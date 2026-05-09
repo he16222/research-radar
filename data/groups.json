@@ -9,8 +9,8 @@
       "Cesare A. Hall",
       "Paul G. Tucker"
     ],
-    "total": 98,
-    "avg_relevance": 3.2,
+    "total": 105,
+    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -24,7 +24,7 @@
       "Choon Tan",
       "Paduano"
     ],
-    "total": 85,
+    "total": 95,
     "avg_relevance": 3.5,
     "preset": true,
     "custom": false
@@ -38,7 +38,7 @@
       "Berdanier",
       "Sanford Fleeter"
     ],
-    "total": 50,
+    "total": 52,
     "avg_relevance": 3.2,
     "preset": true,
     "custom": false
@@ -50,8 +50,8 @@
       "L. He",
       "Thomas Povey"
     ],
-    "total": 43,
-    "avg_relevance": 2.2,
+    "total": 44,
+    "avg_relevance": 2.3,
     "preset": true,
     "custom": false
   },
@@ -63,8 +63,31 @@
       "Christoph Brandstetter",
       "Fabrice Thouverez"
     ],
-    "total": 31,
+    "total": 32,
     "avg_relevance": 3.2,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Penn State (historical)",
+    "institution": "Penn State University",
+    "pis": [
+      "Lakshminarayana"
+    ],
+    "total": 31,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "NASA Glenn",
+    "institution": "NASA Glenn Research Center",
+    "pis": [
+      "Chunill Hah",
+      "Adamczyk"
+    ],
+    "total": 30,
+    "avg_relevance": 5.0,
     "preset": true,
     "custom": false
   },
@@ -81,14 +104,27 @@
     "custom": false
   },
   {
-    "name": "NASA Glenn",
-    "institution": "NASA Glenn Research Center",
+    "name": "Cranfield Propulsion",
+    "institution": "Cranfield University",
     "pis": [
-      "Chunill Hah",
-      "Adamczyk"
+      "David G. MacManus",
+      "Vassilios Pachidis"
     ],
     "total": 27,
-    "avg_relevance": 5.0,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
+    "pis": [
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
+    ],
+    "total": 26,
+    "avg_relevance": 3.9,
     "preset": true,
     "custom": false
   },
@@ -106,38 +142,13 @@
     "custom": false
   },
   {
-    "name": "Beihang BUAA",
-    "institution": "Beihang University",
+    "name": "Imperial Aeroelasticity",
+    "institution": "Imperial College London",
     "pis": [
-      "Xiaofeng Sun",
-      "Dakun Sun",
-      "Xu Dong"
+      "Mehdi Vahdati"
     ],
-    "total": 25,
-    "avg_relevance": 3.9,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Cranfield Propulsion",
-    "institution": "Cranfield University",
-    "pis": [
-      "David G. MacManus",
-      "Vassilios Pachidis"
-    ],
-    "total": 23,
-    "avg_relevance": 2.7,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Penn State (historical)",
-    "institution": "Penn State University",
-    "pis": [
-      "Lakshminarayana"
-    ],
-    "total": 23,
-    "avg_relevance": 0.0,
+    "total": 22,
+    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -153,23 +164,23 @@
     "custom": false
   },
   {
-    "name": "Imperial Aeroelasticity",
-    "institution": "Imperial College London",
-    "pis": [
-      "Mehdi Vahdati"
-    ],
-    "total": 20,
-    "avg_relevance": 3.1,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "ETH Zurich LEC",
     "institution": "ETH Zurich",
     "pis": [
       "Reza S. Abhari"
     ],
     "total": 20,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "GE Aviation",
+    "institution": "GE Aviation",
+    "pis": [
+      "A. R. Wadia"
+    ],
+    "total": 17,
     "avg_relevance": 0.0,
     "preset": true,
     "custom": false
@@ -187,17 +198,6 @@
     "custom": false
   },
   {
-    "name": "GE Aviation",
-    "institution": "GE Aviation",
-    "pis": [
-      "A. R. Wadia"
-    ],
-    "total": 16,
-    "avg_relevance": 0.0,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Kurz & Brun (Industrial GT)",
     "institution": "Solar Turbines / Elliott Group",
     "pis": [
@@ -208,6 +208,13 @@
     "avg_relevance": 0.0,
     "preset": true,
     "custom": false
+  },
+  {
+    "name": "★ Yasutoshi SENOO",
+    "institution": "（自动识别）",
+    "total": 15,
+    "avg_relevance": 0.0,
+    "preset": false
   },
   {
     "name": "CAS IET",
@@ -232,6 +239,17 @@
     "custom": false
   },
   {
+    "name": "ITP Aero / UPM",
+    "institution": "ITP Aero / Univ. Politecnica de Madrid",
+    "pis": [
+      "Roque Corral"
+    ],
+    "total": 13,
+    "avg_relevance": 3.3,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "TU Dresden",
     "institution": "TU Dresden",
     "pis": [
@@ -239,17 +257,6 @@
     ],
     "total": 12,
     "avg_relevance": 3.3,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "ITP Aero / UPM",
-    "institution": "ITP Aero / Univ. Politecnica de Madrid",
-    "pis": [
-      "Roque Corral"
-    ],
-    "total": 11,
-    "avg_relevance": 2.9,
     "preset": true,
     "custom": false
   },
