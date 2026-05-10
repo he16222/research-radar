@@ -2,14 +2,14 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from build_timeline import get_decade, group_papers_by_topic_decade
+from build_timeline import get_period, group_papers_by_topic_period
 
 
-def test_get_decade():
-    assert get_decade(1975) == 1970
-    assert get_decade(1980) == 1980
-    assert get_decade(1989) == 1980
-    assert get_decade(2023) == 2020
+def test_get_period():
+    assert get_period(1975) == 1975
+    assert get_period(1980) == 1980
+    assert get_period(1989) == 1985
+    assert get_period(2023) == 2020
 
 
 def test_group_papers_single_match():
@@ -18,7 +18,7 @@ def test_group_papers_single_match():
          "topics_matched": ["机匣处理"]},
     ]
     topics = [{"label": "机匣处理", "terms": []}, {"label": "叶尖间隙", "terms": []}]
-    result = group_papers_by_topic_decade(papers, topics)
+    result = group_papers_by_topic_period(papers, topics)
     assert result["机匣处理"][1980] == ["W1"]
     assert "叶尖间隙" not in result or 1980 not in result.get("叶尖间隙", {})
 
@@ -30,7 +30,7 @@ def test_group_papers_uses_topics_matched_for_historical():
          "topics_matched": ["进气畸变"]},
     ]
     topics = [{"label": "进气畸变", "terms": ["inlet distortion"]}]
-    result = group_papers_by_topic_decade(papers, topics)
+    result = group_papers_by_topic_period(papers, topics)
     assert result["进气畸变"][1990] == ["W2"]
 
 
@@ -41,7 +41,7 @@ def test_group_papers_uses_keyword_matching_for_current():
          "abstract": "", "keywords": []},
     ]
     topics = [{"label": "叶尖间隙", "terms": ["tip clearance"]}]
-    result = group_papers_by_topic_decade(papers, topics)
+    result = group_papers_by_topic_period(papers, topics)
     assert result["叶尖间隙"][2020] == ["W3"]
 
 
@@ -52,6 +52,6 @@ def test_group_papers_deduplicates():
          "topics_matched": ["机匣处理", "叶尖间隙"]},
     ]
     topics = [{"label": "机匣处理", "terms": []}, {"label": "叶尖间隙", "terms": []}]
-    result = group_papers_by_topic_decade(papers, topics)
-    assert result["机匣处理"][1980].count("W4") == 1
-    assert result["叶尖间隙"][1980].count("W4") == 1
+    result = group_papers_by_topic_period(papers, topics)
+    assert result["机匣处理"][1985].count("W4") == 1
+    assert result["叶尖间隙"][1985].count("W4") == 1

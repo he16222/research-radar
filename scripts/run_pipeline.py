@@ -19,7 +19,7 @@ from process_with_ai import process_papers
 from fetch_repos import fetch_all_repos, enrich_repos
 from fetch_papers_historical import fetch_papers_historical_incremental
 from build_timeline import build_timeline
-from config import RESEARCH_GROUPS
+from config import CATEGORIES, RESEARCH_GROUPS
 
 logging.basicConfig(
     level=logging.INFO,
@@ -38,6 +38,16 @@ def load_all_groups() -> list:
     if custom_path.exists():
         custom = json.loads(custom_path.read_text(encoding="utf-8"))
     return RESEARCH_GROUPS + custom
+
+
+def _contains_any(values: list[str], needles: list[str]) -> bool:
+    """Case-insensitive substring match against a list of text values."""
+    haystack = [str(v).lower() for v in values if v]
+    for needle in needles:
+        needle_l = str(needle).lower().strip()
+        if needle_l and any(needle_l in value for value in haystack):
+            return True
+    return False
 
 
 # ─────────────────────────────────────────────
@@ -114,13 +124,13 @@ def tag_groups(papers: list[dict]) -> None:
     all_groups = load_all_groups()
     for paper in papers:
         authors = paper.get("authors", [])
+        affiliations = paper.get("affiliations", [])
         matched = []
         for group in all_groups:
-            for pi in group["pis"]:
-                pi_lower = pi.lower()
-                if any(pi_lower in a.lower() for a in authors):
-                    matched.append(group["name"])
-                    break
+            pi_match = _contains_any(authors, group.get("pis", []))
+            alias_match = _contains_any(affiliations, group.get("aliases", []))
+            if pi_match or alias_match:
+                matched.append(group["name"])
         paper["groups"] = matched
 
 
@@ -147,6 +157,7 @@ def build_groups_json(papers: list[dict]) -> None:
             "name": g["name"],
             "institution": g["institution"],
             "pis": g.get("pis", []),
+            "aliases": g.get("aliases", []),
             "paper_ids": [],
             "total": 0,
             "avg_relevance": 0.0,
@@ -182,7 +193,7 @@ def build_groups_json(papers: list[dict]) -> None:
         del g["paper_ids"]
 
     # 高频作者补充（不在预设组中）
-    preset_pis = {pi.lower() for g in all_groups for pi in g["pis"]}
+    preset_pis = {pi.lower() for g in all_groups for pi in g.get("pis", [])}
     for author, count in author_counter.most_common(50):
         if count < 15:
             break
@@ -248,6 +259,11 @@ def write_meta() -> None:
     save_json(DATA_DIR / "meta.json", [meta])
 
 
+def write_categories() -> None:
+    """Write the configured AI classification labels for the frontend filter bar."""
+    save_json(DATA_DIR / "categories.json", CATEGORIES)
+
+
 # ─────────────────────────────────────────────
 #  主函数
 # ─────────────────────────────────────────────
@@ -258,6 +274,7 @@ def main() -> None:
     run_papers_pipeline()
     run_repos_pipeline()
     write_meta()
+    write_categories()
 
     # 6. 历史论文增量抓取
     log.info("─── 历史论文增量抓取 ───")

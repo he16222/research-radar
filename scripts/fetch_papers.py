@@ -29,6 +29,28 @@ def reconstruct_abstract(inv: dict) -> str:
     return " ".join(word for _, word in sorted(pairs))
 
 
+def extract_affiliations(authorships: list[dict]) -> list[str]:
+    """Extract institution and raw affiliation strings from OpenAlex authorships."""
+    affiliations: list[str] = []
+    seen: set[str] = set()
+    for authorship in authorships:
+        for inst in authorship.get("institutions", []) or []:
+            name = (inst.get("display_name") or "").strip()
+            if name and name.lower() not in seen:
+                seen.add(name.lower())
+                affiliations.append(name)
+        raw_values = authorship.get("raw_affiliation_strings") or []
+        raw_single = authorship.get("raw_affiliation_string")
+        if raw_single:
+            raw_values.append(raw_single)
+        for raw in raw_values:
+            text = str(raw).strip()
+            if text and text.lower() not in seen:
+                seen.add(text.lower())
+                affiliations.append(text)
+    return affiliations
+
+
 def fetch_openalex(keyword: str, issn: str, journal_name: str,
                    max_results: int = 25) -> list[dict]:
     params = {
@@ -60,11 +82,13 @@ def fetch_openalex(keyword: str, issn: str, journal_name: str,
         if not abstract:
             continue
 
+        authorships = item.get("authorships", []) or []
         authors = [
             a["author"]["display_name"]
-            for a in item.get("authorships", [])
+            for a in authorships
             if a.get("author", {}).get("display_name")
         ]
+        affiliations = extract_affiliations(authorships)
 
         doi  = item.get("doi") or ""
         url  = f"https://doi.org/{doi.replace('https://doi.org/', '')}" if doi else ""
@@ -81,6 +105,7 @@ def fetch_openalex(keyword: str, issn: str, journal_name: str,
             "title":    title,
             "abstract": abstract,
             "authors":  authors,
+            "affiliations": affiliations,
             "date":     date,
             "url":      url,
             "venue":    venue,

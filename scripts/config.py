@@ -28,6 +28,28 @@ KEYWORDS = [
     "inlet distortion",
     "circumferential distortion",
     "radial distortion",
+    # ── 非同步振动 / 气动弹性 / 旋转不稳定性 ──
+    "nonsynchronous vibration",
+    "non-synchronous vibration",
+    "NSV",
+    "turbomachinery aeroelasticity",
+    "compressor blade vibration",
+    "fan flutter",
+    "blade flutter",
+    "forced response turbomachinery",
+    "aeroelastic stability compressor",
+    "fluid structure interaction turbomachinery",
+    "mistuning",
+    "nodal diameter",
+    "traveling wave vibration",
+    "rotating instability",
+    "RI compressor",
+    # ── 转子振动控制 / 预测解析模型 ──
+    "rotor vibration control",
+    "blade vibration control",
+    "rotor blade vibration prediction",
+    "analytical model blade vibration",
+    "reduced order aeroelastic model",
 ]
 
 # 目标期刊（AIAA / ASME），按 ISSN 精准过滤
@@ -36,6 +58,9 @@ TARGET_JOURNALS = [
     {"name": "J. Eng. Gas Turbines and Power",     "issn": "0742-4795"},
     {"name": "Journal of Propulsion and Power",    "issn": "0748-4658"},
     {"name": "AIAA Journal",                        "issn": "0001-1452"},
+    {"name": "Journal of Sound and Vibration",      "issn": "0022-460X"},
+    {"name": "Progress in Aerospace Sciences",      "issn": "0376-0421"},
+    {"name": "Chinese Journal of Aeronautics",      "issn": "1000-9361"},
 ]
 
 # 历史期刊（前身），仅 fetch_papers_historical 使用
@@ -70,6 +95,14 @@ CATEGORIES = [
     "实验测量",
     "畸变进气",
     "失速/喘振机理",
+    "非同步振动 NSV",
+    "气动弹性",
+    "转子振动控制",
+    "旋转流动不稳定性 RI",
+    "转子叶片振动预测解析模型",
+    "颤振/强迫响应",
+    "声学/振动",
+    "流固耦合",
     "其他",
 ]
 
@@ -92,7 +125,7 @@ RESEARCH_GROUPS = [
     {
         "name": "Purdue Compressor Lab",
         "institution": "Purdue University",
-        "pis": ["Nicole Key", "Nicole L. Key", "Berdanier", "Sanford Fleeter"],
+        "pis": ["Nicole Key", "Nicole L. Key", "Berdanier", "Sanford Fleeter", "Yujun Leng"],
     },
     {
         "name": "NASA Glenn",
@@ -118,7 +151,13 @@ RESEARCH_GROUPS = [
     {
         "name": "Imperial Aeroelasticity",
         "institution": "Imperial College London",
-        "pis": ["Mehdi Vahdati"],
+        "pis": [
+            "Mehdi Vahdati",
+            "Sina Stapelfeldt",
+            "Loic Salles",
+            "Fanzhou Zhao",
+            "Venkatesh Suriyanarayanan",
+        ],
     },
     {
         "name": "ETH Zurich LEC",
@@ -133,7 +172,81 @@ RESEARCH_GROUPS = [
     {
         "name": "TU Dresden",
         "institution": "TU Dresden",
-        "pis": ["Ronald Mailach"],
+        "pis": ["Ronald Mailach", "Konrad Vogeler", "Xiangyi Chen", "Martin Lange"],
+    },
+    {
+        "name": "TU Darmstadt GLR",
+        "institution": "Technical University of Darmstadt",
+        "pis": [
+            "Schiffer",
+            "Heinz-Peter Schiffer",
+            "H.-P. Schiffer",
+            "F. Holzinger",
+            "Holzinger",
+            "Maximilian Jungst",
+            "Christoph Brandstetter",
+        ],
+        "aliases": [
+            "TU Darmstadt",
+            "Technical University of Darmstadt",
+            "Technische Universitat Darmstadt",
+            "Institute of Gas Turbines and Aerospace Propulsion",
+            "Gas Turbines and Aerospace Propulsion",
+            "GLR",
+        ],
+    },
+    {
+        "name": "DLR",
+        "institution": "German Aerospace Center",
+        "pis": [
+            "F. Holste",
+            "Holste",
+            "Frank Kameier",
+            "Kameier",
+            "Neise",
+            "Benjamin Pardowitz",
+            "Pardowitz",
+            "Marz",
+            "M. Baumgartner",
+            "Baumgartner",
+        ],
+        "aliases": [
+            "DLR",
+            "German Aerospace Center",
+            "Deutsches Zentrum fur Luft- und Raumfahrt",
+            "Engine Acoustics Department",
+            "Institute of Propulsion Technology",
+            "Institute of Aeroelasticity",
+            "Fan and Compressor",
+        ],
+    },
+    {
+        "name": "TU Berlin Aero Engines",
+        "institution": "Technische Universitat Berlin",
+        "pis": ["Mario Eck", "Dieter Peitsch", "Victor Bicalho Civinelli de Almeida"],
+        "aliases": [
+            "Technische Universitat Berlin",
+            "Technical University of Berlin",
+            "TU Berlin",
+            "Institute of Aeronautics and Astronautics",
+            "Chair for Aero Engines",
+        ],
+    },
+    {
+        "name": "Duke Aeroelasticity",
+        "institution": "Duke University",
+        "pis": ["Hall", "Kielb", "Spiker", "Richard Hollenbach", "Clark", "Dowell"],
+        "aliases": [
+            "Duke University",
+            "Thomas Lord Department of Mechanical Engineering",
+            "Department of Mechanical Engineering and Material Science",
+        ],
+    },
+    {
+        "name": "University of Pennsylvania",
+        "institution": "University of Pennsylvania",
+        "pis": [],
+        "aliases": ["University of Pennsylvania", "Penn Engineering"],
     },
     {
         "name": "Cranfield Propulsion",
@@ -196,6 +309,46 @@ RESEARCH_GROUPS = [
         "name": "GE Aviation",
         "institution": "GE Aviation",
         "pis": ["A. R. Wadia"],
+    },
+    {
+        "name": "Mitsubishi Heavy Industries",
+        "institution": "Mitsubishi Heavy Industries",
+        "pis": ["Ryosuke Seki"],
+        "aliases": [
+            "Mitsubishi Heavy Industries",
+            "Turbomachinery Research Department",
+            "Research & Innovation Center",
+        ],
+    },
+    {
+        "name": "Waseda / IHI",
+        "institution": "Waseda University / IHI",
+        "pis": ["Fujisawa", "Yutaka Ohta"],
+        "aliases": [
+            "Waseda University",
+            "Department of Applied Mechanics and Aerospace Engineering",
+            "IHI",
+        ],
+    },
+    {
+        "name": "CSIR-NAL Propulsion",
+        "institution": "CSIR-National Aerospace Laboratories",
+        "pis": [],
+        "aliases": [
+            "CSIR-National Aerospace Laboratories",
+            "National Aerospace Laboratories",
+            "Propulsion Division",
+        ],
+    },
+    {
+        "name": "IISc Aerospace",
+        "institution": "Indian Institute of Science",
+        "pis": ["Jyoti Ranjan Majhi", "Kartik Venkatraman"],
+        "aliases": [
+            "Indian Institute of Science",
+            "IISc",
+            "Department of Aerospace Engineering",
+        ],
     },
     {
         "name": "Kurz & Brun (Industrial GT)",

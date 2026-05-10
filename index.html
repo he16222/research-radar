@@ -2538,6 +2538,43 @@ const DEFAULT_TOPICS = [
     terms: ['flutter', 'aeroelastic', 'forced response', 'mistuning',
             'blade vibration', 'aeromechanics', 'aeroelasticity'],
     builtin: true
+  },
+  {
+    label: '非同步振动 NSV',
+    terms: ['nonsynchronous vibration', 'non-synchronous vibration', 'NSV',
+            'traveling wave vibration', 'rotating instability', 'nodal diameter',
+            'part speed vibration', 'non synchronous vibration'],
+    builtin: true
+  },
+  {
+    label: '气动弹性',
+    terms: ['aeroelasticity', 'aeroelastic stability', 'flutter',
+            'forced response', 'fluid structure interaction', 'blade vibration',
+            'mistuning', 'aeromechanics', 'aeroelastic'],
+    builtin: true
+  },
+  {
+    label: '转子振动控制',
+    terms: ['rotor vibration control', 'blade vibration control',
+            'flutter suppression', 'active vibration control',
+            'passive vibration control', 'mistuning control',
+            'aeroelastic control'],
+    builtin: true
+  },
+  {
+    label: '旋转流动不稳定性 RI',
+    terms: ['rotating instability', 'rotating instabilities', 'RI',
+            'tip leakage vortex', 'vortex breakdown', 'modal wave',
+            'stall precursor', 'near stall disturbance'],
+    builtin: true
+  },
+  {
+    label: '转子叶片振动预测解析模型',
+    terms: ['analytical model blade vibration', 'rotor blade vibration prediction',
+            'reduced order aeroelastic model', 'harmonic balance',
+            'Van der Pol', 'stability model', 'nodal diameter model',
+            'traveling wave model'],
+    builtin: true
   }
 ];
 
@@ -2640,19 +2677,20 @@ async function ensureGithubToken() {
   return token;
 }
 
-let papers = [], repos = [], groups = [], annotations = {}, customGroups = [], activeTag = null, activeGroup = null;
+let papers = [], repos = [], groups = [], categories = [], annotations = {}, customGroups = [], activeTag = null, activeGroup = null;
 const _groupEditData = {};  // key → edit info，供 openGroupEdit 使用
 
 const REL_LABEL = { 5:'核心方向', 4:'高度相关', 3:'相关', 2:'部分相关' };
 const REL_CLASS = { 5:'r5', 4:'r4', 3:'r3', 2:'r2' };
 
 async function load() {
-  const [p, r, m, g, ph] = await Promise.allSettled([
+  const [p, r, m, g, ph, c] = await Promise.allSettled([
     fetch('data/papers.json').then(x => x.json()),
     fetch('data/repos.json').then(x => x.json()),
     fetch('data/meta.json').then(x => x.json()),
     fetch('data/groups.json').then(x => x.json()),
     fetch('data/papers-historical.json').then(x => x.json()),
+    fetch('data/categories.json').then(x => x.json()),
   ]);
   const currentPapers    = p.status === 'fulfilled' ? p.value : [];
   const historicalPapers = ph.status === 'fulfilled' ? ph.value : [];
@@ -2663,6 +2701,7 @@ async function load() {
   papers       = merged;
   repos        = r.status === 'fulfilled' ? r.value : [];
   groups       = g.status === 'fulfilled' ? g.value : [];
+  categories   = c.status === 'fulfilled' ? c.value : [];
   customGroups = getCustomGroups();
   annotations  = getAnnotations();
   const meta  = m.status === 'fulfilled' ? m.value : [];
@@ -2679,11 +2718,23 @@ async function load() {
 }
 
 function buildTags() {
-  const tags = new Set();
-  papers.forEach(p => effectiveTags(p).forEach(t => tags.add(t)));
+  const tagSet = new Set();
+  const tags = [];
+  ['全部', ...categories].forEach(tag => {
+    if (!tagSet.has(tag)) {
+      tagSet.add(tag);
+      tags.push(tag);
+    }
+  });
+  papers.forEach(p => effectiveTags(p).forEach(t => {
+    if (!tagSet.has(t)) {
+      tagSet.add(t);
+      tags.push(t);
+    }
+  }));
   const bar = document.getElementById('tag-bar');
   bar.innerHTML = '<span class="tag-bar-label">Filter</span>';
-  ['全部', ...tags].forEach(tag => {
+  tags.forEach(tag => {
     const btn = document.createElement('button');
     btn.className = 'tag-pill' + (tag === '全部' && !activeTag ? ' active' : '');
     btn.textContent = tag;
@@ -3733,11 +3784,12 @@ function appendPipelineLog(msg) {
 
 async function reloadData() {
   closePipelinePanel();
-  const [p, g, m, ph] = await Promise.allSettled([
+  const [p, g, m, ph, c] = await Promise.allSettled([
     fetch('data/papers.json?t=' + Date.now()).then(x => x.json()),
     fetch('data/groups.json?t=' + Date.now()).then(x => x.json()),
     fetch('data/meta.json?t=' + Date.now()).then(x => x.json()),
     fetch('data/papers-historical.json?t=' + Date.now()).then(x => x.json()),
+    fetch('data/categories.json?t=' + Date.now()).then(x => x.json()),
   ]);
   const currentPapers    = p.status === 'fulfilled' ? p.value : [];
   const historicalPapers = ph.status === 'fulfilled' ? ph.value : [];
@@ -3746,6 +3798,7 @@ async function reloadData() {
   merged.sort((a, b) => (b.date || '') > (a.date || '') ? 1 : -1);
   papers = merged;
   if (g.status === 'fulfilled') groups = g.value;
+  if (c.status === 'fulfilled') categories = c.value;
   const meta = m.status === 'fulfilled' ? m.value : [];
   if (meta[0]?.last_updated)
     document.getElementById('meta').textContent = 'UPDATED ' + meta[0].last_updated.replace('T',' ').replace('Z',' UTC');
@@ -4242,8 +4295,8 @@ async function sendChat() {
       contextParts.push('以下是与当前问题最相关的论文：\n\n' + lines.join('\n\n'));
     }
 
-    const CHAT_SYSTEM = `你是一个航空发动机压气机气动热力学领域的研究助手。
-用户的研究方向：压气机稳定性、叶尖间隙、机匣处理、进气畸变、稳定性建模（激盘/体力模型）。
+    const CHAT_SYSTEM = `你是一个航空发动机压气机气动热力学、气动弹性与转子动力学领域的研究助手。
+用户的研究方向：压气机稳定性、叶尖间隙、机匣处理、进气畸变、稳定性建模（激盘/体力模型）、非同步振动 NSV、旋转流动不稳定性 RI、气动弹性、转子振动控制和转子叶片振动预测解析模型。
 你有权访问用户的论文库（已在下方提供相关论文摘要）。
 优先基于论文库回答问题，不要编造不在库中的论文信息。
 如果论文库中没有找到相关内容，明确告知用户，并建议他们使用"更新检索"抓取更多论文。

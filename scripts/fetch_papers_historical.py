@@ -83,6 +83,33 @@ DEFAULT_TOPICS = [
         "flutter", "aeroelastic", "forced response", "mistuning",
         "blade vibration", "aeromechanics", "aeroelasticity",
     ]},
+    {"label": "非同步振动 NSV", "terms": [
+        "nonsynchronous vibration", "non-synchronous vibration", "NSV",
+        "traveling wave vibration", "rotating instability", "nodal diameter",
+        "part speed vibration", "non synchronous vibration",
+    ]},
+    {"label": "气动弹性", "terms": [
+        "aeroelasticity", "aeroelastic stability", "flutter",
+        "forced response", "fluid structure interaction", "blade vibration",
+        "mistuning", "aeromechanics", "aeroelastic",
+    ]},
+    {"label": "转子振动控制", "terms": [
+        "rotor vibration control", "blade vibration control",
+        "flutter suppression", "active vibration control",
+        "passive vibration control", "mistuning control",
+        "aeroelastic control",
+    ]},
+    {"label": "旋转流动不稳定性 RI", "terms": [
+        "rotating instability", "rotating instabilities", "RI",
+        "tip leakage vortex", "vortex breakdown", "modal wave",
+        "stall precursor", "near stall disturbance",
+    ]},
+    {"label": "转子叶片振动预测解析模型", "terms": [
+        "analytical model blade vibration", "rotor blade vibration prediction",
+        "reduced order aeroelastic model", "harmonic balance",
+        "Van der Pol", "stability model", "nodal diameter model",
+        "traveling wave model",
+    ]},
 ]
 
 
@@ -98,6 +125,7 @@ def get_topics() -> list[dict]:
 
 
 from fetch_papers import reconstruct_abstract  # 共用摘要还原函数
+from fetch_papers import extract_affiliations
 
 
 def matches_topic(paper: dict, terms: list[str]) -> bool:
@@ -159,11 +187,13 @@ def _fetch_page(keyword: str, issn: str, journal_name: str,
             continue
 
         abstract = reconstruct_abstract(item.get("abstract_inverted_index"))
+        authorships = item.get("authorships", []) or []
         authors = [
             a["author"]["display_name"]
-            for a in item.get("authorships", [])
+            for a in authorships
             if a.get("author", {}).get("display_name")
         ]
+        affiliations = extract_affiliations(authorships)
         doi = item.get("doi") or ""
         url = doi if doi.startswith("https://doi.org/") else (
             f"https://doi.org/{doi}" if doi else ""
@@ -184,6 +214,7 @@ def _fetch_page(keyword: str, issn: str, journal_name: str,
             "date": date,
             "year": year,
             "authors": authors,
+            "affiliations": affiliations,
             "venue": venue,
             "source": "OpenAlex",
             "url": url,
