@@ -62,7 +62,7 @@ def test_new_default_topics_match_requested_areas():
     topic_labels = {t["label"] for t in DEFAULT_TOPICS}
     assert "旋转不稳定性 RI" in topic_labels
     assert "非同步振动 NSV" in topic_labels
-    assert "RI-NSV 机理" in topic_labels
+    assert "RI-NSV机理" in topic_labels
     assert "机匣处理与流动控制" in topic_labels
     assert "声学诱导叶片振动" in topic_labels
     assert "叶片流致振动预测模型" in topic_labels
@@ -81,6 +81,27 @@ def test_new_default_topics_match_requested_areas():
     assert "机匣处理与流动控制" in result
     assert "声学诱导叶片振动" in result
     assert "叶片流致振动预测模型" in result
+
+
+def test_classic_nsv_model_title_matches_prediction_topic():
+    paper = {
+        "title": "Non-synchronous vibration in axial compressors: Lock-in mechanism and semi-analytical model",
+        "abstract": "",
+        "keywords": [],
+    }
+    result = set(compute_topics_matched(paper, DEFAULT_TOPICS))
+    assert "叶片流致振动预测模型" in result
+    assert "解析/降阶模型" in result
+
+
+def test_tip_leakage_model_terms_match_analytic_topic():
+    paper = {
+        "title": "A reduced-order model for tip leakage flow in an axial compressor",
+        "abstract": "",
+        "keywords": [],
+    }
+    result = set(compute_topics_matched(paper, DEFAULT_TOPICS))
+    assert "解析/降阶模型" in result
 
 
 def test_reconstruct_abstract_empty():

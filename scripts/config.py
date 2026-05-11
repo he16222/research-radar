@@ -28,7 +28,7 @@ KEYWORDS = [
     "inlet distortion",
     "circumferential distortion",
     "radial distortion",
-    # ── RI 与 RI-NSV 机理 ──
+    # ── RI 与 RI-NSV机理 ──
     "rotating instability",
     "rotating instabilities",
     "rotating instability axial compressor",
@@ -96,6 +96,19 @@ KEYWORDS = [
     "aeroelastic reduced-order model fan blade",
     "flutter reduced order model fan blade",
     "acoustic treatment fan flutter analytical model",
+    "tip leakage flow model",
+    "tip leakage vortex model",
+    "tip leakage flow analytical model",
+    "tip leakage flow reduced-order model",
+    "tip leakage flow reduced order model",
+    "tip clearance flow model",
+    "tip clearance vortex model",
+    "reduced-order model tip clearance compressor",
+    "low-order model tip leakage flow",
+    "semi-analytical model tip leakage flow",
+    "non-synchronous vibration in axial compressors",
+    "lock-in mechanism and semi-analytical model",
+    "nonsynchronous vibration lock-in semi-analytical",
 ]
 
 # 目标期刊（AIAA / ASME），按 ISSN 精准过滤
@@ -107,6 +120,9 @@ TARGET_JOURNALS = [
     {"name": "Journal of Sound and Vibration",      "issn": "0022-460X"},
     {"name": "Progress in Aerospace Sciences",      "issn": "0376-0421"},
     {"name": "Chinese Journal of Aeronautics",      "issn": "1000-9361"},
+    {"name": "Journal of Fluid Mechanics",          "issn": "0022-1120"},
+    {"name": "Applied Acoustics",                    "issn": "0003-682X"},
+    {"name": "Journal of Fluids and Structures",    "issn": "0889-9746"},
 ]
 
 # 历史期刊（前身），仅 fetch_papers_historical 使用
@@ -116,7 +132,7 @@ HISTORICAL_JOURNALS = [
 ]
 
 # 只抓近几年的论文
-FETCH_FROM_YEAR = 2020
+FETCH_FROM_YEAR = 2015
 
 # 历史论文起始年份（fetch_papers_historical.py 使用）
 FETCH_FROM_YEAR_HISTORICAL = 1960
@@ -134,7 +150,7 @@ GITHUB_KEYWORDS = [
 CATEGORIES = [
     "旋转不稳定性 RI",
     "非同步振动 NSV",
-    "RI-NSV 机理",
+    "RI-NSV机理",
     "机匣处理与流动控制",
     "叶片流致振动抑制/控制",
     "声学诱导叶片振动",

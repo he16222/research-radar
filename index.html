@@ -1761,7 +1761,7 @@ select {
   <div id="timeline-heatmap" class="tl-wrap" style="display:none;">
     <div class="tl-left">
       <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--text3); letter-spacing:.08em; margin-bottom:14px;">
-        RESEARCH HEATMAP · 1970–至今 · 5 年间隔（点击格子查看综述和论文）
+        RESEARCH HEATMAP · 1960–至今 · 5 年间隔（点击格子查看综述和论文）
       </div>
       <div id="heatmap-grid"></div>
       <div class="heatmap-time-axis">
@@ -1949,7 +1949,7 @@ select {
     <div class="build-entry solved">
       <span class="build-entry-tag t-feature">功能</span>
       <h3>TIMELINE 热力图：50 年研究趋势可视化</h3>
-      <p>从 OpenAlex 抓取 1970–2025 年历史论文（2000+ 篇），按 10 个研究话题 × 5 年间隔构建热力图。每个格子由 DeepSeek 生成中文综述。</p>
+      <p>从 OpenAlex 抓取 1960 年至今的论文，按研究话题 × 5 年间隔构建热力图。每个格子由 DeepSeek 生成中文综述。</p>
       <p>布局从单栏改为左右分栏（60/40）：左侧热力图全宽，右侧常驻详情面板。使用期刊风格的单色绿渐变色阶，全局统一缩放。顶部双行表头（年代 + 5 年细分），底部时间轴箭头。</p>
     </div>
 
@@ -2030,7 +2030,7 @@ select {
         <div class="manual-step-num">1</div>
         <div class="manual-step-body">
           <strong>抓取论文（fetch_papers.py）</strong>
-          <p>调用 OpenAlex API，按期刊 ISSN 精确过滤，增量拉取 2020 年至今的新论文。每篇记录标题、摘要、作者、DOI、发表日期、期刊名。</p>
+          <p>调用 OpenAlex API，按期刊 ISSN 精确过滤，增量拉取 2015 年至今的新论文。每篇记录标题、摘要、作者、DOI、发表日期、期刊名。</p>
         </div>
       </div>
       <div class="manual-step">
@@ -2195,7 +2195,7 @@ select {
           <strong>加监控期刊</strong>
           <p>在 <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue)">config.py</code> 的 <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue)">TARGET_JOURNALS</code> 里加一行，需要提供期刊的 ISSN（在期刊官网或 OpenAlex 上查）：</p>
           <div class="manual-cmd">{"name": "Aerospace Science and Technology", "issn": "1270-9638"},</div>
-          <p>ISSN 是唯一标识，必须正确，否则过滤后返回 0 篇。可以先去 <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue)">api.openalex.org/works?filter=primary_location.source.issn:XXXX&amp;per-page=3</code> 验证一下。</p>
+          <p>ISSN 是唯一标识，必须正确，否则过滤后返回 0 篇。可以先去 <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue)">api.openalex.org/works?filter=locations.source.issn:XXXX&amp;per-page=3</code> 验证一下。</p>
         </div>
       </div>
 
@@ -2516,7 +2516,7 @@ const DEFAULT_TOPICS = [
     builtin: true
   },
   {
-    label: 'RI-NSV 机理',
+    label: 'RI-NSV机理',
     terms: ['rotating instability non-synchronous vibration',
             'rotating instability nonsynchronous vibration',
             'rotating instability blade vibration',
@@ -2580,8 +2580,11 @@ const DEFAULT_TOPICS = [
   {
     label: '叶片流致振动预测模型',
     terms: ['non-synchronous vibration semi-analytical model',
+            'non-synchronous vibration in axial compressors',
             'convective non-synchronous vibration model',
+            'lock-in mechanism and semi-analytical model',
             'lock-in mechanism non-synchronous vibration compressor',
+            'nonsynchronous vibration lock-in semi-analytical',
             'linear model non-synchronous vibration compressor',
             'single-degree-of-freedom non-synchronous vibration',
             'reduced-order model nonsynchronous vibration turbomachinery',
@@ -2607,10 +2610,26 @@ const DEFAULT_TOPICS = [
   {
     label: '解析/降阶模型',
     terms: ['analytical model', 'semi-analytical model', 'reduced-order model',
-            'reduced order model', 'linear model', 'Van der Pol'],
+            'reduced order model', 'linear model', 'Van der Pol',
+            'tip leakage flow model', 'tip leakage vortex model',
+            'tip leakage flow analytical model',
+            'tip leakage flow reduced-order model',
+            'tip leakage flow reduced order model',
+            'tip clearance flow model', 'tip clearance vortex model',
+            'reduced-order model tip clearance compressor',
+            'low-order model tip leakage flow',
+            'semi-analytical model tip leakage flow',
+            'lock-in mechanism', 'disturbance propagation speed'],
     builtin: true
   }
 ];
+
+const TAG_ALIASES = {
+  'ri-nsv 机理': 'RI-NSV机理',
+  'ri-nsv机理': 'RI-NSV机理',
+  'ri/nsv机理': 'RI-NSV机理',
+  'ri-nsv mechanism': 'RI-NSV机理'
+};
 
 // localStorage 工具函数
 function lsGet(key, fallback) {
@@ -2660,6 +2679,24 @@ function matchesTopicTerm(haystack, term) {
   return haystack.includes(needle);
 }
 
+function normalizeTag(tag) {
+  const text = String(tag || '').trim();
+  if (!text) return '';
+  return TAG_ALIASES[text.toLowerCase()] || text;
+}
+
+function normalizeTagList(tags) {
+  const result = [];
+  const seen = new Set();
+  (tags || []).forEach(tag => {
+    const normalized = normalizeTag(tag);
+    if (!normalized || seen.has(normalized)) return;
+    seen.add(normalized);
+    result.push(normalized);
+  });
+  return result;
+}
+
 /**
  * Returns the effective tag set for a paper: AI-assigned tags merged with
  * any user-added topic overrides, deduplicated.
@@ -2668,7 +2705,7 @@ function effectiveTags(paper) {
   const overrides = getTopicOverrides();
   const extra = overrides[paper.id] || [];
   const base  = paper.tags || [];
-  return [...new Set([...base, ...extra])];
+  return normalizeTagList([...base, ...extra]);
 }
 
 // ── 设置弹窗 ─────────────────────────────────────
@@ -2764,10 +2801,11 @@ async function load() {
 function buildTags() {
   const tagSet = new Set();
   const tags = [];
-  ['全部', ...categories].forEach(tag => {
-    if (!tagSet.has(tag)) {
-      tagSet.add(tag);
-      tags.push(tag);
+  ['全部', ...normalizeTagList(categories)].forEach(tag => {
+    const normalized = normalizeTag(tag);
+    if (!tagSet.has(normalized)) {
+      tagSet.add(normalized);
+      tags.push(normalized);
     }
   });
   papers.forEach(p => effectiveTags(p).forEach(t => {
@@ -3288,6 +3326,13 @@ function closePipelinePanel() {
   if (_pipelinePoll) { clearInterval(_pipelinePoll); _pipelinePoll = null; }
 }
 
+function paperYear(paper) {
+  const explicitYear = Number(paper?.year);
+  if (Number.isInteger(explicitYear) && explicitYear > 0) return explicitYear;
+  const match = String(paper?.date || '').match(/^(\d{4})/);
+  return match ? Number(match[1]) : 0;
+}
+
 function showTimelineDetail(topicLabel, period) {
   const topic = timelineData?.topics?.find(t => t.label === topicLabel);
   const cellKey = timelineData.periods ? 'periods' : 'decades';
@@ -3308,7 +3353,7 @@ function showTimelineDetail(topicLabel, period) {
       if (cp) allPapers.push({ ...cp, _source: 'current' });
     }
   });
-  allPapers.sort((a, b) => (a.year || 0) - (b.year || 0));
+  allPapers.sort((a, b) => paperYear(a) - paperYear(b));
 
   let html = `<div class="tl-detail-title">${escapeHtml(topicLabel)} ${period}-${periodEnd} <span style="font-size:11px; color:var(--text3); font-weight:400;">${cell.count} 篇</span></div>`;
 
@@ -3326,7 +3371,7 @@ function showTimelineDetail(topicLabel, period) {
   allPapers.forEach(p => {
     const firstAuthor = (p.authors || [])[0] || '';
     const lastName = firstAuthor ? firstAuthor.split(',')[0].split(' ').slice(-1)[0] : '';
-    const yearAuthor = `${p.year || ''}${lastName ? ' · ' + lastName : ''}`;
+    const yearAuthor = `${paperYear(p) || ''}${lastName ? ' · ' + lastName : ''}`;
     const url = p.url || '';
     const clickAttr = url ? `onclick="window.open('${url.replace(/'/g, "\\'")}','_blank')"` : '';
     html += `<div class="tl-paper-item" ${clickAttr}>
@@ -4340,7 +4385,7 @@ async function sendChat() {
     }
 
     const CHAT_SYSTEM = `你是一个航空发动机风扇/压气机非定常气动、气动弹性与叶片振动领域的研究助手。
-用户的研究方向：旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV 机理、预测与控制。
+用户的研究方向：旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV机理、预测与控制。
 你有权访问用户的论文库（已在下方提供相关论文摘要）。
 优先基于论文库回答问题，不要编造不在库中的论文信息。
 如果论文库中没有找到相关内容，明确告知用户，并建议他们使用"更新检索"抓取更多论文。

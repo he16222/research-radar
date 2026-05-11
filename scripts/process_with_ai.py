@@ -24,6 +24,48 @@ except ImportError:
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
 
+TAG_ALIASES = {
+    "ri-nsv 机理": "RI-NSV机理",
+    "ri-nsv机理": "RI-NSV机理",
+    "ri/nsv机理": "RI-NSV机理",
+    "ri-nsv mechanism": "RI-NSV机理",
+}
+VALID_CATEGORIES = set(CATEGORIES)
+
+
+def normalize_tag(tag: str) -> str:
+    """Normalize historical and model-generated tag variants to canonical names."""
+    text = str(tag or "").strip()
+    if not text:
+        return ""
+    return TAG_ALIASES.get(text.casefold(), text)
+
+
+def normalize_tags(tags) -> list[str]:
+    """Normalize, deduplicate, and constrain AI tags to configured categories."""
+    if isinstance(tags, list):
+        raw_tags = tags
+    elif tags:
+        raw_tags = [tags]
+    else:
+        raw_tags = []
+
+    result: list[str] = []
+    seen: set[str] = set()
+    for tag in raw_tags:
+        normalized = normalize_tag(tag)
+        if not normalized:
+            continue
+        if normalized not in VALID_CATEGORIES:
+            normalized = "其他"
+        if normalized not in seen:
+            seen.add(normalized)
+            result.append(normalized)
+
+    if not result:
+        result.append("其他")
+    return result[:3]
+
 # ─────────────────────────────────────────────
 #  DeepSeek 客户端
 # ─────────────────────────────────────────────
@@ -63,8 +105,8 @@ def fetch_pdf_text(pdf_url: str, max_chars: int = 12000) -> str:
 # ─────────────────────────────────────────────
 
 BASE_SYSTEM_PROMPT = """你是一个航空发动机风扇/压气机非定常气动、气动弹性与叶片振动领域的资深研究助手。
-用户课题核心：风扇/压气机中旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV 机理、预测与控制。
-评分时优先判断论文与 RI-NSV 机理、预测或控制的关系，不要沿用叶尖畸变下稳定裕度作为核心标准。
+用户课题核心：风扇/压气机中旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV机理、预测与控制。
+评分时优先判断论文与 RI-NSV机理、预测或控制的关系，不要沿用叶尖畸变下稳定裕度作为核心标准。
 只输出 JSON，不要有任何其他文字或 markdown 代码块。"""
 
 RELEVANCE_GUIDE = """relevance 评分标准：
@@ -74,7 +116,9 @@ RELEVANCE_GUIDE = """relevance 评分标准：
 2=泛化叶片振动、失谐、声学处理、流固耦合、转子动力学，与风扇/压气机流致振动有参考价值；
 1=普通稳定性、普通结构振动、非叶轮机械对象；
 0=无关。
-relevance_reason 必须用一句话说明论文与 RI-NSV 机理、预测或控制的关系。"""
+relevance_reason 必须用一句话说明论文与 RI-NSV机理、预测或控制的关系。"""
+RELEVANCE_GUIDE += """
+“解析/降阶模型”包括半解析模型、降阶模型、低阶模型、线性模型、Van der Pol 类模型、叶尖泄漏流/叶尖涡模化、锁频与扰动传播速度预测模型。"""
 
 def build_system_prompt(annotations: dict) -> str:
     """将用户历史标注整合进系统 prompt，形成个性化偏好记忆"""
@@ -197,6 +241,7 @@ def process_one(
                           "limitations", "tags", "relevance"):
                 assert field in result, f"缺少 {field}"
 
+            result["tags"] = normalize_tags(result.get("tags", []))
             result["has_fulltext"] = has_fulltext
             return result
 

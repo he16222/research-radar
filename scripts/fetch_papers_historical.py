@@ -1,6 +1,6 @@
 """
 fetch_papers_historical.py
-从 OpenAlex 抓取 1970–2019 年历史论文，增量写入 data/papers-historical.json。
+从 OpenAlex 抓取 1960 年至当前论文起始年前一年的历史论文，增量写入 data/papers-historical.json。
 使用 OpenAlex 原生 W-ID（非 MD5 哈希），包含所有可用字段供将来扩展。
 """
 
@@ -68,7 +68,7 @@ DEFAULT_TOPICS = [
         "nonsynchronous blade vibration", "non-synchronous blade vibration",
         "traveling wave vibration", "nodal diameter",
     ]},
-    {"label": "RI-NSV 机理", "terms": [
+    {"label": "RI-NSV机理", "terms": [
         "rotating instability non-synchronous vibration",
         "rotating instability nonsynchronous vibration",
         "rotating instability blade vibration",
@@ -122,8 +122,11 @@ DEFAULT_TOPICS = [
     ]},
     {"label": "叶片流致振动预测模型", "terms": [
         "non-synchronous vibration semi-analytical model",
+        "non-synchronous vibration in axial compressors",
         "convective non-synchronous vibration model",
+        "lock-in mechanism and semi-analytical model",
         "lock-in mechanism non-synchronous vibration compressor",
+        "nonsynchronous vibration lock-in semi-analytical",
         "linear model non-synchronous vibration compressor",
         "single-degree-of-freedom non-synchronous vibration",
         "reduced-order model nonsynchronous vibration turbomachinery",
@@ -144,6 +147,15 @@ DEFAULT_TOPICS = [
     {"label": "解析/降阶模型", "terms": [
         "analytical model", "semi-analytical model", "reduced-order model",
         "reduced order model", "linear model", "Van der Pol",
+        "tip leakage flow model", "tip leakage vortex model",
+        "tip leakage flow analytical model",
+        "tip leakage flow reduced-order model",
+        "tip leakage flow reduced order model",
+        "tip clearance flow model", "tip clearance vortex model",
+        "reduced-order model tip clearance compressor",
+        "low-order model tip leakage flow",
+        "semi-analytical model tip leakage flow",
+        "lock-in mechanism", "disturbance propagation speed",
     ]},
 ]
 
@@ -196,7 +208,7 @@ def _fetch_page(keyword: str, issn: str, journal_name: str,
     params = {
         "search": keyword,
         "filter": (
-            f"primary_location.source.issn:{issn},"
+            f"locations.source.issn:{issn},"
             f"from_publication_date:{from_year}-01-01,"
             f"to_publication_date:{to_year}-12-31"
         ),

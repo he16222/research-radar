@@ -51,11 +51,21 @@ def extract_affiliations(authorships: list[dict]) -> list[str]:
     return affiliations
 
 
+def extract_year(date: str) -> int | None:
+    """Extract a publication year from an OpenAlex publication_date string."""
+    if not date or len(date) < 4:
+        return None
+    try:
+        return int(date[:4])
+    except ValueError:
+        return None
+
+
 def fetch_openalex(keyword: str, issn: str, journal_name: str,
                    max_results: int = 25) -> list[dict]:
     params = {
         "search":   keyword,
-        "filter":   f"primary_location.source.issn:{issn},"
+        "filter":   f"locations.source.issn:{issn},"
                     f"from_publication_date:{FETCH_FROM_YEAR}-01-01",
         "per-page": max_results,
         "sort":     "publication_date:desc",
@@ -107,6 +117,7 @@ def fetch_openalex(keyword: str, issn: str, journal_name: str,
             "authors":  authors,
             "affiliations": affiliations,
             "date":     date,
+            "year":     extract_year(date),
             "url":      url,
             "venue":    venue,
             "source":   "OpenAlex",

@@ -2,7 +2,7 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from build_timeline import get_period, group_papers_by_topic_period
+from build_timeline import get_period, group_papers_by_topic_period, paper_year
 
 
 def test_get_period():
@@ -43,6 +43,32 @@ def test_group_papers_uses_keyword_matching_for_current():
     topics = [{"label": "叶尖间隙", "terms": ["tip clearance"]}]
     result = group_papers_by_topic_period(papers, topics)
     assert result["叶尖间隙"][2020] == ["W3"]
+
+
+def test_group_papers_falls_back_to_date_for_2020_period():
+    papers = [
+        {"id": "W5", "date": "2021-04-15", "title": "tip clearance effect on compressor",
+         "abstract": "", "keywords": []},
+    ]
+    topics = [{"label": "叶尖间隙", "terms": ["tip clearance"]}]
+    result = group_papers_by_topic_period(papers, topics)
+    assert result["叶尖间隙"][2020] == ["W5"]
+
+
+def test_group_papers_falls_back_to_date_for_2025_period():
+    papers = [
+        {"id": "W6", "date": "2026-02-20", "title": "casing treatment in compressor",
+         "abstract": "", "keywords": []},
+    ]
+    topics = [{"label": "机匣处理", "terms": ["casing treatment"]}]
+    result = group_papers_by_topic_period(papers, topics)
+    assert result["机匣处理"][2025] == ["W6"]
+
+
+def test_paper_year_prefers_year_and_parses_date():
+    assert paper_year({"year": "2019", "date": "2021-01-01"}) == 2019
+    assert paper_year({"date": "2021-01-01"}) == 2021
+    assert paper_year({"date": ""}) is None
 
 
 def test_group_papers_deduplicates():

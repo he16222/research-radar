@@ -30,6 +30,24 @@ def get_period(year: int) -> int:
     return (year // 5) * 5
 
 
+def paper_year(paper: dict) -> int | None:
+    """Return publication year from explicit year or date fallback."""
+    year = paper.get("year")
+    if year:
+        try:
+            return int(year)
+        except (TypeError, ValueError):
+            pass
+
+    date = str(paper.get("date") or "")
+    if len(date) >= 4:
+        try:
+            return int(date[:4])
+        except ValueError:
+            return None
+    return None
+
+
 def group_papers_by_topic_period(
     papers: list[dict], topics: list[dict]
 ) -> dict[str, dict[int, list[str]]]:
@@ -43,7 +61,7 @@ def group_papers_by_topic_period(
         result[label] = {}
 
     for paper in papers:
-        year = paper.get("year")
+        year = paper_year(paper)
         if not year:
             continue
         period = get_period(year)

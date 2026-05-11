@@ -4,7 +4,7 @@
 
 本仓库基于 `treeEnergy/research-radar` 修改，当前配置面向以下课题：
 
-> 风扇/压气机中旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV 机理、预测与控制。
+> 风扇/压气机中旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV机理、预测与控制。
 
 访问地址：
 
@@ -15,7 +15,7 @@
 ## 功能
 
 - 双主题网页界面，支持 Papers、Groups、Timeline、AI Chat、标注和愿望清单。
-- 从 OpenAlex 按 `关键词 × 期刊 ISSN` 抓取论文，当前配置为 79 个论文检索关键词、7 本当前监控期刊和 2 本历史前身期刊。
+- 从 OpenAlex 按 `关键词 × 期刊 ISSN` 抓取论文，当前配置为 92 个论文检索关键词、10 本当前监控期刊和 2 本历史前身期刊。
 - DeepSeek 对新论文生成中文综述、研究方法、创新点、主要结论、局限性、分类标签、`relevance` 和 `relevance_reason`。
 - Papers Filter 固定读取 `data/categories.json`，当前包含 16 个分类标签。
 - Groups 页面根据作者姓名和 OpenAlex 单位信息匹配课题组，当前配置 32 个研究组。
@@ -154,11 +154,11 @@ GitHub Actions -> commit data/*.json
 | 配置项 | 位置 | 当前含义 |
 |---|---|---|
 | 论文检索关键词 | `scripts/config.py` -> `KEYWORDS` | RI、NSV、气动弹性、声学诱导振动、流动-振动控制、解析/降阶模型 |
-| 当前监控期刊 | `scripts/config.py` -> `TARGET_JOURNALS` | 7 本期刊 |
+| 当前监控期刊 | `scripts/config.py` -> `TARGET_JOURNALS` | 10 本期刊 |
 | 历史前身期刊 | `scripts/config.py` -> `HISTORICAL_JOURNALS` | 2 本期刊 |
 | AI 分类标签 | `scripts/config.py` -> `CATEGORIES` | 16 个固定 Filter 标签 |
 | 课题组 | `scripts/config.py` -> `RESEARCH_GROUPS` | 32 个研究组，支持 `pis` 和 `aliases` 匹配 |
-| AI 论文分析提示词 | `scripts/process_with_ai.py` -> `BASE_SYSTEM_PROMPT`、`RELEVANCE_GUIDE` | 围绕 RI-NSV 机理、预测与控制评分 |
+| AI 论文分析提示词 | `scripts/process_with_ai.py` -> `BASE_SYSTEM_PROMPT`、`RELEVANCE_GUIDE` | 围绕 RI-NSV机理、预测与控制评分 |
 | Timeline 默认话题 | `scripts/fetch_papers_historical.py` 和 `index.html` -> `DEFAULT_TOPICS` | 15 个话题 |
 | 自动更新频率 | `.github/workflows/pipeline.yml` -> `cron` | 每周自动运行 |
 
@@ -166,7 +166,7 @@ GitHub Actions -> commit data/*.json
 
 - `旋转不稳定性 RI`
 - `非同步振动 NSV`
-- `RI-NSV 机理`
+- `RI-NSV机理`
 - `机匣处理与流动控制`
 - `叶片流致振动抑制/控制`
 - `声学诱导叶片振动`
@@ -185,8 +185,8 @@ GitHub Actions -> commit data/*.json
 
 ## 数据文件说明
 
-- `data/papers.json`：2020 年至今论文，经过 DeepSeek 分析，按日期倒序。
-- `data/papers-historical.json`：1960 年至 2019 年历史论文，包含 OpenAlex 元数据和 `topics_matched`。
+- `data/papers.json`：2015 年至今论文，经过 DeepSeek 分析，按日期倒序。
+- `data/papers-historical.json`：1960 年至 2014 年历史论文，包含 OpenAlex 元数据和 `topics_matched`。
 - `data/timeline.json`：Timeline 热力图数据和 AI 综述。
 - `data/groups.json`：课题组统计，合并历史论文和当前论文。
 - `data/categories.json`：Papers Filter 固定分类。
@@ -218,12 +218,21 @@ python -m pytest scripts/tests -q
 
 ## 更新日志
 
+### v1.5（2026-05-11）
+
+- 当前论文抓取起始年份从 2020 年改为 2015 年，历史论文覆盖 1960 年至 2014 年。
+- 新增 Journal of Fluid Mechanics、Applied Acoustics、Journal of Fluids and Structures 三本当前监控期刊。
+- 增加叶尖泄漏流模化、降阶模型和经典 NSV 半解析模型相关检索词。
+- 统一 `RI-NSV机理` 标签，兼容旧数据中的空格版本，避免 Papers Filter 重复。
+- 修正 Timeline 年份解析，使只有 `date` 字段的当前论文也能进入 2020s 和 2025s heatmap。
+- 将 OpenAlex 期刊过滤字段改为 `locations.source.issn`，以保证 Journal of Fluid Mechanics 的 print ISSN 能被正确检索。
+
 ### v1.4（2026-05-11）
 
 - 将仓库方向校准为 RI 导致 NSV、流动-振动控制、实验/仿真/解析模型。
 - 重构论文检索关键词，删除宽泛词和易误匹配缩写。
 - 重构 Papers Filter 分类和 Timeline 默认话题。
-- 修改 DeepSeek 评分规则，使 `relevance` 围绕 RI-NSV 机理、预测或控制。
+- 修改 DeepSeek 评分规则，使 `relevance` 围绕 RI-NSV机理、预测或控制。
 - 修正 `data/topics.json` 逻辑：网页话题词追加到主关键词，不再覆盖主关键词。
 - 删除旧的“叶尖畸变下稳定裕度”标注偏置。
 - 清空旧数据文件，等待按新方向全量重建。
