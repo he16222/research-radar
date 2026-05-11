@@ -2473,19 +2473,12 @@ const DEFAULT_TOPICS = [
     builtin: true
   },
   {
-    label: '机匣处理',
-    terms: ['casing treatment stall margin', 'casing treatment',
-            'casing groove', 'casing slot', 'shroud treatment', 'endwall treatment'],
-    builtin: true
-  },
-  {
-    label: '压缩机稳定性',
+    label: '失速/喘振机理',
     terms: ['axial compressor rotating stall', 'compressor stability',
             'compressor surge', 'stall inception compressor',
             'rotating stall', 'stall inception', 'surge', 'stall margin',
             'post-stall', 'spike', 'modal wave', 'stall cell',
-            'active control stall', 'stall recovery', 'hysteresis',
-            'instability', 'stability'],
+            'stall recovery', 'hysteresis'],
     builtin: true
   },
   {
@@ -2506,74 +2499,115 @@ const DEFAULT_TOPICS = [
     builtin: true
   },
   {
-    label: '跨音速/激波',
-    terms: ['transonic compressor', 'transonic fan', 'transonic rotor',
-            'shock wave', 'shock structure', 'passage shock', 'bow shock',
-            'supersonic compressor', 'transonic cascade', 'transonic stage',
-            'transonic', 'shock'],
-    builtin: true
-  },
-  {
-    label: '叶片气动设计',
-    terms: ['blade design', 'airfoil design', 'cascade', 'blade row',
-            'controlled diffusion', 'swept blade', 'blade sweep', 'lean',
-            'optimization', 'blade profile', 'blade shape'],
-    builtin: true
-  },
-  {
-    label: '离心压气机',
-    terms: ['centrifugal compressor', 'centrifugal impeller', 'radial compressor',
-            'vaneless diffuser', 'vaned diffuser', 'inducer',
-            'centrifugal', 'impeller', 'diffuser'],
-    builtin: true
-  },
-  {
-    label: '非定常流动',
-    terms: ['unsteady flow', 'unsteady', 'time-resolved', 'rotor-stator interaction',
-            'wake', 'clocking', 'deterministic stress'],
-    builtin: true
-  },
-  {
-    label: '气弹/振动',
-    terms: ['flutter', 'aeroelastic', 'forced response', 'mistuning',
-            'blade vibration', 'aeromechanics', 'aeroelasticity'],
+    label: '旋转不稳定性 RI',
+    terms: ['rotating instability', 'rotating instabilities',
+            'rotating instability axial compressor', 'rotating instability axial fan',
+            'tip leakage flow rotating instability', 'tip clearance rotating instability',
+            'azimuthal mode rotating instability', 'casing groove rotating instability',
+            'prestall rotating disturbance compressor', 'rotating blade flow instability'],
     builtin: true
   },
   {
     label: '非同步振动 NSV',
-    terms: ['nonsynchronous vibration', 'non-synchronous vibration', 'NSV',
-            'traveling wave vibration', 'rotating instability', 'nodal diameter',
-            'part speed vibration', 'non synchronous vibration'],
+    terms: ['nonsynchronous vibration', 'non-synchronous vibration', 'non synchronous vibration',
+            'NSV', 'non-engine order blade vibration', 'part speed vibration',
+            'nonsynchronous blade vibration', 'non-synchronous blade vibration',
+            'traveling wave vibration', 'nodal diameter'],
     builtin: true
   },
   {
-    label: '气动弹性',
-    terms: ['aeroelasticity', 'aeroelastic stability', 'flutter',
-            'forced response', 'fluid structure interaction', 'blade vibration',
-            'mistuning', 'aeromechanics', 'aeroelastic'],
+    label: 'RI-NSV 机理',
+    terms: ['rotating instability non-synchronous vibration',
+            'rotating instability nonsynchronous vibration',
+            'rotating instability blade vibration',
+            'blade excitation by aerodynamic instabilities',
+            'self-excited blade vibration rotating instability',
+            'non-engine order blade vibration',
+            'convective non-synchronous vibration',
+            'lock-in mechanism non-synchronous vibration'],
     builtin: true
   },
   {
-    label: '转子振动控制',
-    terms: ['rotor vibration control', 'blade vibration control',
-            'flutter suppression', 'active vibration control',
-            'passive vibration control', 'mistuning control',
-            'aeroelastic control'],
+    label: '机匣处理与流动控制',
+    terms: ['casing treatment stall margin', 'casing treatment',
+            'casing groove', 'casing slot', 'shroud treatment', 'endwall treatment',
+            'casing treatment non-synchronous vibration',
+            'axial slot casing treatment non-synchronous blade vibration',
+            'casing treatment blade vibration compressor',
+            'casing treatment rotating instability'],
     builtin: true
   },
   {
-    label: '旋转流动不稳定性 RI',
-    terms: ['rotating instability', 'rotating instabilities', 'RI',
-            'tip leakage vortex', 'vortex breakdown', 'modal wave',
-            'stall precursor', 'near stall disturbance'],
+    label: '叶片流致振动抑制/控制',
+    terms: ['intentional mistuning non-synchronous vibration',
+            'aerodynamic mistuning non-synchronous vibration',
+            'structural mistuning non-synchronous vibration',
+            'acoustic treatment fan flutter',
+            'acoustic impedance fan flutter',
+            'wall impedance fan flutter',
+            'liner fan flutter stability',
+            'fan blade flutter margin',
+            'improving flutter margin fan blade',
+            'flutter suppression', 'mistuning control', 'aeroelastic control'],
     builtin: true
   },
   {
-    label: '转子叶片振动预测解析模型',
-    terms: ['analytical model blade vibration', 'rotor blade vibration prediction',
-            'reduced order aeroelastic model', 'harmonic balance',
-            'Van der Pol', 'stability model', 'nodal diameter model',
-            'traveling wave model'],
+    label: '声学诱导叶片振动',
+    terms: ['acoustic resonance non-synchronous blade vibration',
+            'trapped acoustic modes blade vibration',
+            'trapped acoustic modes compressor',
+            'acoustic modes non-synchronous vibration',
+            'acoustic reflections fan flutter',
+            'intake acoustic reflections fan blade',
+            'intake acoustics fan flutter',
+            'duct acoustic modes blade vibration',
+            'aeroacoustic blade vibration compressor',
+            'acoustic resonance in an axial multistage compressor'],
+    builtin: true
+  },
+  {
+    label: '风扇/压气机叶片气动弹性',
+    terms: ['fan blade aeroelasticity', 'compressor blade aeroelasticity',
+            'aeroelastic stability fan blade', 'aeroelastic stability compressor blade',
+            'fan blade flutter', 'compressor blade flutter',
+            'fan blade forced response', 'compressor blade forced response',
+            'aerodynamic damping fan blade', 'aerodynamic damping compressor blade',
+            'travelling wave mode compressor blade', 'traveling wave mode compressor blade',
+            'inter-blade phase angle flutter', 'nodal diameter fan flutter',
+            'aeromechanics'],
+    builtin: true
+  },
+  {
+    label: '叶片流致振动预测模型',
+    terms: ['non-synchronous vibration semi-analytical model',
+            'convective non-synchronous vibration model',
+            'lock-in mechanism non-synchronous vibration compressor',
+            'linear model non-synchronous vibration compressor',
+            'single-degree-of-freedom non-synchronous vibration',
+            'reduced-order model nonsynchronous vibration turbomachinery',
+            'Van der Pol nonsynchronous vibration turbomachinery',
+            'aeroelastic reduced-order model fan blade',
+            'flutter reduced order model fan blade',
+            'acoustic treatment fan flutter analytical model',
+            'harmonic balance', 'traveling wave model'],
+    builtin: true
+  },
+  {
+    label: '实验测量',
+    terms: ['experiment', 'experimental', 'measurement', 'measurements',
+            'time-resolved', 'blade tip timing', 'pressure transducer'],
+    builtin: true
+  },
+  {
+    label: '数值仿真',
+    terms: ['numerical simulation', 'CFD', 'large eddy simulation',
+            'unsteady RANS', 'URANS', 'fluid-structure simulation'],
+    builtin: true
+  },
+  {
+    label: '解析/降阶模型',
+    terms: ['analytical model', 'semi-analytical model', 'reduced-order model',
+            'reduced order model', 'linear model', 'Van der Pol'],
     builtin: true
   }
 ];
@@ -2613,7 +2647,17 @@ function matchesTopic(paper, terms) {
     paper.abstract || '',
     (paper.keywords || []).join(' ')
   ].join(' ').toLowerCase();
-  return terms.some(t => haystack.includes(t.toLowerCase()));
+  return terms.some(t => matchesTopicTerm(haystack, t));
+}
+
+function matchesTopicTerm(haystack, term) {
+  const needle = String(term || '').trim().toLowerCase();
+  if (!needle) return false;
+  if (needle.length <= 3) {
+    const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`).test(haystack);
+  }
+  return haystack.includes(needle);
 }
 
 /**
@@ -4295,8 +4339,8 @@ async function sendChat() {
       contextParts.push('以下是与当前问题最相关的论文：\n\n' + lines.join('\n\n'));
     }
 
-    const CHAT_SYSTEM = `你是一个航空发动机压气机气动热力学、气动弹性与转子动力学领域的研究助手。
-用户的研究方向：压气机稳定性、叶尖间隙、机匣处理、进气畸变、稳定性建模（激盘/体力模型）、非同步振动 NSV、旋转流动不稳定性 RI、气动弹性、转子振动控制和转子叶片振动预测解析模型。
+    const CHAT_SYSTEM = `你是一个航空发动机风扇/压气机非定常气动、气动弹性与叶片振动领域的研究助手。
+用户的研究方向：旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV 机理、预测与控制。
 你有权访问用户的论文库（已在下方提供相关论文摘要）。
 优先基于论文库回答问题，不要编造不在库中的论文信息。
 如果论文库中没有找到相关内容，明确告知用户，并建议他们使用"更新检索"抓取更多论文。

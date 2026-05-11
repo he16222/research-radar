@@ -19,7 +19,7 @@ from process_with_ai import process_papers
 from fetch_repos import fetch_all_repos, enrich_repos
 from fetch_papers_historical import fetch_papers_historical_incremental
 from build_timeline import build_timeline
-from config import CATEGORIES, RESEARCH_GROUPS
+from config import CATEGORIES, KEYWORDS, RESEARCH_GROUPS
 
 logging.basicConfig(
     level=logging.INFO,
@@ -48,6 +48,38 @@ def _contains_any(values: list[str], needles: list[str]) -> bool:
         if needle_l and any(needle_l in value for value in haystack):
             return True
     return False
+
+
+def _dedupe_texts(values: list[str]) -> list[str]:
+    """Return non-empty strings in first-seen order, deduplicated case-insensitively."""
+    result: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        text = str(value).strip()
+        key = text.casefold()
+        if text and key not in seen:
+            seen.add(key)
+            result.append(text)
+    return result
+
+
+def load_pipeline_keywords() -> list[str]:
+    """Load configured keywords and append any browser-synced topic terms."""
+    keywords = list(KEYWORDS)
+    topics_path = DATA_DIR / "topics.json"
+    if topics_path.exists():
+        try:
+            topics_data = json.loads(topics_path.read_text(encoding="utf-8"))
+            topic_terms = [
+                term
+                for topic in topics_data
+                for term in topic.get("terms", [])
+            ]
+            keywords.extend(topic_terms)
+            log.info(f"从 topics.json 追加关键词：{len(topic_terms)} 个")
+        except Exception as e:
+            log.warning(f"读取 topics.json 失败，仅使用 config.py：{e}")
+    return _dedupe_texts(keywords)
 
 
 # ─────────────────────────────────────────────
@@ -79,17 +111,10 @@ def run_papers_pipeline() -> None:
 
     log.info(f"现有论文库：{len(existing)} 篇，开始增量更新")
 
-    # 1. 抓取原始论文（如果存在 data/topics.json，使用其中的搜索词）
-    topics_path = DATA_DIR / "topics.json"
-    custom_keywords = None
-    if topics_path.exists():
-        try:
-            topics_data = json.loads(topics_path.read_text(encoding="utf-8"))
-            custom_keywords = [term for t in topics_data for term in t.get("terms", [])]
-            log.info(f"从 topics.json 加载关键词：{len(custom_keywords)} 个")
-        except Exception as e:
-            log.warning(f"读取 topics.json 失败，回退到 config.py：{e}")
-    raw = fetch_all_papers(keywords=custom_keywords)
+    # 1. 抓取原始论文：config.py 主关键词 + data/topics.json 追加话题词。
+    keywords = load_pipeline_keywords()
+    log.info(f"论文抓取关键词：{len(keywords)} 个")
+    raw = fetch_all_papers(keywords=keywords)
 
     # 2. DeepSeek 处理（跳过已存在 id）
     new_papers = process_papers(raw, existing_ids=existing_ids)

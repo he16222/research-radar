@@ -30,14 +30,22 @@ def test_matches_topic_no_match():
     assert matches_topic(paper, ["tip clearance", "casing treatment"]) is False
 
 
+def test_short_abbreviation_uses_word_boundary():
+    unrelated = {"title": "Friction damping in aerodynamic structures", "abstract": "", "keywords": []}
+    related = {"title": "RI-induced non-synchronous vibration in an axial compressor", "abstract": "", "keywords": []}
+
+    assert matches_topic(unrelated, ["RI"]) is False
+    assert matches_topic(related, ["RI"]) is True
+
+
 def test_compute_topics_matched_single():
     paper = {"title": "Casing treatment stall margin", "abstract": "", "keywords": []}
     topics = [
-        {"label": "机匣处理", "terms": ["casing treatment"]},
+        {"label": "机匣处理与流动控制", "terms": ["casing treatment"]},
         {"label": "叶尖间隙", "terms": ["tip clearance"]},
     ]
     result = compute_topics_matched(paper, topics)
-    assert result == ["机匣处理"]
+    assert result == ["机匣处理与流动控制"]
 
 
 def test_compute_topics_matched_multiple():
@@ -52,22 +60,27 @@ def test_compute_topics_matched_multiple():
 
 def test_new_default_topics_match_requested_areas():
     topic_labels = {t["label"] for t in DEFAULT_TOPICS}
+    assert "旋转不稳定性 RI" in topic_labels
     assert "非同步振动 NSV" in topic_labels
-    assert "气动弹性" in topic_labels
-    assert "转子振动控制" in topic_labels
-    assert "旋转流动不稳定性 RI" in topic_labels
-    assert "转子叶片振动预测解析模型" in topic_labels
+    assert "RI-NSV 机理" in topic_labels
+    assert "机匣处理与流动控制" in topic_labels
+    assert "声学诱导叶片振动" in topic_labels
+    assert "叶片流致振动预测模型" in topic_labels
 
     paper = {
-        "title": "Nonsynchronous vibration and rotating instability in a transonic compressor",
-        "abstract": "An aeroelastic reduced order model predicts rotor blade vibration.",
-        "keywords": ["flutter", "harmonic balance"],
+        "title": "Rotating instability and non-synchronous vibration in an axial compressor",
+        "abstract": (
+            "A casing treatment and acoustic resonance mitigation method is assessed with "
+            "a non-synchronous vibration semi-analytical model."
+        ),
+        "keywords": ["casing treatment", "acoustic resonance non-synchronous blade vibration"],
     }
     result = set(compute_topics_matched(paper, DEFAULT_TOPICS))
+    assert "旋转不稳定性 RI" in result
     assert "非同步振动 NSV" in result
-    assert "气动弹性" in result
-    assert "旋转流动不稳定性 RI" in result
-    assert "转子叶片振动预测解析模型" in result
+    assert "机匣处理与流动控制" in result
+    assert "声学诱导叶片振动" in result
+    assert "叶片流致振动预测模型" in result
 
 
 def test_reconstruct_abstract_empty():

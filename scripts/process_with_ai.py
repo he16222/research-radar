@@ -62,9 +62,19 @@ def fetch_pdf_text(pdf_url: str, max_chars: int = 12000) -> str:
 #  Prompt 模板
 # ─────────────────────────────────────────────
 
-BASE_SYSTEM_PROMPT = """你是一个航空发动机压气机气动热力学、气动弹性与转子动力学领域的资深研究助手。
-研究方向核心：压气机稳定性、叶尖间隙畸变、机匣处理、流动稳定性分析、非同步振动 NSV、旋转流动不稳定性 RI、气动弹性、颤振/强迫响应、声振耦合、流固耦合、转子振动控制和转子叶片振动预测解析模型。
+BASE_SYSTEM_PROMPT = """你是一个航空发动机风扇/压气机非定常气动、气动弹性与叶片振动领域的资深研究助手。
+用户课题核心：风扇/压气机中旋转不稳定性 RI 导致的非同步振动 NSV，以及基于机匣处理、叶片改型、失谐、声学阻抗调控等方式的流动-振动控制；重点使用实验测量、数值仿真、解析/降阶模型研究 RI-NSV 机理、预测与控制。
+评分时优先判断论文与 RI-NSV 机理、预测或控制的关系，不要沿用叶尖畸变下稳定裕度作为核心标准。
 只输出 JSON，不要有任何其他文字或 markdown 代码块。"""
+
+RELEVANCE_GUIDE = """relevance 评分标准：
+5=直接研究 RI 导致 NSV，或 RI-NSV 预测、机理、控制；
+4=研究 NSV、rotating instability、声学诱导叶片振动、风扇/压气机颤振、流致振动控制；
+3=研究叶尖泄漏流、机匣处理、近失速扰动、气动弹性、强迫响应，但未直接连接 NSV；
+2=泛化叶片振动、失谐、声学处理、流固耦合、转子动力学，与风扇/压气机流致振动有参考价值；
+1=普通稳定性、普通结构振动、非叶轮机械对象；
+0=无关。
+relevance_reason 必须用一句话说明论文与 RI-NSV 机理、预测或控制的关系。"""
 
 def build_system_prompt(annotations: dict) -> str:
     """将用户历史标注整合进系统 prompt，形成个性化偏好记忆"""
@@ -99,7 +109,7 @@ FULLTEXT_TEMPLATE = """请基于以下论文全文进行深度分析：
 }}
 
 tags 从以下列表中选 1~3 个：{categories}
-relevance 含义：0=完全无关, 1=偶有涉及, 2=部分相关, 3=相关, 4=高度相关, 5=核心方向"""
+{relevance_guide}"""
 
 # 仅有摘要时使用
 ABSTRACT_TEMPLATE = """请基于以下论文摘要进行尽可能详尽的分析（无法获取全文，请从摘要最大化提取信息）：
@@ -120,7 +130,7 @@ ABSTRACT_TEMPLATE = """请基于以下论文摘要进行尽可能详尽的分析
 }}
 
 tags 从以下列表中选 1~3 个：{categories}
-relevance 含义：0=完全无关, 1=偶有涉及, 2=部分相关, 3=相关, 4=高度相关, 5=核心方向"""
+{relevance_guide}"""
 
 
 # ─────────────────────────────────────────────
@@ -154,6 +164,7 @@ def process_one(
             title=title,
             text=full_text,
             categories="、".join(CATEGORIES),
+            relevance_guide=RELEVANCE_GUIDE,
         )
         log.debug(f"  [全文模式] {title[:40]}")
     else:
@@ -161,6 +172,7 @@ def process_one(
             title=title,
             abstract=abstract[:3000],
             categories="、".join(CATEGORIES),
+            relevance_guide=RELEVANCE_GUIDE,
         )
 
     if system_prompt is None:

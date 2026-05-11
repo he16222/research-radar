@@ -6,6 +6,7 @@ fetch_papers_historical.py
 
 import json
 import logging
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -33,17 +34,12 @@ DEFAULT_TOPICS = [
         "tip clearance", "tip leakage", "tip gap", "leakage vortex", "leakage flow",
         "blade tip", "tip vortex",
     ]},
-    {"label": "机匣处理", "terms": [
-        "casing treatment stall margin", "casing treatment",
-        "casing groove", "casing slot", "shroud treatment", "endwall treatment",
-    ]},
-    {"label": "压缩机稳定性", "terms": [
+    {"label": "失速/喘振机理", "terms": [
         "axial compressor rotating stall", "compressor stability",
         "compressor surge", "stall inception compressor",
         "rotating stall", "stall inception", "surge", "stall margin",
         "post-stall", "spike", "modal wave", "stall cell",
-        "active control stall", "stall recovery", "hysteresis",
-        "instability", "stability",
+        "stall recovery", "hysteresis",
     ]},
     {"label": "稳定性建模", "terms": [
         "actuator disk model compressor", "actuator disk model fan",
@@ -59,56 +55,95 @@ DEFAULT_TOPICS = [
         "inlet distortion", "circumferential distortion", "total pressure distortion",
         "distortion", "non-uniform inlet", "nonuniform inlet",
     ]},
-    {"label": "跨音速/激波", "terms": [
-        "transonic compressor", "transonic fan", "transonic rotor",
-        "shock wave", "shock structure", "passage shock", "bow shock",
-        "supersonic compressor", "transonic cascade", "transonic stage",
-        "transonic", "shock",
-    ]},
-    {"label": "叶片气动设计", "terms": [
-        "blade design", "airfoil design", "cascade", "blade row",
-        "controlled diffusion", "swept blade", "blade sweep", "lean",
-        "optimization", "blade profile", "blade shape",
-    ]},
-    {"label": "离心压气机", "terms": [
-        "centrifugal compressor", "centrifugal impeller", "radial compressor",
-        "vaneless diffuser", "vaned diffuser", "inducer",
-        "centrifugal", "impeller", "diffuser",
-    ]},
-    {"label": "非定常流动", "terms": [
-        "unsteady flow", "unsteady", "time-resolved", "rotor-stator interaction",
-        "wake", "clocking", "deterministic stress",
-    ]},
-    {"label": "气弹/振动", "terms": [
-        "flutter", "aeroelastic", "forced response", "mistuning",
-        "blade vibration", "aeromechanics", "aeroelasticity",
+    {"label": "旋转不稳定性 RI", "terms": [
+        "rotating instability", "rotating instabilities",
+        "rotating instability axial compressor", "rotating instability axial fan",
+        "tip leakage flow rotating instability", "tip clearance rotating instability",
+        "azimuthal mode rotating instability", "casing groove rotating instability",
+        "prestall rotating disturbance compressor", "rotating blade flow instability",
     ]},
     {"label": "非同步振动 NSV", "terms": [
-        "nonsynchronous vibration", "non-synchronous vibration", "NSV",
-        "traveling wave vibration", "rotating instability", "nodal diameter",
-        "part speed vibration", "non synchronous vibration",
+        "nonsynchronous vibration", "non-synchronous vibration", "non synchronous vibration",
+        "NSV", "non-engine order blade vibration", "part speed vibration",
+        "nonsynchronous blade vibration", "non-synchronous blade vibration",
+        "traveling wave vibration", "nodal diameter",
     ]},
-    {"label": "气动弹性", "terms": [
-        "aeroelasticity", "aeroelastic stability", "flutter",
-        "forced response", "fluid structure interaction", "blade vibration",
-        "mistuning", "aeromechanics", "aeroelastic",
+    {"label": "RI-NSV 机理", "terms": [
+        "rotating instability non-synchronous vibration",
+        "rotating instability nonsynchronous vibration",
+        "rotating instability blade vibration",
+        "blade excitation by aerodynamic instabilities",
+        "self-excited blade vibration rotating instability",
+        "non-engine order blade vibration",
+        "convective non-synchronous vibration",
+        "lock-in mechanism non-synchronous vibration",
     ]},
-    {"label": "转子振动控制", "terms": [
-        "rotor vibration control", "blade vibration control",
-        "flutter suppression", "active vibration control",
-        "passive vibration control", "mistuning control",
-        "aeroelastic control",
+    {"label": "机匣处理与流动控制", "terms": [
+        "casing treatment stall margin", "casing treatment",
+        "casing groove", "casing slot", "shroud treatment", "endwall treatment",
+        "casing treatment non-synchronous vibration",
+        "axial slot casing treatment non-synchronous blade vibration",
+        "casing treatment blade vibration compressor",
+        "casing treatment rotating instability",
     ]},
-    {"label": "旋转流动不稳定性 RI", "terms": [
-        "rotating instability", "rotating instabilities", "RI",
-        "tip leakage vortex", "vortex breakdown", "modal wave",
-        "stall precursor", "near stall disturbance",
+    {"label": "叶片流致振动抑制/控制", "terms": [
+        "intentional mistuning non-synchronous vibration",
+        "aerodynamic mistuning non-synchronous vibration",
+        "structural mistuning non-synchronous vibration",
+        "acoustic treatment fan flutter",
+        "acoustic impedance fan flutter",
+        "wall impedance fan flutter",
+        "liner fan flutter stability",
+        "fan blade flutter margin",
+        "improving flutter margin fan blade",
+        "flutter suppression", "mistuning control", "aeroelastic control",
     ]},
-    {"label": "转子叶片振动预测解析模型", "terms": [
-        "analytical model blade vibration", "rotor blade vibration prediction",
-        "reduced order aeroelastic model", "harmonic balance",
-        "Van der Pol", "stability model", "nodal diameter model",
-        "traveling wave model",
+    {"label": "声学诱导叶片振动", "terms": [
+        "acoustic resonance non-synchronous blade vibration",
+        "trapped acoustic modes blade vibration",
+        "trapped acoustic modes compressor",
+        "acoustic modes non-synchronous vibration",
+        "acoustic reflections fan flutter",
+        "intake acoustic reflections fan blade",
+        "intake acoustics fan flutter",
+        "duct acoustic modes blade vibration",
+        "aeroacoustic blade vibration compressor",
+        "acoustic resonance in an axial multistage compressor",
+    ]},
+    {"label": "风扇/压气机叶片气动弹性", "terms": [
+        "fan blade aeroelasticity", "compressor blade aeroelasticity",
+        "aeroelastic stability fan blade", "aeroelastic stability compressor blade",
+        "fan blade flutter", "compressor blade flutter",
+        "fan blade forced response", "compressor blade forced response",
+        "aerodynamic damping fan blade", "aerodynamic damping compressor blade",
+        "travelling wave mode compressor blade", "traveling wave mode compressor blade",
+        "inter-blade phase angle flutter", "nodal diameter fan flutter",
+        "aeromechanics",
+    ]},
+    {"label": "叶片流致振动预测模型", "terms": [
+        "non-synchronous vibration semi-analytical model",
+        "convective non-synchronous vibration model",
+        "lock-in mechanism non-synchronous vibration compressor",
+        "linear model non-synchronous vibration compressor",
+        "single-degree-of-freedom non-synchronous vibration",
+        "reduced-order model nonsynchronous vibration turbomachinery",
+        "Van der Pol nonsynchronous vibration turbomachinery",
+        "aeroelastic reduced-order model fan blade",
+        "flutter reduced order model fan blade",
+        "acoustic treatment fan flutter analytical model",
+        "harmonic balance", "traveling wave model",
+    ]},
+    {"label": "实验测量", "terms": [
+        "experiment", "experimental", "measurement", "measurements",
+        "time-resolved", "blade tip timing", "pressure transducer",
+    ]},
+    {"label": "数值仿真", "terms": [
+        "numerical simulation", "CFD", "large eddy simulation",
+        "unsteady RANS", "URANS", "fluid-structure simulation",
+    ]},
+    {"label": "解析/降阶模型", "terms": [
+        "analytical model", "semi-analytical model", "reduced-order model",
+        "reduced order model", "linear model", "Van der Pol",
     ]},
 ]
 
@@ -136,7 +171,18 @@ def matches_topic(paper: dict, terms: list[str]) -> bool:
         " ".join(paper.get("keywords", [])),
     ]
     combined = " ".join(text_parts).lower()
-    return any(term.lower() in combined for term in terms)
+    return any(_matches_term(combined, term) for term in terms)
+
+
+def _matches_term(combined_text: str, term: str) -> bool:
+    """Match short abbreviations by word boundary; match longer phrases by substring."""
+    term_l = str(term).lower().strip()
+    if not term_l:
+        return False
+    if len(term_l) <= 3:
+        pattern = rf"(?<![a-z0-9]){re.escape(term_l)}(?![a-z0-9])"
+        return re.search(pattern, combined_text) is not None
+    return term_l in combined_text
 
 
 def compute_topics_matched(paper: dict, topics: list[dict]) -> list[str]:

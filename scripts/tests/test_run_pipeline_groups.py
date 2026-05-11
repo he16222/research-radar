@@ -45,9 +45,28 @@ def test_tag_groups_matches_affiliation_alias(monkeypatch):
 
 def test_write_categories_exports_configured_labels(tmp_path, monkeypatch):
     monkeypatch.setattr(run_pipeline, "DATA_DIR", tmp_path)
-    monkeypatch.setattr(run_pipeline, "CATEGORIES", ["非同步振动 NSV", "气动弹性"])
+    monkeypatch.setattr(run_pipeline, "CATEGORIES", ["非同步振动 NSV", "旋转不稳定性 RI"])
 
     run_pipeline.write_categories()
 
     data = json.loads((tmp_path / "categories.json").read_text(encoding="utf-8"))
-    assert data == ["非同步振动 NSV", "气动弹性"]
+    assert data == ["非同步振动 NSV", "旋转不稳定性 RI"]
+
+
+def test_load_pipeline_keywords_merges_config_and_topics(tmp_path, monkeypatch):
+    monkeypatch.setattr(run_pipeline, "DATA_DIR", tmp_path)
+    monkeypatch.setattr(run_pipeline, "KEYWORDS", [
+        "rotating instability",
+        "non-synchronous vibration",
+    ])
+    (tmp_path / "topics.json").write_text(json.dumps([
+        {"label": "自定义", "terms": ["rotating instability", "fan blade flutter"]},
+    ], ensure_ascii=False), encoding="utf-8")
+
+    keywords = run_pipeline.load_pipeline_keywords()
+
+    assert keywords == [
+        "rotating instability",
+        "non-synchronous vibration",
+        "fan blade flutter",
+    ]
