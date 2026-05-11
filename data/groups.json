@@ -1,1 +1,482 @@
-[]
+[
+  {
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
+    "pis": [
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
+    ],
+    "aliases": [],
+    "total": 25,
+    "avg_relevance": 3.2,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Ecole Centrale Lyon LMFA",
+    "institution": "Ecole Centrale de Lyon",
+    "pis": [
+      "Xavier Ottavy",
+      "Christoph Brandstetter",
+      "Fabrice Thouverez"
+    ],
+    "aliases": [],
+    "total": 18,
+    "avg_relevance": 3.2,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Imperial Aeroelasticity",
+    "institution": "Imperial College London",
+    "pis": [
+      "Mehdi Vahdati",
+      "Sina Stapelfeldt",
+      "Loic Salles",
+      "Fanzhou Zhao",
+      "Venkatesh Suriyanarayanan"
+    ],
+    "aliases": [],
+    "total": 17,
+    "avg_relevance": 3.4,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "ITP Aero / UPM",
+    "institution": "ITP Aero / Univ. Politecnica de Madrid",
+    "pis": [
+      "Roque Corral"
+    ],
+    "aliases": [],
+    "total": 17,
+    "avg_relevance": 3.4,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Purdue Compressor Lab",
+    "institution": "Purdue University",
+    "pis": [
+      "Nicole Key",
+      "Nicole L. Key",
+      "Berdanier",
+      "Sanford Fleeter",
+      "Yujun Leng"
+    ],
+    "aliases": [],
+    "total": 17,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "DLR",
+    "institution": "German Aerospace Center",
+    "pis": [
+      "F. Holste",
+      "Holste",
+      "Frank Kameier",
+      "Kameier",
+      "Neise",
+      "Benjamin Pardowitz",
+      "Pardowitz",
+      "Marz",
+      "M. Baumgartner",
+      "Baumgartner"
+    ],
+    "aliases": [
+      "DLR",
+      "German Aerospace Center",
+      "Deutsches Zentrum fur Luft- und Raumfahrt",
+      "Engine Acoustics Department",
+      "Institute of Propulsion Technology",
+      "Institute of Aeroelasticity",
+      "Fan and Compressor"
+    ],
+    "total": 16,
+    "avg_relevance": 2.4,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Duke Aeroelasticity",
+    "institution": "Duke University",
+    "pis": [
+      "Hall",
+      "Kielb",
+      "Spiker",
+      "Richard Hollenbach",
+      "Clark",
+      "Dowell"
+    ],
+    "aliases": [
+      "Duke University",
+      "Thomas Lord Department of Mechanical Engineering",
+      "Department of Mechanical Engineering and Material Science"
+    ],
+    "total": 13,
+    "avg_relevance": 2.7,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Polytechnique Montreal",
+    "institution": "Polytechnique Montreal",
+    "pis": [
+      "Huu Duc Vo",
+      "Alain Batailly"
+    ],
+    "aliases": [],
+    "total": 12,
+    "avg_relevance": 2.1,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "TU Darmstadt GLR",
+    "institution": "Technical University of Darmstadt",
+    "pis": [
+      "Schiffer",
+      "Heinz-Peter Schiffer",
+      "H.-P. Schiffer",
+      "F. Holzinger",
+      "Holzinger",
+      "Maximilian Jungst",
+      "Christoph Brandstetter"
+    ],
+    "aliases": [
+      "TU Darmstadt",
+      "Technical University of Darmstadt",
+      "Technische Universitat Darmstadt",
+      "Institute of Gas Turbines and Aerospace Propulsion",
+      "Gas Turbines and Aerospace Propulsion",
+      "GLR"
+    ],
+    "total": 11,
+    "avg_relevance": 4.1,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "CAS IET",
+    "institution": "Chinese Academy of Sciences",
+    "pis": [
+      "Juan Du"
+    ],
+    "aliases": [],
+    "total": 11,
+    "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Tsinghua Turbo Lab",
+    "institution": "Tsinghua University",
+    "pis": [
+      "Xinqian Zheng"
+    ],
+    "aliases": [],
+    "total": 11,
+    "avg_relevance": 2.4,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "TU Berlin Aero Engines",
+    "institution": "Technische Universitat Berlin",
+    "pis": [
+      "Mario Eck",
+      "Dieter Peitsch",
+      "Victor Bicalho Civinelli de Almeida"
+    ],
+    "aliases": [
+      "Technische Universitat Berlin",
+      "Technical University of Berlin",
+      "TU Berlin",
+      "Institute of Aeronautics and Astronautics",
+      "Chair for Aero Engines"
+    ],
+    "total": 10,
+    "avg_relevance": 2.8,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Cambridge Whittle Lab",
+    "institution": "University of Cambridge",
+    "pis": [
+      "Cumpsty",
+      "Hodson",
+      "I. J. Day",
+      "Cesare A. Hall",
+      "Paul G. Tucker"
+    ],
+    "aliases": [],
+    "total": 8,
+    "avg_relevance": 2.2,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Cranfield Propulsion",
+    "institution": "Cranfield University",
+    "pis": [
+      "David G. MacManus",
+      "Vassilios Pachidis"
+    ],
+    "aliases": [],
+    "total": 6,
+    "avg_relevance": 2.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Mitsubishi Heavy Industries",
+    "institution": "Mitsubishi Heavy Industries",
+    "pis": [
+      "Ryosuke Seki"
+    ],
+    "aliases": [
+      "Mitsubishi Heavy Industries",
+      "Turbomachinery Research Department",
+      "Research & Innovation Center"
+    ],
+    "total": 5,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Waseda / IHI",
+    "institution": "Waseda University / IHI",
+    "pis": [
+      "Fujisawa",
+      "Yutaka Ohta"
+    ],
+    "aliases": [
+      "Waseda University",
+      "Department of Applied Mechanics and Aerospace Engineering",
+      "IHI"
+    ],
+    "total": 5,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "IISc Aerospace",
+    "institution": "Indian Institute of Science",
+    "pis": [
+      "Jyoti Ranjan Majhi",
+      "Kartik Venkatraman"
+    ],
+    "aliases": [
+      "Indian Institute of Science",
+      "IISc",
+      "Department of Aerospace Engineering"
+    ],
+    "total": 5,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "TU Dresden",
+    "institution": "TU Dresden",
+    "pis": [
+      "Ronald Mailach",
+      "Konrad Vogeler",
+      "Xiangyi Chen",
+      "Martin Lange"
+    ],
+    "aliases": [],
+    "total": 4,
+    "avg_relevance": 3.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "MIT GTL",
+    "institution": "MIT",
+    "pis": [
+      "Greitzer",
+      "Spakovszky",
+      "C. S. Tan",
+      "Choon Tan",
+      "Paduano"
+    ],
+    "aliases": [],
+    "total": 4,
+    "avg_relevance": 2.8,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "SJTU Teng Group",
+    "institution": "Shanghai Jiao Tong University",
+    "pis": [
+      "Jinfang Teng",
+      "Mingmin Zhu"
+    ],
+    "aliases": [],
+    "total": 3,
+    "avg_relevance": 3.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Bath Sealing Group",
+    "institution": "University of Bath",
+    "pis": [
+      "James A. Scobie",
+      "Gary D. Lock",
+      "Carl M. Sangan"
+    ],
+    "aliases": [],
+    "total": 3,
+    "avg_relevance": 2.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "CSIR-NAL Propulsion",
+    "institution": "CSIR-National Aerospace Laboratories",
+    "pis": [],
+    "aliases": [
+      "CSIR-National Aerospace Laboratories",
+      "National Aerospace Laboratories",
+      "Propulsion Division"
+    ],
+    "total": 1,
+    "avg_relevance": 4.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "NASA Glenn",
+    "institution": "NASA Glenn Research Center",
+    "pis": [
+      "Chunill Hah",
+      "Adamczyk"
+    ],
+    "aliases": [],
+    "total": 1,
+    "avg_relevance": 3.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "BIT Wu Group",
+    "institution": "Beijing Institute of Technology",
+    "pis": [
+      "Yanhui Wu"
+    ],
+    "aliases": [],
+    "total": 1,
+    "avg_relevance": 3.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Oxford Thermofluids",
+    "institution": "University of Oxford",
+    "pis": [
+      "L. He",
+      "Thomas Povey"
+    ],
+    "aliases": [],
+    "total": 1,
+    "avg_relevance": 2.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Peking University",
+    "institution": "Peking University",
+    "pis": [
+      "Chao Zhou"
+    ],
+    "aliases": [],
+    "total": 1,
+    "avg_relevance": 2.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "ETH Zurich LEC",
+    "institution": "ETH Zurich",
+    "pis": [
+      "Reza S. Abhari"
+    ],
+    "aliases": [],
+    "total": 0,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "University of Pennsylvania",
+    "institution": "University of Pennsylvania",
+    "pis": [],
+    "aliases": [
+      "University of Pennsylvania",
+      "Penn Engineering"
+    ],
+    "total": 0,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Penn State (historical)",
+    "institution": "Penn State University",
+    "pis": [
+      "Lakshminarayana"
+    ],
+    "aliases": [],
+    "total": 0,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Ferrara / Parma",
+    "institution": "Univ. Ferrara / Univ. Parma",
+    "pis": [
+      "Michele Pinelli",
+      "Mirko Morini"
+    ],
+    "aliases": [],
+    "total": 0,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "GE Aviation",
+    "institution": "GE Aviation",
+    "pis": [
+      "A. R. Wadia"
+    ],
+    "aliases": [],
+    "total": 0,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Kurz & Brun (Industrial GT)",
+    "institution": "Solar Turbines / Elliott Group",
+    "pis": [
+      "Rainer Kurz",
+      "Klaus Brun"
+    ],
+    "aliases": [],
+    "total": 0,
+    "avg_relevance": 0.0,
+    "preset": true,
+    "custom": false
+  }
+]
