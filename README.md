@@ -164,22 +164,50 @@ GitHub Actions -> commit data/*.json
 
 当前核心分类：
 
-- `旋转不稳定性 RI`
-- `非同步振动 NSV`
-- `RI-NSV机理`
-- `机匣处理与流动控制`
-- `叶片流致振动抑制/控制`
-- `声学诱导叶片振动`
-- `风扇/压气机叶片气动弹性`
-- `叶片流致振动预测模型`
-- `实验测量`
-- `数值仿真`
-- `解析/降阶模型`
-- `叶尖间隙`
-- `失速/喘振机理`
-- `稳定性建模`
-- `畸变进气`
-- `其他`
+| 分类 | 覆盖内容 | 与当前课题的关系 |
+|---|---|---|
+| `旋转不稳定性 RI` | 轴流风扇、压气机中的 rotating instability、rotating instabilities、叶尖泄漏流诱导的周向非定常扰动、近失速旋转扰动、方位模态等。 | 用于识别 NSV 的主要流动激励来源，尤其关注叶尖间隙、机匣槽、近失速工况下的 RI 形成与传播。 |
+| `非同步振动 NSV` | nonsynchronous vibration、non-synchronous vibration、non-engine-order blade vibration、part-speed vibration、行波振动和节径相关叶片振动。 | 对应当前课题的主要振动对象，强调区别于转速整数阶强迫响应的自激或流致振动现象。 |
+| `RI-NSV机理` | RI 扰动与叶片振动之间的耦合机制，包括气动激励频率、扰动传播速度、锁频、行波模态和叶片响应之间的关系。 | 属于最核心类别，用于筛选直接讨论“RI 如何导致 NSV”以及如何预测这种耦合关系的论文。 |
+| `机匣处理与流动控制` | casing treatment、casing groove、casing slot、shroud treatment、endwall treatment 等改变叶尖流动和近失速扰动的控制方式。 | 用于追踪通过机匣结构或端壁处理改变 RI、叶尖泄漏流和失速裕度，进而影响 NSV 或流致振动的研究。 |
+| `叶片流致振动抑制/控制` | 叶片改型、气动或结构失谐、 intentional mistuning、flutter margin 提升、振动抑制和流动-振动控制策略。 | 用于收集面向叶片颤振、NSV、强迫响应或其他流致振动问题的抑制方法。 |
+| `声学诱导叶片振动` | acoustic resonance、trapped acoustic modes、duct/intake acoustic modes、声反射、声衬和壁面声学阻抗对叶片振动的影响。 | 用于追踪声学模态与叶片振动耦合的论文，尤其是声学反馈、进气道反射和阻抗调控对风扇/压气机叶片稳定性的影响。 |
+| `风扇/压气机叶片气动弹性` | fan/compressor blade aeroelasticity、flutter、forced response、aerodynamic damping、inter-blade phase angle、nodal diameter 等。 | 用于收集风扇和压气机叶片气动弹性稳定性论文，作为 NSV、颤振和强迫响应分析的上位背景类别。 |
+| `叶片流致振动预测模型` | NSV 半解析模型、降阶模型、线性模型、单自由度模型、Van der Pol 类模型、锁频预测和声学/气动弹性预测模型。 | 用于追踪能直接预测叶片流致振动幅值、频率、锁频条件或稳定边界的模型类论文。 |
+| `实验测量` | 级环境或叶栅实验、叶尖定时、非定常压力测量、应变测量、时间分辨测量和模态识别。 | 用于标记提供实验数据、验证机制或支持模型校核的论文。 |
+| `数值仿真` | CFD、URANS、LES、大涡模拟、全环/扇区非定常模拟、流固耦合计算和参数扫描。 | 用于标记通过数值手段研究 RI、NSV、气动弹性、叶尖泄漏流和控制措施的论文。 |
+| `解析/降阶模型` | 半解析模型、降阶模型、低阶模型、线性模型、Moore-Greitzer 类稳定性模型、叶尖泄漏流/叶尖涡模化和扰动传播速度模型。 | 该分类强调研究方法本身，常与 `叶片流致振动预测模型` 同时出现，用于保留可解释、计算成本较低的理论和模型研究。 |
+| `叶尖间隙` | tip clearance、tip leakage、tip leakage vortex、tip gap、叶尖泄漏流和叶尖间隙变化的影响。 | 叶尖间隙是 RI、近失速扰动和部分 NSV 问题的重要流动来源，该分类用于保留相关基础流动研究。 |
+| `失速/喘振机理` | rotating stall、stall inception、surge、stall margin、spike、modal wave、stall cell 和失速恢复。 | 用于保留风扇/压气机稳定性背景文献，特别是与 RI、叶尖泄漏流和近失速非定常扰动有关的研究。 |
+| `稳定性建模` | actuator disk、body force model、throughflow、streamline curvature、Moore-Greitzer 和三维稳定性模型。 | 用于收集风扇/压气机系统稳定性和流动稳定性建模论文，为 RI 与控制研究提供理论背景。 |
+| `畸变进气` | inlet distortion、circumferential distortion、radial distortion、total pressure distortion 和非均匀进气。 | 用于保留进气畸变对压气机稳定性、非定常流动和叶片响应影响的论文。 |
+| `其他` | 与风扇、压气机、叶轮机械振动或稳定性有一定关系，但无法明确归入上述类别的论文。 | 作为兜底标签，避免有参考价值但分类边界不清的论文被完全排除。 |
+
+### 当前检索期刊范围
+
+当前论文库使用 `TARGET_JOURNALS`，抓取 2015 年至今的论文；历史论文库使用 `TARGET_JOURNALS + HISTORICAL_JOURNALS`，抓取 1960 年至 2014 年的论文。OpenAlex 查询使用 `locations.source.issn` 过滤，原因是部分期刊的 print ISSN 不一定出现在 `primary_location.source.issn`，例如 Journal of Fluid Mechanics。
+
+当前监控期刊：
+
+| 期刊 | ISSN | 纳入原因 |
+|---|---|---|
+| Journal of Turbomachinery | `0889-504X` | ASME 叶轮机械核心期刊，覆盖压气机、涡轮、风扇、非定常流动、叶尖泄漏流、稳定性和气动弹性。 |
+| Journal of Engineering for Gas Turbines and Power | `0742-4795` | 燃气轮机与推进系统期刊，覆盖压气机/风扇部件、稳定性、失速、试验和工程应用。 |
+| Journal of Propulsion and Power | `0748-4658` | AIAA 推进期刊，覆盖航空发动机推进部件、风扇/压气机气动、非定常流动和推进系统相关振动问题。 |
+| AIAA Journal | `0001-1452` | 航空航天综合基础期刊，覆盖气动弹性、流固耦合、声学、非定常流动和计算方法。 |
+| Journal of Sound and Vibration | `0022-460X` | 声学与振动核心期刊，覆盖叶片振动、声学模态、结构响应、非线性振动和流致振动。 |
+| Progress in Aerospace Sciences | `0376-0421` | 航空航天综述期刊，适合捕捉气动弹性、推进系统、非定常气动和流动控制方向的综述性工作。 |
+| Chinese Journal of Aeronautics | `1000-9361` | 航空领域综合期刊，覆盖压气机、风扇、非定常流动、气动弹性和国内相关研究进展。 |
+| Journal of Fluid Mechanics | `0022-1120` | 流体力学基础期刊，覆盖涡结构、剪切流、非定常流动、流动稳定性和可用于解释 RI/叶尖泄漏流的基础研究。 |
+| Applied Acoustics | `0003-682X` | 应用声学期刊，覆盖管道声学、声学阻抗、声衬、声反射和声振耦合问题。 |
+| Journal of Fluids and Structures | `0889-9746` | 流固耦合与流致振动核心期刊，覆盖流致振动、气动弹性、结构响应和非线性耦合。 |
+
+历史补充期刊：
+
+| 期刊 | ISSN | 纳入原因 |
+|---|---|---|
+| Journal of Engineering for Power | `0022-0825` | Journal of Engineering for Gas Turbines and Power 的历史前身之一，覆盖早期燃气轮机、压气机和叶轮机械研究。 |
+| Journal of Basic Engineering | `0021-9223` | ASME 早期基础工程期刊，可能包含早期流体机械、流动稳定性和叶轮机械基础论文。 |
 
 ---
 
