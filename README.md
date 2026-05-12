@@ -29,7 +29,7 @@
 
 数据文件由 GitHub Actions 流水线生成并提交回仓库。
 
-当前仓库已经清空旧数据，等待按 RI-NSV 新方向全量重建：
+当前仓库包含最近一次 `Research Radar Pipeline` 生成的数据文件：
 
 - `data/papers.json`
 - `data/papers-historical.json`
@@ -38,7 +38,87 @@
 - `data/repos.json`
 - `data/meta.json`
 
-运行 `Research Radar Pipeline` 后，上述文件会重新生成。由于全量重建会重新调用 DeepSeek，仓库的 `Actions secrets` 必须配置 `DEEPSEEK_API_KEY`。
+克隆仓库后可以直接读取这些静态数据。修改检索方向、期刊范围或分类体系后，需要重新运行 `Research Radar Pipeline` 才能让数据和页面同步更新。全量重建会重新调用 DeepSeek，仓库的 `Actions secrets` 或本地环境变量中必须配置 `DEEPSEEK_API_KEY`。
+
+---
+
+## 本地安装与使用
+
+本项目是静态网页加 Python 数据流水线。只浏览现有数据时，本地不需要数据库和后端服务；需要重新抓取和分析论文时，才需要配置 Python 环境和 DeepSeek API Key。
+
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/he16222/research-radar.git
+cd research-radar
+```
+
+### 2. 创建 Python 环境
+
+建议使用 Python 3.11。Windows PowerShell 示例：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r scripts\requirements.txt
+```
+
+macOS 或 Linux 示例：
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r scripts/requirements.txt
+```
+
+### 3. 本地打开网页
+
+不要直接双击 `index.html`，因为浏览器在 `file://` 模式下可能阻止读取 `data/*.json`。建议在仓库根目录启动本地静态服务器：
+
+```bash
+python -m http.server 8000
+```
+
+然后在浏览器打开：
+
+```text
+http://localhost:8000
+```
+
+此时网页会读取本地 `data/*.json`。如果这些文件已经包含数据，Papers、Groups 和 Timeline 可以直接浏览。
+
+### 4. 本地运行论文更新流水线
+
+需要重新检索论文、调用 DeepSeek 生成中文摘要和评分时，先设置 `DEEPSEEK_API_KEY`。
+
+Windows PowerShell：
+
+```powershell
+$env:DEEPSEEK_API_KEY="你的 DeepSeek API Key"
+cd scripts
+python run_pipeline.py
+```
+
+macOS 或 Linux：
+
+```bash
+export DEEPSEEK_API_KEY="你的 DeepSeek API Key"
+cd scripts
+python run_pipeline.py
+```
+
+流水线会更新仓库根目录下的 `data/*.json`。本地运行产生的数据只保存在本机，提交和推送后才会同步到 GitHub Pages。
+
+### 5. 本地个性化修改
+
+常见修改位置：
+
+- `scripts/config.py`：修改检索关键词、监控期刊、分类标签和研究组。
+- `data/topics.json`：网页同步出来的自定义 Timeline 话题词；存在时会追加到主检索关键词。
+- `data/categories.json`：Papers Filter 固定分类，由流水线根据 `CATEGORIES` 写出。
+- `index.html`：修改页面展示、筛选、Timeline、Groups 和 AI Chat 交互。
+
+修改检索关键词、期刊或分类后，建议重新运行 `python run_pipeline.py`。已有论文如果需要重新评分和重新分类，需要清空对应的 `data/*.json` 后再全量重建。
 
 ---
 
