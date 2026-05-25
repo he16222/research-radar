@@ -111,8 +111,8 @@
       "Fabrice Thouverez"
     ],
     "aliases": [],
-    "total": 33,
-    "avg_relevance": 3.3,
+    "total": 34,
+    "avg_relevance": 3.2,
     "preset": true,
     "custom": false
   },
@@ -128,6 +128,23 @@
     ],
     "aliases": [],
     "total": 31,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "IISc Aerospace",
+    "institution": "Indian Institute of Science",
+    "pis": [
+      "Jyoti Ranjan Majhi",
+      "Kartik Venkatraman"
+    ],
+    "aliases": [
+      "Indian Institute of Science",
+      "IISc",
+      "Department of Aerospace Engineering"
+    ],
+    "total": 25,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -158,23 +175,6 @@
     ],
     "total": 25,
     "avg_relevance": 2.5,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "IISc Aerospace",
-    "institution": "Indian Institute of Science",
-    "pis": [
-      "Jyoti Ranjan Majhi",
-      "Kartik Venkatraman"
-    ],
-    "aliases": [
-      "Indian Institute of Science",
-      "IISc",
-      "Department of Aerospace Engineering"
-    ],
-    "total": 24,
-    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
@@ -242,6 +242,18 @@
     "custom": false
   },
   {
+    "name": "CAS IET",
+    "institution": "Chinese Academy of Sciences",
+    "pis": [
+      "Juan Du"
+    ],
+    "aliases": [],
+    "total": 18,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Oxford Thermofluids",
     "institution": "University of Oxford",
     "pis": [
@@ -268,18 +280,6 @@
     ],
     "total": 17,
     "avg_relevance": 2.8,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "CAS IET",
-    "institution": "Chinese Academy of Sciences",
-    "pis": [
-      "Juan Du"
-    ],
-    "aliases": [],
-    "total": 17,
-    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
@@ -391,8 +391,8 @@
       "Vassilios Pachidis"
     ],
     "aliases": [],
-    "total": 8,
-    "avg_relevance": 2.3,
+    "total": 9,
+    "avg_relevance": 2.2,
     "preset": true,
     "custom": false
   },
