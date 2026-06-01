@@ -127,24 +127,7 @@
       "Yujun Leng"
     ],
     "aliases": [],
-    "total": 31,
-    "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "IISc Aerospace",
-    "institution": "Indian Institute of Science",
-    "pis": [
-      "Jyoti Ranjan Majhi",
-      "Kartik Venkatraman"
-    ],
-    "aliases": [
-      "Indian Institute of Science",
-      "IISc",
-      "Department of Aerospace Engineering"
-    ],
-    "total": 25,
+    "total": 32,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -173,8 +156,25 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 25,
+    "total": 26,
     "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "IISc Aerospace",
+    "institution": "Indian Institute of Science",
+    "pis": [
+      "Jyoti Ranjan Majhi",
+      "Kartik Venkatraman"
+    ],
+    "aliases": [
+      "Indian Institute of Science",
+      "IISc",
+      "Department of Aerospace Engineering"
+    ],
+    "total": 25,
+    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
