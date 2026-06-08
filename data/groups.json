@@ -10,7 +10,7 @@
       "Paul G. Tucker"
     ],
     "aliases": [],
-    "total": 76,
+    "total": 78,
     "avg_relevance": 2.4,
     "preset": true,
     "custom": false
@@ -52,20 +52,6 @@
     "custom": false
   },
   {
-    "name": "Beihang BUAA",
-    "institution": "Beihang University",
-    "pis": [
-      "Xiaofeng Sun",
-      "Dakun Sun",
-      "Xu Dong"
-    ],
-    "aliases": [],
-    "total": 37,
-    "avg_relevance": 3.1,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Duke Aeroelasticity",
     "institution": "Duke University",
     "pis": [
@@ -81,8 +67,22 @@
       "Thomas Lord Department of Mechanical Engineering",
       "Department of Mechanical Engineering and Material Science"
     ],
-    "total": 36,
+    "total": 38,
     "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
+    "pis": [
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
+    ],
+    "aliases": [],
+    "total": 37,
+    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -127,7 +127,24 @@
       "Yujun Leng"
     ],
     "aliases": [],
-    "total": 32,
+    "total": 33,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "IISc Aerospace",
+    "institution": "Indian Institute of Science",
+    "pis": [
+      "Jyoti Ranjan Majhi",
+      "Kartik Venkatraman"
+    ],
+    "aliases": [
+      "Indian Institute of Science",
+      "IISc",
+      "Department of Aerospace Engineering"
+    ],
+    "total": 27,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -158,23 +175,6 @@
     ],
     "total": 26,
     "avg_relevance": 2.5,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "IISc Aerospace",
-    "institution": "Indian Institute of Science",
-    "pis": [
-      "Jyoti Ranjan Majhi",
-      "Kartik Venkatraman"
-    ],
-    "aliases": [
-      "Indian Institute of Science",
-      "IISc",
-      "Department of Aerospace Engineering"
-    ],
-    "total": 25,
-    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
@@ -242,6 +242,18 @@
     "custom": false
   },
   {
+    "name": "Tsinghua Turbo Lab",
+    "institution": "Tsinghua University",
+    "pis": [
+      "Xinqian Zheng"
+    ],
+    "aliases": [],
+    "total": 19,
+    "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "CAS IET",
     "institution": "Chinese Academy of Sciences",
     "pis": [
@@ -280,18 +292,6 @@
     ],
     "total": 17,
     "avg_relevance": 2.8,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Tsinghua Turbo Lab",
-    "institution": "Tsinghua University",
-    "pis": [
-      "Xinqian Zheng"
-    ],
-    "aliases": [],
-    "total": 17,
-    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
@@ -358,18 +358,6 @@
     "custom": false
   },
   {
-    "name": "Penn State (historical)",
-    "institution": "Penn State University",
-    "pis": [
-      "Lakshminarayana"
-    ],
-    "aliases": [],
-    "total": 10,
-    "avg_relevance": 0.0,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Bath Sealing Group",
     "institution": "University of Bath",
     "pis": [
@@ -378,8 +366,20 @@
       "Carl M. Sangan"
     ],
     "aliases": [],
-    "total": 9,
-    "avg_relevance": 2.5,
+    "total": 11,
+    "avg_relevance": 2.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Penn State (historical)",
+    "institution": "Penn State University",
+    "pis": [
+      "Lakshminarayana"
+    ],
+    "aliases": [],
+    "total": 10,
+    "avg_relevance": 0.0,
     "preset": true,
     "custom": false
   },
