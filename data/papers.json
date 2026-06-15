@@ -1,5 +1,44 @@
 [
   {
+    "id": "26d0ebeb9476",
+    "title": "Blade-Tip Noise Characterization Using Physics-Informed Neural Networks and Sparse Velocimetry",
+    "abstract": "Mitigating flow-induced noise from airfoils and blades is critical in industrial applications. However, resolving the near-field pressure fluctuations that underpin flow-induced noise remains challenging: experimental measurements are often intrusive or limited to far-field data, whereas high-fidelity numerical simulations are computationally prohibitive. To address this, we develop a Reynolds-averaged Navier–Stokes (RANS) [Formula: see text] augmented physics-informed neural network (PINN) framework to reconstruct full-field velocity and pressure distributions from sparse, noisy particle image velocimetry snapshots of a blade-tip vortex. By leveraging the governing physical equations as regularizers, the PINN effectively filters measurement noise, yielding physically consistent reconstructed flow and pressure fields. Subsequently, pressure fluctuations and the power spectral density are derived from the reconstructed fields to characterize the near-field flow-induced noise sources associated with the tip leakage flow for a representative blade-tip leakage condition. Comparisons with high-fidelity large-eddy simulation data show that this RANS-augmented PINN framework provides a nonintrusive approach for near-field noise source characterization in complex flows.",
+    "authors": [
+      "Hailong Liu",
+      "Wenguang Zhao",
+      "Shipeng Wang",
+      "Tim Persoons",
+      "Rui Deng"
+    ],
+    "affiliations": [
+      "Sun Yat-sen University",
+      "Trinity College Dublin",
+      "Merchants Chongqing Communications Research and Design Institute",
+      "China Merchants Marine Equipment Research Institute"
+    ],
+    "date": "2026-06-13",
+    "year": 2026,
+    "url": "https://doi.org/10.2514/1.j067040",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究开发了一种基于RANS增强的物理信息神经网络（PINN）框架，利用稀疏、含噪的粒子图像测速（PIV）快照重构叶尖涡的全场速度和压力分布，进而表征叶尖泄漏流引起的近场噪声源。通过与高保真大涡模拟数据对比，验证了该方法在复杂流动中非侵入式噪声源表征的有效性。",
+    "method": "数值方法：RANS增强的PINN框架，结合稀疏PIV实验数据，重构全场流场和压力，分析叶尖泄漏流噪声源。",
+    "innovation": "将RANS湍流模型嵌入PINN，利用物理方程作为正则化器，从稀疏噪声数据中重构物理一致的流场和压力，实现非侵入式近场噪声源表征。",
+    "conclusions": "PINN能有效滤除测量噪声，重构的流场和压力与高保真LES数据吻合良好；该方法可非侵入式地获取近场压力脉动，用于噪声源特性分析。",
+    "limitations": "仅针对单一叶尖泄漏条件，未考虑旋转不稳定性或非同步振动；RANS模型可能限制非定常细节的捕捉。",
+    "tags": [
+      "叶尖间隙",
+      "实验测量",
+      "数值仿真"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究叶尖泄漏流噪声，与RI-NSV涉及的叶尖流动和压力脉动相关，但未直接研究旋转不稳定性或非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
+    "groups": []
+  },
+  {
     "id": "d9940d7daf06",
     "title": "Influence mechanism of non-adjacent blade rows on vibration of embedded rotor blades in a multi-stage compressor",
     "abstract": "Vibration issues of embedded rotor blades frequently occur due to inter-row interference. This study presents an investigation into vibration cracks observed at the roots of the third-stage rotor blades (R3) of a 4.5-stage compressor. Preliminary studies ruled out forced response or classical flutter as the root causes of the cracks. The underlying mechanism remained elusive. To explore the key factors inducing blade vibration in the multi-stage environment, the aerodynamic damping of R3 under isolated-row, 3-row (S2-R3-S3) and 5-row (R2-S2-R3-S3-R4) models via the Fluid-Structure Interaction (FSI) method is presented. The results demonstrate that non-adjacent blade rows (R2, R4) exert a notable influence on the aeroelastic stability of R3 within the low Nodal Diameter (ND) region, particularly at ±1 ND. Specifically, the aerodynamic damping of −1 ND decreases by 117.67%, transitioning from aeroelastic stability to critical instability. Further studies confirmed that blade rows more than two rows away exert no significant impact on the aeroelastic performance of the embedded rotor. Finally, applying the theory of acoustic wave propagation, reflection and transmission, the influence mechanism of low-circumferential-wavenumber acoustic modes on aerodynamic damping was investigated. It is clarified that non-adjacent blade rows affect the reflection of pressure waves with low circumferential wavenumbers, constituting the primary driver of embedded blade vibration. This work highlights the limitations of traditional aeroelastic analysis methods in addressing inter-row interference-related vibration problems, providing a basis for blade flutter prediction and structural design optimization of multi-stage compressors.",
@@ -239,6 +278,49 @@
     "has_fulltext": false,
     "fetched_at": "2026-05-18",
     "groups": []
+  },
+  {
+    "id": "7ba1ad9cc640",
+    "title": "Advanced Compressor Stall Warning Using Cross-Correlation and Deep Learning-Based Approaches",
+    "abstract": "Abstract This study presents and evaluates three independent stall warning approaches based on unsteady casing pressure measurements acquired above the rotor blade tips. The methods are applied to two different axial compressors, each exhibiting distinct stall characteristics and inception mechanisms. The first approach utilizes a cross-correlation technique to detect small perturbations propagating circumferentially just prior to stall onset. The second method employs a convolutional neural network, trained on labeled time-resolved pressure data, to accurately classify operating ranges as stable and unstable. The third approach is based on an autoencoder trained on pressure data exclusively recorded at design flow conditions; deviations from the learned patterns are flagged as anomalies. This unsupervised technique enables the detection of any pre-stall anomalies—including those, not identifiable through visual inspection—that precede conventional stall indicators such as spikes. Importantly, none of the three approaches rely on manually tuned threshold values to trigger stall warnings. As a result, especially the autoencoder remains valid even with changing tip clearances, making this approach highly robust. All methods are validated using independent datasets, and their accuracy is quantified using stall margin-based metrics. Robustness under varying signal-to-noise conditions further demonstrates the applicability of these techniques for reliable stall warning. While the deep learning approaches consistently provide precise warnings at about 5% stall margin, the cross-correlation method only triggers at a similar level if the compressor is free of pre-stall instabilities such as rotating instability.",
+    "authors": [
+      "Mario Eck",
+      "Ergin Tüzüner",
+      "Robin Ecker",
+      "M. Stender",
+      "Dieter Peitsch"
+    ],
+    "affiliations": [
+      "China Aerodynamics Research and Development Center",
+      "Technical University at Berlin Experimental Compressor Aerodynamics, Chair of Aero Engines, ,   ,",
+      "Technische Universität Berlin",
+      "Technical University at Berlin Chair of Cyber Physical Systems in Mechanical Engineering, ,   ,",
+      "MTU Aero Engines (Germany)",
+      "Technical University at Berlin Chair of Aero Engines, ,   ,"
+    ],
+    "date": "2026-05-07",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4071890",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本研究提出三种基于机匣非稳态压力测量的喘振预警方法，应用于两台轴流压气机。方法包括互相关检测小扰动、卷积神经网络分类运行状态、自编码器检测异常。自编码器无需手动阈值，对叶尖间隙变化鲁棒，可在约5%喘振裕度时预警，而互相关法仅在无旋转不稳定性时有效。",
+    "method": "实验测量，基于转子叶尖上方机匣非稳态压力数据，采用互相关、卷积神经网络和自编码器三种方法，在两种轴流压气机上验证。",
+    "innovation": "提出无需手动阈值的自编码器无监督异常检测方法，对叶尖间隙变化鲁棒，能检测传统方法无法识别的预喘振异常。",
+    "conclusions": "1. 深度学习方法可在约5%喘振裕度时提供精确预警。2. 互相关法仅在无旋转不稳定性等预喘振不稳定时达到类似预警水平。",
+    "limitations": "仅基于机匣压力测量，未涉及叶片振动或气动弹性响应。",
+    "tags": [
+      "实验测量",
+      "失速/喘振机理",
+      "旋转不稳定性 RI"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究喘振预警，涉及旋转不稳定性对预警方法的影响，但未直接研究RI-NSV机理或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
+    "groups": [
+      "TU Berlin Aero Engines"
+    ]
   },
   {
     "id": "d28c9c1a5494",
@@ -709,6 +791,45 @@
     "groups": []
   },
   {
+    "id": "4dbe8892c636",
+    "title": "On the tip leakage noise mechanisms of a stationary aerofoil",
+    "abstract": "Among the various noise sources related to ducted fans, the noise generated by the interaction of tip leakage flow with the blade’s geometric singularities is one of the least understood. This paper deals with identifying the tip leakage noise mechanisms for a single stationary aerofoil, tested in a low-speed open-jet wind tunnel over a wide range of angle of attack, gap sizes, and inflow velocities. Simultaneous near- and far-field pressure measurements, combined with flow characterisation using Particle Image Velocimetry (PIV) and Hot-Wire Anemometry (HWA), reveal two tip noise sources. These sources, for the first time, are directly linked to two specific fluid-dynamic instabilities occurring in the tip-gap region: roll-up and shedding of vortical structures generated during the separation of the flow at the pressure side tip edge. The non-dimensional frequencies of the two noise sources, expressed as Strouhal numbers based on inflow velocity and their respective length scales, have also been identified, indicating the fundamental nature of the tip leakage noise mechanisms.",
+    "authors": [
+      "Ivan Saraceno",
+      "Paruchuri Chaitanya",
+      "Prateek Jaiswal",
+      "Sergi Palleja-Cabre",
+      "Long Wu",
+      "Bharathram Ganapathisubramani"
+    ],
+    "affiliations": [
+      "University of Southampton",
+      "Institute of Sound and Vibration Research, University of Southampton, SO17 1BJ, UK",
+      "Aerodynamics and Flight Mechanics Group, University of Southampton, SO16 7QF, UK"
+    ],
+    "date": "2026-02-13",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.jsv.2026.119712",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "针对静止叶片叶尖泄漏噪声机理，通过低速风洞实验结合近远场压力测量、PIV和HWA，发现两种噪声源分别与压力面叶尖边缘分离涡的卷起和脱落相关，并确定了基于来流速度和特征长度的斯特劳哈尔数。",
+    "method": "实验研究：低速开式射流风洞，变攻角、间隙和来流速度，同步近远场压力测量、PIV和HWA。",
+    "innovation": "首次将叶尖泄漏噪声直接关联到叶尖间隙内两种特定流体动力不稳定性（涡卷起和脱落），并给出无量纲频率。",
+    "conclusions": "叶尖泄漏噪声由两种流体动力不稳定性主导，其斯特劳哈尔数分别为基于涡卷起和脱落特征长度的值。",
+    "limitations": "仅针对静止叶片，未考虑旋转效应和叶片排相互作用。",
+    "tags": [
+      "叶尖间隙",
+      "实验测量",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "研究叶尖泄漏流不稳定性，与RI-NSV涉及的叶尖泄漏流扰动相关，但未直接研究旋转不稳定性或非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
+    "groups": []
+  },
+  {
     "id": "2d6ca94fc603",
     "title": "Design Optimization of Complex Total Pressure Distortion Screens for Gas Turbine Engine Testing",
     "abstract": "Abstract In a gas turbine engine, inlet flow distortion occurs due to factors such as flow separation in the aircraft inlet due to aircraft maneuvers and flight conditions. The distorted inlet flow significantly impacts the compressor performance, reducing the efficiency and operability of the gas turbine engine, as it can provoke early stall or rotating stall and cause aeromechanical issues. In a compressor ground test facility, distortion screens are employed to simulate the distorted inlet flow experienced in flight conditions. In the present work, a methodology is developed to design complex total pressure distortion screens. First, the total pressure loss characteristics of uniform porosity screens are evaluated by computations for screen porosities ranging from 0.20 to 0.90 and inlet Mach numbers ranging from 0.01 to 0.67. The influence of porosity on the total pressure loss for various inlet Mach numbers is highlighted in both incompressible and compressible flow regimes. Second, an inverse design methodology is formulated with the objective function to minimize the difference between the target and achieved total pressure patterns. Finally, this inverse design methodology is posed as an optimization problem, which is then iteratively solved using a gradient-based method until the target total pressure pattern is obtained. The proposed design optimization methodology is tested for several cases including actual gas turbine distortion patterns. The present work resulted in a robust design framework that can be utilized to design distortion screens based on the target total pressure distortion pattern for arbitrary inlet Mach numbers.",
@@ -1107,6 +1228,41 @@
     "relevance_reason": "论文研究主动噪声控制，与RI-NSV无直接关联，但声学控制方法对叶片振动抑制有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "d959e87e2fba",
+    "title": "Discrete vortex-based broadcast mode analysis for mitigation of dynamic stall",
+    "abstract": "We integrate a discrete vortex method (DVM) with complex network analysis to strategise dynamic stall mitigation over aerofoils with active flow control. The objective is to inform the actuator placement and the timing to introduce control inputs during the highly transient process of dynamic stall. To this end, we treat a massively separated flow as a network of discrete vortical elements and quantify the interactions among the vortical nodes by tracking the spread of displacement perturbations between each pair of vortical elements using a DVM. This allows us to perform network broadcast mode analysis to identify an optimal set of discrete vortices, the critical timing and the direction to seed perturbations as control inputs. Motivated by the objective of dynamic stall mitigation, the optimality is defined as maximising the reduction of total circulation of the free vortices generated from the leading edge over a prescribed time horizon. We demonstrate the use of the analysis on a two-dimensional flow over a flat plate aerofoil and a three-dimensional turbulent flow over an SD $7003$ aerofoil. The results from the network analysis reveal that the optimal timing for introducing disturbances occurs slightly after the onset of flow separation, before the shear layer rolls up and forms the core of the dynamic stall vortex. The broadcast modes also show that the vortical nodes along the shear layer are optimal for introducing disturbances, hence providing guidance to actuator placement. Leveraging these insights, we perform nonlinear simulations of controlled flows by introducing flow actuation that targets the shear layer slightly after the separation onset. We observe that the network-guided control results in a $21 \\,\\%$ and $14\\,\\%$ reduction in peak lift for flows over the flat plate and SD $7003$ aerofoil, respectively. A corresponding decrease in vorticity injection from the aerofoil surface under the influence of control is observed from simulations, which aligns with the objective of the network broadcast analysis. The study highlights the potential of integrating the DVMs with the network analysis to design an effective active flow control strategy for unsteady aerodynamics.",
+    "authors": [
+      "Het D. Patel",
+      "Yi Tsung Lee",
+      "Ashok Gopalarathnam",
+      "C. Yeh"
+    ],
+    "affiliations": [
+      "North Carolina State University"
+    ],
+    "date": "2026-01-02",
+    "year": 2026,
+    "url": "https://doi.org/10.1017/jfm.2025.11019",
+    "venue": "Journal of Fluid Mechanics",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本研究将离散涡方法与复杂网络分析相结合，用于主动流动控制缓解动态失速。通过将分离流视为离散涡网络，量化涡节点间的扰动传播，识别最佳控制输入时机和位置。在平板和SD7003翼型上验证，峰值升力分别降低21%和14%。",
+    "method": "数值仿真：二维离散涡方法（DVM）结合复杂网络广播模式分析，用于平板和SD7003翼型（三维湍流）的动态失速控制。",
+    "innovation": "首次将离散涡方法与网络广播模式分析集成，从涡相互作用角度识别控制输入的最佳时机和位置，而非传统经验或试错方法。",
+    "conclusions": "1. 最佳扰动引入时机在分离开始后、剪切层卷起形成动态失速涡之前。2. 网络引导控制使平板和SD7003翼型峰值升力分别降低21%和14%。",
+    "limitations": "仅考虑二维和简单三维翼型，未涉及旋转机械或真实压气机几何。",
+    "tags": [
+      "其他",
+      "数值仿真",
+      "解析/降阶模型"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究动态失速缓解，与风扇/压气机RI-NSV无直接关联，但流动控制方法对叶片流致振动控制有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
     "groups": []
   },
   {
@@ -13720,6 +13876,46 @@
     ]
   },
   {
+    "id": "2bfbea2caa8e",
+    "title": "Simultaneous flow measurement and deformation tracking for passive flow control experiments involving fluid–structure interactions",
+    "abstract": "Fluid–structure interactions (FSI) on highly flexible structures involve large deformations and require specific techniques for a thorough investigation of the flow field and structural deformation. To this purpose, a physics-informed method is introduced that allows for simultaneous determination of the flow fields and the structural deformation by using Particle Image Velocimetry (PIV) raw images. The method combines apriori knowledge of the mechanical characteristics of the flexible structure with classical image processing techniques for segmentation. PIV recordings of an actively pitched, highly deformable hydrodynamic profile experiment in a closed water tunnel serve as an example case. To achieve accurate results, the contour obtained from image segmentation is further defined under the assumption that its flexure can be described with the Euler–Bernoulli beam theory model. This makes it possible to determine the neutral fiber of the structure and the final reconstruction becomes possible from knowledge of the original geometry. The resulting procedure allows for a recognition of the structure itself and is suitable for cross-section deformation measurements and for masking of the structure in the raw images to improve the PIV processing. A test case comprising synthetic data similar to the application with a modeled profile geometry of known shape is used to investigate the accuracy of the method and its validity for deformation measurements. Under conditions of cyclic dynamic stall, a mean absolute error of 0.84° could be reached, with a deterioration up to 2° mean absolute error under static stall. The method has a major advantage compared to other technically more sophisticated and complex methods, such as the combination of Laser interferometers combined with Laser-Doppler Anemometry: the method allows for the usage of a single data source for both, fluid and solid in a unified measurement method. Therefore a direct comparison of instantaneous flow field and deformation is possible. In consequence it is in particular useful for highly dynamic multi-physical processes involving extreme deformations, such as passive flow control and soft actuated or flexible under water robotics.",
+    "authors": [
+      "Wolf Iring Kösters",
+      "Stefan Hoerner"
+    ],
+    "affiliations": [
+      "Tallinn University of Technology",
+      "Tallinn University",
+      "Otto-von-Guericke-Universität Magdeburg",
+      "Center for Biorobotics, Tallinn University of Technology (Taltech), Akadeemia tee 15A, 12616 Tallinn, Estonia",
+      "Laboratory of Fluid Dynamics and Technical Flows, Institute of Fluid Dynamics and Thermodynamics, Otto von Guericke University Magdeburg (OvGU), Universitaetsplatz 2, 39106 Magdeburg, Germany",
+      "Tallinn University (Narva Road 25 10120 Tallinn Estonia - Estonia)",
+      "OVGU - Otto-von-Guericke-Universität Magdeburg = Otto-von-Guericke University [Magdeburg] (Universitätsplatz 2 D-39106 Magdeburg - Germany)",
+      "Laboratoire des Écoulements Géophysiques et Industriels",
+      "LEGI - Laboratoire des Écoulements Géophysiques et Industriels [Grenoble] (1209-1211 rue de la piscine - Domaine Universitaire - 38610 Gières - France)"
+    ],
+    "date": "2023-08-01",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.jfluidstructs.2023.103956",
+    "venue": "Journal of Fluids and Structures",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文提出一种基于PIV原始图像的物理信息方法，同时测量高柔性结构的流场和变形，用于被动流动控制中的流固耦合实验。该方法结合欧拉-伯努利梁理论和图像分割，实现单一数据源下的流体与固体同步测量，在动态失速条件下平均绝对误差0.84°。",
+    "method": "实验方法：基于PIV原始图像，结合欧拉-伯努利梁理论和图像分割技术，同步测量流场和结构变形。工况：主动俯仰高柔性水翼在水洞中循环动态失速。",
+    "innovation": "提出一种利用单一数据源（PIV图像）同时获取流场和结构变形的方法，避免了多设备同步的复杂性，特别适用于大变形流固耦合问题。",
+    "conclusions": "1. 该方法在动态失速条件下变形测量平均绝对误差0.84°，静态失速下误差增至2°。2. 实现了瞬时流场与变形的直接对比，适用于高动态多物理过程。",
+    "limitations": "方法依赖欧拉-伯努利梁假设，可能不适用于复杂几何或非线性变形；精度在静态失速下有所下降。",
+    "tags": [
+      "实验测量",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究流固耦合测量方法，与风扇/压气机RI-NSV无直接关联，但可为叶片流致振动实验提供测量技术参考。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
+    "groups": []
+  },
+  {
     "id": "490ab81f3839",
     "title": "Flow control of a plunging cylinder based on resolvent analysis",
     "abstract": "We design an open-loop active flow control for separated flows around a plunging circular cylinder based on resolvent analysis. The cylinder is plunging at a Strouhal number of 0.36 and a Reynolds number of 500. A linear time-periodic system for control is obtained by linearizing the non-inertial incompressible vorticity equation in the cylinder-fixed frame about a time-averaged base flow. Using the Lyapunouv–Floquet transformation, the linear time-periodic system is transformed into a similar linear time-invariant system, whose resolvent is analysed to obtain an optimal actuating Strouhal number of 0.1464 for the transformed linear system. Simulations show that the active control with tangential actuations is capable of reducing the lift fluctuation by up to 25.7 % when the flow is actuated near the predicted harmonic and subharmonic frequencies.",
@@ -17780,6 +17976,43 @@
     "relevance_reason": "研究流致振动与冲击，但对象为圆柱而非风扇/压气机叶片，与RI-NSV无直接关联。",
     "has_fulltext": false,
     "fetched_at": "2026-05-18",
+    "groups": []
+  },
+  {
+    "id": "48e894e50df8",
+    "title": "Accelerated Wind-Turbine Wake Recovery Through Actuation of the Tip-Vortex Instability",
+    "abstract": "Advances in wind-plant control have often focused on more effectively balancing power between neighboring turbines. Wake steering is one such method that provides control-based improvements in a quasi-static way, but this does little to fundamentally change the wake recovery process, and thus, it has limited potential. This study investigates use of another control paradigm known as dynamic wake control (DWC) to excite the mutual inductance instability between adjacent tip-vortex structures, thereby accelerating the breakdown of the structures. The current work carries this approach beyond the hypothetical by applying the excitation via turbine control vectors that already exist on all modern wind turbines: blade pitch and rotor speed control. The investigation leverages a free-vortex wake method (FVWM) that allows a thorough exploration of relevant frequencies and amplitudes of harmonic forcing for each control vector (as well as the phase difference between the vectors for a tandem configuration) while still capturing the essential tip-vortex dynamics. The FVWM output feeds into a Fourier stability analysis working to pinpoint candidate DWC strategies suggesting fastest wake recovery. Near-wake length reductions of are demonstrated, although without considering inflow turbulence. Analysis is provided to interpret these predictions considering the presence of turbulence in a real atmospheric inflow.",
+    "authors": [
+      "Kenneth Brown",
+      "Daniel Houck",
+      "David Maniaci",
+      "Carsten Westergaard",
+      "Christopher Kelley"
+    ],
+    "affiliations": [
+      "Sandia National Laboratories",
+      "Sandia National Laboratories, Albuquerque, New Mexico 87123"
+    ],
+    "date": "2022-02-11",
+    "year": 2022,
+    "url": "https://doi.org/10.2514/1.j060772",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究通过动态尾流控制（DWC）激励相邻叶尖涡之间的互感不稳定性，加速风力机尾流恢复。采用自由涡尾流方法（FVWM）结合傅里叶稳定性分析，探索叶片桨距和转速控制向量的谐波激励频率和幅值，实现近尾流长度显著减小。",
+    "method": "数值仿真：自由涡尾流方法（FVWM）结合傅里叶稳定性分析，研究叶片桨距和转速控制向量的谐波激励频率、幅值及相位差。",
+    "innovation": "将动态尾流控制（DWC）从理论假设推进到实际应用，利用现有风力机控制向量（叶片桨距和转速）激励叶尖涡不稳定性，加速尾流恢复。",
+    "conclusions": "通过DWC激励叶尖涡互感不稳定性，近尾流长度显著减小（具体数值未给出）；分析表明在真实大气湍流下该策略仍有效。",
+    "limitations": "未考虑入流湍流的影响，实际大气湍流可能改变激励效果。",
+    "tags": [
+      "旋转不稳定性 RI",
+      "解析/降阶模型",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "研究叶尖涡不稳定性及其控制，与旋转不稳定性（RI）机理相关，但对象为风力机而非风扇/压气机，且未涉及非同步振动（NSV）。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
     "groups": []
   },
   {
@@ -21851,6 +22084,45 @@
     ]
   },
   {
+    "id": "91da1e3d1a78",
+    "title": "Computational analysis of the indirect combustion noise generation mechanism in a nozzle guided vane in transonic operating conditions",
+    "abstract": "The combustion noise in modern engines is mainly originating from two types of mechanisms. First, chemical reactions in the combustion chamber leads to an unsteady heat release which is responsible of the direct combustion noise. Second, hot and cold blobs of air coming from the combustion chamber are advected and accelerated through turbine stages, giving rise to entropy noise (or indirect combustion noise). In the present work, numerical characterization of indirect combustion noise of a Nozzle Guide Vane passage was assessed using three-dimensional Large Eddy Simulations. The present work offers an overview to the analytical, computational and experimental studies of the topic. Numerical simulations are conducted to reproduce the effects of incoming planar entropy waves from the combustion chamber and to characterize the generated acoustic power. The dynamic features of the flow are addressed by the means of frequency domain and modal analyses techniques such as Fourier Decomposition and Proper Orthogonal Decomposition. Finally, the predicted entropy noise from numerical calculations is compared with the analytical results of an actuator disk model for a stator stage. The present paper proves that the generated indirect combustion noise can be significant for transonic operating conditions. The blade acoustic response is characterized by the excitation of a latent dynamics at the forcing frequency of the planar entropy waves, and it increases as the amplitude of the incoming disturbances increases.",
+    "authors": [
+      "Alessandro Ceci",
+      "Romain Gojon",
+      "Mihai Mihăescu"
+    ],
+    "affiliations": [
+      "KTH Royal Institute of Technology",
+      "KTH Royal Institute of Technology, Competence Center for Gas Exchange (CCGEx) Sweden",
+      "KTH - KTH Royal Institute of Technology [Kista] (Kungliga Tekniska Högskolan, SE-100 44 Stockholm - Sweden)",
+      "Université Fédérale de Toulouse Midi-Pyrénées",
+      "Institut Superieur de l'Aeronautique et de l'Espace (ISAE-SUPAERO)",
+      "ISAE-SUPAERO, Université de Toulouse, France",
+      "DAEP - Département Aérodynamique Energétique et Propulsion (10 av. Edouard Belin BP 54032 31055 TOULOUSE Cedex 4 - France)"
+    ],
+    "date": "2020-11-16",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.jsv.2020.115851",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文通过三维大涡模拟研究跨声速喷嘴导叶通道中的间接燃烧噪声（熵噪声）产生机制。采用傅里叶分解和本征正交分解分析流动动态特征，并将数值结果与致动盘模型解析解对比，证明跨声速条件下熵噪声显著，且叶片声学响应随入射熵波振幅增大而增强。",
+    "method": "三维大涡模拟（LES），结合傅里叶分解和本征正交分解进行频域和模态分析，并与致动盘模型解析结果对比。工况为跨声速。",
+    "innovation": "首次通过高保真LES系统量化跨声速条件下喷嘴导叶的间接燃烧噪声，并揭示其与入射熵波振幅的线性关系。",
+    "conclusions": "1. 跨声速条件下间接燃烧噪声显著，叶片声学响应随入射熵波振幅增大而增强。2. 数值结果与致动盘模型解析解定性一致。",
+    "limitations": "仅考虑平面熵波，未涉及三维非均匀熵波或实际燃烧室出口条件。",
+    "tags": [
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究间接燃烧噪声，与RI-NSV机理、预测或控制无直接关联，但涉及叶片声学响应和流固耦合，对风扇/压气机流致振动有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
+    "groups": []
+  },
+  {
     "id": "e747735d2d3e",
     "title": "Application of Spectral Method for Vibration-Induced High-Cycle Fatigue Evaluation of an High-Pressure Turbine Blade",
     "abstract": "Abstract A method of fluid–structure interaction coupling is implemented for a forced-response, vibration-induced fatigue life estimation of a high-pressure turbine blade. Two simulations approaches; a two-way (fully coupled) and one-way (uncoupled) methods are implemented to investigate the influence of fluid–solid coupling on a turbine blade structural response. The fatigue analysis is performed using the frequency domain spectral moments estimated from the response power spectral density (PSD) of the two simulation cases. The method is demonstrated in relation to the time-domain method of the rainflow cycle counting method with mean stress correction. Correspondingly, the mean stress and multi-axiality effects are also accounted for in the frequency domain spectral approach. In this case, a multiplication coefficient is derived based on the Morrow equation, while the case of multi-axiality is based on a criterion which reduces the triaxial stress state to an equivalent uniaxial stress using the critical plane assumption. The analyses show that while the vibration-induced stress histories of both simulation approaches are stationary, they violate the assumption of normality of the frequency domain approaches. The stress history profile of both processes can be described as platykurtic with the distributions having less mass near its mean and in the tail region, as compared to a Gaussian distribution with an equal standard deviation. The fully coupled method is right leaning with positive skewness while the uncoupled approach is left leaning with negative skewness. The directional orientation of the principal axes was also analyzed based on the Euler angle estimation. Although noticeable differences were found in the peak distribution of the normal stresses for both methods, the predicted Euler angle orientations were consistent in both cases, depicting a similar orientation of the critical plane during a crack initiation and propagation process. Finally, the fatigue life estimation was shown to be conservative in the fully coupled solution approach.",
@@ -22031,6 +22303,42 @@
     "fetched_at": "2026-05-11",
     "groups": [
       "Purdue Compressor Lab"
+    ]
+  },
+  {
+    "id": "91d60ed3b12a",
+    "title": "Coupled Mode Flutter Analysis of Turbomachinery Blades Using an Adaptation of the <i>p</i>–<i>k</i> Method",
+    "abstract": "Abstract Current trends in turbomachinery design significantly reduce the mass ratio of structure to air, making them prone to flutter by aerodynamic coupling between mode shapes, also called coupled-mode flutter. The p–k method, which solves an aeroelastic eigenvalue problem for frequency and damping, respectively, excitation of the aerodynamically coupled system, was adapted for turbomachinery application using aerodynamic responses computed in the frequency domain (FD). A two-dimensional (2D) test case is validated against time-marching fluid–structure coupled simulations for subsonic and transonic conditions. A span of mass ratios is investigated showing that the adapted p–k method is able to predict the transition between aeroelastically stable and unstable cascades depending on the mass ratio. Finally, the p–k method is applied to a low mass ratio fan showing that the flutter-free operating range is significantly reduced when aerodynamic coupling effects are taken into account.",
+    "authors": [
+      "Matthias Schuff",
+      "Virginie Anne Chenaux"
+    ],
+    "affiliations": [
+      "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)",
+      "German Aerospace Center (DLR), Institute of Aeroelasticity, Göttingen 37073, Germany"
+    ],
+    "date": "2020-10-29",
+    "year": 2020,
+    "url": "https://doi.org/10.1115/1.4048986",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究将航空领域常用的p-k方法改编用于涡轮机械叶片耦合模态颤振分析，通过频域气动响应求解气弹特征值问题，预测频率和阻尼。在二维亚声速和跨声速条件下验证，并应用于低质量比风扇，发现考虑气动耦合后无颤振运行范围显著减小。",
+    "method": "数值仿真：采用频域p-k方法求解气弹特征值问题，与时间推进流固耦合模拟对比，研究亚声速和跨声速下不同质量比的影响。",
+    "innovation": "将p-k方法从航空领域改编至涡轮机械，用于预测耦合模态颤振，并验证了质量比对稳定性的影响，考虑了气动耦合效应。",
+    "conclusions": "1. 改编的p-k方法能准确预测质量比变化时叶栅从稳定到不稳定的转变。2. 低质量比风扇中，考虑气动耦合后无颤振运行范围显著减小。",
+    "limitations": "仅基于二维叶栅验证，未考虑三维效应和旋转不稳定性等复杂流动现象。",
+    "tags": [
+      "风扇/压气机叶片气动弹性",
+      "叶片流致振动预测模型",
+      "数值仿真"
+    ],
+    "relevance": 4,
+    "relevance_reason": "研究风扇/压气机叶片颤振（非同步振动的一种），但未涉及旋转不稳定性（RI）导致的NSV，属于相关领域。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
+    "groups": [
+      "DLR"
     ]
   },
   {
@@ -23228,6 +23536,48 @@
     "relevance_reason": "论文研究机匣处理对压气机稳定性的影响，与RI-NSV的流动控制手段相关，但未直接涉及旋转不稳定性或非同步振动。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "45d1b756bfcb",
+    "title": "Newton–Krylov Solver for Robust Turbomachinery Aerodynamic Analysis",
+    "abstract": "Steady computational fluid dynamics solvers based on the Reynolds-averaged Navier–Stokes equations are the primary workhorses for turbomachinery aerodynamic analysis due to their good engineering accuracy at a low computational cost. However, even state-of-the-art steady solvers suffer from convergence slowdown or failure when applied to challenging off-design conditions. This severely limits the reliable nonlinear and linearized turbomachinery aerodynamic analysis over a wide operating range. To alleviate the convergence difficulties, a nonlinear flow solver using the Newton–Krylov method is developed. This is the first time the Newton–Krylov algorithm is used for achieving robust analysis of turbomachinery aerodynamics in the open literature. The proposed solution algorithm features 1) the exact Jacobian matrix forming, 2) straightforward parallelization, and 3) a reliable globalization strategy; and it aims to achieve fast machine-zero convergence. The solver accuracy is validated using four test cases: an airfoil, a linear turbine cascade, a centrifugal compressor, and an axial compressor. Machine-zero convergence is achieved for all cases over a wide range of operating conditions without manual intervention. The method shows great potential for enabling an automated and reliable whole-map turbomachinery aerodynamic analysis, and it paves the way for a robust and efficient linearized aerodynamic analysis, such as adjoint, time-linearized, and eigenvalue analyses.",
+    "authors": [
+      "Shenren Xu",
+      "Pavanakumar Mohanamuraly",
+      "Dingxi Wang",
+      "Jens‐Dominik Müller"
+    ],
+    "affiliations": [
+      "Northwestern Polytechnical University",
+      "Northwestern Polytechnical University, 215400 Taicang, People’s Republic of China",
+      "Northwestern Polytechnical University, 215400 Taicang, People's Republic of China",
+      "Queen Mary University of London",
+      "Queen Mary University of London, London, England E1 4NS, United Kingdom",
+      "China Aerodynamics Research and Development Center",
+      "Aero Engine Corporation of China (China)",
+      "Shaanxi Key Laboratory of Internal Aerodynamics in Aero-Engines, 710072 Xi’an, People’s Republic of China",
+      "Shaanxi Key Laboratory of Internal Aerodynamics in Aero-Engines, 710072 Xi'an, People's Republic of China"
+    ],
+    "date": "2019-12-24",
+    "year": 2019,
+    "url": "https://doi.org/10.2514/1.j058523",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文开发了基于Newton-Krylov方法的非线性流求解器，用于涡轮机械气动分析，首次公开实现稳健的机器零收敛。通过精确雅可比矩阵、并行化和全局化策略，在翼型、涡轮叶栅、离心压气机和轴流压气机等算例中验证了精度和鲁棒性，为自动化全工况分析和线性化分析（如伴随、时域线性化、特征值分析）奠定基础。",
+    "method": "数值方法：基于RANS方程的Newton-Krylov非线性求解器，采用精确雅可比矩阵和并行化，在四个算例（翼型、涡轮叶栅、离心压气机、轴流压气机）上验证。",
+    "innovation": "首次将Newton-Krylov算法用于涡轮机械气动分析，实现机器零收敛，无需人工干预，为稳健的线性化分析（如特征值分析）提供基础。",
+    "conclusions": "1. 在所有算例的宽工况范围内实现机器零收敛，无需手动干预。2. 方法为自动化全工况分析和线性化分析（如特征值分析）铺平道路。",
+    "limitations": "摘要未提及非定常效应或旋转不稳定性，可能仅适用于稳态分析。",
+    "tags": [
+      "数值仿真",
+      "稳定性建模"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文开发了稳健的稳态求解器，为线性化分析（如特征值分析）提供基础，但未直接研究RI-NSV机理或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
     "groups": []
   },
   {
@@ -30320,6 +30670,44 @@
     "relevance_reason": "论文关注流动稳定性分析方法，但未涉及旋转不稳定性或非同步振动，对RI-NSV研究有间接参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "9ba12fc7e1b3",
+    "title": "On the reduction of aerofoil–turbulence interaction noise associated with wavy leading edges",
+    "abstract": "An aerofoil leading-edge profile based on wavy (sinusoidal) protuberances/tubercles is investigated to understand the mechanisms by which they are able to reduce the noise produced through the interaction with turbulent mean flow. Numerical simulations are performed for non-lifting flat-plate aerofoils with straight and wavy leading edges (denoted by SLE and WLE, respectively) subjected to impinging turbulence that is synthetically generated in the upstream zone (free-stream Mach number of 0.24). Full three-dimensional Euler (inviscid) solutions are computed for this study thereby eliminating self-noise components. A high-order accurate finite-difference method and artefact-free boundary conditions are used in the current simulations. Various statistical analysis methods, including frequency spectra, are implemented to aid the understanding of the noise-reduction mechanisms. It is found with WLEs, unlike the SLE, that the surface pressure fluctuations along the leading edge exhibit a significant source-cutoff effect due to geometric obliqueness which leads to reduced levels of radiated sound pressure. It is also found that there exists a phase interference effect particularly prevalent between the peak and the hill centre of the WLE geometry, which contributes to the noise reduction in the mid- to high-frequency range.",
+    "authors": [
+      "Jae Wook Kim",
+      "Sina Haeri",
+      "Phillip F. Joseph"
+    ],
+    "affiliations": [
+      "Dynamic Research (United States)",
+      "University of Southampton",
+      "Aerodynamics and Flight Mechanics Research Group, University of Southampton, Southampton SO17 1BJ, UK",
+      "Aerodynamics & Flight Mechanics Research Group and",
+      "Institute of Sound and Vibration Research, University of Southampton, Southampton SO17 1BJ, UK",
+      "Institute of Sound & Vibration Research, University of Southampton, Southampton, SO17 1BJ, United Kingdom"
+    ],
+    "date": "2016-03-03",
+    "year": 2016,
+    "url": "https://doi.org/10.1017/jfm.2016.95",
+    "venue": "Journal of Fluid Mechanics",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文通过三维欧拉数值模拟研究了波浪前缘翼型与湍流相互作用产生的噪声降低机制。发现波浪前缘由于几何倾斜导致表面压力波动源截止效应，以及峰谷间的相位干涉效应，从而在中高频段降低辐射声压。",
+    "method": "采用高精度有限差分法求解三维欧拉方程，对直前缘和波浪前缘平板翼型进行数值模拟，自由流马赫数0.24，湍流由上游合成生成。",
+    "innovation": "揭示了波浪前缘通过源截止效应和相位干涉效应降低翼型-湍流相互作用噪声的机制，区别于传统噪声控制方法。",
+    "conclusions": "波浪前缘的几何倾斜导致表面压力波动源截止效应，显著降低辐射声压；峰谷间的相位干涉效应在中高频段贡献噪声降低。",
+    "limitations": "仅考虑无粘流动，忽略自噪声成分，且研究对象为平板翼型，未涉及真实叶轮机械几何。",
+    "tags": [
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究波浪前缘降低噪声，与RI-NSV无直接关联，但噪声控制方法对叶片振动控制有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-15",
     "groups": []
   },
   {

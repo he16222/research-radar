@@ -46,7 +46,7 @@
       "Institute of Aeronautics and Astronautics",
       "Chair for Aero Engines"
     ],
-    "total": 41,
+    "total": 42,
     "avg_relevance": 2.8,
     "preset": true,
     "custom": false
@@ -133,23 +133,6 @@
     "custom": false
   },
   {
-    "name": "IISc Aerospace",
-    "institution": "Indian Institute of Science",
-    "pis": [
-      "Jyoti Ranjan Majhi",
-      "Kartik Venkatraman"
-    ],
-    "aliases": [
-      "Indian Institute of Science",
-      "IISc",
-      "Department of Aerospace Engineering"
-    ],
-    "total": 27,
-    "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "DLR",
     "institution": "German Aerospace Center",
     "pis": [
@@ -173,8 +156,25 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 26,
-    "avg_relevance": 2.5,
+    "total": 27,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "IISc Aerospace",
+    "institution": "Indian Institute of Science",
+    "pis": [
+      "Jyoti Ranjan Majhi",
+      "Kartik Venkatraman"
+    ],
+    "aliases": [
+      "Indian Institute of Science",
+      "IISc",
+      "Department of Aerospace Engineering"
+    ],
+    "total": 27,
+    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
