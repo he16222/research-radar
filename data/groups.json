@@ -67,7 +67,7 @@
       "Thomas Lord Department of Mechanical Engineering",
       "Department of Mechanical Engineering and Material Science"
     ],
-    "total": 38,
+    "total": 39,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -81,8 +81,22 @@
       "Xu Dong"
     ],
     "aliases": [],
-    "total": 37,
+    "total": 38,
     "avg_relevance": 3.1,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Ecole Centrale Lyon LMFA",
+    "institution": "Ecole Centrale de Lyon",
+    "pis": [
+      "Xavier Ottavy",
+      "Christoph Brandstetter",
+      "Fabrice Thouverez"
+    ],
+    "aliases": [],
+    "total": 35,
+    "avg_relevance": 3.2,
     "preset": true,
     "custom": false
   },
@@ -103,20 +117,6 @@
     "custom": false
   },
   {
-    "name": "Ecole Centrale Lyon LMFA",
-    "institution": "Ecole Centrale de Lyon",
-    "pis": [
-      "Xavier Ottavy",
-      "Christoph Brandstetter",
-      "Fabrice Thouverez"
-    ],
-    "aliases": [],
-    "total": 34,
-    "avg_relevance": 3.2,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Purdue Compressor Lab",
     "institution": "Purdue University",
     "pis": [
@@ -127,7 +127,7 @@
       "Yujun Leng"
     ],
     "aliases": [],
-    "total": 33,
+    "total": 34,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -156,7 +156,7 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 27,
+    "total": 28,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -198,8 +198,8 @@
       "Gas Turbines and Aerospace Propulsion",
       "GLR"
     ],
-    "total": 22,
-    "avg_relevance": 4.3,
+    "total": 23,
+    "avg_relevance": 4.2,
     "preset": true,
     "custom": false
   },
@@ -236,8 +236,8 @@
       "Roque Corral"
     ],
     "aliases": [],
-    "total": 19,
-    "avg_relevance": 3.2,
+    "total": 20,
+    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -254,6 +254,19 @@
     "custom": false
   },
   {
+    "name": "Oxford Thermofluids",
+    "institution": "University of Oxford",
+    "pis": [
+      "L. He",
+      "Thomas Povey"
+    ],
+    "aliases": [],
+    "total": 19,
+    "avg_relevance": 2.4,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "CAS IET",
     "institution": "Chinese Academy of Sciences",
     "pis": [
@@ -262,19 +275,6 @@
     "aliases": [],
     "total": 18,
     "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Oxford Thermofluids",
-    "institution": "University of Oxford",
-    "pis": [
-      "L. He",
-      "Thomas Povey"
-    ],
-    "aliases": [],
-    "total": 18,
-    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
