@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T07:34:24Z",
+  "generated_at": "2026-06-29T06:58:49Z",
   "periods": [
     1960,
     1965,
@@ -456,7 +456,7 @@
           "summary": "2015-2019年间，叶尖间隙研究在失速机理与流动控制方面取得显著进展，例如明确了叶尖泄漏流在尖峰型旋转失速起始中的关键作用（如《The Role of Tip Leakage Flow in Spike-Type Rotating Stall Inception》），并系统揭示了非均匀叶尖间隙对跨声速压气机性能的影响（如《Effect of Nonuniform Tip Clearance on the Performance of Transonic Axial Compressors》）。在主动控制技术上，自循环射流（如《Stability Enhancement With Self-Recirculating Injection in Axial Flow Compressor》）和周向槽机匣处理（如《Experimental and Numerical Investigation of a Circumferential Groove Casing Treatment》）被证实能有效抑制失速并扩大稳定裕度。此外，针对叶尖间隙引起的非同步振动问题，全环数值模拟与实验结合的方法（如《Full-Annulus Simulation of Nonsynchronous Blade Vibration Excitation of an Axial Compressor》）为叶片强迫响应预测提供了新手段。"
         },
         "2020": {
-          "count": 115,
+          "count": 116,
           "paper_ids": [
             "b00c4e55885d",
             "c5408ff10d27",
@@ -472,6 +472,7 @@
             "fe1e2795a5dc",
             "dcc8646c3a94",
             "4100b117cf36",
+            "ec028fc0bae4",
             "680664c383ff",
             "4f69afe03608",
             "709146a4e576",
@@ -2655,7 +2656,7 @@
           "summary": "2015-2019年间，实验测量在压气机领域的研究重点集中于失速与喘振的机理探索及主动控制，例如通过脉冲直流等离子体激励实现轴流风扇旋转失速控制，以及利用快速响应压力测量非侵入式监测叶片振动。在气动弹性与稳定性方面，研究揭示了叶尖间隙、雷诺数效应及湿压缩对流动结构的影响，并发展了基于延迟微分方程的叶片/机匣碰摩稳定性分析方法。此外，针对多级压气机中的转子-定子相互作用，实验解析了Tyler-Sofrin模态的传播特性，并对比了气动建模对强迫响应预测的精度差异。这些工作为压气机设计优化、失速预警及颤振抑制提供了关键实验依据。"
         },
         "2020": {
-          "count": 237,
+          "count": 239,
           "paper_ids": [
             "b00c4e55885d",
             "c5408ff10d27",
@@ -2676,9 +2677,11 @@
             "8232cd4898ac",
             "fe1e2795a5dc",
             "dcc8646c3a94",
+            "94811a890610",
             "4100b117cf36",
             "18c8b2fa37c5",
             "613157355e55",
+            "ec028fc0bae4",
             "4f69afe03608",
             "0ed444c5a2af",
             "5047e07986c2",
@@ -3202,7 +3205,7 @@
           "summary": "2015-2019年间，数值仿真在航空发动机压气机领域的研究重点集中于非定常流动与气弹稳定性问题，例如通过全环非定常仿真揭示了非同步叶片振动激励（如《Full-Annulus Simulation of Nonsynchronous Blade Vibration Excitation of an Axial Compressor》）以及旋转失速与机匣处理耦合机制（如《Transonic Compressor Blade Optimization Integrated With Circumferential Groove Casing Treatment》）。同时，研究者发展了基于降阶模型（如《A Reduced Order Model for Nonlinear Dynamics of Mistuned Bladed Disks With Shroud Friction Contacts》）和流固耦合方法（如《Numerical and Experimental Fluid–Structure Interaction-Study to Determine Mechanical Stresses Induced by Rotating Stall》）来预测叶片强迫响应与失速诱导应力，并针对进气道畸变（如《Fan Similarity Model for the Fan–Intake Interaction Problem》）和离心压气机蜗壳非均匀流动（如《Performance Analysis of a Centrifugal Compressor Based on Circumferential Flow Distortion Induced by Volute》）的影响开展了系统性数值验证。"
         },
         "2020": {
-          "count": 101,
+          "count": 103,
           "paper_ids": [
             "e19d39ff7de4",
             "d9af602f8ede",
@@ -3210,7 +3213,9 @@
             "53c20f6f53c4",
             "166f5ebd5ba7",
             "dcc8646c3a94",
+            "94811a890610",
             "4100b117cf36",
+            "ec028fc0bae4",
             "5047e07986c2",
             "709146a4e576",
             "6c10b9d8d434",

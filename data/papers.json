@@ -7293,6 +7293,50 @@
     ]
   },
   {
+    "id": "94811a890610",
+    "title": "The Unsteady Shock–Boundary Layer Interaction in a Compressor Cascade—Part II: High-Fidelity Simulation",
+    "abstract": "Abstract In the second part of this three-paper series, high-fidelity simulations of the transonic cascade TEAMAero at the aerodynamic design point with Rein=1.35×106 and Main=1.21 are presented. A high-order discontinuous Galerkin spectral element method with finite-volume subcell shock capturing is employed to simulate the flow based on an implicit large eddy simulation (LES) scheme and advanced over several buffeting cycles to reliably capture the shock unsteadiness. A study on the spanwise domain size shows that the shock oscillation amplitude decreases with increasing span, although its frequency and mean location remain fixed through the simulations. By comparing high- and low-resolution LES results, it is further presented that deviations from under-resolution are mostly limited to the separated region past the shock, where the high-fidelity results match experimental results more closely. In addition to the LES, low-fidelity unsteady Reynolds-averaged Navier–Stokes is shown to capture the shock unsteadiness correctly, but at a reduced amplitude and fails to match the force distributions on the blade surface. Through examination of instantaneous flow features, space–time relations and spectral proper orthogonal decomposition, a basic analysis of the shock–boundary layer interaction is presented and indicates that velocity perturbations travel upstream through the subsonic boundary layer and periodically cause oblique shock waves, transporting the information from the boundary layer into the passage.",
+    "authors": [
+      "Bjoern F. Klose",
+      "Christian Morsbach",
+      "Michael Bergmann",
+      "Edwin J. Munoz Lopez",
+      "Alexander Hergt",
+      "Edmund Kügeler"
+    ],
+    "affiliations": [
+      "University Hospital Augsburg",
+      "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)",
+      "German Aerospace Center (DLR) Institute of Test and Simulation for Gas Turbines, , Linder Höhe,   ,",
+      "German Aerospace Center Institute of Test and Simulation for Gas Turbines, , Linder Höhe,   ,",
+      "Am Technologiezentrum 5 Augsburg, 86159 Germany",
+      "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR) Institute of Propulsion Technology, , Linder Höhe,   ,",
+      "German Aerospace Center (DLR) Institute of Propulsion Technology, , Linder Höhe,   ,"
+    ],
+    "date": "2024-11-07",
+    "year": 2024,
+    "url": "https://doi.org/10.1115/1.4067097",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文是系列论文第二部分，采用高阶间断伽辽金谱元法结合隐式大涡模拟对跨声速压气机叶栅TEAMAero在设计点进行高保真仿真，研究激波-边界层非定常相互作用。发现展向尺寸影响激波振荡幅度但不影响频率和平均位置，高分辨率LES结果更接近实验，低分辨率LES和URANS在分离区有偏差。通过瞬时流场、时空关系和谱本征正交分解分析，揭示了速度扰动通过亚声速边界层向上游传播并周期性地产生斜激波的机制。",
+    "method": "采用高阶间断伽辽金谱元法结合有限体积子单元激波捕捉的隐式大涡模拟，雷诺数1.35×10^6，马赫数1.21，并对比低分辨率LES和URANS。",
+    "innovation": "首次在跨声速叶栅中采用高阶谱元法进行高保真LES，系统研究了展向尺寸对激波非定常性的影响，并揭示了边界层内速度扰动向上游传播驱动激波振荡的机制。",
+    "conclusions": "激波振荡幅度随展向尺寸增大而减小，但频率和平均位置不变；高分辨率LES在分离区与实验吻合更好，URANS虽能捕捉激波非定常性但幅度偏低。",
+    "limitations": "仅针对单个设计点工况，未涉及变工况或旋转不稳定性；展向尺寸影响需进一步验证。",
+    "tags": [
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究激波-边界层相互作用，属于叶栅非定常流动，但未涉及旋转不稳定性或非同步振动，与RI-NSV机理、预测或控制无直接关联。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-29",
+    "groups": [
+      "DLR"
+    ]
+  },
+  {
     "id": "4100b117cf36",
     "title": "Hybrid RANS-LES Simulation of Rotor–Stator Interaction in a Compressor Stage Using a Grid-Adaptive Simulation Method",
     "abstract": "Abstract Flows in compressors are extremely complex with various scales. Small-scale turbulence, middle-scale rotor–stator interaction (RSI), large-scale corner separation, and tip leakage flow should all be considered in the simulation of compressors. Recently, a new hybrid Reynolds-averaged Navier–Stokes-large eddy simulation (RANS-LES) strategy that modifies the turbulent viscosity equation based on the Kolmogorov energy spectrum, termed the grid-adaptive simulation (GAS) method, is proposed by our group to achieve high accuracy simulation using different grid resolutions. In this study, the GAS method with the shear stress transport (SST) turbulence model is employed to simulate the RSI just with RANS-like grid resolution in a single-stage transonic compressor TUDa-GLR open test case. Compared with experiments and other simulation methods (including RANS and delayed detached eddy simulation (DDES) methods), results show that the GAS method can significantly improve the prediction accuracy for stall margin and radial distribution of flow parameters. Then, the effect of RSI on the secondary flow structures is analyzed based on the unsteady flow field simulated by the GAS method. Results show that the incorrect prediction of rotor tip leakage vortex breakdown and the underestimation of mixing losses in the tip region of the rotor are blamed for the high prediction deviation of RANS. An intuitive total pressure fluctuation caused by wakes is observed in the stator inlet. The particle tracking shows that the wake from the suction surface of the rotor has a strong trend to transport into the tip region of the stator. Spectral proper orthogonal decomposition (SPOD) is also utilized. Unsteady temporal–spatial structures induced by local unsteadiness and RSI are distinguished by SPOD, which includes the reverse flow in the tip region of the rotor and the pressure wave generated from RSI. SPOD also found that the separation of the stator on the suction side exhibits an unsteady fluctuation with a frequency of 1.6 blade passing frequency (BPF).",
@@ -7411,6 +7455,45 @@
     "relevance_reason": "论文关注非线性结构振动测量方法，与RI-NSV机理、预测或控制无直接关联，但对叶片振动实验测量有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "ec028fc0bae4",
+    "title": "Comprehensive Experimental Assessment of Unsteady Pressure and Heat Flux in a Small-Core Turbine Over-Tip Shroud",
+    "abstract": "Abstract For novel high-speed small core turbines, with tip clearance below 0.5 mm, even small blade-to-blade tip clearance variation is significant. The assessment of these complex flows is pertinent to the design of the next generation of small-core turbines. This paper provides a thorough experimental analysis of the shroud's unsteady heat flux and static pressure in a small-core squealer-tip blade turbine. Atomic layer thermopile sensors (ALTPs) and fast response pressure transducers were used to perform high-frequency acquisition at 2 MHz around the 51% axial blade chord on the shroud. Measurements were taken at engine-representative conditions at several operational conditions and tip clearances. The signals were phase-locked averaged (PLA) over the revolution period and synchronized to identify individual blade and row signature. The linear relationship between the rotational tip Reynolds and the static pressure ratio across the blade tip reveals the transition point to reverse over-tip flows. Total heat flux is decomposed into the different steady and unsteady heat flux contributions. It is demonstrated that the adiabatic wall temperature governs the unsteady heat flux and contributes to one-third of the total surface heat flux. A linear trend was observed between the unsteady heat flux and the tip clearance measured at the pressure and suction side rims. Similar trends were observed between the local heat flux and the pressure ratio across the tip. A comparison with computational fluid dynamics (CFD) predictions highlights some limitations on resolving the detached and secondary flows, evidencing the necessity of complementary experimental data.",
+    "authors": [
+      "Antonio Castillo Sauca",
+      "Lakshya Bhatnagar",
+      "Lukas Benjamin Inhestern",
+      "Guillermo Paniagua"
+    ],
+    "affiliations": [
+      "Purdue University West Lafayette",
+      "School of Aeronautics and Astronautics, Purdue University , West Lafayette, IN 47906",
+      "Purdue University, West Lafayette, IN, USA",
+      "School of Mechanical Engineering, Purdue University , West Lafayette, IN 47907",
+      "School of Mechanical Engineering, Purdue University , West Lafayette, IN 47901"
+    ],
+    "date": "2024-10-29",
+    "year": 2024,
+    "url": "https://doi.org/10.1115/1.4067019",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "针对小核心涡轮叶尖间隙小于0.5mm的复杂流动，实验测量了机匣上51%轴向弦长处的非定常压力和热流，采用ALTP和快响应压力传感器在2MHz下采集，揭示了叶尖间隙与压力比、热流之间的线性关系，并分解了稳态与非稳态热流贡献。",
+    "method": "实验测量为主，辅以CFD对比；在发动机代表工况下改变运行条件和叶尖间隙，采用相位锁定平均处理高频信号。",
+    "innovation": "首次在小型核心涡轮中综合评估机匣非定常压力和热流，分解热流贡献并发现绝热壁温主导非稳态热流。",
+    "conclusions": "绝热壁温主导非稳态热流，贡献总表面热流的三分之一；叶尖间隙与压力侧/吸力侧边缘的非稳态热流呈线性关系。",
+    "limitations": "仅针对单一轴向位置，未覆盖全弦长；CFD对分离流和二次流解析不足。",
+    "tags": [
+      "实验测量",
+      "叶尖间隙",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "研究涡轮叶尖间隙流动与热流，与风扇/压气机RI-NSV无直接关联，但对叶尖泄漏流实验方法有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-06-29",
     "groups": []
   },
   {
