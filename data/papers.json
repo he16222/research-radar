@@ -1236,6 +1236,45 @@
     ]
   },
   {
+    "id": "66733969954a",
+    "title": "Aerodynamic Performance Prognosis of Operationally Used Aero Engine Compressor Blading",
+    "abstract": "Abstract The operational efficiency of aircraft engines is adversely affected over time due to degradation, manifesting as increased exhaust gas temperature (EGT) and thrust-specific fuel consumption. Exceeding critical EGT limits necessitates an overhaul of the engine. During the maintenance of fan and compressor blades, adherence to specific limits outlined in the engine manual is crucial to ensure safe blade functionality. However, current practices lack established criteria for evaluating aerodynamic performance, particularly concerning which geometric parameters—such as leading and trailing edge thickness, chord length, tip clearance, as well as variations in lean and sweep—most significantly impact the performance. Consequently, the extent of engine performance degradation remains uncertain. This study aims to investigate the aerodynamic implications of geometric alterations in compressor blades following usage in a commonly deployed turbofan engine. Serviced blades, processed during maintenance, were digitized and parameterized. A design of experiments approach was employed to create a comprehensive array of synthetic compressor blades based on these parameter variations. Through computational fluid dynamics (CFD) analysis and integration into a fan and low-pressure compressor (LPC) simulation model, as well as a high-pressure compressor (HPC) model, metamodels of the compressor modules were developed. These surrogate models facilitate the assessment of how specific geometric changes impact the aerodynamic efficiency of the compressor, thereby enhancing our understanding of performance deterioration in operational aircraft engines.",
+    "authors": [
+      "Ingo Voissel",
+      "Siddhartha Kudeti",
+      "Nils Budziszewski",
+      "Jens Friedrichs",
+      "Christoph Bode"
+    ],
+    "affiliations": [
+      "Technische Universität Braunschweig",
+      "Institute of Jet Propulsion and Turbomachinery, TU Braunschweig , Hermann-Blenk-Straße 37 , Braunschweig, Lower Saxony 38108, Germany",
+      "Repha (Germany)",
+      "MTU Maintenance Hannover GmbH , Münchner Straße 31 , Langenhagen, Lower Saxony 30855, Germany"
+    ],
+    "date": "2026-01-09",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4070813",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本研究针对运营中涡扇发动机压气机叶片因磨损导致的几何变化，通过数字化维护叶片并参数化，采用实验设计生成合成叶片，结合CFD分析和整机仿真模型构建元模型，评估几何变化对气动效率的影响，以理解性能退化。",
+    "method": "数值仿真：基于CFD的压气机模块元模型构建，结合实验设计参数化叶片几何，工况为典型涡扇发动机运行条件。",
+    "innovation": "首次系统量化运营中叶片几何变化（如前缘厚度、叶尖间隙等）对气动效率的影响，通过元模型实现快速性能评估。",
+    "conclusions": "叶片几何变化（如叶尖间隙增大）显著降低压气机效率；元模型可有效预测性能退化程度。",
+    "limitations": "未考虑非定常流动效应及叶片振动对性能的影响。",
+    "tags": [
+      "风扇/压气机叶片气动弹性",
+      "数值仿真",
+      "叶尖间隙"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文关注叶片几何变化对气动性能的影响，未涉及旋转不稳定性或非同步振动，但与压气机叶片气动弹性间接相关。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-06",
+    "groups": []
+  },
+  {
     "id": "98e26b046809",
     "title": "A Parametric Study on the Influence of Acoustic Treatments in Fan Flutter",
     "abstract": "Abstract Acoustic liners in turbo engines reduce community noise but can also impact fan flutter, even though it is at lower frequencies. Without liners, reflected acoustic waves from the intake highlight can induce flutter, reducing the operability close to the stall line, a situation known as flutter bite. Liners alter this behavior by damping the acoustic waves but also shifting their phase, affecting flutter stability. A parametric study using a simplified intake model with an acoustic liner is carried out in this article. Results show that noise liners have a significant impact in flutter stability. The length of the intake, which changes the propagation time of the acoustic waves, also has a relevant effect in fan flutter. Considering the geometry of the AneCom AeroTest (ACAT) fan, the influence of the impedance, position, and length of the acoustic liner is examined. Liners covering more of the intake stabilize cut-on waves but destabilize cut-off frequencies due to reflected decaying modes. Short liners covering a quarter of the intake significantly affect flutter, with those near the inlet expanding instability, while central liners increase stability. Liners near the fan stabilize high frequencies but leave low frequencies near cut-off unstable.",
@@ -1963,6 +2002,47 @@
     "relevance_reason": "论文研究畸变进气对风扇性能及喘振裕度的影响，未涉及旋转不稳定性或非同步振动，但畸变可能诱发NSV，具有间接参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "e64738620d83",
+    "title": "Experimental Study of Flow in an Industrial Gas Turbine Intake System Under Different Operating Conditions",
+    "abstract": "Abstract The intake system of industrial gas turbines significantly impacts compressor performance due to loss and flow distortion. The flow characteristics of the intake system of an industrial gas turbine have been investigated experimentally and numerically in this paper. A two-dimensional (2D) particle image velocimetry (PIV) system, along with pressure probes, is used to obtain the velocity and total pressure at the intake system outlet. The results show that PIV-measured data are in good agreement with the data obtained from the five-hole pressure probe, indicating the reliability of the experimental results. Experiments are conducted under different flow conditions, showing that the mass flow rate has minimal influence on the cross-flow velocity pattern and flow angle at the intake system outlet. A pair of counter-rotating vortices is present in the intake system. Both the vortices and the struts serve as the two main sources of the swirl flow distortion. Higher mass flow rates are associated with increased total pressure loss, mainly caused by the struts, the counter-rotating vortices, and their interplay. Furthermore, numerical simulation accurately predicts the flow pattern at the outlet of the intake system, with the generalized k–ω model (GEKW) turbulence model demonstrating superior performance compared to other turbulence models.",
+    "authors": [
+      "Xiaodong Ren",
+      "Xiaoye Li",
+      "Yuhong Li",
+      "Ying Qiu",
+      "Chunwei Gu"
+    ],
+    "affiliations": [
+      "Tsinghua University",
+      "Department of Energy and Power Engineering, Tsinghua University , Beijing 100084, China",
+      "Department of Energy and Power Engineering, Tsinghua University, Beijing, 100084, China",
+      "Gas Turbine Research Establishment",
+      "China United Gas Turbine Technology Co., Ltd. , Beijing 100016, China",
+      "China United Gas Turbine Technology CO., LTD, Beijing, 100016, China"
+    ],
+    "date": "2025-11-06",
+    "year": 2025,
+    "url": "https://doi.org/10.1115/1.4070339",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文实验与数值研究了工业燃气轮机进气系统在不同工况下的流动特性，采用二维PIV和压力探针测量出口速度与总压。结果表明质量流量对出口横向速度分布影响小，存在一对反向旋转涡和支板引起旋流畸变，高流量下总压损失增大。数值模拟中GEKW湍流模型预测精度最佳。",
+    "method": "实验采用二维PIV和五孔压力探针测量，数值模拟使用GEKW湍流模型，工况涵盖不同质量流量。",
+    "innovation": "系统对比了PIV与五孔探针的测量结果，验证了PIV的可靠性；揭示了涡与支板对旋流畸变的贡献，并评估了多种湍流模型。",
+    "conclusions": "1. 质量流量对出口横向速度分布影响小，但高流量下总压损失增大。2. 反向旋转涡和支板是旋流畸变的主要来源。",
+    "limitations": "仅研究进气系统出口流动，未涉及压缩机内部流动及非定常效应。",
+    "tags": [
+      "实验测量",
+      "数值仿真",
+      "畸变进气"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究进气系统畸变流动，与风扇/压气机流致振动间接相关，但未涉及RI-NSV机理或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-06",
     "groups": []
   },
   {
@@ -12978,6 +13058,49 @@
     "groups": []
   },
   {
+    "id": "474c880913e4",
+    "title": "Experimental study on the influence of vibration amplitude on the fluid damping of a submerged disk",
+    "abstract": "Accurate determination of modal parameters for disk-like structures submerged in heavy fluids is a topic of interest in many fields. For instance, some type of hydraulic turbomachinery can be modelled as disk structures due to the similarity in their mode shapes. Although in the recent years many studies have analyzed and correctly predicted the fluid added mass effect on the natural frequencies and mode shapes of these types of structures, it is particularly challenging to determine fluid damping and characterize its most influential effects. In this article, the influence of vibration amplitude on the fluid damping ratio of a submerged disk, when the disk gets close to a rigid wall, is analytically and experimentally studied. Particularly, the first diametrical modes of the disk have been analyzed at different vibration amplitudes and at very small distances away from a rigid surface. The disk is put in a resonant state by means of a piezoelectric patch generating a harmonic excitation and the response is measured by means of a Laser Doppler Vibrometer (LDV). The damping ratio is obtained directly from the vibrating free decay following a sudden stop of the excitation. It is shown that the fluid damping ratio values are related to the vibration amplitude: there is a trend of increasing damping ratio as the amplitude of the vibration increases. This effect is found to be much larger for small distances between the disk and the rigid surface.",
+    "authors": [
+      "Greco Moraga",
+      "Xiang Xia",
+      "Sergi Roig",
+      "Carme Valero",
+      "David Valentín",
+      "Mònica Egusquiza",
+      "Lingjiu Zhou",
+      "Eduard Egusquiza",
+      "Alexandre Presas"
+    ],
+    "affiliations": [
+      "Universitat Politècnica de Catalunya",
+      "Centre for industrial Diagnosis and Fluid Dynamics (CDIF) - Universitat Politècnica de Catalunya, Barcelona, Spain",
+      "China Agricultural University",
+      "China Agricultural University, Beijing, China"
+    ],
+    "date": "2023-10-11",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.jsv.2023.118099",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文通过实验和解析方法研究浸没圆盘在靠近刚性壁面时振动幅值对流体阻尼比的影响。利用压电片激励和激光测振仪测量自由衰减响应，发现阻尼比随振幅增大而增加，且小间隙时效应更显著。",
+    "method": "实验测量与解析分析；采用压电片谐波激励、LDV测量自由衰减，分析不同振幅和间隙下的阻尼比。",
+    "innovation": "揭示了振动幅值对流体阻尼的非线性影响，并量化了小间隙下阻尼增强效应，为旋转机械叶片阻尼建模提供新视角。",
+    "conclusions": "流体阻尼比随振动幅值增大而增加；小间隙（距刚性壁）时该效应更显著，表明非线性阻尼在近壁区不可忽略。",
+    "limitations": "仅针对静止圆盘，未考虑旋转效应和实际叶轮机械流动条件。",
+    "tags": [
+      "实验测量",
+      "叶片流致振动抑制/控制",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究浸没圆盘振动阻尼，与风扇/压气机叶片流致振动有间接参考价值，但未涉及旋转不稳定性或非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-06",
+    "groups": []
+  },
+  {
     "id": "427a9dd03ec2",
     "title": "Computation of Isolated Periodic Solutions for Forced Response Blade-Tip/Casing Contact Problems",
     "abstract": "Abstract This article introduces a numerical procedure dedicated to the identification of isolated branches of solutions for nonlinear mechanical systems. Here, it is applied to a fan blade subject to rubbing interactions and harmonic forcing. Both contact, which is initiated by means of the harmonic forcing, and dry friction are accounted for. The presented procedure relies on the computation of the system's nonlinear normal modes (NNM) and their analysis through the application of an energy principle derived from the Melnikov function. The dynamic Lagrangian frequency-time strategy associated with the harmonic balance method (DLFT-HBM) is used to predict the blade's dynamics response as well as to compute the autonomous nonlinear normal modes. The open industrial fan blade NASA rotor 67 is employed in order to avoid confidentiality issues and to promote the reproducibility of the presented results. Previous publications have underlined the complexity of NASA rotor 67's dynamics response as it undergoes structural contacts, thus making it an ideal benchmark blade when searching for isolated solutions. The application of the presented procedure considering a varying amplitude of the harmonic forcing allows to predict isolated branches of solutions featuring nonlinear resonances. With the use of the Melnikov energy principle, nonlinear modal interactions are shown to be responsible for the separation of branches of solutions from the main response curve. In the end, the application of the presented procedure on an industrial blade model with contact interactions demonstrates that it is both industry-ready and applicable to highly nonlinear mechanical systems.",
@@ -13634,6 +13757,43 @@
     "relevance_reason": "论文研究涡轮叶片结构非线性振动，与风扇/压气机中RI-NSV机理、预测或控制无直接关联，但叶片振动控制方法有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "3faab86ca28d",
+    "title": "Noise of a shrouded propeller due to ingestion of grid-generated turbulence",
+    "abstract": "An experimental investigation of the noise produced by a shrouded propeller interacting with grid-generated turbulence in an anechoic wind tunnel is presented. Inflow turbulence statistics and the far-field noise directivity were measured. Measured inflow turbulence statistics and propeller operating parameters were used in a theoretical model to predict the turbulent inflow noise spectra and directivity. The theoretical model uses rapid distortion theory to calculate the distorted turbulent field at the propeller plane. The unsteady loading on the rotating blades is calculated using isolated blade response functions. The noise radiated to the far-field is then evaluated using a tailored Green's function approach which accounts for the acoustic scattering effect of the shroud. The theoretical model is able to capture the shape of the directivity pattern of the turbulent inflow noise produced by the shrouded propeller. The agreement between the measured and predicted spectra is reasonable, however the high frequency broadband levels tend to be underpredicted.",
+    "authors": [
+      "Sung Tyaek Go",
+      "Michael J. Kingan",
+      "Luke Bowen",
+      "Mahdi Azarpeyvand"
+    ],
+    "affiliations": [
+      "University of Auckland",
+      "Acoustics Research Centre, Department of Mechanical Engineering, University of Auckland, Auckland 1010, New Zealand",
+      "University of Bristol",
+      "Faculty of Engineering, University of Bristol, BS8 1TR, UK"
+    ],
+    "date": "2023-09-08",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.jsv.2023.118044",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "实验研究了涵道螺旋桨与网格湍流相互作用产生的噪声。测量了来流湍流统计量和远场噪声指向性，并利用快速畸变理论和孤立叶片响应函数建立理论模型，结合涵道声散射效应预测噪声谱和指向性。模型能捕捉指向性形状，但高频宽带噪声预测偏低。",
+    "method": "实验测量（风洞）与理论模型（快速畸变理论+孤立叶片响应函数+格林函数）结合，工况包括网格湍流参数和螺旋桨运行参数。",
+    "innovation": "将快速畸变理论用于涵道螺旋桨湍流噪声预测，并采用定制格林函数考虑涵道声散射效应。",
+    "conclusions": "理论模型能合理预测湍流噪声指向性形状；预测与实测谱趋势一致，但高频宽带噪声被低估。",
+    "limitations": "仅针对涵道螺旋桨，未涉及旋转不稳定性或非同步振动；高频预测精度不足。",
+    "tags": [
+      "实验测量",
+      "解析/降阶模型"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究涵道螺旋桨湍流噪声，与风扇/压气机RI-NSV无直接关联，但涉及叶片-湍流相互作用和声学模型，对理解非定常气动噪声有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-06",
     "groups": []
   },
   {
