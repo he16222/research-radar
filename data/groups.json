@@ -101,6 +101,22 @@
     "custom": false
   },
   {
+    "name": "Purdue Compressor Lab",
+    "institution": "Purdue University",
+    "pis": [
+      "Nicole Key",
+      "Nicole L. Key",
+      "Berdanier",
+      "Sanford Fleeter",
+      "Yujun Leng"
+    ],
+    "aliases": [],
+    "total": 35,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Imperial Aeroelasticity",
     "institution": "Imperial College London",
     "pis": [
@@ -113,22 +129,6 @@
     "aliases": [],
     "total": 34,
     "avg_relevance": 3.3,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Purdue Compressor Lab",
-    "institution": "Purdue University",
-    "pis": [
-      "Nicole Key",
-      "Nicole L. Key",
-      "Berdanier",
-      "Sanford Fleeter",
-      "Yujun Leng"
-    ],
-    "aliases": [],
-    "total": 34,
-    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },

@@ -1,5 +1,51 @@
 [
   {
+    "id": "64535d1bc3c4",
+    "title": "Adaptive Stability Control of a High-Speed Axial Flow Fan under Circumferential Distortion Inlet Conditions",
+    "abstract": "Abstract Adaptive stability control is experimentally studied in a high-speed axial flow fan of an aero-engine under circumferential distortion conditions. A baffle is used to simulate circumferentially distorted inflow with a comprehensive distortion index of 9%. Experimental results indicate that distorted inflow leads to compressor performance degradation and reduces stall margin by 8.81% at design speed. To mitigate this effect, an adaptive stability control system is devised. Although distorted inflow alters the instability route, cross-correlation analysis can be validated for early stall warning and serve as the feedback signal via casing wall pressure sensors. Tip air injection mitigates the forward movement of the leading-edge shock wave and tip leakage vortex downstream of distortion region, thereby delaying stall onset. Moreover, tip air injection increases the correlation coefficient, enabling a correlation between stability-enhancing parameter and stall warning signal. In adaptive control experiments, once the warning threshold is triggered, the feedback signal regulates the proportional valve opening, and tip air injection is activated to delay stall occurrence. Under circumferentially distorted inflow, the strategy improves SM by 8.45% and 9.31% at 100% and 80% design speed, respectively, without peak-efficiency penalty. The improvement is comparable to steady injection with constant mass flow, while injection energy consumption is reduced by approximately 40%. This study verifies the feasibility of the adaptive stability control strategy based on cross-correlation algorithms and tip air injection for high-speed axial compressors under distorted inflow conditions, and offers a reference for engineering applications.",
+    "authors": [
+      "Boning Fan",
+      "J J Li",
+      "Cheng Liang",
+      "Wentao Wang",
+      "Hongwu Zhang",
+      "Junqiang Zhu"
+    ],
+    "affiliations": [
+      "Beijing Enterprises (China)",
+      "No.11 North Fourth Ring Road West, Beijing Bejing, Beijng 100190 China",
+      "No.11 North Fourth Ring Road West, Beijing Bejing, Bejing 100190 China",
+      "Beijing Haidian Hospital",
+      "No.11, North Fourth Ring West Road, Haidian District, Beijin Beijing, Beijing 100190 China",
+      "The Fourth People's Hospital",
+      "No.11 North Fourth Ring Road West, Beijing, China 100190 China",
+      "No.11 Beisihuan West Road, Haidian District Beijing, 100190 China",
+      "Beihua University",
+      "Beisihuanxi 11 Beijing, 100190 China"
+    ],
+    "date": "2026-07-09",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4072311",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "针对周向畸变进气下高速轴流风扇的稳定性问题，实验研究了基于互相关分析和叶尖喷气的自适应稳定控制策略。畸变使喘振裕度下降8.81%，自适应控制通过喷气延迟失速，在100%和80%转速下分别提升裕度8.45%和9.31%，且能耗降低约40%。",
+    "method": "实验研究，采用挡板模拟周向畸变（畸变指数9%），通过机匣壁面压力传感器进行互相关分析，并实施叶尖喷气主动控制。",
+    "innovation": "将互相关算法用于畸变进气下的失速预警，并实现自适应叶尖喷气控制，在保持效率的同时显著降低能耗。",
+    "conclusions": "1. 畸变进气使喘振裕度下降8.81%；2. 自适应叶尖喷气在100%和80%转速下分别提升裕度8.45%和9.31%，且无效率损失。",
+    "limitations": "仅针对特定畸变模式（9%周向畸变），未考虑其他畸变形式或旋转不稳定性。",
+    "tags": [
+      "畸变进气",
+      "机匣处理与流动控制",
+      "实验测量"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究畸变进气下的失速控制，未涉及旋转不稳定性或非同步振动，属于泛化稳定性控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-13",
+    "groups": []
+  },
+  {
     "id": "6a34acdc1072",
     "title": "Effects of partial foam metal casing treatment on fan stability",
     "abstract": "Abstract The application of casing treatments is a widely recognized method for improving the stall margin of fans and compressors. However, dimensional constraints in modern aero-engines, particularly in designs with S-duct or boundary layer ingesting inlets, limit the use of treatments requiring bulky auxiliary structures. This paper investigates the effectiveness of a circumferentially partial foam metal casing treatment (PFMCT) combined with an adjacent circumferential cavity. The study is conducted experimentally on a low-speed, single-stage axial flow fan under both uniform and distorted inlet conditions. The effects of varying the circumferential coverage of the foam metal and the influence of the relative angular position between the PFMCT and a 180-degree inlet distortion are systematically examined. Results indicate that PFMCT provides a significant stall margin improvement, which is further enhanced by the presence of the circumferential cavity, especially under uniform inflow. It is found that unlike full-annulus casing treatments, especially the ones with annulus back-chamber, the partial configurations do not alter the inherent spike-type stall inception of the fan. The stabilization mechanism is attributed to two distinct functions: the foam metal section is primarily responsible for dissipating unsteady disturbance energy and reducing the blade tip's loading, while the circumferential cavity contributes by achieving a more uniform steady-state circumferential load distribution. Furthermore, stability enhancement is shown to be highly sensitive to the relative circumferential position of the casing treatment and the inlet distortion zone.",
@@ -16328,6 +16374,44 @@
     "groups": []
   },
   {
+    "id": "e945dc2dd41f",
+    "title": "Investigation of Surge in a Transonic Centrifugal Compressor With Vaned Diffuser: Part II—Correlation With Subcomponent Characteristics",
+    "abstract": "Abstract In the first part of the paper, surge signatures and the underlying mechanisms thereof for a high-speed centrifugal compressor were investigated using signals from fast-response transducers installed along the flow path. The compressor surge signature is observed to vary as the impeller inlet tip flow transitions from subsonic to supersonic conditions. Spike-type deep surge is observed at subsonic and supersonic impeller inlet tip conditions while modal-type mild surge occurs at 90% speed with transonic inlet tip conditions. In Part II of the paper, a detailed analysis of the static pressure rise characteristics at the stage, component, and subcomponent levels is conducted. Additionally, the influence of the impeller inlet conditions on the instability is also considered. A connection between the surge mechanism and component static pressure rise characteristics is shown which exhibits the potential for prediction of the stall inception mechanism including identification of the destabilizing component. Furthermore, the transition from subsonic to transonic impeller inlet conditions is shown to be the cause of the unique mild surge instability at 90% speed. Lastly, both experimental and computational results are utilized to investigate the development of a shock wave at the impeller leading edge. The shock is considered to be critical to stage stability at speeds where the compressor experiences transonic inlet conditions.",
+    "authors": [
+      "Fangyuan Lou",
+      "Herbert M. Harrison",
+      "William J. Brown",
+      "Nicole L. Key"
+    ],
+    "affiliations": [
+      "Purdue University West Lafayette",
+      "Purdue University School of Mechanical Engineering , West Lafayette, IN 47907"
+    ],
+    "date": "2022-10-05",
+    "year": 2022,
+    "url": "https://doi.org/10.1115/1.4055865",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "针对跨声速离心压气机喘振，通过快响应传感器实验和数值仿真，分析了级、部件及子部件静压升特性与失稳机理的关联。发现叶轮进口从亚声速到超声速转变导致喘振类型变化，并揭示了激波对稳定性的关键作用。",
+    "method": "实验测量（快响应传感器）与数值仿真结合，研究不同转速（含90%转速跨声速工况）下叶轮进口条件变化。",
+    "innovation": "建立了喘振机理与部件静压升特性的关联，可预测失稳起始机制并识别失稳部件；揭示了进口条件从亚声速到跨声速转变是90%转速轻度喘振的成因。",
+    "conclusions": "1. 亚声速和超声速叶尖条件下出现突尖型深度喘振，跨声速条件下出现模态型轻度喘振。2. 叶轮前缘激波对跨声速工况的级稳定性至关重要。",
+    "limitations": "仅针对特定离心压气机，未涉及轴流压气机或旋转不稳定性导致的非同步振动。",
+    "tags": [
+      "失速/喘振机理",
+      "实验测量",
+      "数值仿真"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究喘振机理与部件特性关联，涉及近失速扰动，但未直接研究旋转不稳定性或非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-13",
+    "groups": [
+      "Purdue Compressor Lab"
+    ]
+  },
+  {
     "id": "6a8bbe618988",
     "title": "Investigation of Surge in a Transonic Centrifugal Compressor With Vaned Diffuser—Part I: Surge Signature",
     "abstract": "Abstract The identification of stall inception mechanisms and stability-limiting components in a centrifugal compressor is required for the development of effective surge suppression approaches. Part I of this two-part paper investigates the surge signature of a centrifugal compressor at subsonic, transonic, and supersonic inlet tip conditions, and Part II considers the relationship of the surge signature with the compressor static pressure characteristics, as well as the impeller leading edge relative tip Mach number. Experiments were performed in the single stage centrifugal compressor (SSCC) facility at Purdue University with both steady performance and dynamic pressure data recorded. Results show the presence of both mild and deep surges on the compressor map. Deep surge occurs at subsonic and supersonic impeller tip relative Mach numbers while the mild surge is observed as the tip relative Mach number nears unity. Long length-scale modal oscillations can be detected only at the transonic operating condition while spike disturbances are identified as the precursor to instability at subsonic and supersonic tips relative Mach numbers. Finally, the impeller is determined to be the origin of instability throughout most of the compressor map. The observation of impeller-induced instability refreshes the conventional understanding that the diffuser is typically the stability-limiting component for centrifugal compressors with vaned diffusers and suggests various surge suppression approaches may be necessary to achieve range extension throughout a compressor map.",
@@ -16474,6 +16558,48 @@
     "groups": [
       "Duke Aeroelasticity"
     ]
+  },
+  {
+    "id": "c3f1f6de97aa",
+    "title": "Effect of Compressor Unsteady Wakes on a Gas Turbine Combustor Flow",
+    "abstract": "Abstract In gas turbines, combustor inlets are characterized by significant levels of unsteady circumferential distortion due to compressor wakes and secondary flows, together with additional radial nonuniformity induced by the adverse pressure gradients in the prediffuser. This can cause nonuniform velocity distributions across the fuel injector, although the exact interaction mechanism, and the effects it has on the downstream air–fuel mixing, is not fully understood. This paper investigates the flow in an a single sector of a fully featured isothermal rig comprising of compression and combustion systems, exploiting the synchronous coupling of a compressible unsteady RANS simulation with a low-Mach large eddy simulation (LES). Validation against five-hole probe measurements shows that the coupled approach can correctly predict distortion onset and development, with no solution discontinuity at the coupling interface, and is able to preserve unsteady information. The coupled prediction is then compared against a standalone combustor simulation carried out using a circumferentially uniform inlet profile, showing that the additional turbulence from the wakes interacts with the injector, reducing the coherence of the precessing vortex core (PVC) and potentially affecting the air–fuel mixing characteristics.",
+    "authors": [
+      "Alessandro Soli",
+      "Richard Adoua",
+      "Ivan Langella",
+      "Paul A. Denman",
+      "Andrew Garmory",
+      "Gary Page"
+    ],
+    "affiliations": [
+      "Loughborough University",
+      "Department of Aeronautical and Automotive Engineering, Loughborough University , Loughborough LE11 3TU, UK",
+      "Rolls-Royce (United Kingdom)",
+      "Rolls-Royce plc , P.O. Box 3, Filton, Bristol BS34 7QE, UK",
+      "Delft University of Technology",
+      "Faculty of Aerospace Engineering, Delft University of Technology , Delft 2629 HS, The Netherlands"
+    ],
+    "date": "2022-09-23",
+    "year": 2022,
+    "url": "https://doi.org/10.1115/1.4055750",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文通过耦合可压缩非定常RANS与低马赫数LES模拟，研究了压气机尾迹对燃气轮机燃烧室入口流动的影响。结果表明，尾迹引起的湍流与燃料喷射器相互作用，降低了旋进涡核的相干性，可能影响空气-燃料混合特性。",
+    "method": "采用可压缩非定常RANS与低马赫数LES的同步耦合方法，模拟单扇区等温试验台，并用五孔探针测量验证。",
+    "innovation": "首次实现压气机与燃烧室耦合模拟，保留非定常信息，揭示尾迹湍流对旋进涡核相干性的影响。",
+    "conclusions": "耦合方法能正确预测畸变起始与发展；尾迹湍流降低旋进涡核相干性，可能影响混合特性。",
+    "limitations": "仅研究单扇区等温工况，未考虑真实燃烧与热效应。",
+    "tags": [
+      "数值仿真",
+      "畸变进气",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究压气机尾迹对燃烧室流动的影响，未涉及旋转不稳定性或非同步振动，但与叶轮机械非定常流动相关。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-13",
+    "groups": []
   },
   {
     "id": "55c9b20f97f4",
