@@ -10,7 +10,7 @@
       "Paul G. Tucker"
     ],
     "aliases": [],
-    "total": 78,
+    "total": 79,
     "avg_relevance": 2.4,
     "preset": true,
     "custom": false
@@ -242,6 +242,18 @@
     "custom": false
   },
   {
+    "name": "CAS IET",
+    "institution": "Chinese Academy of Sciences",
+    "pis": [
+      "Juan Du"
+    ],
+    "aliases": [],
+    "total": 19,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Tsinghua Turbo Lab",
     "institution": "Tsinghua University",
     "pis": [
@@ -263,18 +275,6 @@
     "aliases": [],
     "total": 19,
     "avg_relevance": 2.4,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "CAS IET",
-    "institution": "Chinese Academy of Sciences",
-    "pis": [
-      "Juan Du"
-    ],
-    "aliases": [],
-    "total": 18,
-    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
@@ -428,8 +428,8 @@
       "Yanhui Wu"
     ],
     "aliases": [],
-    "total": 3,
-    "avg_relevance": 3.0,
+    "total": 4,
+    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
