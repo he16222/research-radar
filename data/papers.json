@@ -128,6 +128,43 @@
     ]
   },
   {
+    "id": "a8474fd93d87",
+    "title": "Vortical–Potential Integrated Reduced-Order Solver for Non-Axisymmetric Turbomachinery Aerodynamics",
+    "abstract": "Modern gas turbines contain non-axisymmetric components (e.g., bifurcations and transition ducts) that disturb circumferential uniformity and drive long-range potential fields across blade rows, degrading performance. We introduce Turbomachinery Aerodynamic Vortical–Potential Integrated Solver (TAVIS), a reduced-order method formulated on curved streamsurfaces to capture component interactions at orders-of-magnitude lower cost than three-dimensional unsteady Reynolds-averaged Navier–Stokes (URANS). On each streamsurface, the flow is represented as a circumferentially uniform mean with potential/vortical perturbations. Velocity perturbations are decomposed into five harmonically resolved modes (intake, rotor-bound potential, rotor-bound circulation, rotor-shed vorticity, and stator circulation). Rotor effects are modeled using an actuator disc, where nonreflecting transmission is enforced through linearized continuity across the disc with the rotor Kutta condition. Combined with wall impermeability and the stator Kutta condition, all constraints are imposed simultaneously within a single finite-element linear system. Validation on high-bypass fan-outlet guide vane (OGV)-pylon configurations shows that TAVIS reproduces dominant harmonics and Mach-number distortions with band-aware [Formula: see text] at mid- and tip-span; off-design discrepancies [Formula: see text]. Solutions converge in ten seconds, [Formula: see text] times faster than URANS, retaining accuracy. Including compressibility and geometric-variation effects, TAVIS delivers near–real-time predictions for optimization. The framework is readily extensible to other non-axisymmetric configurations (e.g., compressor struts, transition ducts, and propeller–rudder systems).",
+    "authors": [
+      "Muting Hao",
+      "Davendu Kulkarni",
+      "Bharat Lad",
+      "Luca di Mare"
+    ],
+    "affiliations": [
+      "University of Oxford",
+      "Rolls-Royce (United Kingdom)",
+      "Rolls-Royce plc"
+    ],
+    "date": "2026-06-24",
+    "year": 2026,
+    "url": "https://doi.org/10.2514/1.b40369",
+    "venue": "Journal of Propulsion and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "提出一种基于流面的降阶求解器TAVIS，将非轴对称涡轮机械流动分解为周向均匀平均流与势/涡扰动，通过致动盘模型模拟转子效应，并施加非反射传输条件。在风扇-OGV-吊架构型验证中，TAVIS以URANS十万分之一的计算成本复现主导谐波与马赫数畸变，精度良好。",
+    "method": "数值降阶方法，基于弯曲流面的势-涡集成求解器，采用致动盘模型与线性化连续条件，在有限元系统中同时施加壁面不可穿透与库塔条件。",
+    "innovation": "将非轴对称流动分解为五种谐波模态，通过致动盘与线性化非反射传输实现跨排耦合，计算速度比URANS快数个数量级。",
+    "conclusions": "TAVIS在风扇-OGV-吊架构型中复现主导谐波与马赫数畸变，中尖部吻合度[公式:见原文]；单次求解仅需10秒，比URANS快约十万倍。",
+    "limitations": "仅适用于势/涡线性扰动假设，未考虑湍流与分离等强非线性效应。",
+    "tags": [
+      "解析/降阶模型",
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文聚焦非轴对称流动降阶建模，未涉及旋转不稳定性或非同步振动，但对风扇/压气机流场快速预测有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-27",
+    "groups": []
+  },
+  {
     "id": "6a34acdc1072",
     "title": "Effects of partial foam metal casing treatment on fan stability",
     "abstract": "Abstract The application of casing treatments is a widely recognized method for improving the stall margin of fans and compressors. However, dimensional constraints in modern aero-engines, particularly in designs with S-duct or boundary layer ingesting inlets, limit the use of treatments requiring bulky auxiliary structures. This paper investigates the effectiveness of a circumferentially partial foam metal casing treatment (PFMCT) combined with an adjacent circumferential cavity. The study is conducted experimentally on a low-speed, single-stage axial flow fan under both uniform and distorted inlet conditions. The effects of varying the circumferential coverage of the foam metal and the influence of the relative angular position between the PFMCT and a 180-degree inlet distortion are systematically examined. Results indicate that PFMCT provides a significant stall margin improvement, which is further enhanced by the presence of the circumferential cavity, especially under uniform inflow. It is found that unlike full-annulus casing treatments, especially the ones with annulus back-chamber, the partial configurations do not alter the inherent spike-type stall inception of the fan. The stabilization mechanism is attributed to two distinct functions: the foam metal section is primarily responsible for dissipating unsteady disturbance energy and reducing the blade tip's loading, while the circumferential cavity contributes by achieving a more uniform steady-state circumferential load distribution. Furthermore, stability enhancement is shown to be highly sensitive to the relative circumferential position of the casing treatment and the inlet distortion zone.",
@@ -17950,6 +17987,40 @@
     ]
   },
   {
+    "id": "796192bd7a65",
+    "title": "The Application of the Arbitrary-Order Galerkin Reduction Method to the Dynamic Analysis of a Rotor With a Preloaded Single-Pad Foil-Air Bearing",
+    "abstract": "Abstract The compressible Reynolds equation (RE) is typically integrated within a fully coupled dynamical foil-air bearings (FABs)-rotor system via spatial Discretization transformation, e.g., finite difference (FD), finite element (FE). An alternative way of integrating the RE is through Galerkin reduction (GR). The motivation for using GR is the computational benefit coming from the drastic condensation of the problem due to the elimination of the two-dimensional grid used for the air film in FD or FE. This paper presents a novel application of arbitrary-order GR to both nonlinear and linearized analyses of rotor systems supported by single-pad FABs with variable radial clearance (preload). Simulations using FD gave a close correlation with those using GR for all preloads, with discrepancies increasing as the preload approaches the nominal clearance (c). The simulations show that the preload has to exceed a certain level in order to delay the onset of instability speed (OIS), and significant delay in OIS and suppression of subsynchronous vibration is possible when the preload is comparable to c. Experimental validation is provided.",
+    "authors": [
+      "Ibrahim Ghalayini",
+      "Philip Bonello"
+    ],
+    "affiliations": [
+      "University of Manchester",
+      "Department of Mechanical, Aerospace and Civil Engineering, University of Manchester , Manchester M13 9PL, UK"
+    ],
+    "date": "2022-08-09",
+    "year": 2022,
+    "url": "https://doi.org/10.1115/1.4055188",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文应用任意阶Galerkin降阶方法分析预载单垫箔片空气轴承-转子系统的动力学特性。通过对比有限差分法，验证了降阶方法在非线性与线性化分析中的准确性，并发现预载接近名义间隙时可显著延迟失稳起始速度并抑制次同步振动。实验验证了数值结果。",
+    "method": "数值仿真（有限差分与Galerkin降阶对比）与实验验证；工况参数包括可变径向间隙（预载）和名义间隙c。",
+    "innovation": "首次将任意阶Galerkin降阶应用于预载单垫箔片空气轴承-转子系统的动力学分析，显著降低计算成本。",
+    "conclusions": "预载需超过一定水平才能延迟失稳起始速度；当预载接近名义间隙c时，可显著延迟失稳并抑制次同步振动。",
+    "limitations": "仅针对单垫箔片轴承，未涉及多垫或更复杂结构；预载范围有限。",
+    "tags": [
+      "解析/降阶模型",
+      "数值仿真",
+      "实验测量"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究箔片轴承-转子系统动力学，与风扇/压气机RI-NSV无直接关联，但降阶方法对转子动力学有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-27",
+    "groups": []
+  },
+  {
     "id": "e6372cc8f848",
     "title": "Thermoacoustic effects on the propagation of non-planar sound in a circular duct",
     "abstract": "This paper examines thermoacoustic effects on the propagation of non-planar sound in a circular duct subjected to an axial temperature gradient. Of particular concern are thermoviscous diffusive effects, which are taken into account by the boundary-layer approximation in a framework of the linear theory. For disturbances expanded into Fourier and Fourier–Bessel series in the azimuthal and radial directions, respectively, the pressure in each mode is described by a one-dimensional, dispersive wave equation, if non-diffusive propagation is assumed. When the diffusive effects are included, each radial mode is coupled to the other radial modes through the boundary layer. Focusing on a single azimuthal and radial mode only, the dispersion relation for the propagation along an infinite duct of a uniform gas is first derived. Effects of the temperature gradient are then examined by solving boundary-value problems for a duct of finite length in four typical cases. Assuming that the wall temperature increases exponentially along the duct, eigenfrequencies and decay rates in the lowest axial mode are obtained as well as axial distributions of the sound pressure and the axial velocity in the duct. The frequency and the decay rate increase as the temperature ratio at both ends becomes higher. It is found from the acoustic energy equation that the dispersion combined with the diffusion acts to reduce the damping and that the temperature gradient makes little contribution to the production of the energy. However, it is unveiled that the non-uniformity in temperature yields thermoacoustic sound confinement in the vicinity of the cold end.",
@@ -24842,6 +24913,44 @@
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
     "groups": []
+  },
+  {
+    "id": "946fbe81d5da",
+    "title": "A Loss and Deflection Model for Compressor Blading at High Negative Incidence",
+    "abstract": "Abstract While significant advances have come about for turbomachinery off-design performance characterization using computational fluid dynamics (CFD), the need for quick performance estimates at challenging off-design conditions still requires the use of lower-order models, such as mean-line analyses and through-flow tools. These inviscid tools require blade performance correlations formulated in terms of loss and turning angle as a function of blade geometric and aerodynamic parameters. Traditionally, such correlations have relied on the empirical data from blade cascade tests at nominal incidence conditions. This limitation on the applicability of the blade correlations has caused performance modeling of the sub-idle regime to be off-limits to this type of correlation-based approaches. This paper addresses the development of blade loss and deviation models applicable to the sub-idle regime using a parametric numerical approach. 2D CFD results are used to generate a model that is then applied to mean-line and through-flow analyses aimed at predicting the sub-idle map of an axial flow compressor. The model proves to be a valuable tool for quick sub-idle performance estimates and allows existing correlation-based performance prediction methods to be extended into the sub-idle regime.",
+    "authors": [
+      "Luis E. Ferrer-Vidal",
+      "Marc Schneider",
+      "Alessandro Allegretti",
+      "Vassilios Pachidis"
+    ],
+    "affiliations": [
+      "Cranfield University",
+      "Cranfield University , Bedfordshire MK43 0AL , UK"
+    ],
+    "date": "2019-09-25",
+    "year": 2019,
+    "url": "https://doi.org/10.1115/1.4044967",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对轴流压气机亚怠速工况，采用参数化数值方法开发了叶片损失和偏转模型。基于二维CFD结果生成模型，并应用于平均线和通流分析以预测亚怠速性能图。该模型可快速估算亚怠速性能，将基于关联的性能预测方法扩展到亚怠速工况。",
+    "method": "数值仿真：二维CFD参数化研究，生成损失和偏转模型，用于平均线和通流分析。工况：亚怠速高负攻角。",
+    "innovation": "开发了适用于亚怠速工况的叶片损失和偏转模型，突破了传统关联方法仅适用于名义攻角的限制，将性能预测扩展到亚怠速区域。",
+    "conclusions": "1. 基于二维CFD的模型能有效预测亚怠速性能。2. 该模型使基于关联的性能预测方法可扩展至亚怠速工况。",
+    "limitations": "模型基于二维CFD，未考虑三维效应和叶尖泄漏流等复杂流动。",
+    "tags": [
+      "数值仿真",
+      "解析/降阶模型",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究亚怠速工况下的叶片性能模型，与RI-NSV无直接关联，但低阶模型方法对压气机非定常流动建模有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-27",
+    "groups": [
+      "Cranfield Propulsion"
+    ]
   },
   {
     "id": "6909cf254d6c",
@@ -32869,6 +32978,52 @@
     "groups": [
       "Oxford Thermofluids"
     ]
+  },
+  {
+    "id": "3fe5446491fe",
+    "title": "Partial Stall Effects on the Failure of an Axial Compressor Blade",
+    "abstract": "This paper is aimed to show the effects of partial stall on the fracture of the first stage rotating blades of the gas turbine compressors of an onshore gas refinery. The first part of the paper deals with the results of finite element modeling (FEM) of stress distribution and stress concentration areas on the blades under its first to third natural frequencies. Comparison of the stress concentration areas with the fractured blades shows that the blades have been fractured due to resonance under the first and second natural frequencies. The second part of the paper deals with the computational fluid dynamics (CFD) simulation of air flowing through the blades to determine the most probable sources of vibrational loads as the aerodynamic forces. Results of CFD simulations show that the operation of the gas turbines under 40–50% of their nominal output power—which has been very regular in the history of operation of the turbines—increases the possibility of stall at the tip side of the first stages rotating blades. The vortices shedding due to downwash flow at the tip side of the blades causes flow instability and increases the aerodynamic vibrational forces on the blades, which finally makes them to experience a kind of high cycle fatigue (HCF).",
+    "authors": [
+      "Esmaeil Poursaeidi",
+      "M. R. Mohammadi Arhani",
+      "Sana Hosseini",
+      "M. Darayi",
+      "Masoud Arablu"
+    ],
+    "affiliations": [
+      "University of Zanjan",
+      "Department of Mechanical Engineering, University of Zanjan, Zanjan 45371-38791, Iran e-mail:",
+      "Department of Mechanical Engineering,#N#University of Zanjan,#N#Zanjan 45371-38791, Iran#N#e-mail:",
+      "Tarbiat Modares University",
+      "Faculty of Mechanical Engineering, Tarbiat Modares University, Tehran 14115-111, Iran e-mail:",
+      "Faculty of Mechanical Engineering,#N#Tarbiat Modares University,#N#Tehran 14115-111, Iran#N#e-mail:",
+      "Arak University",
+      "Department of Mechanical Engineering, Arak University, Arak 39455-38138, Markazi, Iran e-mail:",
+      "University of North Carolina at Charlotte",
+      "Department of Mechanical Engineering and Engineering Science, University of North Carolina at Charlotte, Charlotte, NC 28223 e-mail:",
+      "Department of Mechanical Engineering and#N#Engineering Science,#N#University of North Carolina at Charlotte,#N#Charlotte, NC 28223e-mail:"
+    ],
+    "date": "2015-05-04",
+    "year": 2015,
+    "url": "https://doi.org/10.1115/1.4030515",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文研究部分失速对轴流压气机叶片断裂的影响。通过有限元分析发现叶片在1、2阶固有频率下共振导致断裂；CFD模拟表明40-50%额定功率运行时叶尖失速产生涡脱落，引发气动激振力，导致高周疲劳失效。",
+    "method": "数值仿真：有限元法（FEM）分析应力分布与模态；CFD模拟叶尖失速流场，工况为40-50%额定功率。",
+    "innovation": "将部分失速引起的叶尖涡脱落与叶片高周疲劳断裂直接关联，并指出低负荷运行是失速诱因。",
+    "conclusions": "叶片断裂由1、2阶共振引起；40-50%额定功率下叶尖失速产生涡脱落，增大气动激振力，导致高周疲劳。",
+    "limitations": "未涉及旋转不稳定性或非同步振动机理，仅关注失速引起的强迫响应。",
+    "tags": [
+      "叶片流致振动抑制/控制",
+      "数值仿真",
+      "失速/喘振机理"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究失速引起的叶片振动与疲劳，但未涉及旋转不稳定性或非同步振动，仅与流致振动控制有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-07-27",
+    "groups": []
   },
   {
     "id": "fff95086fabf",

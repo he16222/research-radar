@@ -372,6 +372,19 @@
     "custom": false
   },
   {
+    "name": "Cranfield Propulsion",
+    "institution": "Cranfield University",
+    "pis": [
+      "David G. MacManus",
+      "Vassilios Pachidis"
+    ],
+    "aliases": [],
+    "total": 10,
+    "avg_relevance": 2.2,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Penn State (historical)",
     "institution": "Penn State University",
     "pis": [
@@ -380,19 +393,6 @@
     "aliases": [],
     "total": 10,
     "avg_relevance": 0.0,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Cranfield Propulsion",
-    "institution": "Cranfield University",
-    "pis": [
-      "David G. MacManus",
-      "Vassilios Pachidis"
-    ],
-    "aliases": [],
-    "total": 9,
-    "avg_relevance": 2.2,
     "preset": true,
     "custom": false
   },
