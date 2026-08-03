@@ -10,7 +10,7 @@
       "Paul G. Tucker"
     ],
     "aliases": [],
-    "total": 79,
+    "total": 80,
     "avg_relevance": 2.4,
     "preset": true,
     "custom": false
@@ -26,7 +26,7 @@
       "Paduano"
     ],
     "aliases": [],
-    "total": 65,
+    "total": 66,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -46,7 +46,7 @@
       "Institute of Aeronautics and Astronautics",
       "Chair for Aero Engines"
     ],
-    "total": 42,
+    "total": 43,
     "avg_relevance": 2.8,
     "preset": true,
     "custom": false
@@ -67,7 +67,7 @@
       "Thomas Lord Department of Mechanical Engineering",
       "Department of Mechanical Engineering and Material Science"
     ],
-    "total": 39,
+    "total": 43,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -87,20 +87,6 @@
     "custom": false
   },
   {
-    "name": "Ecole Centrale Lyon LMFA",
-    "institution": "Ecole Centrale de Lyon",
-    "pis": [
-      "Xavier Ottavy",
-      "Christoph Brandstetter",
-      "Fabrice Thouverez"
-    ],
-    "aliases": [],
-    "total": 35,
-    "avg_relevance": 3.2,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Purdue Compressor Lab",
     "institution": "Purdue University",
     "pis": [
@@ -111,24 +97,8 @@
       "Yujun Leng"
     ],
     "aliases": [],
-    "total": 35,
+    "total": 38,
     "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Imperial Aeroelasticity",
-    "institution": "Imperial College London",
-    "pis": [
-      "Mehdi Vahdati",
-      "Sina Stapelfeldt",
-      "Loic Salles",
-      "Fanzhou Zhao",
-      "Venkatesh Suriyanarayanan"
-    ],
-    "aliases": [],
-    "total": 34,
-    "avg_relevance": 3.3,
     "preset": true,
     "custom": false
   },
@@ -156,8 +126,38 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 29,
+    "total": 38,
     "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Ecole Centrale Lyon LMFA",
+    "institution": "Ecole Centrale de Lyon",
+    "pis": [
+      "Xavier Ottavy",
+      "Christoph Brandstetter",
+      "Fabrice Thouverez"
+    ],
+    "aliases": [],
+    "total": 36,
+    "avg_relevance": 3.2,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Imperial Aeroelasticity",
+    "institution": "Imperial College London",
+    "pis": [
+      "Mehdi Vahdati",
+      "Sina Stapelfeldt",
+      "Loic Salles",
+      "Fanzhou Zhao",
+      "Venkatesh Suriyanarayanan"
+    ],
+    "aliases": [],
+    "total": 35,
+    "avg_relevance": 3.3,
     "preset": true,
     "custom": false
   },
@@ -173,8 +173,8 @@
       "IISc",
       "Department of Aerospace Engineering"
     ],
-    "total": 27,
-    "avg_relevance": 2.6,
+    "total": 30,
+    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
@@ -204,6 +204,19 @@
     "custom": false
   },
   {
+    "name": "Polytechnique Montreal",
+    "institution": "Polytechnique Montreal",
+    "pis": [
+      "Huu Duc Vo",
+      "Alain Batailly"
+    ],
+    "aliases": [],
+    "total": 22,
+    "avg_relevance": 2.1,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "NASA Glenn",
     "institution": "NASA Glenn Research Center",
     "pis": [
@@ -217,27 +230,44 @@
     "custom": false
   },
   {
-    "name": "Polytechnique Montreal",
-    "institution": "Polytechnique Montreal",
-    "pis": [
-      "Huu Duc Vo",
-      "Alain Batailly"
-    ],
-    "aliases": [],
-    "total": 21,
-    "avg_relevance": 2.1,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "ITP Aero / UPM",
     "institution": "ITP Aero / Univ. Politecnica de Madrid",
     "pis": [
       "Roque Corral"
     ],
     "aliases": [],
-    "total": 20,
+    "total": 21,
     "avg_relevance": 3.1,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Oxford Thermofluids",
+    "institution": "University of Oxford",
+    "pis": [
+      "L. He",
+      "Thomas Povey"
+    ],
+    "aliases": [],
+    "total": 21,
+    "avg_relevance": 2.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Waseda / IHI",
+    "institution": "Waseda University / IHI",
+    "pis": [
+      "Fujisawa",
+      "Yutaka Ohta"
+    ],
+    "aliases": [
+      "Waseda University",
+      "Department of Applied Mechanics and Aerospace Engineering",
+      "IHI"
+    ],
+    "total": 20,
+    "avg_relevance": 2.7,
     "preset": true,
     "custom": false
   },
@@ -266,32 +296,16 @@
     "custom": false
   },
   {
-    "name": "Oxford Thermofluids",
-    "institution": "University of Oxford",
+    "name": "Bath Sealing Group",
+    "institution": "University of Bath",
     "pis": [
-      "L. He",
-      "Thomas Povey"
+      "James A. Scobie",
+      "Gary D. Lock",
+      "Carl M. Sangan"
     ],
     "aliases": [],
     "total": 19,
-    "avg_relevance": 2.4,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Waseda / IHI",
-    "institution": "Waseda University / IHI",
-    "pis": [
-      "Fujisawa",
-      "Yutaka Ohta"
-    ],
-    "aliases": [
-      "Waseda University",
-      "Department of Applied Mechanics and Aerospace Engineering",
-      "IHI"
-    ],
-    "total": 17,
-    "avg_relevance": 2.8,
+    "avg_relevance": 2.2,
     "preset": true,
     "custom": false
   },
@@ -330,6 +344,22 @@
     "custom": false
   },
   {
+    "name": "Mitsubishi Heavy Industries",
+    "institution": "Mitsubishi Heavy Industries",
+    "pis": [
+      "Ryosuke Seki"
+    ],
+    "aliases": [
+      "Mitsubishi Heavy Industries",
+      "Turbomachinery Research Department",
+      "Research & Innovation Center"
+    ],
+    "total": 15,
+    "avg_relevance": 2.4,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "GE Aviation",
     "institution": "GE Aviation",
     "pis": [
@@ -342,36 +372,6 @@
     "custom": false
   },
   {
-    "name": "Mitsubishi Heavy Industries",
-    "institution": "Mitsubishi Heavy Industries",
-    "pis": [
-      "Ryosuke Seki"
-    ],
-    "aliases": [
-      "Mitsubishi Heavy Industries",
-      "Turbomachinery Research Department",
-      "Research & Innovation Center"
-    ],
-    "total": 13,
-    "avg_relevance": 2.5,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Bath Sealing Group",
-    "institution": "University of Bath",
-    "pis": [
-      "James A. Scobie",
-      "Gary D. Lock",
-      "Carl M. Sangan"
-    ],
-    "aliases": [],
-    "total": 11,
-    "avg_relevance": 2.3,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Cranfield Propulsion",
     "institution": "Cranfield University",
     "pis": [
@@ -379,7 +379,7 @@
       "Vassilios Pachidis"
     ],
     "aliases": [],
-    "total": 10,
+    "total": 11,
     "avg_relevance": 2.2,
     "preset": true,
     "custom": false
@@ -416,8 +416,8 @@
       "Mirko Morini"
     ],
     "aliases": [],
-    "total": 5,
-    "avg_relevance": 2.0,
+    "total": 6,
+    "avg_relevance": 2.2,
     "preset": true,
     "custom": false
   },
