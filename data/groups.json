@@ -132,20 +132,6 @@
     "custom": false
   },
   {
-    "name": "Ecole Centrale Lyon LMFA",
-    "institution": "Ecole Centrale de Lyon",
-    "pis": [
-      "Xavier Ottavy",
-      "Christoph Brandstetter",
-      "Fabrice Thouverez"
-    ],
-    "aliases": [],
-    "total": 36,
-    "avg_relevance": 3.2,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Imperial Aeroelasticity",
     "institution": "Imperial College London",
     "pis": [
@@ -156,8 +142,22 @@
       "Venkatesh Suriyanarayanan"
     ],
     "aliases": [],
-    "total": 35,
+    "total": 37,
     "avg_relevance": 3.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Ecole Centrale Lyon LMFA",
+    "institution": "Ecole Centrale de Lyon",
+    "pis": [
+      "Xavier Ottavy",
+      "Christoph Brandstetter",
+      "Fabrice Thouverez"
+    ],
+    "aliases": [],
+    "total": 36,
+    "avg_relevance": 3.2,
     "preset": true,
     "custom": false
   },
@@ -175,6 +175,20 @@
     ],
     "total": 33,
     "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Bath Sealing Group",
+    "institution": "University of Bath",
+    "pis": [
+      "James A. Scobie",
+      "Gary D. Lock",
+      "Carl M. Sangan"
+    ],
+    "aliases": [],
+    "total": 27,
+    "avg_relevance": 2.4,
     "preset": true,
     "custom": false
   },
@@ -200,6 +214,23 @@
     ],
     "total": 24,
     "avg_relevance": 4.2,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Waseda / IHI",
+    "institution": "Waseda University / IHI",
+    "pis": [
+      "Fujisawa",
+      "Yutaka Ohta"
+    ],
+    "aliases": [
+      "Waseda University",
+      "Department of Applied Mechanics and Aerospace Engineering",
+      "IHI"
+    ],
+    "total": 22,
+    "avg_relevance": 2.7,
     "preset": true,
     "custom": false
   },
@@ -242,23 +273,6 @@
     "custom": false
   },
   {
-    "name": "Waseda / IHI",
-    "institution": "Waseda University / IHI",
-    "pis": [
-      "Fujisawa",
-      "Yutaka Ohta"
-    ],
-    "aliases": [
-      "Waseda University",
-      "Department of Applied Mechanics and Aerospace Engineering",
-      "IHI"
-    ],
-    "total": 21,
-    "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Oxford Thermofluids",
     "institution": "University of Oxford",
     "pis": [
@@ -272,16 +286,14 @@
     "custom": false
   },
   {
-    "name": "Bath Sealing Group",
-    "institution": "University of Bath",
+    "name": "Tsinghua Turbo Lab",
+    "institution": "Tsinghua University",
     "pis": [
-      "James A. Scobie",
-      "Gary D. Lock",
-      "Carl M. Sangan"
+      "Xinqian Zheng"
     ],
     "aliases": [],
     "total": 20,
-    "avg_relevance": 2.3,
+    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
@@ -298,14 +310,17 @@
     "custom": false
   },
   {
-    "name": "Tsinghua Turbo Lab",
-    "institution": "Tsinghua University",
+    "name": "TU Dresden",
+    "institution": "TU Dresden",
     "pis": [
-      "Xinqian Zheng"
+      "Ronald Mailach",
+      "Konrad Vogeler",
+      "Xiangyi Chen",
+      "Martin Lange"
     ],
     "aliases": [],
-    "total": 19,
-    "avg_relevance": 2.5,
+    "total": 16,
+    "avg_relevance": 3.0,
     "preset": true,
     "custom": false
   },
@@ -325,21 +340,6 @@
     "aliases": [],
     "total": 16,
     "avg_relevance": 2.0,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "TU Dresden",
-    "institution": "TU Dresden",
-    "pis": [
-      "Ronald Mailach",
-      "Konrad Vogeler",
-      "Xiangyi Chen",
-      "Martin Lange"
-    ],
-    "aliases": [],
-    "total": 15,
-    "avg_relevance": 3.0,
     "preset": true,
     "custom": false
   },
