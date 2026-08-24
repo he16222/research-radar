@@ -26,8 +26,8 @@
       "Paduano"
     ],
     "aliases": [],
-    "total": 66,
-    "avg_relevance": 2.6,
+    "total": 68,
+    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
@@ -46,7 +46,7 @@
       "Institute of Aeronautics and Astronautics",
       "Chair for Aero Engines"
     ],
-    "total": 44,
+    "total": 46,
     "avg_relevance": 2.8,
     "preset": true,
     "custom": false
@@ -67,8 +67,8 @@
       "Thomas Lord Department of Mechanical Engineering",
       "Department of Mechanical Engineering and Material Science"
     ],
-    "total": 43,
-    "avg_relevance": 2.6,
+    "total": 44,
+    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
@@ -85,20 +85,6 @@
     "aliases": [],
     "total": 40,
     "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Beihang BUAA",
-    "institution": "Beihang University",
-    "pis": [
-      "Xiaofeng Sun",
-      "Dakun Sun",
-      "Xu Dong"
-    ],
-    "aliases": [],
-    "total": 38,
-    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -126,7 +112,7 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 38,
+    "total": 39,
     "avg_relevance": 2.5,
     "preset": true,
     "custom": false
@@ -142,8 +128,22 @@
       "Venkatesh Suriyanarayanan"
     ],
     "aliases": [],
-    "total": 37,
+    "total": 38,
     "avg_relevance": 3.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
+    "pis": [
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
+    ],
+    "aliases": [],
+    "total": 38,
+    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -187,7 +187,7 @@
       "Carl M. Sangan"
     ],
     "aliases": [],
-    "total": 27,
+    "total": 28,
     "avg_relevance": 2.4,
     "preset": true,
     "custom": false
@@ -310,6 +310,18 @@
     "custom": false
   },
   {
+    "name": "ETH Zurich LEC",
+    "institution": "ETH Zurich",
+    "pis": [
+      "Reza S. Abhari"
+    ],
+    "aliases": [],
+    "total": 17,
+    "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "TU Dresden",
     "institution": "TU Dresden",
     "pis": [
@@ -325,25 +337,6 @@
     "custom": false
   },
   {
-    "name": "★ Tianyu Pan",
-    "institution": "（自动识别）",
-    "total": 16,
-    "avg_relevance": 2.2,
-    "preset": false
-  },
-  {
-    "name": "ETH Zurich LEC",
-    "institution": "ETH Zurich",
-    "pis": [
-      "Reza S. Abhari"
-    ],
-    "aliases": [],
-    "total": 16,
-    "avg_relevance": 2.0,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Mitsubishi Heavy Industries",
     "institution": "Mitsubishi Heavy Industries",
     "pis": [
@@ -354,10 +347,17 @@
       "Turbomachinery Research Department",
       "Research & Innovation Center"
     ],
-    "total": 15,
+    "total": 16,
     "avg_relevance": 2.4,
     "preset": true,
     "custom": false
+  },
+  {
+    "name": "★ Tianyu Pan",
+    "institution": "（自动识别）",
+    "total": 16,
+    "avg_relevance": 2.2,
+    "preset": false
   },
   {
     "name": "GE Aviation",
