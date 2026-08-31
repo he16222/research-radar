@@ -89,6 +89,20 @@
     "custom": false
   },
   {
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
+    "pis": [
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
+    ],
+    "aliases": [],
+    "total": 39,
+    "avg_relevance": 3.1,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "DLR",
     "institution": "German Aerospace Center",
     "pis": [
@@ -130,20 +144,6 @@
     "aliases": [],
     "total": 38,
     "avg_relevance": 3.3,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Beihang BUAA",
-    "institution": "Beihang University",
-    "pis": [
-      "Xiaofeng Sun",
-      "Dakun Sun",
-      "Xu Dong"
-    ],
-    "aliases": [],
-    "total": 38,
-    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -397,6 +397,19 @@
     "custom": false
   },
   {
+    "name": "Ferrara / Parma",
+    "institution": "Univ. Ferrara / Univ. Parma",
+    "pis": [
+      "Michele Pinelli",
+      "Mirko Morini"
+    ],
+    "aliases": [],
+    "total": 7,
+    "avg_relevance": 2.3,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Peking University",
     "institution": "Peking University",
     "pis": [
@@ -405,19 +418,6 @@
     "aliases": [],
     "total": 7,
     "avg_relevance": 2.0,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Ferrara / Parma",
-    "institution": "Univ. Ferrara / Univ. Parma",
-    "pis": [
-      "Michele Pinelli",
-      "Mirko Morini"
-    ],
-    "aliases": [],
-    "total": 6,
-    "avg_relevance": 2.2,
     "preset": true,
     "custom": false
   },
@@ -447,6 +447,19 @@
     "custom": false
   },
   {
+    "name": "Kurz & Brun (Industrial GT)",
+    "institution": "Solar Turbines / Elliott Group",
+    "pis": [
+      "Rainer Kurz",
+      "Klaus Brun"
+    ],
+    "aliases": [],
+    "total": 3,
+    "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "CSIR-NAL Propulsion",
     "institution": "CSIR-National Aerospace Laboratories",
     "pis": [],
@@ -457,19 +470,6 @@
     ],
     "total": 2,
     "avg_relevance": 3.0,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Kurz & Brun (Industrial GT)",
-    "institution": "Solar Turbines / Elliott Group",
-    "pis": [
-      "Rainer Kurz",
-      "Klaus Brun"
-    ],
-    "aliases": [],
-    "total": 2,
-    "avg_relevance": 2.0,
     "preset": true,
     "custom": false
   },

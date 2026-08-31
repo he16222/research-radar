@@ -1,5 +1,94 @@
 [
   {
+    "id": "464eddac0641",
+    "title": "ON THE MECHANISM OF UNSTEADY TIP FLOW EVOLUTION ACROSS ROTATIONAL SPEEDS IN A TRANSONIC AXIAL FAN",
+    "abstract": "Abstract This study explores the evolution of unsteady tip flow structures in a transonic axial fan rotor across 70%, 80%, 90%, and 100% of design rotational speed, via experiment-validated unsteady Reynolds-Averaged Navier–Stokes (URANS) simulations and detailed flow diagnostics. Unlike prior work focused on near-stall behavior only at design speed, this research clarifies how rotational speed modulates the onset and characteristics of unsteady leakage vortex dynamics—key to fan stability margin and loss generation. Stall inception at 70% and 100% design speeds is primarily associated with suction surface separation; for the latter operating condition, such separation is predominantly induced by passage shocks. In contrast, stall mechanisms at 80% and 90% design speeds are dominated by TLV-shock interactions. Findings reveal a transition from shock-vortex-dominated tip flow unsteadiness at high speeds to shear-layer instability-driven oscillations at low speeds, highlighting competing centrifugal stabilization and compressibility effects. This work advances understanding of speed-dependent stability boundaries, emphasizing rotational effects for physics-based transonic fan stall control.",
+    "authors": [
+      "Jiangbin Zhao",
+      "Xingen Lu",
+      "Shilong Yuan",
+      "Xuyang Ren",
+      "Hao Zhou",
+      "Ge HAN",
+      "Xu Dong"
+    ],
+    "affiliations": [
+      "Beijing Haidian Hospital",
+      "N4th Ring West Side Rd Haidian District Beijing, Beijing 100190 China",
+      "Beijing Administration Institute",
+      "Beijing China Beijing, Beijing 100190 China",
+      "11 Beisihuanxi Road Beijing, 100190 China",
+      "Haidian District Beijing, Beijing 100000 China",
+      "Beijing, Haidian District, No. 11 West North Fourth Ring Rd. Beijing, Beijing 100190 China",
+      "Gas Turbine Research Establishment",
+      "Key Laboratory of Light-duty Gas-turbine, IET, CAS, Beijing Beijing, 100190 China"
+    ],
+    "date": "2026-08-28",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4072652",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究通过实验验证的URANS模拟，探究跨声速轴流风扇转子在70%、80%、90%和100%设计转速下非定常叶尖流结构的演变。发现失速起始机制随转速变化：70%和100%转速下为吸力面分离（后者由激波诱导），80%和90%转速下为叶尖泄漏涡-激波相互作用。揭示了从高速激波-涡主导到低速剪切层不稳定性主导的转变，强调了离心稳定性和压缩性效应的竞争。",
+    "method": "采用实验验证的URANS数值模拟，覆盖70%-100%设计转速，结合详细流场诊断分析非定常叶尖流动。",
+    "innovation": "不同于以往仅关注设计转速近失速行为，本研究系统揭示了转速对叶尖泄漏涡非定常特性及失速机理的调制作用，强调了转速依赖的稳定性边界。",
+    "conclusions": "失速起始机理随转速变化：70%和100%转速下为吸力面分离（后者由激波诱导），80%和90%转速下为叶尖泄漏涡-激波相互作用。高速时非定常性由激波-涡主导，低速时由剪切层不稳定性主导。",
+    "limitations": "基于URANS模拟，可能无法捕捉全部湍流细节；未涉及控制方法或非同步振动。",
+    "tags": [
+      "叶尖间隙",
+      "失速/喘振机理",
+      "数值仿真"
+    ],
+    "relevance": 3,
+    "relevance_reason": "研究叶尖泄漏流非定常特性及失速机理，与旋转不稳定性和非同步振动相关，但未直接连接NSV。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": [
+      "Beihang BUAA"
+    ]
+  },
+  {
+    "id": "a3099c9474c4",
+    "title": "INDUSTRIAL MULTI-FIDELITY SURROGATE-BASED OPTIMIZATION FRAMEWORK FOR COMPRESSOR BLADE DESIGN: BALANCING AEROMECHANICS, CONTACT ROBUSTNESS, AND NI-POD MODELING",
+    "abstract": "Abstract This paper presents the improvements of a modular, multi-disciplinary, and multi-fidelity Surrogate-Based Optimization (SBO) framework for rotor blade design, aiming at reducing computational cost and accelerating the design process in aeromechanical applications. The concept of “useful accuracy” is central to our approach, allowing the selection of appropriate fidelity levels for each stage of the optimization chain, which combines 3D blade parametrization with aerodynamic and mechanical simulations. Robustness to blade-tip/casing contact interactions is first investigated using two fidelity levels: simplified criterion and nonlinear simulations. The ability of the simplified criterion to guide the optimization process is assessed. Results indicate that, although the locations of maxima differ, the minimization procedure consistently converges toward similar regions of the parameter space. For aerodynamic modeling, a multi-fidelity surrogate strategy combining 2.5D and 3D simulations is adopted, leveraging low-fidelity 2.5D simulations to enhance the quality of the surrogate models associated with the 3D outputs while reducing the need for expensive 3D evaluations. Advanced surrogate modeling based on Non-Intrusive Proper Orthogonal Decomposition (NI-POD) are compared with Tuned Radial Basis Functions (TRBFs) approaches for the prediction of criticity fields. Results show that NI-POD improves prediction accuracy across all derived quantities, despite a higher computational cost. Finally, a multi-fidelity aerodynamic optimization is performed using the simplified contact robustness criterion as constraints. Optimized geometries are compared with initial designs, demonstrating the potential of our framework to efficiently guide aeromechanical design while balancing fidelity, computational cost, and accuracy.",
+    "authors": [
+      "F. Nyssen",
+      "R. Nigro",
+      "L. Baert",
+      "T. Benamara",
+      "J. de Cazenove",
+      "C. Cracco"
+    ],
+    "affiliations": [
+      "Rue des Frères Wright 29 Gosselies, 6041 Belgium",
+      "Institute of Pathology and Genetics",
+      "Rue des Freres Wright, 29 Gosselies, Belgium Gosselies, Belgium 6041 Belgium",
+      "Safran (Belgium)",
+      "Route de Liers 121 Herstal, 4041 Belgium"
+    ],
+    "date": "2026-08-28",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4072649",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文提出一种模块化、多学科、多保真度的代理优化框架，用于压气机转子叶片设计，以降低气动弹性应用中的计算成本并加速设计。该框架结合三维叶片参数化与气动/力学模拟，采用“有用精度”概念选择各阶段保真度。研究了叶尖-机匣接触鲁棒性，并采用多保真度代理策略结合2.5D和3D模拟，比较了NI-POD与TRBF方法，最后进行多保真度气动优化，验证了框架的有效性。",
+    "method": "数值仿真与优化方法，包括多保真度代理模型（2.5D/3D）、NI-POD降阶建模、TRBF代理，以及简化接触判据和非线性模拟，用于叶片气动弹性设计优化。",
+    "innovation": "提出多保真度代理优化框架，结合NI-POD降阶模型提高预测精度，并引入叶尖接触鲁棒性约束，平衡精度与计算成本。",
+    "conclusions": "简化判据与非线性模拟的优化收敛区域相似；NI-POD相比TRBF提高了所有导出量的预测精度，尽管计算成本更高。",
+    "limitations": "研究基于数值仿真，缺乏实验验证；优化框架可能依赖特定工况，通用性需进一步验证。",
+    "tags": [
+      "风扇/压气机叶片气动弹性",
+      "数值仿真",
+      "解析/降阶模型"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究压气机叶片气动弹性优化，涉及叶尖接触和降阶模型，但未直接关联旋转不稳定性和非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": []
+  },
+  {
     "id": "80d6c881fb97",
     "title": "NEAR-STALL UNSTEADY AERODYNAMIC AND AEROELASTIC SIMULATION CAPABILITIES OF THE OPEN-SOURCE CFD CODE SU2",
     "abstract": "Abstract Computational Fluid Dynamic (CFD) tools have revolutionized the way we design engineering systems. However, the prevalence of numerous established tools, each utilizing different development principles and validation strategies, has given rise to numerical inconsistencies that cast a shadow over their application. Differences in performance and stability predictions for identical compressor designs are widely observed between different CFD tools. Conducting a root cause analysis for these discrepancies is, however, next to impossible, as most codes are proprietary and closed-source. To facilitate technology advancement in CFD and to combine the expertise, creativity and skills of different groups worldwide, the use of the freely available open-source CFD code, SU2, is proposed. This research builds upon a previously published study aimed at launching a comprehensive validation and verification campaign for SU2's turbomachinery capabilities. In the first paper, the Reynolds-Averaged Navier-Stokes (RANS) simulation results from SU2 were compared with experimental data and commercial solver. Due to a lack of experimental data, the unsteady results obtained using Unsteady Reynolds-Averaged Navier-Stokes (URANS) in SU2 were compared only against commercial solvers. The recent release of unsteady test data from the Transonic Compressor Darmstadt Open Test Case has prompted this work. In this paper, we further validate SU2's unsteady simulation capabilities against experimental data and demonstrate its capability of predicting the unsteady aerodynamic phenomena at near stall condition, e.g. stall inception and stall-hunting.",
@@ -5310,6 +5399,39 @@
     "groups": []
   },
   {
+    "id": "ccaa9f81cda1",
+    "title": "An Improved Correlation for Turbine Endwall Loss",
+    "abstract": "Abstract To develop high-performance turbomachinery, we need accurate preliminary design correlations to guide us toward optimal system and component configurations. Endwall (or secondary) loss has a significant impact on turbine efficiency, but it remains challenging to predict. Most existing correlations are based on well-conditioned linear cascade experiments, but these generally rely on limited databases and do not include the effect of turbine-realistic inlet conditions, which can increase loss significantly. This article develops a new correlation to help address these deficiencies. The new method is physics-based and tuned to a large database of linear cascade computations with varying inlet conditions. Endwall loss is decomposed into wetted area loss and secondary flow loss. The wetted area loss represents dissipation in the endwall boundary layers. The secondary flow loss correlates with the secondary vorticity predicted by classical theory and is strongly dependent on the thickness and shape of the incoming endwall boundary layer. Validation with literature cascade experiments shows that the new correlation reduces the average error by >30% compared to the best existing method, which was fit to these data, and more accurately predicts sensitivity to design parameters. The new method predicts a realistic increase in loss when moving from cascade to turbine-like inlet conditions and thus helps to reconcile the historical mismatch between endwall losses in cascades and real turbines.",
+    "authors": [
+      "John D. Coull"
+    ],
+    "affiliations": [
+      "University of Oxford",
+      "Science Oxford",
+      "University of Oxford Department of Engineering Science, ,   ,",
+      "Southwell Building Osney Mead Oxford, Oxfordshire OX2 0ES United Kingdom"
+    ],
+    "date": "2025-08-21",
+    "year": 2025,
+    "url": "https://doi.org/10.1115/1.4069513",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究提出一种改进的涡轮端壁损失关联模型，基于物理机制并利用大数据库线性叶栅计算进行校准。模型将端壁损失分解为湿面积损失和二次流损失，考虑了入口边界层厚度和形状的影响。与文献实验对比，平均误差降低超过30%，并能更准确预测设计参数敏感性，且能预测从叶栅到涡轮真实入口条件下损失的合理增加。",
+    "method": "基于物理的关联模型开发，利用大数据库线性叶栅计算（数值仿真）校准，并通过文献叶栅实验进行验证。",
+    "innovation": "新关联模型基于物理机制，分解端壁损失为湿面积损失和二次流损失，并纳入涡轮真实入口条件影响，相比现有方法平均误差降低>30%。",
+    "conclusions": "新关联模型相比最佳现有方法平均误差降低超过30%，能更准确预测设计参数敏感性，并预测从叶栅到涡轮真实入口条件下损失的合理增加。",
+    "limitations": "研究基于线性叶栅计算和实验，可能未完全涵盖真实涡轮旋转效应和复杂几何的影响。",
+    "tags": [
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究涡轮端壁损失，与风扇/压气机RI-NSV机理、预测或控制无直接关联，但涉及叶轮机械二次流和损失预测，对理解叶尖泄漏流等有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": []
+  },
+  {
     "id": "2cfa1213a318",
     "title": "Thermo-Acoustic Instabilities and Shape Bifurcations of a Pilot-Only Spray Flame in a Staged Burner",
     "abstract": "Abstract Aircraft engine manufacturers develop new combustion technologies to comply with stricter regulations on pollutant emissions, such as nitrous oxides or soot. Staged systems coupled with lean premixed combustion show promising prospects to reduce these emissions through correct mixing of the fuel ahead of the combustion chamber, but are more prone to thermo-acoustic instabilities. Hence, guaranteeing the stability over the entire operating range is more challenging. The thermo-acoustic behavior of lean staged systems is investigated experimentally on the laboratory-scale BIMER combustor, an atmospheric pressure test rig composed of a two-stage swirled injector reminiscent of industrial systems and fueled with liquid dodecane. It uses a simplex atomizer in the pilot stage, multipoint injection in the main stage, and can be externally forced using a siren device located upstream of the injector. This study focuses on the thermo-acoustic behavior of the pilot stage of the BIMER combustor. Flame response to acoustic perturbations at different preheating temperatures (ranging from 383 to 473 K) is assessed. To this end, flame describing functions (FDF) are measured using acoustic forcing, a photomultiplier with an OH* filter for heat release rate fluctuation measurements and the multimicrophone method to determine acoustic velocity fluctuations. An acoustic network model of the combustor using the L-ζ model for the injector is used to compute acoustic velocity fluctuations at the base of the flame. This model is parameterized using only the burner geometrical configuration, with no tuning to fit reference experimental data. The accuracy of the model prediction is discussed. Measurements also display flame shape bifurcations from V to Tulip-shape flames generated by acoustic forcing at certain frequencies and amplitudes. High-speed imaging of flame chemiluminescence in the visible range is used to describe these bifurcations. The role of acoustic forcing is highlighted through phase-averaging.",
@@ -9163,6 +9285,43 @@
     "groups": [
       "Purdue Compressor Lab"
     ]
+  },
+  {
+    "id": "3fd6fe552761",
+    "title": "Shape Optimization of an Industrial Aeroengine Combustor to Reduce Thermoacoustic Instability",
+    "abstract": "Abstract We parameterize the geometry of an industrial aeroengine combustor using free-form deformation (FFD). We then define the thermoacoustic system parameters and impose the acoustic boundary conditions to calculate the thermoacoustic eigenmode of the model using an open source parallelized Helmholtz solver. We then use adjoint methods to calculate the shape derivatives of the unstable eigenvalue with respect to the shape parameters. First, we calculate the sensitivities with respect to surface movements. Second, we calculate the sensitivities with respect to the FFD control points. We modify the FFD control point positions in order to reduce the thermoacoustic growth rate until the mode considered is stable. These findings show how, when combined with other constraints, this method could be used to reduce combustion instability in industrial annular combustors through geometric modifications.",
+    "authors": [
+      "Ekrem Ekici",
+      "Matthew P. Juniper"
+    ],
+    "affiliations": [
+      "University of Cambridge",
+      "TRUMPF (United Kingdom)",
+      "Department of Engineering , , Trumpington Street, Cambridge CB21PZ, UK",
+      "University of Cambridge , , Trumpington Street, Cambridge CB21PZ, UK",
+      "Department of Engineering, University of Cambridge, Trumpington Street, Cambridge, United Kingdom, CB21PZ"
+    ],
+    "date": "2024-12-07",
+    "year": 2024,
+    "url": "https://doi.org/10.1115/1.4067337",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究针对工业航空发动机燃烧室，采用自由变形（FFD）参数化几何，结合开源并行Helmholtz求解器计算热声不稳定特征模态，并利用伴随方法求解特征值对形状参数的灵敏度。通过调整FFD控制点位置，成功降低了热声增长率，使模态稳定，展示了通过几何修改抑制燃烧不稳定性的潜力。",
+    "method": "数值仿真：采用FFD参数化几何，Helmholtz方程求解热声特征值，伴随方法计算形状灵敏度，并优化控制点位置。",
+    "innovation": "将伴随方法应用于燃烧室形状优化以抑制热声不稳定，实现了基于梯度的几何修改，提高了优化效率。",
+    "conclusions": "通过调整FFD控制点，热声增长率降低至稳定，证明该方法可有效抑制燃烧不稳定，且可与其他约束结合。",
+    "limitations": "研究局限于线性热声模型，未考虑非线性效应及实际工况变化，且未进行实验验证。",
+    "tags": [
+      "声学诱导叶片振动",
+      "数值仿真",
+      "稳定性建模"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究燃烧室热声不稳定，与风扇/压气机RI-NSV无直接关联，但声学不稳定与叶片振动相关，具有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": []
   },
   {
     "id": "4e4411a047e3",
@@ -18372,6 +18531,44 @@
     "groups": [
       "DLR"
     ]
+  },
+  {
+    "id": "7403db974e9a",
+    "title": "Computational Fluid Dynamics Analysis and Experimental Results for the Dynamic Performance of Two Long Smooth Surface Annular Seals Operating With a Liquid in Air Mixture",
+    "abstract": "Abstract Compressors in subsea oil and gas production must handle wet gases to reliably operate for extended periods of time. Annular clearance seals contribute to compressor performance and do affect system rotordynamic stability. Prior experimental work with two smooth surfaces, uniform clearance seals supplied with a light oil in air mixture and undergoing similar operating conditions produced direct stiffnesses (K) with distinct trends as the liquid content increased to 8% in volume. Both seals differ in length and diameter albeit having similar radial clearance. Other force coefficients for both seals, namely, cross-coupled stiffness (k) and direct damping (C) increase as the inlet liquid volume fraction (LVF) grows. Rationale for the peculiar differences in centering stiffness (K) is missing. Hence, a computational fluid dynamics (CFD) model and its predictions, the thrust of this paper, unveil flow field details (pressure, velocity fields, and liquid content evolution) for the oil in air mixture. Besides the CFD model, an enhanced bulk-flow model (BFM) also predicts the seals' leakage and dynamic force coefficients. Both models predict through flows agreeing well with the measured ones, the maximum difference is less than 16%. The BFM direct stiffness (K) does reproduce closely the experimental K whereas the direct damping coefficient (C) is up to ∼41% lower than the test result. The CFD model captures the variation trend of K versus inlet LVF for the first seal, albeit its magnitude is thrice the experimental stiffness. The CFD C agrees well with the test data for both seals, the largest difference is less than 10%. In spite of the complexity of the CFD model, significant differences with the experimental results persist, in particular for K. When considering the seal inlet corner as round, the CFD model produces a significant reduction in K to better approach the test result for a seal supplied with air. Attention to the seal geometry is paramount to produce accurate predictions.",
+    "authors": [
+      "Jing Yang",
+      "Dung L. Tran",
+      "Luis San Andrés"
+    ],
+    "affiliations": [
+      "Walker (United States)",
+      "Texas A&M University",
+      "Mike Walker ’66 Department of Mechanical Engineering, Turbomachinery Laboratory , Texas A&M University, College Station, TX 77843",
+      "Sr. R&D Engineer, Energy Recovery Inc. , San Leandro, CA 94577",
+      "J. Mike Walker ’66 Department of Mechanical Engineering, Turbomachinery Laboratory , Texas A&M University, College Station, TX 77843"
+    ],
+    "date": "2023-09-02",
+    "year": 2023,
+    "url": "https://doi.org/10.1115/1.4063309",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究针对水下油气生产中压缩机环形密封在油气两相流下的动态特性，结合CFD与增强体流动模型预测泄漏和动力系数，并与实验对比。研究发现直接刚度随液体体积分数变化趋势独特，CFD能捕捉趋势但数值偏高，倒角几何对预测精度影响显著。",
+    "method": "采用CFD数值模拟和增强体流动模型，结合实验测量，研究油气两相流下两种光滑表面环形密封的动态特性，改变入口液体体积分数（最高8%）和密封几何。",
+    "innovation": "首次通过CFD揭示两相流密封内流场细节（压力、速度、液体分布），并对比两种模型预测，强调密封入口倒角几何对刚度预测的关键影响。",
+    "conclusions": "两种模型预测泄漏量误差小于16%；CFD直接阻尼与实验误差小于10%，但直接刚度偏高3倍；考虑倒角后刚度显著降低，更接近实验值。",
+    "limitations": "研究限于特定密封几何和轻油-空气混合物，未涉及其他液体或更高液体分数，且CFD对刚度的预测精度仍有待提高。",
+    "tags": [
+      "数值仿真",
+      "实验测量",
+      "稳定性建模"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究密封对转子稳定性的影响，属于转子动力学范畴，与RI-NSV机理无直接关联，但可为压气机稳定性建模提供参考。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": []
   },
   {
     "id": "1d1c9a2696bd",
@@ -30123,6 +30320,41 @@
     ]
   },
   {
+    "id": "279d2f58cd24",
+    "title": "Aeromechanical Analysis of a Complete Wind Turbine Using Nonlinear Frequency Domain Solution Method",
+    "abstract": "Abstract The high-fidelity computational fluid dynamics (CFD) simulations of a complete wind turbine model usually require significant computational resources. It will require much more resources if the fluid–structure interactions (FSIs) between the blade and the flow are considered, and it has been the major challenge in the industry. The aeromechanical analysis of a complete wind turbine model using a high-fidelity CFD method is discussed in this paper. The distinctiveness of this paper is the application of the nonlinear frequency domain solution method to analyze the forced response and flutter instability of the blade as well as to investigate the unsteady flow field across the wind turbine rotor and the tower. This method also enables the aeromechanical simulations of wind turbines for various interblade phase angles in a combination with a phase shift solution method. Extensive validations of the nonlinear frequency domain solution method against the conventional time domain solution method reveal that the proposed frequency domain solution method can reduce the computational cost by one to two orders of magnitude.",
+    "authors": [
+      "Shine Win Naung",
+      "Mohammad Rahmati",
+      "Hamed Farokhi"
+    ],
+    "affiliations": [
+      "Northumbria University",
+      "Department of Mechanical and Construction Engineering, Faculty of Engineering and Environment, Northumbria University, Newcastle upon Tyne NE1 8ST, UK"
+    ],
+    "date": "2020-12-02",
+    "year": 2020,
+    "url": "https://doi.org/10.1115/1.4049206",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文采用非线性频域求解方法对完整风力机模型进行气动弹性分析，研究叶片强迫响应与颤振失稳，并考察转子与塔架的非定常流场。该方法结合相位平移法可模拟不同叶间相位角，相比传统时域法计算成本降低1~2个数量级，为风力机气动弹性高效仿真提供了新途径。",
+    "method": "数值仿真，采用非线性频域求解方法结合相位平移法，分析完整风力机模型的强迫响应、颤振失稳及非定常流场，并与时域法对比验证。",
+    "innovation": "将非线性频域法应用于完整风力机气动弹性分析，可高效计算不同叶间相位角下的强迫响应与颤振，计算成本较时域法降低1~2个数量级。",
+    "conclusions": "非线性频域法能准确预测风力机叶片强迫响应与颤振失稳，计算效率较时域法提升1~2个数量级，适用于完整风力机气动弹性分析。",
+    "limitations": "研究针对风力机，未涉及压气机旋转不稳定性；频域法可能对强非线性流动（如失速）适用性有限。",
+    "tags": [
+      "叶片流致振动预测模型",
+      "数值仿真",
+      "叶片流致振动抑制/控制"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究风力机叶片气动弹性与强迫响应，属于叶轮机械流致振动范畴，但未涉及旋转不稳定性或非同步振动，与RI-NSV机理无直接关联。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": []
+  },
+  {
     "id": "b9ebe04470d1",
     "title": "Experimental and Numerical Investigation of Active Flow Control of a Serpentine Diffuser",
     "abstract": "Total-pressure losses and distortion in an aggressive offset diffuser, induced by secondary-flow vortices and boundary-layer separation, are mitigated using fluidic actuation for the aerodynamic interface plane Mach number up to 0.57. Although total-pressure recovery is primarily impacted by separation in each of the diffuser’s turns, distortion is governed by counter-rotating streamwise vortices that advect low-momentum fluid from the wall region into the core flow. The present investigations have shown that secondary-flow vortices couple to the outboard segments of the separated-flow domains. Therefore, fluidic control of the scale and topology of the trapped vorticity within the internally separated flow can be leveraged to control the structure and strength of the ensuing secondary vortices, and thereby significantly reduce flow distortion and losses. In the present investigations, fluidic control is effected by a spanwise array of oscillating jets that are placed just upstream of the second-turn separation domain. Actuation directly affects the local flow separation, but it also alters the spacing and diminishes the strength of the base-flow streamwise vortices by forming and adjoining streamwise-vorticity concentrations of opposite sense. Additionally, the spanwise distribution of the actuator array was optimized to reduce circumferential distortion by 60% at actuation to a diffuser mass-flow-rate ratio lower than 0.5%.",
@@ -39053,6 +39285,39 @@
     "groups": []
   },
   {
+    "id": "24aeae436dde",
+    "title": "Development, Application, and Validation of a Quick Optimization Method for the Class of Axial Fans",
+    "abstract": "This article discusses the development, application, and validation of an optimization method for the impellers of axial fans. The method is supposed to be quick, accurate, and applicable to optimization at an extensive range of design points (DPs). Optimality here means highest possible total-to-static efficiency for a given design point and is obtained by an evolutionary algorithm in which the target function is evaluated by computational fluid dynamics (CFD)-trained artificial neural networks (ANN) of the multilayer perceptron (MLP) type. The MLPs were trained with steady-state CFD (i.e., Reynolds-averaged Navier–Stokes (RANS)) results of approximately 14,000 distinct impellers. After this considerable one-time effort to generate the CFD dataset, each new fan optimization can be performed within a few minutes. It is shown in this article that the MLPs are reliably applicable to all typical design points of axial fans according to Cordier's diagram. Moreover, an extension of the design space toward the classic realm of mixed-flow or even centrifugal fans is observed. It is also shown that the optimization method successfully handles geometrical and operational constraints proving the high degree of universality of the method. Another focus of this article is on the application of the newly developed optimization method to numerous design points. This yields two major findings: the estimation of maximum achievable total-to-static efficiency as a function of the targeted design point (with and without geometrical constraints) as well as a quantification of the improvement over fans designed with classic methods. Both investigations are supported by flow field analyses to aerodynamically explain the findings. Experimental validation of the method was performed with a total of nine prototypes. The positive correlation between MLP, CFD, and experiment successfully validates the methodology.",
+    "authors": [
+      "Konrad Bamberger",
+      "Thomas Carolus"
+    ],
+    "affiliations": [
+      "University of Siegen",
+      "Institute for Fluid Dynamics and Thermodynamics, Department of Mechanical Engineering, University of Siegen, Paul-Bonatz-Str. 9-11, Siegen 57076, Germany e-mail:"
+    ],
+    "date": "2017-05-16",
+    "year": 2017,
+    "url": "https://doi.org/10.1115/1.4036764",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文开发并验证了一种轴流风扇叶轮的快速优化方法，采用进化算法结合CFD训练的MLP神经网络，在数分钟内完成优化。通过约14000个叶轮的RANS数据集训练，方法适用于Cordier图中的典型设计点，并扩展至混流/离心风扇领域。实验验证了九台样机，MLP、CFD与实验结果正相关，证实了方法的有效性。",
+    "method": "数值仿真（RANS）生成数据集，训练MLP神经网络作为代理模型，结合进化算法优化；实验验证九台样机。",
+    "innovation": "提出基于CFD训练MLP的快速优化方法，一次性投入后可在数分钟内完成新风扇优化，并成功处理几何和操作约束，具有高通用性。",
+    "conclusions": "MLP可可靠应用于Cordier图中所有典型轴流风扇设计点，并扩展至混流/离心风扇；优化方法能估算最大总静效率，且优于经典设计方法，实验验证了正相关性。",
+    "limitations": "依赖大量CFD数据训练，初始成本高；优化目标仅针对总静效率，未涉及非定常气动或振动特性。",
+    "tags": [
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文聚焦于风扇气动性能优化，未涉及旋转不稳定或非同步振动，但优化方法可能间接影响叶片气动弹性，与风扇流致振动有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": []
+  },
+  {
     "id": "30313605c963",
     "title": "A high-order model of rotating stall in axial compressors with inlet distortion",
     "abstract": "In this paper, a high-order distortion model is proposed for analyzing the rotating stall inception process induced by inlet distortion in axial compressors. A distortion-generating screen in the compressor inlet is considered. By assuming a quadratic function for the local flow total pressure-drop, the existing Mansoux model is extended to include the effects of static inlet distortion, and a new high-order distortion model is derived. To illustrate the effectiveness of the distortion model, numerical simulations are performed on an eighteenth-order model. It is demonstrated that long length-scale disturbances emerge out of the distorted background flow, and further induce the onset of rotating stall in advance. In addition, the circumferential non-uniform distribution and time evolution of the axial flow are also shown to be consistent with the existing features. It is thus shown that the high-order distortion model is capable of describing the transient behavior of stall inception and will contribute further to stall detection under inlet distortion.",
@@ -39752,6 +40017,44 @@
     "groups": [
       "Beihang BUAA"
     ]
+  },
+  {
+    "id": "4582712e453c",
+    "title": "Performance Prediction and Optimization of Low Pressure Steam Turbine Radial Diffuser at Design and Off-Design Conditions Using Streamline Curvature Method",
+    "abstract": "The performance of the radial diffuser of a low pressure (LP) steam turbine is important to the power output of the turbine. A reliable and robust prediction and optimization tool is desirable in industry for preliminary design and performance evaluation. This is particularly critical during the tendering phase of retrofit projects, which typically cover a wide range of original equipment manufacturer and other original equipment manufacturers designs. This work describes a fast and reliable numerical approach for the simulation of flow in the last stage and radial diffuser coupled with the exhaust hood. The numerical solver is based on a streamline curvature throughflow method and a geometry-modification treatment has been developed for off-design conditions, at which large-scale flow separation may occur in the diffuser domain causing convergence difficulty. To take into account the effect of tip leakage jet flow, a boundary layer solver is coupled with the throughflow calculation to predict flow separation on the diffuser lip. The performance of the downstream exhaust hood is modeled by a hood loss model (HLM) that accounts for various loss generations along the flow paths. Furthermore, the solver is implemented in an optimization process. Both the diffuser lip and hub profiles can be quickly optimized, together or separately, to improve the design in the early tender phase. 3D computational fluid dynamics (CFD) simulations are used to validate the solver and the optimization process. The results show that the current method predicts the diffuser/exhaust hood performance within good agreement with the CFD calculation and the optimized diffuser profile improves the diffuser recovery over the datum design. The tool provides General Electric the capability to rapidly optimize and customize retrofit diffusers for each customer considering different constraints.",
+    "authors": [
+      "Luying Zhang",
+      "Francesco Congiu",
+      "Xiaopeng Gan",
+      "David Karunakara"
+    ],
+    "affiliations": [
+      "GE Power, Rugby CV21 2NH, UK e-mail:",
+      "GE Power, Baden 5401, Switzerland e-mail:",
+      "Infosys (India)",
+      "Engineering Unit, Infosys Limited, Mysore 570027, India e-mail:"
+    ],
+    "date": "2016-12-21",
+    "year": 2016,
+    "url": "https://doi.org/10.1115/1.4035527",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究针对低压蒸汽轮机径向扩压器，开发了基于流线曲率通流法的快速数值工具，耦合边界层求解器预测叶尖泄漏射流引起的扩压器唇部流动分离，并采用排气蜗壳损失模型模拟下游损失。通过几何修改处理离设计工况的大尺度分离，并集成优化流程快速优化扩压器唇部和轮毂型线。三维CFD验证表明该方法预测性能良好，优化后扩压器恢复系数提高。",
+    "method": "数值仿真：基于流线曲率通流法，耦合边界层求解器与蜗壳损失模型，处理离设计工况大尺度分离，并通过三维CFD验证。",
+    "innovation": "提出快速可靠的径向扩压器性能预测与优化工具，结合几何修改处理离设计工况分离，并耦合边界层求解器考虑叶尖泄漏射流影响，适用于投标阶段快速定制优化。",
+    "conclusions": "该方法预测扩压器/排气蜗壳性能与CFD吻合良好；优化后的扩压器型线相比基准设计提高了扩压器恢复系数。",
+    "limitations": "摘要未提供定量误差范围，且主要针对蒸汽轮机扩压器，对压气机旋转不稳定性问题参考有限。",
+    "tags": [
+      "数值仿真",
+      "叶尖间隙",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究叶尖泄漏射流对扩压器性能的影响，涉及叶尖间隙流动，但未涉及旋转不稳定性或非同步振动，与RI-NSV机理无直接关联。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": []
   },
   {
     "id": "df4e0928146a",
@@ -40568,6 +40871,42 @@
     "relevance_reason": "论文研究风扇自噪声与尾迹，未涉及旋转不稳定性或非同步振动，但噪声与流动失稳相关，对理解流致振动有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-18",
+    "groups": []
+  },
+  {
+    "id": "33bfd0e00446",
+    "title": "Labyrinth Seal Rotordynamic Characteristics Part II: Geometrical Parameter Effects",
+    "abstract": "The objective of this work was to determine the effects of the operational conditions [as shown in Part 1 ( Li Z. Li J. Feng Z. , “ Labyrinth Seal Rotordynamic Characteristics Part I: Operational Conditions Effects ,” Journal of Propulsion and Power , Vol. XXX , No. XXX , 2016 , pp. XXX – XXX )] and geometrical parameters (as shown in this paper) on the leakage and rotordynamic characteristics of labyrinth seals. In this paper, the effects of the geometrical parameters, such as the sealing clearance, tooth number, and cavity depth, were numerically investigated using a proposed three-dimensional transient computational-fluid-dynamics perturbation method based on the multifrequency elliptical whirling orbit model. Transient leakage flow rates and frequency-dependent rotordynamic coefficients of labyrinth seals were presented and compared for three sealing clearances, three tooth numbers, and four cavity depths. All these labyrinth seal designs have identical tooth profile, rotor diameter, and axial length. For all labyrinth seal designs, transient computational-fluid-dynamics solutions were carried out at the same operating condition: inlet pressure of 6.9 bar, pressure ratio of 0.45, rotational speed of 15 krpm, and medium inlet preswirl ratio of 0.5. The numerical results show that the cavity depth is the most important factor that significantly influences the seal rotordynamic coefficients, followed by sealing clearance and tooth number in descending order. Too small sealing clearance may result in a risk of high rotor vibrations during a critical-speed transition or even instability if the natural frequency drops below the crossover frequency due to the negative effective stiffness. Increasing tooth number or increasing cavity depth of the labyrinth seal can improve the rotor stability and extend the useful operating frequency range of the machine, due to the increased positive effective damping and decreased crossover frequency.",
+    "authors": [
+      "Zhigang Li",
+      "Jun Li",
+      "Zhenping Feng"
+    ],
+    "affiliations": [
+      "Xi'an Jiaotong University",
+      "Xi’an Jiaotong University, 710049 Xi’an, People’s Republic of China",
+      "Xi'an Jiaotong University, 710049 Xi'an, People's Republic of China"
+    ],
+    "date": "2016-07-18",
+    "year": 2016,
+    "url": "https://doi.org/10.2514/1.b35817",
+    "venue": "Journal of Propulsion and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文采用三维瞬态CFD扰动方法，基于多频椭圆涡动轨道模型，数值研究了迷宫密封几何参数（密封间隙、齿数、腔深）对泄漏和转子动力特性的影响。结果表明腔深影响最大，间隙次之，齿数最小；过小间隙可能导致负有效刚度引发失稳，增加齿数或腔深可提高稳定性并扩展稳定频率范围。",
+    "method": "数值仿真：三维瞬态CFD扰动方法，多频椭圆涡动轨道模型；工况：进口压力6.9 bar，压比0.45，转速15 krpm，预旋比0.5。",
+    "innovation": "采用多频椭圆涡动轨道模型同时提取频变转子动力系数，系统比较三种几何参数的影响，揭示了腔深对稳定性的主导作用。",
+    "conclusions": "腔深是影响转子动力系数的最重要因素，其次为密封间隙和齿数；过小间隙可能因负有效刚度导致失稳，增加齿数或腔深可提高正有效阻尼并降低交叉频率，从而改善稳定性。",
+    "limitations": "仅针对特定工况和几何范围，未考虑实际转子-密封系统耦合效应及非定常流动细节。",
+    "tags": [
+      "数值仿真",
+      "稳定性建模",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "研究密封几何参数对转子稳定性的影响，与叶尖泄漏流和稳定性相关，但未涉及旋转不稳定性或非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
     "groups": []
   },
   {
@@ -42723,6 +43062,53 @@
     "groups": [
       "Cambridge Whittle Lab",
       "Imperial Aeroelasticity"
+    ]
+  },
+  {
+    "id": "a0128bef4596",
+    "title": "Estimation of the Particle Deposition on a Transonic Axial Compressor Blade",
+    "abstract": "Solid particle ingestion is one of the principal degradation mechanisms in the compressor section of heavy-duty gas turbines. Usually, foulants in the ppm range, not captured by the air filtration system, i.e., (0–2) μm cause deposits on blading and result in a severe performance drop of the compressor. It is of great interest to the industry to determine which areas of the compressor airfoils are interested by these contaminants as a function of the location of the power unit. The aim of this work is the estimation of the actual deposits on the blade surface in terms of location and quantity. The size of the particles, their concentrations, and the filtration efficiency are specified in order to perform a realistic quantitative analysis of the fouling phenomena in an axial compressor. This study combines, for the first time, the impact/adhesion characteristic of the particles obtained through a computational fluid dynamics (CFD) and the real size distribution of the contaminants in the air swallowed by the compressor. The blade zones affected by the deposits are clearly reported by using easy-to-use contaminant maps realized on the blade surface in terms of contaminant mass. The analysis showed that particular fluid-dynamic phenomena such as separation, shock waves, and tip leakage vortex strongly influence the pattern deposition. The combination of the smaller particles (0.15 μm) and the larger ones (1.50 μm) determines the highest amounts of deposits on the leading edge (LE) of the compressor airfoil. From these analyses, some guidelines for proper installation and management of the power plant (in terms of filtration systems and washing strategies) can be drawn.",
+    "authors": [
+      "Alessio Suman",
+      "Mirko Morini",
+      "Rainer Kurz",
+      "Nicola Aldi",
+      "Klaus Brun",
+      "Michele Pinelli",
+      "Pier Ruggero Spina"
+    ],
+    "affiliations": [
+      "University of Ferrara",
+      "Dipartimento di Ingegneria, Università degli Studi di Ferrara, Ferrara 44122, Italy",
+      "University of Parma",
+      "Dipartimento di Ingegneria Industriale, Università degli Studi di Parma, Parma 43121, Italy",
+      "Solar Turbines Incorporated, San Diego, CA 92123",
+      "Southwest Research Institute",
+      "Southwest Research Institute, San Antonio, TX 78228"
+    ],
+    "date": "2015-08-04",
+    "year": 2015,
+    "url": "https://doi.org/10.1115/1.4031206",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该研究通过CFD与真实颗粒尺寸分布结合，首次评估跨声速轴流压气机叶片上的颗粒沉积位置与数量。发现分离、激波和叶尖泄漏涡显著影响沉积模式，小颗粒（0.15μm）与大颗粒（1.50μm）组合导致前缘沉积量最大，为电厂过滤与清洗策略提供指导。",
+    "method": "采用CFD数值模拟，结合颗粒撞击/粘附特性与真实污染物尺寸分布，对跨声速轴流压气机叶片进行定量沉积分析。",
+    "innovation": "首次将CFD获得的颗粒撞击/粘附特性与真实颗粒尺寸分布相结合，实现叶片表面沉积位置和质量的定量预测，并生成易用的污染图。",
+    "conclusions": "颗粒沉积主要受分离、激波和叶尖泄漏涡影响；0.15μm与1.50μm颗粒组合导致前缘沉积量最高，为电厂过滤和清洗策略提供依据。",
+    "limitations": "研究基于特定工况和颗粒尺寸范围，未考虑颗粒反弹、温度效应及长期运行影响，可能限制通用性。",
+    "tags": [
+      "数值仿真",
+      "叶尖间隙",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究叶尖泄漏涡对沉积的影响，与叶尖间隙流动相关，但未涉及旋转不稳定或非同步振动，故评分为3。",
+    "has_fulltext": false,
+    "fetched_at": "2026-08-31",
+    "groups": [
+      "Ferrara / Parma",
+      "Kurz & Brun (Industrial GT)"
     ]
   },
   {
