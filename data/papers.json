@@ -1,5 +1,50 @@
 [
   {
+    "id": "1eb385415ab5",
+    "title": "Entrainment of Swirled Axial Throughflow in a Rotating Compressor Cavity under Centrifugal Buoyancy-Driven Convection",
+    "abstract": "Abstract Future jet engine compressors are expected to feature overall pressure ratios (OPR) that approach 70:1. The core of the compressor will downsize with higher OPR, increasing the importance of managing blade-tip clearance. This clearance is influenced by compressor rotor expansion, which is dictated by the flow structure and heat transfer inside the cavities between co-rotating discs. This unstable flow structure is induced by buoyancy under centrifugal acceleration at high Grashof numbers. Further, the flow is destabilised by the enthalpy and momentum exchange with an axial throughflow of cooler air at low radius. The throughflow forms part of the secondary air system and inherently features swirl from rotating components within the compressor. In some cases, the swirl relative to the rotating discs an exceed unity (over-swirl). This paper presents an experimental study of the influence of entrained fluid into the rotating compressor cavity over a range of Rossby numbers and axial throughflow swirl. The University of Bath Compressor Cavity Rig was used to measure the radial distribution of air temperature in the throughflow, the radial distribution of temperature on the discs inside the cavity, the shroud heat flux, and the resultant flow structure from unsteady pressure. The data produces universal Grashof-number correlations for shroud Nusselt number and the radial mass flow within the buoyancy-induced structures that form in the cavity. Swirl is shown to be a fundamental governing non-dimensional parameter determining the slip of the structures and the number of vortex pairs in the cavity. A theoretical model based on first principles is coupled to the data and supports the practical thermal-mechanical design of compressor rotors in industry.",
+    "authors": [
+      "Sebastian Syncerz",
+      "Dominic W.A. Lafone-Ward",
+      "Mai Mohamed",
+      "Hui Tang",
+      "Gary D. Lock",
+      "James A. Scobie"
+    ],
+    "affiliations": [
+      "University of Bath",
+      "4 East Mechanical Engineering University of Bath Bath, Somerset BA2 7AY United Kingdom",
+      "Claverton Down University of Bath Bath, Somerset BA2 7AY United Kingdom",
+      "Shanghai Jiao Tong University",
+      "School of Mechanical Engineering Shanghai Jiao Tong University, Minhang, Shanghai Shanghai, BA2 7AY China",
+      "University of Bath Department of Mechanical Engineering Bath, BA27AY United Kingdom",
+      "University of Bath 4 East Mechanical Engineering, Claverton Down Bath, N/A BA2 7AY United Kingdom"
+    ],
+    "date": "2026-08-28",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4072648",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该实验研究旋转压缩机腔内离心浮力驱动对流对轴向通流卷吸的影响，测量温度、热通量和非定常压力，揭示涡旋结构。发现旋转数是决定涡对数量和滑移的关键无量纲参数，并建立基于第一性原理的理论模型，为压气机转子热机械设计提供支持。",
+    "method": "实验研究，采用巴斯大学压缩机腔实验台，测量径向温度分布、热通量和非定常压力，结合理论模型分析不同罗斯比数和轴向通流旋流的影响。",
+    "innovation": "首次系统研究轴向通流旋流对腔内浮力驱动对流结构的影响，识别旋转数为关键参数，并建立通用无量纲关联式，耦合理论模型支持工业设计。",
+    "conclusions": "旋转数是控制涡旋结构滑移和涡对数量的基本无量纲参数；建立了护罩努塞尔数和径向质量流的通用格拉晓夫数关联式。",
+    "limitations": "研究局限于特定实验台和工况范围，未涉及真实发动机全尺寸条件，且未直接探讨叶片振动问题。",
+    "tags": [
+      "实验测量",
+      "解析/降阶模型",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究压缩机腔内流动结构，与叶尖间隙和转子热变形相关，但未直接涉及旋转不稳定性和非同步振动，仅对RI-NSV机理有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-07",
+    "groups": [
+      "Bath Sealing Group"
+    ]
+  },
+  {
     "id": "464eddac0641",
     "title": "ON THE MECHANISM OF UNSTEADY TIP FLOW EVOLUTION ACROSS ROTATIONAL SPEEDS IN A TRANSONIC AXIAL FAN",
     "abstract": "Abstract This study explores the evolution of unsteady tip flow structures in a transonic axial fan rotor across 70%, 80%, 90%, and 100% of design rotational speed, via experiment-validated unsteady Reynolds-Averaged Navier–Stokes (URANS) simulations and detailed flow diagnostics. Unlike prior work focused on near-stall behavior only at design speed, this research clarifies how rotational speed modulates the onset and characteristics of unsteady leakage vortex dynamics—key to fan stability margin and loss generation. Stall inception at 70% and 100% design speeds is primarily associated with suction surface separation; for the latter operating condition, such separation is predominantly induced by passage shocks. In contrast, stall mechanisms at 80% and 90% design speeds are dominated by TLV-shock interactions. Findings reveal a transition from shock-vortex-dominated tip flow unsteadiness at high speeds to shear-layer instability-driven oscillations at low speeds, highlighting competing centrifugal stabilization and compressibility effects. This work advances understanding of speed-dependent stability boundaries, emphasizing rotational effects for physics-based transonic fan stall control.",
@@ -87,6 +132,51 @@
     "has_fulltext": false,
     "fetched_at": "2026-08-31",
     "groups": []
+  },
+  {
+    "id": "0380c4809eca",
+    "title": "Near-Stall Unsteady Aerodynamic and Aeroelastic Simulation Capabilities of the Open-Source Computational Fluid Dynamic Code SU2",
+    "abstract": "Abstract Computational fluid dynamics (CFD) tools have revolutionized the way we design engineering systems. However, the prevalence of numerous established tools, each utilizing different development principles and validation strategies, has given rise to numerical inconsistencies that cast a shadow over their application. Differences in performance and stability predictions for identical compressor designs are widely observed between different CFD tools. Conducting a root cause analysis for these discrepancies is, however, next to impossible, as most codes are proprietary and closed-source. To facilitate technology advancement in CFD and to combine the expertise, creativity, and skills of different groups worldwide, the use of the freely available open-source CFD code, SU2, is proposed. This research builds upon a previously published study aimed at launching a comprehensive validation and verification campaign for SU2's turbomachinery capabilities. In the first paper, the Reynolds-Averaged Navier–Stokes (RANS) simulation results from SU2 were compared with experimental data and a commercial solver. Due to a lack of experimental data, the unsteady results obtained using Unsteady Reynolds-Averaged Navier–Stokes (URANS) in SU2 were compared only against commercial solvers. The recent release of unsteady test data from the Transonic Compressor Darmstadt Open Test Case has prompted this work. In this article, SU2's unsteady simulation capabilities against experimental data were further validated and its capability of predicting unsteady aerodynamic phenomena at near-stall condition, e.g., stall inception and stall-hunting, was demonstrated.",
+    "authors": [
+      "Chuanxiang Yan",
+      "Fanzhou Zhao",
+      "Baotong Wang",
+      "Zechen Ding",
+      "Xuedong Zheng",
+      "Xinqian Zheng"
+    ],
+    "affiliations": [
+      "Aero Engine Corporation of China (China)",
+      "Tsinghua University Institute for Aero Engine, ,   ,",
+      "Imperial College London",
+      "Imperial College London Department of Mechanical Engineering, ,   ,",
+      "Tsinghua University",
+      "Tsinghua University School of Vehicle and Mobility, ,   ,"
+    ],
+    "date": "2026-08-13",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4072556",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对开源CFD代码SU2在涡轮机械非定常模拟中的能力进行验证，重点评估其在近失速工况下预测非定常气动现象（如失速起始和失速振荡）的准确性。研究基于Transonic Compressor Darmstadt开放测试案例，将SU2的URANS结果与实验数据对比，验证了其预测近失速非定常流动的能力。",
+    "method": "采用开源CFD代码SU2进行URANS数值模拟，以Transonic Compressor Darmstadt开放测试案例为对象，对比实验数据验证近失速工况下的非定常气动现象预测能力。",
+    "innovation": "首次利用开源CFD代码SU2对跨声速压气机近失速非定常现象进行实验验证，推动开源工具在涡轮机械非定常模拟中的应用，促进代码透明性和可重复性。",
+    "conclusions": "SU2的URANS模拟能够捕捉近失速工况下的失速起始和失速振荡现象，与实验数据吻合良好，验证了开源CFD在预测非定常气动现象方面的潜力。",
+    "limitations": "研究仅针对单一跨声速压气机案例，未涉及旋转不稳定性和非同步振动等具体机理，且URANS模型对湍流和分离流动的预测精度有限。",
+    "tags": [
+      "数值仿真",
+      "失速/喘振机理",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究近失速非定常气动现象，与旋转不稳定性和非同步振动相关，但未直接涉及RI-NSV机理或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-07",
+    "groups": [
+      "Imperial Aeroelasticity",
+      "Tsinghua Turbo Lab"
+    ]
   },
   {
     "id": "80d6c881fb97",
@@ -24426,6 +24516,41 @@
     "relevance_reason": "论文关注压气机低速性能优化，涉及叶尖泄漏流，但未研究旋转不稳定性或非同步振动。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "fe6920f2f71a",
+    "title": "Aircraft Engine Surge-Precursor Detection and Antisurge Control Method at Onboard Environment",
+    "abstract": "This paper is concerned with a new detection method to realize the real-time judgment of surge precursor by the low-sampling-rate compressor discharge static pressure at onboard environment, and it provides the possibility for antisurge control. Firstly, an improved Hilbert–Huang transform time-frequency analysis algorithm is proposed to get the Hilbert spectrum of the windowed signals in real time. The surge-precursor intensity (SPI) is characterized by counting the signal amplitude in the low-frequency range. The surge early warning signal is judged according to whether the SPI crosses the threshold. Then, this paper handles the misjudgment problem caused by the endpoint effect phenomenon in the detection algorithm by adding data segments at the beginning and end of the analysis signal. Finally, to prevent the possible real-time jump phenomenon of the surge warning signal during the detection process, a judgment logic module is added. The verification results of multiple sets of experimental data showed that the warning time margin is . This paper also established an antisurge control system. The results verified that the detection method is effective, and the time margin of the early warning signal judged meets the response time requirements of the control system.",
+    "authors": [
+      "Hanlin Sheng",
+      "Qian Chen",
+      "Tianhong Zhang"
+    ],
+    "affiliations": [
+      "Nanjing University of Aeronautics and Astronautics",
+      "Nanjing University of Aeronautics and Astronautics, 21006 Nanjing, People’s Republic of China"
+    ],
+    "date": "2022-05-30",
+    "year": 2022,
+    "url": "https://doi.org/10.2514/1.j061403",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文提出一种基于低采样率压气机出口静压的喘振先兆实时检测方法，用于机载环境下的防喘控制。通过改进希尔伯特-黄变换获取时频谱，定义喘振先兆强度（SPI）并设置阈值预警，同时处理端点效应和信号跳变问题。实验验证了预警时间裕度满足控制系统响应要求。",
+    "method": "实验方法，基于多组实验数据验证检测算法；采用改进Hilbert-Huang变换进行时频分析，通过低采样率出口静压信号提取低频喘振先兆特征。",
+    "innovation": "提出基于低采样率静压的实时喘振先兆检测方法，改进HHT算法抑制端点效应，并设计判断逻辑模块防止预警信号跳变，提高检测可靠性。",
+    "conclusions": "检测方法能有效识别喘振先兆，预警时间裕度满足控制系统响应要求；建立的防喘控制系统验证了检测方法的有效性。",
+    "limitations": "研究聚焦喘振先兆检测，未涉及旋转不稳定性和非同步振动，且未提供具体预警时间数值。",
+    "tags": [
+      "失速/喘振机理",
+      "实验测量",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究喘振先兆检测与防喘控制，与RI-NSV机理无直接关联，但喘振与旋转不稳定性相关，具有一定参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-07",
     "groups": []
   },
   {
