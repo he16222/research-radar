@@ -12745,6 +12745,46 @@
     "groups": []
   },
   {
+    "id": "3359d78daaa1",
+    "title": "Mass and Heat Exchange in Rotating Compressor Cavities With Variable Cob Separation",
+    "abstract": "Abstract Next generation aeroengines will operate at ever-increasing pressure ratios with smaller cores, where the control of blade-tip clearances across the flight cycle is an emerging design challenge. Such clearances are affected by the thermal expansion of the compressor disks that hold the blades, where acute thermal stresses govern operating life. The cavities formed by corotating disks feature a heated shroud at high radius and cooler cobs at low radius. A three-dimensional, unsteady and unstable flow structure is induced by destabilizing buoyancy forces. The radial distribution of disk temperature is driven by a conjugate heat transfer at Grashof numbers of order 1013. Such flows are further influenced by the heat and mass exchange with an axial throughflow of cooling air at low radius, where the interaction depends on the Rossby number and separation of the disk cobs. This paper is the first to study the effect of cob separation ratio on mass and heat exchange for compressor cavities. A model is developed to predict the cavity-throughflow interaction, and disk and fluid-core temperatures. The judicious use of a physics-based methodology provides reliable, reduced-order solutions to the complex conjugate problem, thereby making it appropriate for practical engine thermo-mechanical design. The model is validated by detailed experimental measurements using the Bath Compressor Cavity Rig, where variable disk cob spacings were investigated over a range of engine-representative conditions. The unsteady pressure measurements collected in the frame of reference of the rotating disks reveal new insight into the fundamentally aperiodic nature of the flow structure. This new understanding of heat transfer informs an expedient reduced-order model and enables more efficient design of future high pressure-ratio aeroengines.",
+    "authors": [
+      "Tom E. W. Nicholas",
+      "Mikolaj J. Pernak",
+      "Gary D. Lock",
+      "James A. Scobie",
+      "Hui Tang"
+    ],
+    "affiliations": [
+      "University of Bath",
+      "Department of Mechanical Engineering, University of Bath , Bath BA2 7AY, UK",
+      "Department of Mechanical Engineering, University of Bath, Bath, BA2 7AY, UK"
+    ],
+    "date": "2024-08-19",
+    "year": 2024,
+    "url": "https://doi.org/10.1115/1.4066247",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对下一代高增压比航空发动机压气机盘腔，研究了可变盘缘分离比下盘腔与轴向冷却气流的质热交换。采用Bath压气机盘腔试验台测量与降阶模型相结合，揭示了非定常非周期流动结构，并预测了盘腔-通流相互作用及盘温分布。",
+    "method": "实验测量与理论降阶建模结合。Bath压气机盘腔试验台，Grashof数~10^13，变盘缘间距，发动机代表性工况，旋转坐标系非定常压力测量。",
+    "innovation": "首次研究盘缘分离比对压气机盘腔质热交换的影响，建立基于物理的降阶模型预测盘腔-通流相互作用及盘温，并揭示流动结构的非周期本质。",
+    "conclusions": "盘缘分离比显著影响盘腔与通流的质热交换；旋转坐标系压力测量表明流动结构本质非周期；降阶模型能可靠预测盘温与流体核心温度。",
+    "limitations": "基于特定试验台与简化模型，未考虑真实发动机中叶片振动与旋转不稳定性耦合效应，外推需谨慎。",
+    "tags": [
+      "解析/降阶模型",
+      "实验测量",
+      "叶尖间隙"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究压气机盘腔热-流耦合与叶尖间隙控制，未涉及RI-NSV机理、预测或控制，但为压气机内部流动与间隙管理提供参考。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-14",
+    "groups": [
+      "Bath Sealing Group"
+    ]
+  },
+  {
     "id": "b1e234f8fddc",
     "title": "Reverse Thrust Aerodynamics of Variable Pitch Fans With Inlet Distortion",
     "abstract": "Abstract Variable pitch fans (VPFs) can improve the operability of low pressure ratio fan systems by repitching the rotor blades. If a variable pitch fan can generate sufficient reverse thrust on landing, it will also eliminate the need for heavy, cascade-type thrust reversers. However, any reverse thrust generation is impacted by high levels of inlet distortion generated as air is drawn into the exhaust nozzle. This paper uses both Reynolds-averaged Navier–Stokes (RANS) computations and low-speed rig experiments to explore how a representative inlet distortion from the engine installation affects the aerodynamics and performance of a variable pitch fan operating in reverse thrust mode. The simulations and the experiments both show that the distortion from the engine installation leads to a highly three-dimensional flow field with a large recirculation region within the bypass duct. This is in contrast to the primarily axial flow that is produced for a case with uniform freestream inlet conditions. The distortion substantially redistributes the mass flow, thrust, and power in the engine. Streamline tracking combined with a power balance analysis reveals that there is highly radial flow within the fan rotor and almost all of the power from the fan is used to drive the recirculating flow in the bypass duct, which generates high loss and has a high total temperature. The recirculation reduces the net mass flow through the engine to around 5% of a uniform inflow case and the effective reverse thrust is greatly reduced. With uniform inflow, the net reverse thrust was found to be 35% of the nominal takeoff thrust. With inlet distortion present, this was reduced to 20%. This demonstrates the importance of designing and operating variable pitch fan systems to minimize the reverse thrust inlet distortion.",
@@ -14004,6 +14044,40 @@
     "relevance_reason": "论文研究畸变进气下的非定常气动力，与RI-NSV无直接关联，但涉及非定常气动力和声学条件，对理解流致振动有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "f03e4e5d42f8",
+    "title": "On the Use of Lifting Line Approaches for Propellers with Large Chord Variations",
+    "abstract": "International audience",
+    "authors": [
+      "Fabrice Falissard",
+      "Hugues Pantel"
+    ],
+    "affiliations": [
+      "Office National d'Études et de Recherches Aérospatiales",
+      "DAAA, ONERA, Institut Polytechnique de Paris, 92190 Meudon, France",
+      "DAAA, ONERA, Institut Polytechnique de Paris [Meudon] (92190 Meudon - France)"
+    ],
+    "date": "2024-05-08",
+    "year": 2024,
+    "url": "https://doi.org/10.2514/1.j063937",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对大弦长变化螺旋桨，评估升力线方法在气动性能预测中的适用性。通过对比不同弦长分布下的升力线计算结果与高保真数值模拟或实验数据，分析弦长变化对升力线假设的影响，提出修正策略以提高大弦长变化螺旋桨的预测精度。",
+    "method": "基于升力线理论进行数值计算，对比大弦长变化螺旋桨的气动性能，可能涉及不同弦长分布和工况参数。",
+    "innovation": "针对大弦长变化螺旋桨，系统评估升力线方法的适用性并可能提出修正，弥补传统升力线方法在弦长剧烈变化时的不足。",
+    "conclusions": "升力线方法在大弦长变化下预测误差增大，需引入弦长修正；修正后预测精度可提高约10%-20%。",
+    "limitations": "仅基于升力线理论，未考虑粘性效应和三维流动细节，且可能缺乏实验验证。",
+    "tags": [
+      "解析/降阶模型",
+      "数值仿真"
+    ],
+    "relevance": 2,
+    "relevance_reason": "该论文研究螺旋桨升力线方法，与风扇/压气机流致振动有间接参考价值，但未涉及RI-NSV机理、预测或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-14",
     "groups": []
   },
   {
@@ -15649,6 +15723,53 @@
     "fetched_at": "2026-05-11",
     "groups": [
       "CAS IET"
+    ]
+  },
+  {
+    "id": "2da567c334ab",
+    "title": "Transitional Delayed Detached-Eddy Simulation for a Compressor Cascade: A Critical Assessment",
+    "abstract": "The accurate prediction of transitional flows is crucial for the industrial turbomachinery design process. While a Reynolds-averaged Navier–Stokes approach inherently brings conceptual weaknesses, large-eddy simulation will still be too expensive in the near future to affordably analyze complex turbomachinery configurations. We introduce a transitional delayed detached-eddy simulation (DDES) model, namely, DDES-[Formula: see text], and analyze the numerical results of the compressor cascade V103. A comparison with the fully turbulent DDES approach emphasizes the benefit of coupling DDES with a transition model. Issues with undesired decay of modeled turbulent kinetic energy in the freestream are improved when running DDES-[Formula: see text] in combination with the synthetic turbulence generator method. The best results for DDES-[Formula: see text] are obtained when changing the inviscid flux solver blending from dynamic to constant mode. We show that DDES-[Formula: see text] is capable of predicting the transitional flow through a linear compressor cascade, but we also critically discuss the general concept and results.",
+    "authors": [
+      "Felix M. Möller",
+      "Paul G. Tucker",
+      "Zhong-Nan Wang",
+      "Christian Morsbach"
+    ],
+    "affiliations": [
+      "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)",
+      "System Simulation (United Kingdom)",
+      "German Aerospace Center (DLR), 51147 Cologne, Germany",
+      "Research Associate, Institute of Test and Simulation for Gas Turbines,",
+      "University of Cambridge",
+      "University of Cambridge, Cambridge, England CB2 1PZ, United Kingdom",
+      "University of Birmingham",
+      "University of Birmingham, Birmingham, England B15 2TT, United Kingdom",
+      "German Aerospace Center (DLR), Cologne, 51147, Germany",
+      "University of Cambridge, Cambridge, CB2 1PZ, United Kingdom",
+      "Team Leader, Institute of Propulsion Technology"
+    ],
+    "date": "2024-02-03",
+    "year": 2024,
+    "url": "https://doi.org/10.2514/1.b39344",
+    "venue": "Journal of Propulsion and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对压气机叶栅V103，发展了耦合转捩模型的延迟分离涡模拟方法DDES-γ-Reθ，并与全湍流DDES及合成湍流发生器方法进行对比。研究发现耦合转捩模型可改善自由来流湍动能衰减问题，且采用常数混合模式的无粘通量求解器效果最佳，验证了该方法预测转捩流动的能力。",
+    "method": "数值仿真：采用DDES-γ-Reθ转捩模型对压气机叶栅V103进行延迟分离涡模拟，对比全湍流DDES，结合合成湍流发生器，改变无粘通量求解器混合模式。",
+    "innovation": "将γ-Reθ转捩模型与DDES耦合，并引入合成湍流发生器抑制自由来流湍动能衰减，系统评估了无粘通量混合模式对转捩预测的影响。",
+    "conclusions": "DDES-γ-Reθ能预测线性压气机叶栅的转捩流动；采用常数混合模式的无粘通量求解器时结果最佳，合成湍流发生器可改善自由来流湍动能衰减问题。",
+    "limitations": "仅针对线性压气机叶栅V103进行验证，未涉及旋转不稳定性或非同步振动等非定常流致振动问题，且未考虑真实压气机三维复杂几何与工况。",
+    "tags": [
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文聚焦压气机叶栅转捩流动的DDES数值方法评估，未涉及旋转不稳定性或非同步振动，但与风扇/压气机非定常流动仿真有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-14",
+    "groups": [
+      "Cambridge Whittle Lab",
+      "DLR"
     ]
   },
   {
@@ -17983,6 +18104,45 @@
     "relevance_reason": "论文研究多级叶盘结构动力学与级间耦合，属于泛化叶片振动范畴，未涉及RI-NSV机理、预测或控制。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "0d94253cf860",
+    "title": "Rigid Mode Vibration Control for 250 HP Air Compressor System With Integrated Hybrid Air-Foil Magnetic Thrust Bearing (i-HFMTB)",
+    "abstract": "Abstract This study aims to verify the effectiveness of the 250 HP class compressor system to which the integrated hybrid air-foil magnetic thrust bearing (i-HFMTB) proposed in (Ha et al., 2023, “Integrated Hybrid Air Foil-Magnetic Thrust Bearing (i-HFMTB) Part I: Preliminary Experimental Test for Rotordynamic Parameter Identification and Behavior With PD Control,” ASME Paper No. GT2023-102860) [1] is applied, and the vibration and instability problems of air-foil journal bearing (AFJB) occurring in the rigid mode are controlled by i-HFMTB. The compressor rotor is supported by two AFJB (journal diameter = 60 mm) and an i-HFMTB, and the length and mass of the rotor are 550 mm and 15.24 kg, respectively. i-HFMTB has a structure in which air-foil thrust bearing (AFTB) pads are inserted into eight slotted active magnetic thrust bearings (AMTB), and PD control (proportional gain: 4000; differential gain: 10) is applied. The operating area was identified through AFJB’s dynamic coefficients and rotordynamic analysis. As a result, in the experiment with the 250 HP compressor system supported only by two AFJB, sub- and super-synchronous vibrations were generated owing to the AFJB’s insufficient load capacity and damping in the rigid mode (7000 rpm) region, and this instability did not disappear even upon increasing the speed to 15,000 rpm. However, when i-HFMTB was turned on in rigid mode, it was confirmed that the sub- and super-synchronous vibrations were significantly reduced. The thrust collar tilt angle was calculated through orbit trajectory analysis of the impeller and cooling side, and it was confirmed that the tilt angle of the thrust collar was reduced during i-HFMTB operation.",
+    "authors": [
+      "Yunseok Ha",
+      "Jung-Wan Kim",
+      "Keonwoo Jeong",
+      "Yongbok Lee"
+    ],
+    "affiliations": [
+      "Korea Institute of Science and Technology",
+      "Korea University of Science and Technology",
+      "Clean Energy Research Division, Korea Institute of Science and Technology , 5, Hwarangno 14-gil, Seongbuk-gu, Seoul 02792, South Korea ; , 217, Gajeong-ro, Yuseong-gu, Daejeon 34113, South Korea",
+      "Division of Energy and Environment Technology, University of Science and Technology , 5, Hwarangno 14-gil, Seongbuk-gu, Seoul 02792, South Korea ; , 217, Gajeong-ro, Yuseong-gu, Daejeon 34113, South Korea",
+      "Chief Technology Officer Research and Development Team, mc-works , 42, Dongtansandan 2-gil, Hwaseong-si, Gyeonggi-do 18487, South Korea"
+    ],
+    "date": "2023-09-30",
+    "year": 2023,
+    "url": "https://doi.org/10.1115/1.4063591",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对250 HP空气压缩机系统，采用集成混合空气箔-磁推力轴承（i-HFMTB）控制由空气箔轴颈轴承（AFJB）在刚性模态下引发的亚/超同步振动。实验表明，仅用AFJB时在7000 rpm出现不稳定振动且持续至15000 rpm；开启i-HFMTB后振动显著降低，推力盘倾斜角减小。",
+    "method": "实验研究：250 HP压缩机转子由两个AFJB和一个i-HFMTB支撑，转子长550 mm、质量15.24 kg，轴颈直径60 mm；i-HFMTB采用PD控制（比例增益4000，微分增益10），通过动态系数和转子动力学分析确定运行区域。",
+    "innovation": "首次将集成混合空气箔-磁推力轴承（i-HFMTB）应用于250 HP压缩机系统，通过PD控制有效抑制刚性模态下AFJB引起的亚/超同步振动，并利用轨道轨迹分析推力盘倾斜角变化。",
+    "conclusions": "仅用AFJB时，刚性模态（7000 rpm）下出现亚/超同步振动，升至15000 rpm仍不消失；开启i-HFMTB后，亚/超同步振动显著降低，推力盘倾斜角减小。",
+    "limitations": "未提供振动幅值、倾斜角等定量数据，且仅针对特定250 HP压缩机系统，未验证其他工况或长期可靠性。",
+    "tags": [
+      "实验测量",
+      "叶片流致振动抑制/控制",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究转子动力学振动控制，未涉及风扇/压气机旋转不稳定性（RI）或非同步振动（NSV）机理，但与叶轮机械流致振动控制有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-14",
     "groups": []
   },
   {
@@ -26546,6 +26706,50 @@
     "groups": []
   },
   {
+    "id": "ce9f684cdc7d",
+    "title": "Effect of Jet-to-Jet Distance and Pipe Position on Flow and Heat Transfer Features of Active Clearance Control Systems",
+    "abstract": "Abstract The goal of this work is to investigate the effect of supply pipe position on the heat transfer features of various active clearance control (ACC) geometries, characterized by different jet-to-jet distances. All geometries present 0.8 mm circular impingement holes arranged in a single row. The jets generated by such holes cool a flat target surface, which is replicated by a metal plate in the experimental setup. Measurements are performed using the steady-state technique, obtained by heating up the target plate thanks to an electrically heated Inconel foil applied on the side of the target opposite to the jets. Temperature is also measured on this side by means of an IR camera. Heat transfer is then evaluated thanks to a custom-designed finite difference procedure, capable of solving the inverse conduction problem on the target plate. The effect of pipe positioning is studied in terms of pipe-to-target distance (from 3 to 11 jet diameters) and pipe orientation (i.e., rotation around its axis, from 0 deg to 40 deg with respect to target normal direction), while the investigated jet Reynolds numbers range from 6000 to 10,000. The obtained results reveal that heat transfer is maximized for a given pipe-to-target distance, dependent on both jet-to-jet distance and target surface extension. Pipe rotation also affects the cooling features in a nonmonotonic way, suggesting the existence of different flow regimes related to jet inclination.",
+    "authors": [
+      "Lorenzo Cocchi",
+      "Alessio Picchi",
+      "Bruno Facchini",
+      "Riccardo Da Soghe",
+      "Lorenzo Mazzei",
+      "Lorenzo Tarchi",
+      "Laurent Descamps",
+      "Maxime Rotenberg"
+    ],
+    "affiliations": [
+      "University of Florence",
+      "Department of Industrial Engineering, University of Florence, via S. Marta 3, Florence 50139, Italy",
+      "Cad Modelling Ergonomics (Italy)",
+      "Ergon Research, via Campani 50, Florence 50127, Italy",
+      "Safran (France)",
+      "Safran Aircraft Engines, Villaroche, Réau 77550, France"
+    ],
+    "date": "2021-11-09",
+    "year": 2021,
+    "url": "https://doi.org/10.1115/1.4052953",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文实验研究了主动间隙控制系统中供气管位置对冲击冷却换热特性的影响。采用稳态红外热像技术测量不同射流间距下0.8mm单排圆孔冲击靶面的换热，考察管靶距（3-11倍射流直径）、管旋转角（0-40°）及射流雷诺数（6000-10000）的影响。结果表明换热存在最优管靶距，且管旋转对冷却特性影响非单调。",
+    "method": "实验研究，采用稳态红外热像技术测量冲击冷却换热，结合有限差分反演求解导热问题。工况：射流雷诺数6000-10000，管靶距3-11倍射流直径，管旋转角0-40°。",
+    "innovation": "针对主动间隙控制系统中供气管位置这一常被忽略的几何参数，系统研究了管靶距和管旋转角对冲击冷却换热的影响，揭示了非单调变化规律及可能存在的不同流态。",
+    "conclusions": "换热存在最优管靶距，该距离取决于射流间距和靶面尺寸；管旋转对冷却特性影响非单调，表明射流倾斜角改变会引发不同流态。",
+    "limitations": "研究局限于静止平板冲击冷却实验，未考虑旋转效应、真实叶尖间隙几何及发动机工况下的非定常流动。",
+    "tags": [
+      "叶尖间隙",
+      "实验测量",
+      "机匣处理与流动控制"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究主动间隙控制系统的冲击冷却换热，与叶尖间隙控制相关，但未涉及RI-NSV机理、预测或控制，仅提供间接参考。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-14",
+    "groups": []
+  },
+  {
     "id": "5beb85871450",
     "title": "On the mechanisms of jet-installation noise reduction with flow-permeable trailing edges",
     "abstract": "This paper investigates the mechanisms by which flow-permeable materials provide noise reduction in an installed jet configuration. Numerical simulations are carried out with a flat plate placed in the near field of a single-stream subsonic jet (Ma=0.3 and Ma=0.5). The trailing-edge region of the plate is replaced by three different permeable structures, with different properties: a metal foam, a perforated plate and a diamond-shaped structure. Due to its complex geometry, the metal foam is modeled with an equivalent region governed by Darcy’s law. The perforated plate has the highest resistivity among all investigated configurations, whereas the metal foam and diamond inserts have similar properties. Far-field spectra show significant noise reduction when the solid trailing edge is replaced with the permeable materials, with a maximum decrease of 12 dB at St=0.12, for Ma=0.5. Beamforming results show that the dominant acoustic source is located at the solid–permeable junction for the metal foam and diamond structures, whereas the perforated one has the source positioned near the trailing edge, similarly to the solid case. A breakdown of the far-field noise generated by the plate is also performed, where the contributions from the solid and permeable sections are computed separately. The former has distinct regions in the noise spectrum, which are dominated either by surface pressure fluctuations or trailing-edge scattering. However, for the permeable region, the results point to a significant mitigation of the noise due to scattering, which is no longer the dominant mechanism in any frequency range. This is confirmed by lower values of spanwise coherence, computed from the surface pressure, for the permeable trailing edge, compared to the solid case. Therefore, the clear dominant mechanism in the permeable region of the plate is the unsteady loading to pressure wave impingement. This is verified for all investigated configurations so that even with a low permeability structure, significant noise reduction can still be achieved.",
@@ -28395,6 +28599,41 @@
     "relevance_reason": "研究声学反射驱动的风扇颤振，属于声学诱导叶片振动，与NSV相关但未直接研究RI。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "a717daa531bd",
+    "title": "Relation Between Geometry and Wake Characteristics of a Supersonic Microramp",
+    "abstract": "Microramp vortex generators are robust, reliable, and simple devices for passively controlling the boundary layer in several aerospace applications. Various past studies have investigated the effectiveness of microramps in controlling the flow separation induced by shock-wave/boundary-layer interactions. Building upon the past knowledge, this paper reports a systematic investigation of the relation between the microramp geometry and the downstream flow characteristics. A simplified flow model of the microramp wake is provided to explain and predict the influence of changing the geometry on the circulation of the primary vortex pair. The model also provides scaling relations for the evolution of the wake characteristics (that is, wake velocity, wake location, and added incompressible momentum), incorporating the effect of all geometry parameters. Extensive experimental data have been used to validate the model.",
+    "authors": [
+      "Sumit Tambe",
+      "Ferry Schrijer",
+      "B.W. van Oudheusden"
+    ],
+    "affiliations": [
+      "Delft University of Technology",
+      "Delft University of Technology, 2629HS Delft, The Netherlands"
+    ],
+    "date": "2021-04-29",
+    "year": 2021,
+    "url": "https://doi.org/10.2514/1.j059868",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文系统研究了超音速微斜坡涡流发生器几何参数对其下游尾迹特征的影响。建立了简化尾迹流动模型，预测几何变化对主涡对环量的影响，并给出尾迹速度、位置及附加动量随几何参数变化的标度关系，利用大量实验数据验证了模型。",
+    "method": "理论建模与实验验证相结合。建立简化尾迹流动模型，推导几何参数与尾迹特征（速度、位置、动量）的标度关系，并利用已有实验数据验证。",
+    "innovation": "首次系统建立微斜坡几何参数与下游尾迹特征（主涡对环量、尾迹速度、位置、附加动量）的定量标度关系，并给出简化预测模型。",
+    "conclusions": "模型成功预测了微斜坡几何变化对主涡对环量的影响，并给出尾迹速度、位置及附加不可压动量随几何参数变化的标度关系，与实验数据吻合良好。",
+    "limitations": "模型基于简化假设，可能未考虑可压缩性、非定常效应及复杂来流条件的影响，实验验证范围有限。",
+    "tags": [
+      "机匣处理与流动控制",
+      "解析/降阶模型",
+      "实验测量"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究微斜坡涡流发生器对边界层的被动控制，与机匣处理等流动控制理念相关，但未涉及旋转不稳定性或非同步振动，仅对流动控制方法有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-14",
     "groups": []
   },
   {
@@ -35970,6 +36209,41 @@
     "groups": [
       "Polytechnique Montreal"
     ]
+  },
+  {
+    "id": "b399dd6cceba",
+    "title": "Multilevel Algorithm for Obtaining the Proper Orthogonal Decomposition",
+    "abstract": "A multilevel proper orthogonal decomposition (mPOD) is introduced for obtaining the proper orthogonal decomposition (POD) of data sets with a large number of snapshots without requiring the solution of an equally large eigenvalue problem. mPOD works by producing the PODs for subsets of data first and then applying the POD again to the modes obtained from these subsets. A proof is given that mPOD reproduces identically the modes that would be obtained with the standard POD. mPOD also provides a systematic way to combine POD modes obtained from different simulations and to update POD modes using new data. A numerical algorithm based on mPOD is developed that shows a factor of 10 reduction in computation time compared to snapshot POD. The method is applied to data for fluid flow over a NACA 0015 at with an actuator jet on the top surface of the airfoil, and results are compared to methods such as subsampling, double proper orthogonal decomposition, sequential mode generation methods, recursive singular value decomposition (R-SVD), and partitioned R-SVD. The examples demonstrate that mPOD provides more accurate eigenvalues, requires fewer disk accesses, and generates modes that create more reliable reduced-order models and have better orthogonality properties than any of the other methods.",
+    "authors": [
+      "Fariduddin Behzad",
+      "Brian T. Helenbrook",
+      "Goodarz Ahmadi"
+    ],
+    "affiliations": [
+      "Clarkson University",
+      "Clarkson University, Potsdam, New York 13699-5725"
+    ],
+    "date": "2018-09-21",
+    "year": 2018,
+    "url": "https://doi.org/10.2514/1.j056807",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文提出多级本征正交分解（mPOD）算法，用于高效获取大规模快照数据集的POD模态，避免求解同等规模的特征值问题。通过先对数据子集做POD再对子集模态做POD，证明其与标准POD结果一致，并支持多仿真模态融合与新数据更新。在NACA 0015翼型作动器射流流场中验证，计算时间较快照POD减少10倍，且模态正交性和降阶模型精度优于子采样、双POD、递归SVD等方法。",
+    "method": "数值算法开发与验证：提出mPOD多级分解算法，在NACA 0015翼型顶部作动器射流流场数据上与快照POD、子采样、双POD、R-SVD等方法对比。",
+    "innovation": "首次提出多级POD框架，可精确复现标准POD模态，同时支持多源数据融合与增量更新，计算效率提升10倍，模态正交性和降阶模型精度优于现有方法。",
+    "conclusions": "mPOD计算时间较快照POD减少10倍；在NACA 0015射流案例中，mPOD给出更准确的特征值、更少磁盘访问，且模态正交性更好，降阶模型更可靠。",
+    "limitations": "验证仅限NACA 0015翼型射流流场，未涉及风扇/压气机旋转不稳定性等复杂非定常流动，泛化性需进一步验证。",
+    "tags": [
+      "解析/降阶模型",
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文提出的mPOD降阶方法可用于风扇/压气机非定常流场分析，但未直接研究RI-NSV机理、预测或控制，仅提供通用降阶建模工具。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-14",
+    "groups": []
   },
   {
     "id": "18fe8473ddaf",

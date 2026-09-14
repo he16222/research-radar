@@ -10,8 +10,8 @@
       "Paul G. Tucker"
     ],
     "aliases": [],
-    "total": 80,
-    "avg_relevance": 2.4,
+    "total": 81,
+    "avg_relevance": 2.3,
     "preset": true,
     "custom": false
   },
@@ -89,6 +89,35 @@
     "custom": false
   },
   {
+    "name": "DLR",
+    "institution": "German Aerospace Center",
+    "pis": [
+      "F. Holste",
+      "Holste",
+      "Frank Kameier",
+      "Kameier",
+      "Neise",
+      "Benjamin Pardowitz",
+      "Pardowitz",
+      "Marz",
+      "M. Baumgartner",
+      "Baumgartner"
+    ],
+    "aliases": [
+      "DLR",
+      "German Aerospace Center",
+      "Deutsches Zentrum fur Luft- und Raumfahrt",
+      "Engine Acoustics Department",
+      "Institute of Propulsion Technology",
+      "Institute of Aeroelasticity",
+      "Fan and Compressor"
+    ],
+    "total": 40,
+    "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Imperial Aeroelasticity",
     "institution": "Imperial College London",
     "pis": [
@@ -115,35 +144,6 @@
     "aliases": [],
     "total": 39,
     "avg_relevance": 3.1,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "DLR",
-    "institution": "German Aerospace Center",
-    "pis": [
-      "F. Holste",
-      "Holste",
-      "Frank Kameier",
-      "Kameier",
-      "Neise",
-      "Benjamin Pardowitz",
-      "Pardowitz",
-      "Marz",
-      "M. Baumgartner",
-      "Baumgartner"
-    ],
-    "aliases": [
-      "DLR",
-      "German Aerospace Center",
-      "Deutsches Zentrum fur Luft- und Raumfahrt",
-      "Engine Acoustics Department",
-      "Institute of Propulsion Technology",
-      "Institute of Aeroelasticity",
-      "Fan and Compressor"
-    ],
-    "total": 39,
-    "avg_relevance": 2.5,
     "preset": true,
     "custom": false
   },
@@ -187,7 +187,7 @@
       "Carl M. Sangan"
     ],
     "aliases": [],
-    "total": 29,
+    "total": 30,
     "avg_relevance": 2.4,
     "preset": true,
     "custom": false
