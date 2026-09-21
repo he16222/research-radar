@@ -160,6 +160,42 @@
     "groups": []
   },
   {
+    "id": "6acc2bfde353",
+    "title": "Change of Stall Inception of Axial Compressor with Active Flow Control",
+    "abstract": "Axial compressors are key components of aircraft engines, defining their operability. Active flow control is a powerful tool to optimize compressor stability, but the effect of these methods on the way the compressors run into stall remains unclear. In fact, previous works of the authors have shown that stall inception can be shifted from spike to modal type on the machine considered in this study. However, the transition from one mode to another is difficult to analyze with conventional methods. To explain the evolution of the stall process with an increasingly strong control action, the authors propose to study an experimental data set consisting of fast pressure transducers recordings measured during stall events with flow control. This work relies first on wavelet analysis but also proposes a new method inspired by system dynamic analysis to get a complementary view of the transition to stall for the controlled cases. The main finding is that spike instability disappears with only a very limited injected mass flow, as low as 0.4% of the main mass flow. Other interesting features are linked to the new method itself, providing a clear and computationally cheaper indicator of the stall process, and can be potentially investigated as stall warning method.",
+    "authors": [
+      "Pierric Joseph",
+      "Francesco Romanò",
+      "Olivier Roussette",
+      "Antoine Dazin"
+    ],
+    "affiliations": [
+      "Laboratoire de Mécanique des Fluides de Lille - Kampé de Fériet",
+      "Univ. Lille, CNRS, ONERA, Centrale Lille, UMR 9014-LMFL, Laboratoire de Mécanique des Fluides de Lille - Kampé de Feriet"
+    ],
+    "date": "2026-09-04",
+    "year": 2026,
+    "url": "https://doi.org/10.2514/1.b40532",
+    "venue": "Journal of Propulsion and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对轴流压气机主动流动控制下失速起始模式转变问题，利用快速压力传感器实验数据，结合小波分析与类系统动力学新方法，研究控制作用下失速过程演化。发现仅注入0.4%主质量流量即可使突尖型失速不稳定性消失，新方法可提供廉价失速预警指标。",
+    "method": "实验研究，基于快速压力传感器测量失速事件，采用小波分析和系统动力学启发的新方法分析数据，主动流动控制注入质量流量低至0.4%。",
+    "innovation": "提出受系统动力学启发的新分析方法，可清晰且计算廉价地指示失速过程转变，并揭示极小控制流量即可消除突尖型失速。",
+    "conclusions": "仅注入0.4%主质量流量的主动控制即可使突尖型失速不稳定性消失；新方法可作为潜在失速预警指标。",
+    "limitations": "仅基于单台压气机实验数据，未涉及数值模拟或全尺寸验证，控制流量阈值可能因机器而异。",
+    "tags": [
+      "失速/喘振机理",
+      "机匣处理与流动控制",
+      "实验测量"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究主动流动控制对失速起始模式转变的影响，涉及近失速扰动与流动控制，但未直接连接旋转不稳定性导致的非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-21",
+    "groups": []
+  },
+  {
     "id": "1eb385415ab5",
     "title": "Entrainment of Swirled Axial Throughflow in a Rotating Compressor Cavity under Centrifugal Buoyancy-Driven Convection",
     "abstract": "Abstract Future jet engine compressors are expected to feature overall pressure ratios (OPR) that approach 70:1. The core of the compressor will downsize with higher OPR, increasing the importance of managing blade-tip clearance. This clearance is influenced by compressor rotor expansion, which is dictated by the flow structure and heat transfer inside the cavities between co-rotating discs. This unstable flow structure is induced by buoyancy under centrifugal acceleration at high Grashof numbers. Further, the flow is destabilised by the enthalpy and momentum exchange with an axial throughflow of cooler air at low radius. The throughflow forms part of the secondary air system and inherently features swirl from rotating components within the compressor. In some cases, the swirl relative to the rotating discs an exceed unity (over-swirl). This paper presents an experimental study of the influence of entrained fluid into the rotating compressor cavity over a range of Rossby numbers and axial throughflow swirl. The University of Bath Compressor Cavity Rig was used to measure the radial distribution of air temperature in the throughflow, the radial distribution of temperature on the discs inside the cavity, the shroud heat flux, and the resultant flow structure from unsteady pressure. The data produces universal Grashof-number correlations for shroud Nusselt number and the radial mass flow within the buoyancy-induced structures that form in the cavity. Swirl is shown to be a fundamental governing non-dimensional parameter determining the slip of the structures and the number of vortex pairs in the cavity. A theoretical model based on first principles is coupled to the data and supports the practical thermal-mechanical design of compressor rotors in industry.",
@@ -6980,6 +7016,41 @@
     "relevance_reason": "论文研究颗粒沉积对压气机性能的影响，未涉及旋转不稳定性或非同步振动，但与叶尖泄漏流及流动损失相关，对风扇/压气机流动控制有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "55dfc091cc03",
+    "title": "Wave Finite Element Method for thermoacoustic stability analysis in waveguides with high-order modes and fluid–structure interaction",
+    "abstract": "A generalization of the Wave Finite Element Method is proposed for the linear stability analysis of thermoacoustic systems, incorporating high-order modes associated with cross-sectional wave propagation and fluid–structure interaction. Formulated in the Laplace domain, this methodology enables the estimation of transfer matrices that integrate into network models for stability predictions. By extending beyond the classical plane wave assumption in network modeling, the framework accurately captures wave propagation in complex geometries where high-order acoustic modes play a crucial role. Additionally, it accounts for fluid–structure interaction, demonstrating how coupling between the fluid and structure modifies wave propagation and influences the system stability. The approach is validated through case studies of increasing complexity and the results confirm the importance of incorporating high-order modes and fluid–structure interaction effects into predictive models. By providing a computationally efficient alternative to full-domain numerical simulations, the proposed wave-based framework enhances the accuracy of reduced-order models, improving their predictive capabilities for thermoacoustic stability analysis and enabling design-oriented studies such as the optimization of flexible wall configurations for passive instability control.",
+    "authors": [
+      "Dario Passato",
+      "Danilo Beli",
+      "Inés López Arteaga"
+    ],
+    "affiliations": [
+      "Eindhoven University of Technology",
+      "Department of Mechanical Engineering, Eindhoven University of Technology, The Netherlands"
+    ],
+    "date": "2025-07-15",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.jsv.2025.119320",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文提出一种广义波有限元方法，用于热声系统线性稳定性分析，可纳入截面高阶声模态与流固耦合效应。方法在拉普拉斯域构建传递矩阵并集成网络模型，突破经典平面波假设，通过递增复杂度算例验证了高阶模态与流固耦合对稳定性的重要影响，为柔性壁面被动控制优化提供高效降阶工具。",
+    "method": "理论/数值方法：在拉普拉斯域建立波有限元传递矩阵，集成网络模型进行线性稳定性分析，通过递增复杂度算例验证。",
+    "innovation": "将波有限元法推广至含高阶截面模态与流固耦合的热声稳定性分析，突破传统网络模型平面波假设，提供计算高效的降阶替代方案。",
+    "conclusions": "高阶声模态与流固耦合显著改变波传播与系统稳定性；忽略这些效应会降低预测精度，纳入后可提升降阶模型预测能力并支持柔性壁面被动控制优化。",
+    "limitations": "方法限于线性稳定性分析，未考虑非线性极限环与湍流效应；算例为简化波导，未涉及真实叶轮机械复杂几何与旋转效应。",
+    "tags": [
+      "解析/降阶模型",
+      "声学诱导叶片振动",
+      "稳定性建模"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究热声系统高阶模态与流固耦合的稳定性建模，虽未直接涉及RI-NSV，但其波传播与流固耦合降阶方法对风扇/压气机声学诱导振动预测有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-21",
     "groups": []
   },
   {
