@@ -10,7 +10,7 @@
       "Paul G. Tucker"
     ],
     "aliases": [],
-    "total": 81,
+    "total": 82,
     "avg_relevance": 2.3,
     "preset": true,
     "custom": false
@@ -73,22 +73,6 @@
     "custom": false
   },
   {
-    "name": "Purdue Compressor Lab",
-    "institution": "Purdue University",
-    "pis": [
-      "Nicole Key",
-      "Nicole L. Key",
-      "Berdanier",
-      "Sanford Fleeter",
-      "Yujun Leng"
-    ],
-    "aliases": [],
-    "total": 40,
-    "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "DLR",
     "institution": "German Aerospace Center",
     "pis": [
@@ -112,7 +96,7 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 40,
+    "total": 42,
     "avg_relevance": 2.5,
     "preset": true,
     "custom": false
@@ -128,8 +112,24 @@
       "Venkatesh Suriyanarayanan"
     ],
     "aliases": [],
-    "total": 39,
+    "total": 40,
     "avg_relevance": 3.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Purdue Compressor Lab",
+    "institution": "Purdue University",
+    "pis": [
+      "Nicole Key",
+      "Nicole L. Key",
+      "Berdanier",
+      "Sanford Fleeter",
+      "Yujun Leng"
+    ],
+    "aliases": [],
+    "total": 40,
+    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
@@ -156,8 +156,8 @@
       "Fabrice Thouverez"
     ],
     "aliases": [],
-    "total": 36,
-    "avg_relevance": 3.2,
+    "total": 37,
+    "avg_relevance": 3.3,
     "preset": true,
     "custom": false
   },
@@ -173,7 +173,7 @@
       "IISc",
       "Department of Aerospace Engineering"
     ],
-    "total": 33,
+    "total": 34,
     "avg_relevance": 2.5,
     "preset": true,
     "custom": false
@@ -212,7 +212,7 @@
       "Gas Turbines and Aerospace Propulsion",
       "GLR"
     ],
-    "total": 24,
+    "total": 26,
     "avg_relevance": 4.2,
     "preset": true,
     "custom": false
@@ -360,6 +360,19 @@
     "preset": false
   },
   {
+    "name": "Cranfield Propulsion",
+    "institution": "Cranfield University",
+    "pis": [
+      "David G. MacManus",
+      "Vassilios Pachidis"
+    ],
+    "aliases": [],
+    "total": 15,
+    "avg_relevance": 2.2,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "GE Aviation",
     "institution": "GE Aviation",
     "pis": [
@@ -368,19 +381,6 @@
     "aliases": [],
     "total": 15,
     "avg_relevance": 2.0,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Cranfield Propulsion",
-    "institution": "Cranfield University",
-    "pis": [
-      "David G. MacManus",
-      "Vassilios Pachidis"
-    ],
-    "aliases": [],
-    "total": 14,
-    "avg_relevance": 2.2,
     "preset": true,
     "custom": false
   },
@@ -481,8 +481,8 @@
       "University of Pennsylvania",
       "Penn Engineering"
     ],
-    "total": 0,
-    "avg_relevance": 0.0,
+    "total": 1,
+    "avg_relevance": 2.0,
     "preset": true,
     "custom": false
   }

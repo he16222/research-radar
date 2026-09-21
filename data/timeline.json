@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T07:47:51Z",
+  "generated_at": "2026-09-21T04:19:29Z",
   "periods": [
     1960,
     1965,
@@ -597,8 +597,9 @@
           "summary": "2020-2024年间，叶尖间隙领域的研究主要聚焦于揭示间隙泄漏流与旋转不稳定性的耦合机制，例如通过实验与数值方法（如混合RANS-LES）明确了局部叶尖间隙对非同步振动及预失稳扰动的影响。关键进展包括：提出了基于子午流线的轴流压气机稳定性灵敏度分析方法，并验证了可控转速机匣处理对跨声速转子稳定性的提升效果；同时，针对涡轮叶片，研究了高速相对运动下叶尖冷却射流与间隙泄漏损失的相互作用，并优化了转子叶尖空腔形状以降低气动损失。此外，通过叶尖定时技术实现了无键相的行波分析，为工程监测提供了新手段。"
         },
         "2025": {
-          "count": 68,
+          "count": 69,
           "paper_ids": [
+            "77e4e1f43ebf",
             "1eb385415ab5",
             "464eddac0641",
             "9a8d21dc5ac7",
@@ -1127,8 +1128,9 @@
           "summary": "2020-2024年间，该领域在失速/喘振机理研究上取得了显著进展，主要体现在：通过高保真CFD与实验结合，深入揭示了非轴对称机匣处理（如回流通道）对跨声速压气机失速裕度的提升机制，并发展了基于阻抗边界条件的机匣处理控制方法；同时，利用混合RANS-LES模拟和机器学习工具（如旋转失速预警模型）实现了对离心与轴流压气机失速起始过程的精准预测与自适应控制。此外，研究还系统阐明了进口畸变、导叶角度及端壁造型对失速类型（如旋转失速与喘振过渡）的影响规律，并提出了基于肋条等被动控制手段增强超临界CO2离心压气机稳定性的新方案。"
         },
         "2025": {
-          "count": 49,
+          "count": 50,
           "paper_ids": [
+            "7a3a01e446f8",
             "464eddac0641",
             "0380c4809eca",
             "80d6c881fb97",
@@ -1542,7 +1544,7 @@
           "summary": "2015-2019年间，进气畸变领域的研究主要聚焦于畸变对风扇/压气机稳定性与气动响应的影响机制，例如通过实验与数值方法揭示了周向压力畸变、边界层吸入及S形进气道引发的旋流畸变对失速起始和叶片气弹响应的作用（如《Stall Inception in a Boundary Layer Ingesting Fan》《Effects of Inlet Disturbances on Fan Stability》）。同时，研究者发展了多种畸变模拟与测量技术，如StreamVane旋流畸变发生器、立体粒子图像测速（SPIV）及基于速度数据的畸变重构方法（《StreamVane Turbofan Inlet Swirl Distortion Generator》《Pressure Flowfield and Inlet Flow Distortion Metrics Reconstruction from Velocity Data》），并探索了吹吸控制、机匣处理等主动/被动控制手段以抑制畸变影响（如《Blowing–Suction Control in S-Shaped Inlet》《Influence of SPS casing treatment on axial flow compressor subjected to radial pressure distortion》）。此外，针对短舱集成与嵌入式进气道等未来构型，研究揭示了进气道-风扇耦合效应及畸变对噪声、性能的交互影响（如《Toward Future Installations: Mutual Interactions of Short Intakes With Modern High Bypass Fans》《Parametric Analysis and Design for Embedded Engine Inlets》）。"
         },
         "2020": {
-          "count": 93,
+          "count": 95,
           "paper_ids": [
             "e274173a47b4",
             "c569e940dd36",
@@ -1600,6 +1602,7 @@
             "49da7175a7d8",
             "d234d5a6afdd",
             "a127b93aa762",
+            "f077b24f63d0",
             "2165e6b3a8aa",
             "107e45e14c7a",
             "24bd0c0cb33b",
@@ -1611,6 +1614,7 @@
             "6ff5fcbf00c4",
             "e54cc2825648",
             "15ec5325bec2",
+            "83c663fc8810",
             "8fa6079690e7",
             "c630a3a25a83",
             "cbcc5981d452",
@@ -1641,8 +1645,9 @@
           "summary": "2020-2024年间，进气畸变领域的研究主要聚焦于畸变对压气机/风扇气动稳定性与强迫响应的耦合机制，例如通过阻抗边界条件分析跨声速压气机的流动稳定性（如《An input-output analysis on flow stability of transonic compressors with impedance boundary condition》），以及揭示边界层吸入风扇中非定常涡流畸变与局部旋转失速的关联（如《Partial rotating instability in a boundary layer ingesting fan》）。在建模方法上，发展了考虑上游诱导效应的体力模型以模拟总温畸变（如《Body-force modeling considering induced upstream effects for a transonic compressor with total temperature distortion》），并提出了非对称进口导叶衰减畸变影响（如《Attenuation of Inlet Distortion Effects on Fans Using Asymmetric Inlet Guide Vanes》）及优化机匣处理提升畸变下失速裕度（如《Optimized Casing Treatment to Improve Stall Margin Under Circumferential Pressure Distortion》）等主动控制策略。此外，针对畸变导致的非同步振动（如《Fan Non-Synchronous Forced Vibration Under Crosswind》）和颤振问题（如《A New Nonlinear Time-Domain Flutter Analysis Approach for Distorted Flows》），建立了更精确的时域非线性分析方法。"
         },
         "2025": {
-          "count": 45,
+          "count": 47,
           "paper_ids": [
+            "b0749ee4ff9d",
             "19a39b1bfd13",
             "64535d1bc3c4",
             "90f8764a7173",
@@ -1651,6 +1656,7 @@
             "52824f48b5f3",
             "84ddf8bd47f6",
             "83c573245c73",
+            "b712f9bba48b",
             "f2f7ecd85b3a",
             "67f6aa6e17d3",
             "9b9b0a062a44",
@@ -1852,8 +1858,10 @@
           "summary": "2020-2024年间，非同步振动（NSV）领域的研究主要聚焦于揭示其与叶尖间隙流动不稳定性、声学共振及叶片-轴耦合等机制的关联，例如通过实验和数值方法明确了局部叶尖间隙对气动扰动特征的影响（如《Non-Synchronous Vibration: Characterization of the Aerodynamic Disturbance and Its Dependency on Local Tip Clearance》），并发展了基于Van der Pol降阶模型的流固耦合工具以模拟失速颤振和NSV（如《A Fluid–Structure Interaction Tool Using a Van der Pol-Based Reduced-Order Model for Buffet and Nonsynchronous Vibrations》）。此外，研究在抑制策略上取得进展，通过有意引入气动和结构失谐来抑制NSV（如《Suppression of Nonsynchronous Vibration Through Intentional Aerodynamic and Structural Mistuning》），并针对UHBR风扇等复杂结构开展了非线性分析与实验验证（如《UHBR Open-Test Case Fan ECL5/CATANA: Non-Linear Analysis of Non-Synchronous Blade Vibration at Part-Speed Conditions》）。"
         },
         "2025": {
-          "count": 4,
+          "count": 6,
           "paper_ids": [
+            "6d4fc5a0e909",
+            "77e4e1f43ebf",
             "ccc53381a59d",
             "d9940d7daf06",
             "b6f5067361bb",
@@ -1991,8 +1999,9 @@
           "summary": "2020-2024年间，机匣处理与流动控制领域的研究在机理探索与工程应用上均取得显著进展。关键工作包括：通过输入-输出分析与可解分析揭示了阻抗边界条件对跨声速压气机流动稳定性的影响机制（如第1、6篇）；系统研究了背腔、再循环通道、轴向槽等非对称及耦合机匣处理结构对失速裕度、叶片激励及噪声的调控效果（如第2、3、5、30篇）；实验与数值模拟结合证实了金属泡沫、肋条等新型处理方式在稳定性提升与降噪中的潜力（如第8、25篇）。此外，研究深入揭示了轴向槽与叶尖泄漏涡、双泄漏效应的非定常相互作用（如第13、21、29篇），并提出了基于简化模型的优化设计方法（如第4篇），为高性能压气机的稳定运行提供了理论支撑。"
         },
         "2025": {
-          "count": 8,
+          "count": 9,
           "paper_ids": [
+            "7a3a01e446f8",
             "6a34acdc1072",
             "8b2e353e30a1",
             "32c3c2eff787",
@@ -2096,8 +2105,9 @@
           "summary": "2020-2024年间，风扇/压气机叶片气动弹性领域的研究主要聚焦于非均匀流动环境下的气动弹性响应与新型结构设计。例如，通过非轴对称出口导叶缓解边界层吸入引起的周向畸变，以及利用机匣处理技术探索其潜力与局限性，均直接关联叶片气动弹性稳定性。此外，针对离心压气机的创新空腔建模方法，为气动弹性分析提供了更精确的数值工具，而多级轴流压气机中周向流动非均匀性的建模则揭示了非定常气动力对叶片振动的关键影响。这些工作共同推动了从传统燃料向全氢燃料转型中气动弹性问题的理解，并拓展了非传统燃料对涡轮模块气动弹性性能影响的研究边界。"
         },
         "2025": {
-          "count": 2,
+          "count": 3,
           "paper_ids": [
+            "77e4e1f43ebf",
             "a3099c9474c4",
             "33bf57f7c875"
           ],
@@ -2150,8 +2160,9 @@
           "summary": "2020-2024年间，叶片流致振动预测模型领域在高效数值方法上取得显著进展，尤其是基于谐波平衡法（HBM）的多种改进策略被广泛用于叶尖/机匣接触非线性问题（如孤立周期解计算、分岔跟踪）和颤振分析（如低马赫数预处理求解器、全黏性离散伴随优化）。关键贡献包括：发展了立方B样条时间配点法实现快速颤振与强迫响应分析，提出了多维时间谐波平衡法及时间矢量推进法以处理复杂周期性非定常流动，并揭示了叶片-轴耦合、声反馈及失谐/气动耦合对多级压气机强迫响应的影响机制。这些工作显著提升了对航空发动机叶片非线性振动与流固耦合失稳的预测能力。"
         },
         "2025": {
-          "count": 2,
+          "count": 3,
           "paper_ids": [
+            "7a3a01e446f8",
             "a5b70e55ff40",
             "d109072447f7"
           ],
@@ -2832,7 +2843,7 @@
           "summary": "2015-2019年间，实验测量在压气机领域的研究重点集中于失速与喘振的机理探索及主动控制，例如通过脉冲直流等离子体激励实现轴流风扇旋转失速控制，以及利用快速响应压力测量非侵入式监测叶片振动。在气动弹性与稳定性方面，研究揭示了叶尖间隙、雷诺数效应及湿压缩对流动结构的影响，并发展了基于延迟微分方程的叶片/机匣碰摩稳定性分析方法。此外，针对多级压气机中的转子-定子相互作用，实验解析了Tyler-Sofrin模态的传播特性，并对比了气动建模对强迫响应预测的精度差异。这些工作为压气机设计优化、失速预警及颤振抑制提供了关键实验依据。"
         },
         "2020": {
-          "count": 343,
+          "count": 348,
           "paper_ids": [
             "b00c4e55885d",
             "a2e455dba63b",
@@ -3023,8 +3034,10 @@
             "90d3cd595f16",
             "a127b93aa762",
             "6c5748c7a5ab",
+            "d69cbb0a7fa3",
             "31bc0b830c2c",
             "f93a96c76948",
+            "f077b24f63d0",
             "f01cf8b5ed76",
             "ad0d5440e262",
             "def88839e3c0",
@@ -3069,6 +3082,8 @@
             "fe8edcb936d0",
             "b08ebecd74ec",
             "19e4c38d81f2",
+            "972eb567f41c",
+            "83c663fc8810",
             "7edf1c3f54c0",
             "e8a386def2ef",
             "23a833e7fc9c",
@@ -3117,6 +3132,7 @@
             "72f4c87978e3",
             "3ed3d5e00127",
             "d4d4205ae1fb",
+            "2c02373d531d",
             "89cfab415030",
             "fcf2a83b448d",
             "ecad7c8360a6",
@@ -3181,13 +3197,16 @@
           "summary": "2020-2024年间，“实验测量”领域在叶轮机械流动稳定性与结构动力学方面取得显著进展：通过高时间分辨率粒子图像测速（如Part I中的非定常激波-边界层相互作用测量）和三维扫描激光多普勒测振技术，实现了对压缩机失速边界、喘振瞬态响应及叶片非同步振动的精细化表征；同时，针对涡轮机械中的泄漏流控制（如轴端密封处理）和进口畸变效应（如短进气道横风条件下的旋流畸变）开展了系统性实验研究，为模型验证与主动控制策略提供了关键数据支撑。"
         },
         "2025": {
-          "count": 107,
+          "count": 111,
           "paper_ids": [
+            "6d4fc5a0e909",
+            "77e4e1f43ebf",
             "1eb385415ab5",
             "464eddac0641",
             "0380c4809eca",
             "80d6c881fb97",
             "6c679597c68c",
+            "450d6633c9a0",
             "b0180ee3df5b",
             "64535d1bc3c4",
             "90f8764a7173",
@@ -3199,6 +3218,7 @@
             "7ba1ad9cc640",
             "d28c9c1a5494",
             "83c573245c73",
+            "b712f9bba48b",
             "b94ef99a9ef5",
             "f2f7ecd85b3a",
             "173e178edbfb",
@@ -3457,7 +3477,7 @@
           "summary": "2010-2014年间，数值仿真在叶轮机械领域的主要进展集中于高保真度模拟与复杂流动现象的机理揭示，例如通过全部件仿真与选定叶片排对比，系统解析了多级风扇中每转型进气畸变的传递机制（Part I & II）。研究还深入探讨了叶尖间隙对跨声速压气机失速起始的影响，明确了叶尖动量通量在失速触发中的关键作用，并通过非对称流动控制显著提升了高压比离心压气机的稳定性。此外，针对涡轮叶片，工作重点包括非均匀进口温度分布对气热性能的影响，以及通过热-固耦合有限元分析优化级间密封腔的冷却设计。"
         },
         "2015": {
-          "count": 80,
+          "count": 81,
           "paper_ids": [
             "f1aa13bf3bdc",
             "cfcce0872c78",
@@ -3465,6 +3485,7 @@
             "f57914683d85",
             "63320b0e0a3d",
             "c5ef6f655b55",
+            "d1209195045d",
             "de4bbfb9eb97",
             "29140ce71c19",
             "2d4dd2d36935",
@@ -3543,7 +3564,7 @@
           "summary": "2015-2019年间，数值仿真在航空发动机压气机领域的研究重点集中于非定常流动与气弹稳定性问题，例如通过全环非定常仿真揭示了非同步叶片振动激励（如《Full-Annulus Simulation of Nonsynchronous Blade Vibration Excitation of an Axial Compressor》）以及旋转失速与机匣处理耦合机制（如《Transonic Compressor Blade Optimization Integrated With Circumferential Groove Casing Treatment》）。同时，研究者发展了基于降阶模型（如《A Reduced Order Model for Nonlinear Dynamics of Mistuned Bladed Disks With Shroud Friction Contacts》）和流固耦合方法（如《Numerical and Experimental Fluid–Structure Interaction-Study to Determine Mechanical Stresses Induced by Rotating Stall》）来预测叶片强迫响应与失速诱导应力，并针对进气道畸变（如《Fan Similarity Model for the Fan–Intake Interaction Problem》）和离心压气机蜗壳非均匀流动（如《Performance Analysis of a Centrifugal Compressor Based on Circumferential Flow Distortion Induced by Volute》）的影响开展了系统性数值验证。"
         },
         "2020": {
-          "count": 144,
+          "count": 145,
           "paper_ids": [
             "e19d39ff7de4",
             "d9af602f8ede",
@@ -3662,6 +3683,7 @@
             "acef92f18b33",
             "c13ecead2231",
             "027bc9aca414",
+            "2c02373d531d",
             "325e51a6d52f",
             "8de26b23a77d",
             "cea59ba84426",
@@ -3693,11 +3715,14 @@
           "summary": "2020-2024年间，数值仿真在叶轮机械领域的研究进展主要体现在对复杂流动现象的高保真建模与稳定性预测上。例如，通过混合RANS-LES及网格自适应方法实现了对压气机级转子-静子相互作用的精细模拟，并发展了基于高保真CFD的离心压气机失稳预测模型（如新型叶轮扩散因子）。此外，研究深入揭示了非轴对称机匣处理、端壁造型及肋条等被动控制手段对跨声速压气机气动性能与稳定性的影响机制，同时建立了考虑叶片-轴耦合效应的气弹分析方法，并验证了低周疲劳颤振极限环振荡幅值的预测方法。"
         },
         "2025": {
-          "count": 55,
+          "count": 58,
           "paper_ids": [
+            "6d4fc5a0e909",
+            "b0749ee4ff9d",
             "464eddac0641",
             "0380c4809eca",
             "80d6c881fb97",
+            "450d6633c9a0",
             "a8474fd93d87",
             "26d0ebeb9476",
             "84ddf8bd47f6",
@@ -3824,7 +3849,7 @@
           "summary": "2015-2019年间，该领域在降阶模型（ROM）的物理一致性构建与工程应用上取得显著进展：例如提出了适用于等离子体气动弹性控制的物理一致降阶模型（第2篇），以及针对带叶冠摩擦接触的失谐叶盘非线性动力学降阶模型（第6篇），显著提升了复杂耦合问题的计算效率。同时，ROM被成功用于叶尖定时数据的高效生成（第7篇）和压气机叶盘失谐强迫响应分析（第4篇），实现了从机理建模到工程诊断的跨越。此外，研究还揭示了低湍流雷诺数下叶尖泄漏流与雷诺数效应对压气机几何缩放的影响（第1篇），为降阶模型在尺度效应模拟中的适用性提供了关键验证。"
         },
         "2020": {
-          "count": 41,
+          "count": 42,
           "paper_ids": [
             "166f5ebd5ba7",
             "18c8b2fa37c5",
@@ -3855,6 +3880,7 @@
             "5abdc5dca87b",
             "c4ee1435494b",
             "042776f2a35d",
+            "972eb567f41c",
             "7edf1c3f54c0",
             "a200471bb0e4",
             "a38085bf4c0d",
@@ -3871,8 +3897,9 @@
           "summary": "2020-2024年间，解析/降阶模型在叶轮机械气弹与振动领域取得了显著进展，主要体现在：发展了基于Van der Pol振子的流固耦合降阶模型，成功用于捕捉非同步振动与抖振现象（如第18、27篇）；提出了针对失谐叶片盘的非线性降阶模型，能够有效模拟内部共振与几何非线性效应（如第30篇）；此外，通过降阶模型实现了对多级压气机失谐与气动耦合下的强迫响应预测（第19篇），并验证了其在评估低压涡轮叶片颤振极限环振荡幅值中的有效性（第3、4篇）。这些工作显著提升了复杂气弹问题的计算效率与预测精度。"
         },
         "2025": {
-          "count": 5,
+          "count": 6,
           "paper_ids": [
+            "6d4fc5a0e909",
             "2e7705341a29",
             "87bebf22924b",
             "86ec8e0bcd51",
