@@ -1,5 +1,50 @@
 [
   {
+    "id": "08b3f7375d8d",
+    "title": "Comparison of Flutter Analysis Approaches in the Frequency Domain for the ECL5 Open Fan",
+    "abstract": "Abstract The topic of this paper is the flutter analysis at part speed of the ECL5/Catana open fan. The focus is on the operating point of maximal pressure ratio on the 80% speed line, where previous studies have revealed a very high sensitivity of the aerodynamic damping for the second blade eigenmode. In particular, a sudden drop of the damping near the nodal diameters of 5 was observed with time-linearised approaches, while for harmonic balance simulations with a different solver this V-shaped spike in the damping curve was observed near the nodal diameter of 6 when a fully nonlinear setup resolving the 0th and higher harmonics was used. In the previous study, this phenomenon was related to the resonance with a convective disturbance with a characteristic circumferential speed and suggested that, if non-linear effects are taken into account, then the resonance convective speed increases. In this paper, the flutter analyses based on three different frequency domain solvers are compared with each other: a time-linearised method and two harmonic balance solvers, each being based on different spatial schemes and/or turbulence models. The results in this paper show that the V-shaped damping curves can be reproduced with different solvers. If the zeroth harmonic is included in the set of harmonics which are solved for then the resonance condition is located near the nodal diameter of 6, while, for frozen mean flows, it is located at 5. This behaviour is confirmed by two harmonic balance solvers.",
+    "authors": [
+      "Christian R. Frey",
+      "Stéphane Aubert",
+      "Renaud Daon",
+      "Pascale Ferrand",
+      "Valdo Pagès"
+    ],
+    "affiliations": [
+      "Linde (Germany)",
+      "Linder Höhe Cologne, 51147 Germany",
+      "36 avenue Guy de Collongue Ecully, 69134 France",
+      "Safran (France)",
+      "Safran Aircraft Engines (France)",
+      "Safran Aircraft Engines Rond-point René Ravaud Moissy Cramayel, 77550 France",
+      "Laboratoire de Mécanique des Fluides et d'Acoustique",
+      "École de management de Lyon",
+      "LMFA 36 av, Guy de Collongue Ecully, 69134 France",
+      "Rond Point Rene Ravaud Moissy Cramayel, 77550 France"
+    ],
+    "date": "2026-09-24",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4072726",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对ECL5/Catana开放式风扇80%转速线最高压比工况，采用时间线性化与两种谐波平衡频域求解器对比颤振分析。发现第二阶模态气动阻尼在节径5或6附近出现V形骤降，是否包含零阶谐波决定共振位置，证实了非线性效应对共振对流速度的影响。",
+    "method": "数值研究，采用时间线性化方法和两种谐波平衡求解器（不同空间格式/湍流模型），在80%转速线最高压比工况下进行频域颤振分析，对比冻结平均流与包含零阶谐波的非线性设置。",
+    "innovation": "首次系统对比三种频域求解器对ECL5开放风扇颤振的预测能力，明确零阶谐波对V形阻尼曲线共振节径位置的决定性作用，揭示非线性效应对共振对流速度的影响。",
+    "conclusions": "1）V形阻尼曲线可被不同求解器复现；2）包含零阶谐波时共振位于节径6附近，冻结平均流时位于节径5，两种谐波平衡求解器均证实此现象。",
+    "limitations": "仅针对80%转速线最高压比单工况，未涵盖其他转速和工况；未进行实验验证；未深入探讨V形骤降与旋转不稳定性非同步振动的直接关联。",
+    "tags": [
+      "风扇/压气机叶片气动弹性",
+      "数值仿真",
+      "叶片流致振动预测模型"
+    ],
+    "relevance": 4,
+    "relevance_reason": "论文研究风扇颤振与气动阻尼异常，涉及非同步振动相关的气动弹性预测，但未直接连接旋转不稳定性RI导致的NSV机理或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-28",
+    "groups": []
+  },
+  {
     "id": "6d4fc5a0e909",
     "title": "Non-Synchronous Vibration: Influence of blade vibration on aerodynamic disturbances",
     "abstract": "Abstract Non-Synchronous Vibrations in compressors or fans are attributed to a coupling between blade vibration and circumferentially propagating structures called aerodynamic disturbances, appearing as machines are throttled towards stall at part speed conditions. Their ability to lock-in to structural vibration is evidenced in experiments by a sharp rise in vibration amplitudes coinciding with a shift in aerodynamic disturbance propagation speeds. Aerodynamic disturbance speeds as well as wave numbers have been identified as key parameters affecting the forcing frequencies on the rotor, and therefore the critical structural mode and nodal diameter likely to be excited. This work uses full-annulus time-accurate URANS simulations of the ECL5/CATANA research rig to investigate the fluid-structure coupling. Aerodynamic-only cases show that as massflow is reduced, disturbances increase in wavelength and pressure fluctuation amplitudes, and propagate faster and more erratically in the stationary frame. Across multiple unsteady operating points, blade vibration is included following prescribed amplitudes and frequencies. Local analysis of the disturbances shows that vibration can modulate their propagation speed based on their relative interaction phase, with a consistent sine wave relationship. Visualisations in a frame travelling at the aerodynamic propagation speed reveal that blade vibration can alter the distance between adjacent disturbances. At high enough vibration amplitudes, this can lead to disturbances merging or being created, effectively modifying their dominant circumferential wave number.",
@@ -9934,6 +9979,48 @@
     "groups": []
   },
   {
+    "id": "7440a22b79ff",
+    "title": "Modeling of Frictional Interbristle Contact in Brush Seals With Shaft Radial Movements",
+    "abstract": "Abstract Brush seals are utilized in turbines to minimize leakage flows and enhance thermal efficiency. Their widespread use faces challenges like pressure-stiffening and hysteresis, leading to unpredictable performance. This work introduces an advanced numerical model to simulate interbristle frictional contact, shaft and backing ring interaction, and three-dimensional (3D) bristle bending. The model is adopted to investigate multibristle brush seal's behavior under shaft radial movements and pressure loading. Backing ring friction emerges as a vital factor in hysteresis modeling, lessening the impact of shaft friction. When the shaft retracts, modeling the bristle tip clearance becomes important. The clearance greatly increases leakage flowrate and changes bristles' aerodynamic loading distribution. With clearance, the normal force on upstream bristles rises markedly, opposing bristle hang-up, while the axial force decreases in downstream bristles, alleviating the bristle pack compression. Considering these factors, an improved model for pressurized seals in the shaft retraction phase is developed and compared to experimental data in the literature. Frictional interbristle contact significantly modifies the distribution of local tip force through the pack. These effects would influence localized wear and heat generation across the brush seal pack, shedding light on the uneven wear patterns often observed in experiments. The present high-fidelity model can capture these complex interactions, offering a means to deepen our understanding of the physical mechanisms underpinning novel brush seal designs.",
+    "authors": [
+      "Hien M. Phan",
+      "Michael J. Pekris",
+      "Jia Wei Chew",
+      "T. J. Greenslade"
+    ],
+    "affiliations": [
+      "University of Surrey",
+      "Culham Science Centre",
+      "Reaction Engines (United Kingdom)",
+      "Department of Mechanical Engineering Sciences, University of Surrey , Guildford, Surrey GU2 7XH, UK ; , Abingdon OX14 3DB, UK",
+      "Reaction Engines Ltd, Culham Science Centre , Guildford, Surrey GU2 7XH, UK ; , Abingdon OX14 3DB, UK",
+      "Department of Mechanical Engineering Sciences, University of Surrey, Guildford, Surrey GU2 7XH, United Kingdom; Reaction Engines Ltd, Culham Science Centre, Abingdon OX14 3DB, United Kingdom",
+      "Department of Mechanical Engineering Sciences, University of Surrey , Guildford, Surrey GU2 7XH, UK",
+      "Department of Mechanical Engineering Sciences, University of Surrey, Guildford, Surrey GU2 7XH, United Kingdom"
+    ],
+    "date": "2024-11-28",
+    "year": 2024,
+    "url": "https://doi.org/10.1115/1.4067268",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对刷式密封中刷丝间摩擦接触、轴与背环相互作用及三维刷丝弯曲问题，建立了高保真数值模型，重点研究轴径向运动与压力载荷下多刷丝刷式密封的迟滞行为。发现背环摩擦是迟滞建模的关键因素，轴回退时刷尖间隙显著增大泄漏流量并改变气动载荷分布，导致上游刷丝法向力升高、下游轴向力降低。",
+    "method": "采用三维数值模型模拟刷丝间摩擦接触、轴与背环相互作用及刷丝弯曲，在轴径向运动和压力载荷工况下计算多刷丝刷式密封的力学与泄漏特性，并与文献实验数据对比验证。",
+    "innovation": "首次在刷式密封模型中同时考虑刷丝间摩擦接触、背环摩擦和三维刷丝弯曲，并揭示轴回退阶段刷尖间隙对泄漏流量和气动载荷分布的关键影响，改进了加压密封在轴回退阶段的建模方法。",
+    "conclusions": "背环摩擦是迟滞建模的关键因素，可减弱轴摩擦影响；轴回退时刷尖间隙使泄漏流量大幅增加，上游刷丝法向力显著升高以抵抗刷丝悬挂，下游轴向力降低缓解刷丝束压缩。",
+    "limitations": "模型基于文献实验数据验证，未涉及转子动力学与流致振动耦合，且未考虑刷丝磨损和热效应的长期演化。",
+    "tags": [
+      "数值仿真",
+      "叶尖间隙",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "该论文研究刷式密封的摩擦接触与泄漏特性，虽涉及叶尖间隙和泄漏流，但未直接关联旋转不稳定性或非同步振动，仅对叶尖泄漏流建模有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-28",
+    "groups": []
+  },
+  {
     "id": "46b59794c48c",
     "title": "Unsteady Flow Mechanism of Corner Separation Control Using Blade End Slots in a Highly Loaded Compressor Cascade",
     "abstract": "Abstract Blade end slots have been proven to be an effective method to suppress corner separation, thereby improving the aerodynamic performance of the compressor. The unsteady effects of blade end slots affiliated with a highly loaded compressor cascade on corner separation control are investigated based on delayed detached eddy simulation under the Mach number of 0.59. The corner separation vortex structures between the datum blade and the end slotted blade are compared. The vortex topologies are markedly reorganized and suppressed by the blade end slots. Unsteady flow behaviors of separation vortex and the corresponding dynamic mechanisms are analyzed in both time and frequency domains. The interaction of the self-adaptive jet flow from the blade end slots to the corner separation flow results in smaller-scale vortices in the blade end region with a higher characteristic frequency. Consequently, the unsteady effects caused by corner separation vortices are significantly reduced in range and intensity through the enhancement of flow mixing and the rapid dissipation of corner separation vortices into larger-scale lower-frequency features. Furthermore, spatiotemporal features and dynamics of corner separation flow with blade end slot control are investigated using the enhanced dynamic mode decomposition method. Results show that the dominant unsteady flow behavior develops with better stability, the intermittency of low-frequency and large-scale behavior is reduced via the blade end slot control.",
@@ -13536,6 +13623,45 @@
     "relevance_reason": "论文研究畸变进气对失速起始的影响，未涉及旋转不稳定性或非同步振动，但与压气机稳定性相关。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "a161ab1c837a",
+    "title": "Active Energy Management for Enhanced Engine Transient Operations",
+    "abstract": "Combat aircraft often require the engine to accelerate as fast as possible in response to the demand of maneuvering. The engine acceleration rate, however, is limited by the compressor surge constraint, which prevents more fuel addition that, otherwise, could provide for higher net shaft torque, and thus, faster acceleration. This paper examines the idea of using the electric starter/generator (ES/G) system to provide additional net shaft torque during this critical phase of acceleration. The idea is examined by simulations using a quasi-one-dimensional dynamic compressor flow model coupled with a lumped combustor–turbine model. A notional single-spool turbojet with a low overall pressure ratio is modeled and simulated. Simulation results suggest that an ES/G, when used as an electric-assist motor during acceleration, can help the engine to accelerate roughly 11, 48, and 70% faster compared to the case without ES/G participation, by using electric power roughly equivalent to 0.1, 1, and 3% of full-speed fuel combustion power, respectively. Furthermore, the respective increase in the acceleration rate leads to an additional 19, 80, and 113% of propulsion impulse, respectively (i.e., thrust integrated over time), during the first 5 s following the acceleration command.",
+    "authors": [
+      "Zhenhao Jing",
+      "Yedidia Neumeier",
+      "J. V. R. Prasad",
+      "Darrell K. James"
+    ],
+    "affiliations": [
+      "Georgia Institute of Technology",
+      "Georgia Institute of Technology, Atlanta, Georgia 30332",
+      "Honeywell (United States)",
+      "Honeywell International, Inc",
+      "Honeywell International, Inc., Phoenix, Arizona 85034"
+    ],
+    "date": "2024-07-15",
+    "year": 2024,
+    "url": "https://doi.org/10.2514/1.b39242",
+    "venue": "Journal of Propulsion and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对战斗机发动机加速受喘振约束的问题，提出利用电动起动机/发电机（ES/G）在加速阶段提供额外轴扭矩。采用准一维动态压气机模型耦合集总燃烧室-涡轮模型进行仿真，结果表明电辅助可显著提升加速率并增加推进冲量。",
+    "method": "数值仿真：准一维动态压气机流动模型耦合集总燃烧室-涡轮模型，模拟低总压比单轴涡喷发动机加速过程。",
+    "innovation": "将电动起动机/发电机作为加速辅助动力，通过主动能量管理突破喘振约束以提升发动机瞬态响应，而非传统被动控制。",
+    "conclusions": "电辅助功率为满速燃烧功率的0.1%、1%、3%时，加速率分别提高约11%、48%、70%；加速后5秒内推进冲量分别增加19%、80%、113%。",
+    "limitations": "基于简化准一维模型和低总压比单轴涡喷，未考虑多级压气机、叶尖间隙及旋转不稳定性等非定常细节。",
+    "tags": [
+      "数值仿真",
+      "失速/喘振机理",
+      "稳定性建模"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究喘振约束下的加速控制，未涉及旋转不稳定性或非同步振动，但喘振与RI同属压气机气动稳定性问题，对流动控制有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-28",
     "groups": []
   },
   {
@@ -40950,6 +41076,47 @@
     "has_fulltext": false,
     "fetched_at": "2026-08-03",
     "groups": []
+  },
+  {
+    "id": "705aad84815e",
+    "title": "Analysis of Fan Stage Conceptual Design Attributes for Boundary Layer Ingestion",
+    "abstract": "This paper describes a new conceptual framework for three-dimensional turbomachinery flow analysis and its use to assess fan stage attributes for mitigating adverse effects of inlet distortion due to boundary layer ingestion (BLI). A nonaxisymmetric throughflow analysis has been developed to define fan flow with inlet distortion. The turbomachinery is modeled using momentum and energy source distributions that are determined as a function of local flow conditions and specified blade camber surface geometry. Comparison with higher-fidelity computational and experimental results shows the analysis captures the principal flow redistribution and distortion transfer effects associated with BLI. Distortion response is assessed for a range of (i) design flow and stagnation enthalpy rise coefficients, (ii) rotor spanwise work profiles, (iii) rotor–stator spacings, and (iv) nonaxisymmetric stator geometries. Of the approaches examined, nonaxisymmetric stator geometry and increased stage flow and stagnation enthalpy rise coefficients provide the greatest reductions in rotor flow nonuniformity, and may offer the most potential for mitigating performance loss due to BLI inlet distortion.",
+    "authors": [
+      "David K. Hall",
+      "E. M. Greitzer",
+      "Choon Sooi Tan"
+    ],
+    "affiliations": [
+      "American Institute of Aeronautics and Astronautics",
+      "Massachusetts Institute of Technology",
+      "Gas Turbine Laboratory, Department of Aeronautics and Astronautics, Massachusetts Institute of Technology, Cambridge, MA 02139 e-mail:",
+      "Gas Turbine Laboratory, Department of Aeronautics and Astronautics, Massachusetts Institute of Technology, Cambridge, MA 02139"
+    ],
+    "date": "2017-01-06",
+    "year": 2017,
+    "url": "https://doi.org/10.1115/1.4035631",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文建立了一种三维非轴对称通流分析框架，用于评估边界层吸入（BLI）进气畸变下风扇级概念设计属性。通过动量与能量源项建模叶片，并与高保真计算及实验对比，研究了设计参数、转子展向功分布、转子-静子间距及非轴对称静子几何对畸变响应的影响。",
+    "method": "采用非轴对称通流分析，以动量/能量源项和叶片中弧面几何建模，对比高保真CFD与实验，评估不同设计参数、功分布、间距及静子几何下的畸变响应。",
+    "innovation": "提出非轴对称通流分析框架，可快速评估BLI畸变下风扇级设计属性，并系统比较多种设计参数对畸变传递的影响，为概念设计提供高效工具。",
+    "conclusions": "非轴对称静子几何与提高级流量和滞止焓升系数可最大程度降低转子流动非均匀性，有望缓解BLI进气畸变导致的性能损失。",
+    "limitations": "基于通流模型，可能无法精确捕捉局部三维流动细节和非定常效应；未考虑旋转不稳定性等非同步振动问题。",
+    "tags": [
+      "畸变进气",
+      "解析/降阶模型",
+      "风扇/压气机叶片气动弹性"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究BLI进气畸变下风扇级设计属性，涉及畸变传递与流动非均匀性，但未直接连接旋转不稳定性或非同步振动，仅对畸变进气与气动弹性有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-09-28",
+    "groups": [
+      "MIT GTL",
+      "TU Berlin Aero Engines",
+      "Duke Aeroelasticity"
+    ]
   },
   {
     "id": "321bd35683c9",
