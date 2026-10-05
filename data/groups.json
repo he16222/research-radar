@@ -102,6 +102,20 @@
     "custom": false
   },
   {
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
+    "pis": [
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
+    ],
+    "aliases": [],
+    "total": 41,
+    "avg_relevance": 3.0,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Imperial Aeroelasticity",
     "institution": "Imperial College London",
     "pis": [
@@ -130,20 +144,6 @@
     "aliases": [],
     "total": 40,
     "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Beihang BUAA",
-    "institution": "Beihang University",
-    "pis": [
-      "Xiaofeng Sun",
-      "Dakun Sun",
-      "Xu Dong"
-    ],
-    "aliases": [],
-    "total": 39,
-    "avg_relevance": 3.1,
     "preset": true,
     "custom": false
   },
@@ -218,6 +218,18 @@
     "custom": false
   },
   {
+    "name": "Tsinghua Turbo Lab",
+    "institution": "Tsinghua University",
+    "pis": [
+      "Xinqian Zheng"
+    ],
+    "aliases": [],
+    "total": 23,
+    "avg_relevance": 2.6,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Waseda / IHI",
     "institution": "Waseda University / IHI",
     "pis": [
@@ -273,18 +285,6 @@
     "custom": false
   },
   {
-    "name": "Tsinghua Turbo Lab",
-    "institution": "Tsinghua University",
-    "pis": [
-      "Xinqian Zheng"
-    ],
-    "aliases": [],
-    "total": 21,
-    "avg_relevance": 2.5,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Oxford Thermofluids",
     "institution": "University of Oxford",
     "pis": [
@@ -304,7 +304,7 @@
       "Juan Du"
     ],
     "aliases": [],
-    "total": 19,
+    "total": 20,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -428,8 +428,8 @@
       "Yanhui Wu"
     ],
     "aliases": [],
-    "total": 4,
-    "avg_relevance": 2.5,
+    "total": 5,
+    "avg_relevance": 2.7,
     "preset": true,
     "custom": false
   },
