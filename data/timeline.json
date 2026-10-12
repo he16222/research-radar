@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T08:46:02Z",
+  "generated_at": "2026-10-12T08:55:52Z",
   "periods": [
     1960,
     1965,
@@ -982,7 +982,7 @@
           "summary": "2015-2019年间，该领域在失速/喘振机理研究上取得了显著进展，主要体现在对失速起始机制的深入理解与控制方法的创新。关键工作包括：揭示了叶尖泄漏流在尖峰型旋转失速起始中的核心作用（如《The Role of Tip Leakage Flow in Spike-Type Rotating Stall Inception》），并发展了基于声学分析（如《Surge and Stall Detection Using Acoustic Analysis》）和等离子体激励（如《Rotating Stall Control in an Axial Fan with Pulsed-Direct-Current Plasma Actuation》）等新型失速检测与控制技术。此外，针对离心压气机，研究者系统阐明了扩压器回流技术（如《An Investigation of Centrifugal Compressor Stability Enhancement Using a Novel Vaned Diffuser Recirculation Technique》）及蜗壳耦合效应（如《Investigation on the Stall Inception Circumferential Position and Stall Process Behavior in a Centrifugal Compressor With Volute》）对失稳行为的影响，为工程稳定性设计提供了关键依据。"
         },
         "2020": {
-          "count": 152,
+          "count": 153,
           "paper_ids": [
             "e19d39ff7de4",
             "d9af602f8ede",
@@ -1039,6 +1039,7 @@
             "8c56d2305810",
             "246e10df9df9",
             "505c0b0ea498",
+            "3cd6cccbd230",
             "cf1aa46f1855",
             "958e7081e251",
             "84ce166f0c26",
@@ -1508,7 +1509,7 @@
           "summary": "2010-2014年间，进气畸变领域的研究重点从单一的总压畸变拓展至温度畸变与旋流畸变，例如通过高保真数值模拟揭示了周向总压畸变在多级风扇中的传递机制（如Per-Rev型畸变传递的完整组件仿真），并系统分析了非均匀温度分布对涡轮叶尖泄漏流、热传递及气动效率的影响（如高温畸变对涡轮效率的冲击）。此外，研究还深入探讨了畸变与风扇/压气机稳定性的相互作用，包括通过非对称流动控制提升高压比离心压气机的稳定性，以及边界层吸入对跨音速风扇转子气动噪声的影响。这些工作为航空发动机进气系统设计提供了更全面的畸变效应评估方法和控制策略。"
         },
         "2015": {
-          "count": 50,
+          "count": 51,
           "paper_ids": [
             "f1aa13bf3bdc",
             "7bdecc52d8d7",
@@ -1529,6 +1530,7 @@
             "98248919a8fb",
             "f263b8792d24",
             "ee046334c6a2",
+            "b35341491f51",
             "9978b06b33be",
             "555bfb2fdde7",
             "6c448faad1b5",
@@ -2871,7 +2873,7 @@
           "summary": "2015-2019年间，实验测量在压气机领域的研究重点集中于失速与喘振的机理探索及主动控制，例如通过脉冲直流等离子体激励实现轴流风扇旋转失速控制，以及利用快速响应压力测量非侵入式监测叶片振动。在气动弹性与稳定性方面，研究揭示了叶尖间隙、雷诺数效应及湿压缩对流动结构的影响，并发展了基于延迟微分方程的叶片/机匣碰摩稳定性分析方法。此外，针对多级压气机中的转子-定子相互作用，实验解析了Tyler-Sofrin模态的传播特性，并对比了气动建模对强迫响应预测的精度差异。这些工作为压气机设计优化、失速预警及颤振抑制提供了关键实验依据。"
         },
         "2020": {
-          "count": 357,
+          "count": 358,
           "paper_ids": [
             "b00c4e55885d",
             "a2e455dba63b",
@@ -3064,6 +3066,7 @@
             "a127b93aa762",
             "6c5748c7a5ab",
             "d69cbb0a7fa3",
+            "f8c71c1411a5",
             "31bc0b830c2c",
             "f93a96c76948",
             "f077b24f63d0",
@@ -3607,7 +3610,7 @@
           "summary": "2015-2019年间，数值仿真在航空发动机压气机领域的研究重点集中于非定常流动与气弹稳定性问题，例如通过全环非定常仿真揭示了非同步叶片振动激励（如《Full-Annulus Simulation of Nonsynchronous Blade Vibration Excitation of an Axial Compressor》）以及旋转失速与机匣处理耦合机制（如《Transonic Compressor Blade Optimization Integrated With Circumferential Groove Casing Treatment》）。同时，研究者发展了基于降阶模型（如《A Reduced Order Model for Nonlinear Dynamics of Mistuned Bladed Disks With Shroud Friction Contacts》）和流固耦合方法（如《Numerical and Experimental Fluid–Structure Interaction-Study to Determine Mechanical Stresses Induced by Rotating Stall》）来预测叶片强迫响应与失速诱导应力，并针对进气道畸变（如《Fan Similarity Model for the Fan–Intake Interaction Problem》）和离心压气机蜗壳非均匀流动（如《Performance Analysis of a Centrifugal Compressor Based on Circumferential Flow Distortion Induced by Volute》）的影响开展了系统性数值验证。"
         },
         "2020": {
-          "count": 151,
+          "count": 152,
           "paper_ids": [
             "e19d39ff7de4",
             "d9af602f8ede",
@@ -3666,6 +3669,7 @@
             "ccdabf016182",
             "8c56d2305810",
             "246e10df9df9",
+            "3cd6cccbd230",
             "a984633e1d92",
             "d8a6a31ea46f",
             "7403db974e9a",

@@ -19125,6 +19125,46 @@
     "groups": []
   },
   {
+    "id": "3cd6cccbd230",
+    "title": "Methodology and Validation of Surge Modeling in a Three-Shaft Compression System",
+    "abstract": "Abstract In this paper an efficient numerical strategy for computational fluid dynamics (CFD) simulation of surge events in a three-shaft engine compression system is presented. Numerical results are compared against measured data and the sources of discrepancies and uncertainties are addressed. It is discovered that the engine bleed system has a major impact in reducing the aerodynamic loading during surge in the core system. To the best knowledge of the authors, this is the first time that such a complex CFD computation is attempted and compared against real engine measured data and will provide valuable information to other CFD users as well as gas turbine manufacturers.",
+    "authors": [
+      "Fanzhou Zhao",
+      "Jose Moreno",
+      "John Dodds",
+      "Mehdi Vahdati"
+    ],
+    "affiliations": [
+      "Imperial College London",
+      "Imperial College London Department of Mechanical Engineering, , London SW7 2AZ , UK",
+      "Rolls-Royce (United Kingdom)",
+      "Rolls-Royce plc , P.O. Box 31, Derby DE24 8BJ , UK"
+    ],
+    "date": "2023-09-27",
+    "year": 2023,
+    "url": "https://doi.org/10.1115/1.4063506",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对三轴发动机压缩系统，发展了高效的CFD喘振数值模拟方法，并与整机实测数据对比验证。研究发现发动机放气系统显著降低核心机喘振时的气动负荷，首次实现如此复杂的喘振CFD计算与真实发动机数据对比。",
+    "method": "基于CFD的数值模拟方法，针对三轴压缩系统喘振事件进行非定常计算，并与真实发动机实测数据进行对比验证。",
+    "innovation": "首次对三轴发动机压缩系统进行复杂喘振CFD计算并与真实发动机实测数据对比，揭示了放气系统对核心机喘振气动负荷的显著影响。",
+    "conclusions": "放气系统对降低核心机喘振时的气动负荷有重大影响；CFD结果与实测数据存在偏差，偏差来源包括放气系统建模不确定性等。",
+    "limitations": "仅针对喘振事件，未涉及旋转不稳定性或非同步振动；计算资源需求大，放气系统建模可能引入不确定性。",
+    "tags": [
+      "数值仿真",
+      "失速/喘振机理",
+      "稳定性建模"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究三轴压缩系统喘振的CFD模拟与验证，属于压气机稳定性建模范畴，但未涉及旋转不稳定性或非同步振动，与RI-NSV机理、预测或控制无直接关联。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-12",
+    "groups": [
+      "Imperial Aeroelasticity"
+    ]
+  },
+  {
     "id": "a984633e1d92",
     "title": "A Numerical Test Rig for Turbomachinery Flows Based on Large Eddy Simulations With a High-Order Discontinuous Galerkin Scheme—Part III: Secondary Flow Effects",
     "abstract": "Abstract In this final paper of a three-part series, we apply the numerical test rig based on a high-order discontinuous Galerkin scheme to the MTU T161 low-pressure turbine with diverging end walls at off-design Reynolds number of 90,000, Mach number of 0.6, and inflow angle of 41 deg. The inflow end wall boundary layers are prescribed in accordance with the experiment. Validation of the setup is shown against recent numerical references and the corresponding experimental data. Additionally, we propose and conduct a purely numerical experiment with upstream bar wake generators at a Strouhal number of 1.25, which is well above what was possible in the experiment. We discuss the flow physics at midspan and in the end wall region and highlight the influence of the wakes from the upstream row on the complex secondary flow system using instantaneous flow visualization, phase averages, and modal decomposition techniques.",
@@ -22681,6 +22721,41 @@
     "relevance_reason": "论文研究风车工况下的叶尖泄漏流与流动相似性，未涉及旋转不稳定性或非同步振动，但对叶尖流动分析有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "f8c71c1411a5",
+    "title": "Experimental Investigation of Friction Damping in Blade Root Joints",
+    "abstract": "Abstract The design of disk assemblies requires the capability to predict their dynamic behavior. To achieve this objective, knowledge of friction damping on the contact between blade and disk is of paramount importance. This paper proposes an experimental technique to measure the loss factor and the dynamics, in terms of natural frequencies, of blade-disk attachment. The free decay is used to infer the dynamic parameters from dummy blades. The identification method is based on the Hilbert transform that allows extracting the dynamic parameters from nonlinear system. This paper shows the test rig utilized in the experimental analysis and details the excitation system used to displace the dummy blade. This system must be a real or a “virtual” noncontact system to avoid injecting external damping into the blade under test. Tests were performed on both a dovetail and a fir-tree type attachment. On the dovetail, tests were performed both with dry contact surfaces and with contact surfaces covered by a film of lubricant to achieve a low coefficient of friction. This low coefficient of friction better simulates dry surfaces at high temperatures, as friction coefficients decrease with temperatures. This paper presents the results obtained on the first and second bending mode. The experimental results show the loss factor and the natural frequency for different axial loads. The measured loss factor depends on the amplitude of vibrations. As predicted with theoretical analyses the loss factor shows a maximum then approaching zero for large amplitude of vibrations. As a rule, it decreases with increasing centrifugal loads.",
+    "authors": [
+      "Daniele Botto",
+      "Federica Cuccovillo",
+      "Veronica Iannotti"
+    ],
+    "affiliations": [
+      "Politecnico di Torino",
+      "Department of Mechanical and Aerospace Engineering, Politecnico di Torino , Torino 10129, Italy"
+    ],
+    "date": "2022-10-28",
+    "year": 2022,
+    "url": "https://doi.org/10.1115/1.4056099",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对叶片-轮盘榫连接触摩擦阻尼，提出基于自由衰减与希尔伯特变换的实验辨识方法，测量燕尾形和枞树形榫头的损耗因子与固有频率。采用非接触激励避免附加阻尼，发现损耗因子随振幅先增后减，且随离心载荷增大而降低。",
+    "method": "实验研究：自由衰减法结合希尔伯特变换辨识非线性系统动态参数，测试燕尾形和枞树形榫头，施加不同轴向载荷，覆盖第一、二阶弯曲模态。",
+    "innovation": "采用希尔伯特变换从非线性自由衰减信号中提取损耗因子与频率，并设计非接触/虚拟激励系统避免外部阻尼注入，系统对比干接触与润滑接触的阻尼特性。",
+    "conclusions": "损耗因子随振动幅值增大先出现最大值后趋近于零；随离心载荷增加而降低。润滑接触模拟高温干接触，低摩擦系数下阻尼变化趋势一致。",
+    "limitations": "仅针对静态或准静态轴向载荷下的榫连接触，未考虑旋转离心场、气动激励与多模态耦合的复杂工况。",
+    "tags": [
+      "叶片流致振动抑制/控制",
+      "实验测量",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究叶片榫连接触摩擦阻尼，属于叶片振动抑制与控制范畴，但未涉及旋转不稳定性或非同步振动，仅对风扇/压气机叶片流致振动控制有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-12",
     "groups": []
   },
   {
@@ -39672,6 +39747,46 @@
     "relevance_reason": "论文研究亥姆霍兹共振器阻抗模型，可用于声学诱导叶片振动分析，但未直接涉及RI-NSV机理或控制。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "b35341491f51",
+    "title": "Leading-Edge Noise Prediction of General Airfoil Profiles with Spanwise-Varying Inflow Conditions",
+    "abstract": "This paper presents a study of the leading-edge noise radiated by an airfoil undergoing a turbulent inflow. The noise prediction of generic airfoil profiles subjected to spanwise-varying inflow conditions is performed with the support of Amiet’s theory and the inverse strip technique. In the proposed methodology, the aeroacoustic transfer function of a generic airfoil profile is computed by the boundary element method. The effects of the airfoil leading-edge thickness on the inflow turbulence are accounted for by a turbulence spectrum based on the rapid distortion theory. This research shows that the turbulence distortion plays a significant role on the predicted noise levels. Compared with the von Kármán model for isotropic turbulence, the rapid distortion theory predicts reduced noise levels at high frequencies and increased noise levels at low frequencies. This paper also shows that the spanwise-varying inflow, here represented by a linearly changing condition, contributes to raising the noise levels when compared to the similar uniform inflow case. This research confirms that the finite airfoil thickness decreases the airfoil-gust lift response, consequently reducing the noise levels. This observation is more pronounced for microphones positioned downstream of the airfoil and for high frequencies.",
+    "authors": [
+      "Renato Fuzaro Miotto",
+      "William Roberto Wolf",
+      "Leandro D. de Santana"
+    ],
+    "affiliations": [
+      "Universidade Estadual de Campinas (UNICAMP)",
+      "University of Twente",
+      "University of Campinas, 13083-860 Campinas SP, Brazil",
+      "University of Twente, 7522 NB Enschede, The Netherlands",
+      "Department of Energy. Member AIAA",
+      "Faculty of Engineering Technology, Drienerlolaan 5",
+      "University of Twente, 7522 NB Enschede, The Netherlands"
+    ],
+    "date": "2018-03-15",
+    "year": 2018,
+    "url": "https://doi.org/10.2514/1.j056716",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对湍流来流下通用翼型前缘噪声，采用Amiet理论结合逆条带技术，并利用边界元法计算气动声传递函数，同时引入基于快速畸变理论的湍流谱以考虑前缘厚度影响。研究发现湍流畸变显著改变噪声预测，快速畸变理论相比各向同性von Kármán模型在高频降低、低频提高噪声；展向变化来流使噪声升高，有限翼型厚度降低升力响应从而降噪。",
+    "method": "理论/半解析方法：Amiet理论+逆条带技术+边界元法计算传递函数，采用快速畸变理论湍流谱，考虑展向线性变化来流和不同前缘厚度。",
+    "innovation": "将快速畸变理论湍流谱与Amiet逆条带技术结合，用于展向变化来流下通用翼型前缘噪声预测，并量化前缘厚度和湍流畸变对噪声的影响。",
+    "conclusions": "湍流畸变使高频噪声降低、低频噪声升高；展向变化来流使噪声升高；有限翼型厚度降低翼型-阵风升力响应，从而降低噪声，下游麦克风和高频更明显。",
+    "limitations": "基于Amiet理论和平板边界层假设，未考虑真实压气机旋转效应、叶片弯掠及非定常分离等复杂流动。",
+    "tags": [
+      "解析/降阶模型",
+      "声学诱导叶片振动",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究翼型前缘噪声预测，与风扇/压气机声学诱导叶片振动有参考价值，但未涉及旋转不稳定性或非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-12",
     "groups": []
   },
   {

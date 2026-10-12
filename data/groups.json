@@ -102,20 +102,6 @@
     "custom": false
   },
   {
-    "name": "Beihang BUAA",
-    "institution": "Beihang University",
-    "pis": [
-      "Xiaofeng Sun",
-      "Dakun Sun",
-      "Xu Dong"
-    ],
-    "aliases": [],
-    "total": 41,
-    "avg_relevance": 3.0,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Imperial Aeroelasticity",
     "institution": "Imperial College London",
     "pis": [
@@ -126,8 +112,22 @@
       "Venkatesh Suriyanarayanan"
     ],
     "aliases": [],
-    "total": 40,
+    "total": 41,
     "avg_relevance": 3.3,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
+    "pis": [
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
+    ],
+    "aliases": [],
+    "total": 41,
+    "avg_relevance": 3.0,
     "preset": true,
     "custom": false
   },
