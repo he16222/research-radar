@@ -1,5 +1,44 @@
 [
   {
+    "id": "5c23521b7a2c",
+    "title": "Transient Forced Response of a Mistuned Blisk Rotor in a Multistage Axial Compressor",
+    "abstract": "Abstract Rotor forced response is a major aeromechanical problem causing blade high cycle fatigue, and mistuning can significantly increase the maximum blade vibrational amplitude due to mode localization. Most of the previous mistuned forced response experimental studies were conducted at slow rotational speed sweep rates through the resonance and analyzed utilizing the steady state assumption. However, in practice, engine sweep rate can be significantly high such that the classical steady state forced response analysis becomes invalid. To study the transient forced response in a realistic environment, a comprehensive experimental study was conducted in the Purdue three-stage axial research compressor by measuring rotor blade response at four different sweep rates in both acceleration and deceleration. An overall peak amplitude reduction and peak frequency shift were observed at higher sweep rates, along with a transient beating occurring at the highest sweep rate. Initially, an analytical transient analysis for a single degree of freedom (SDOF) system was conducted. While it explains the major features of the transient response well, it fails to accurately predict the amplitude change at different sweep rates. The transient effect differences measured between acceleration and deceleration are also completely missed by the SDOF analysis. Therefore, a transient mistuned rotor analysis was performed utilizing the Fundamental Mistuning Model (FMM). Through a mode superposition approach, the transient mistuned rotor analysis shows that the difference measured in the acceleration and deceleration cases was caused by the relative phase change of the dominant modes contributing to the total resonant response.",
+    "authors": [
+      "Yujun Leng",
+      "Douglas R. Matthews",
+      "Jhansi Reddy Dodda",
+      "Nicole L. Key"
+    ],
+    "affiliations": [
+      "500 Allison Rd West Lafayette, IN 47907-2014",
+      "500 Allison Road West Lafayette, IN 47907",
+      "Zucrow Laboratories 500 Allison Road West Lafayette, IN 47907"
+    ],
+    "date": "2026-10-08",
+    "year": 2026,
+    "url": "https://doi.org/10.1115/1.4072756",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文在普渡三级轴流研究压气机上实验测量了失谐整体叶盘转子在四个不同加速/减速扫速率下的瞬态强迫响应，观察到高扫速率下峰值幅值降低、峰值频率偏移及瞬态拍振现象；结合单自由度解析分析与基本失谐模型（FMM）模态叠加分析，揭示了加/减速响应差异源于主导模态相对相位变化。",
+    "method": "实验测量（三级轴流压气机、四个扫速率、加速与减速）+ 单自由度解析瞬态分析 + FMM 失谐转子瞬态模态叠加分析",
+    "innovation": "突破传统稳态假设，实验与失谐瞬态模型结合研究高扫速率下多级压气机失谐叶盘瞬态强迫响应，并解释加/减速响应差异的模态相位机理",
+    "conclusions": "高扫速率下整体峰值幅值降低且峰值频率偏移，最高扫速率出现瞬态拍振；加/减速响应差异由主导模态相对相位变化引起，SDOF 无法预测该差异",
+    "limitations": "仅针对强迫响应共振穿越，未涉及非同步振动与旋转不稳定性；实验限于三级压气机特定工况，模型为降阶近似",
+    "tags": [
+      "叶片流致振动预测模型",
+      "实验测量",
+      "解析/降阶模型"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究失谐叶盘瞬态强迫响应与扫频共振，属气动弹性强迫响应范畴，但未直接涉及 RI 导致的 NSV 机理、预测或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": [
+      "Purdue Compressor Lab"
+    ]
+  },
+  {
     "id": "08b3f7375d8d",
     "title": "Comparison of Flutter Analysis Approaches in the Frequency Domain for the ECL5 Open Fan",
     "abstract": "Abstract The topic of this paper is the flutter analysis at part speed of the ECL5/Catana open fan. The focus is on the operating point of maximal pressure ratio on the 80% speed line, where previous studies have revealed a very high sensitivity of the aerodynamic damping for the second blade eigenmode. In particular, a sudden drop of the damping near the nodal diameters of 5 was observed with time-linearised approaches, while for harmonic balance simulations with a different solver this V-shaped spike in the damping curve was observed near the nodal diameter of 6 when a fully nonlinear setup resolving the 0th and higher harmonics was used. In the previous study, this phenomenon was related to the resonance with a convective disturbance with a characteristic circumferential speed and suggested that, if non-linear effects are taken into account, then the resonance convective speed increases. In this paper, the flutter analyses based on three different frequency domain solvers are compared with each other: a time-linearised method and two harmonic balance solvers, each being based on different spatial schemes and/or turbulence models. The results in this paper show that the V-shaped damping curves can be reproduced with different solvers. If the zeroth harmonic is included in the set of harmonics which are solved for then the resonance condition is located near the nodal diameter of 6, while, for frozen mean flows, it is located at 5. This behaviour is confirmed by two harmonic balance solvers.",
@@ -202,6 +241,44 @@
     "relevance_reason": "论文研究声衬控制进气畸变引起的谐波激励与声响应，与RI-NSV控制中的声学阻抗调控思路相关，但未直接涉及旋转不稳定性或非同步振动。",
     "has_fulltext": false,
     "fetched_at": "2026-09-21",
+    "groups": []
+  },
+  {
+    "id": "3228b6e1784d",
+    "title": "Laser Doppler Velocimetry Measurements of Acoustic–Turbulent Flow Interaction over Liner",
+    "abstract": "The interaction between a grazing turbulent boundary layer at Mach 0.3 and tonal acoustic waves with an amplitude equal to 145 dB over a single-degree-of-freedom acoustic liner is investigated experimentally using laser Doppler velocimetry. Streamwise and wall-normal velocity profiles are measured along the liner, and the acoustic-induced velocity component is extracted from time-resolved measurements via a turbulence-rejection technique, allowing the separation of coherent acoustic and turbulent velocity fluctuations within the boundary layer. The influence of the acoustic source position, upstream or downstream of the liner, is examined. Results show that acoustic excitation near liner resonance frequency reduces the near-wall streamwise mean velocity while enhancing velocity fluctuations, producing a localized hump in second-order statistics. The spatial distribution and amplitude of the acoustic-induced velocity above the liner are strongly dependent on source position and exhibit significant distortions within the near-wall region, revealing a pronounced distortion of the plane wave acoustic field. These measurements provide direct experimental evidence that the turbulent boundary layer modifies the structure of the propagating acoustic wave. These observations highlight that source orientation significantly modulates the transfer of acoustic energy to the turbulent boundary layer, providing new insights into the mechanisms governing acoustic–turbulence interactions over lined surfaces.",
+    "authors": [
+      "Ludovic Ambrosiani",
+      "Fabien Méry",
+      "Estelle Piot",
+      "Francesco Avallone"
+    ],
+    "affiliations": [
+      "Politecnico di Torino",
+      "Polytechnic University of Turin",
+      "Université de Toulouse",
+      "University of Toulouse"
+    ],
+    "date": "2026-09-04",
+    "year": 2026,
+    "url": "https://doi.org/10.2514/1.j067152",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文用激光多普勒测速（LDV）实验研究马赫0.3湍流边界层与145 dB单音声波在单自由度声衬上的声-湍流相互作用，通过湍流剔除技术分离相干声速与湍流脉动，考察声源位于声衬上游或下游的影响。",
+    "method": "实验研究：LDV测量声衬上方流向与法向速度剖面，来流马赫数0.3，声激励145 dB，声源置于声衬上游或下游两种工况。",
+    "innovation": "采用湍流剔除技术从时均测量中提取声致速度分量，实现边界层内相干声波与湍流脉动的分离，并系统比较声源方位对声能向湍流边界层传递的影响。",
+    "conclusions": "声激励接近声衬共振频率时，近壁流向平均速度降低、速度脉动增强，二阶统计量出现局部隆起；声致速度的空间分布与幅值强烈依赖声源位置，近壁区平面声波场发生显著畸变。",
+    "limitations": "仅限马赫0.3、145 dB单音与单自由度声衬的平板边界层实验，未涉及旋转叶片、非定常来流及多频/宽频激励。",
+    "tags": [
+      "实验测量",
+      "声学诱导叶片振动",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究声衬上方声-湍流边界层相互作用与声源方位影响，属声学处理与流动控制基础，未直接涉及RI-NSV机理、预测或控制，但对声学阻抗调控NSV有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
     "groups": []
   },
   {
@@ -1154,6 +1231,48 @@
     "has_fulltext": false,
     "fetched_at": "2026-06-15",
     "groups": []
+  },
+  {
+    "id": "af7e37aceb19",
+    "title": "Realistic Sheared Flow Profile Effects on Acoustic Impedance Eduction in Small Three-Dimensional Ducts",
+    "abstract": "We investigate the influence of realistic sheared grazing flow on acoustic propagation in three-dimensional rectangular ducts. We show that the conclusions reached in the literature about the effects of sheared grazing flow on acoustic propagation in lined ducts are dependent on the flow profiles used in those studies and that significantly different conclusions are reached once a realistic flow profile is used. We particularly focus on small ducts typical of most experimental impedance eduction facilities, for which velocity gradients are relevant in a significant fraction of the duct cross section. We assess the effect of simplifying the velocity distribution in the cross section to either a one-dimensional (two-dimensional, spanwise-infinite duct) or a uniform flow profile. Three flow profiles are considered, namely, i) the tensorized hyperbolic tangent, ii) the law of the wall, and iii) one obtained from a RANS simulation. These flow profiles are used as input in numerical simulations, based on the solution of the three-dimensional Pridmore–Brown equation, to perform in silico impedance eduction experiments. Results show that realistic flow profiles can be well approximated for acoustic wave propagation in ducts by uniform or one-dimensional flow profiles, provided that the bulk Mach number is correctly accounted for, which contrasts with previous findings considering more simplistic flow profiles. The key conclusion of this work is that if viscous effects are negligible and acoustic impedance is a good representation of a lined wall with grazing flow, then the simplification to a uniform flow is a reasonable approximation, and traditional eduction methods are sufficiently accurate.",
+    "authors": [
+      "Lucas A. Bonomo",
+      "Julio Apolinario Cordioli",
+      "Edward James Brambley",
+      "Angelo Paduano",
+      "Francesco Avallone"
+    ],
+    "affiliations": [
+      "Universidade Federal de Santa Catarina",
+      "Federal University of Santa Catarina",
+      "University of Warwick",
+      "Politecnico di Torino",
+      "Polytechnic University of Turin"
+    ],
+    "date": "2026-06-08",
+    "year": 2026,
+    "url": "https://doi.org/10.2514/1.j066637",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文研究真实剪切来流对三维矩形管道内声传播与声阻抗反演的影响，采用张量化双曲正切、壁面律及RANS模拟三种速度型作为输入，基于三维Pridmore-Brown方程开展数值阻抗反演实验。结果表明，只要正确计入主流马赫数，均匀或一维流型即可良好近似真实剪切流下的声传播，传统反演方法足够准确。",
+    "method": "基于三维Pridmore-Brown方程的数值仿真，对比张量化双曲正切、壁面律和RANS三种剪切流型，在小尺寸矩形管道中开展in silico阻抗反演实验。",
+    "innovation": "首次系统比较真实剪切流型与简化流型对三维小管道声阻抗反演的影响，修正了以往基于简化流型得出的剪切流效应结论。",
+    "conclusions": "若粘性效应可忽略且声阻抗能良好表征带 grazing flow 的衬里壁面，则简化为均匀流是合理近似；正确计入主流马赫数后，均匀或一维流型可良好近似真实剪切流下的声传播。",
+    "limitations": "仅针对小尺寸矩形管道与无粘假设，未考虑真实叶轮机械旋转效应、粘性边界层及复杂几何。",
+    "tags": [
+      "声学诱导叶片振动",
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究管道声传播与声阻抗反演方法，与风扇/压气机声学处理及声学诱导振动有参考价值，但未直接涉及RI-NSV机理、预测或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": [
+      "MIT GTL"
+    ]
   },
   {
     "id": "82670378333e",
@@ -8977,6 +9096,42 @@
     ]
   },
   {
+    "id": "c8d3801f08c9",
+    "title": "Boundary-Layer Stability Analysis Using the Nonlinear One-Way Navier–Stokes Approach",
+    "abstract": "We extend the one-way Navier Stokes (OWNS) approach to support nonlinear interactions between waves of different frequencies, which will enable nonlinear analysis of instability and transition. In OWNS, the linearized Navier–Stokes equations are parabolized and solved in the frequency domain as a spatial initial-value (marching) problem. OWNS yields a reduced computational cost compared to global solvers while also conferring numerous advantages over the parabolized stability equations (PSEs), despite its higher computational cost relative to PSE, that we seek to extend to nonlinear analysis. We validate the nonlinear OWNS (NOWNS) method by examining the nonlinear evolution of two- and three-dimensional disturbances in a low-speed Blasius boundary layer compared to nonlinear PSE (NPSE) and direct numerical simulation (DNS) results from the literature. We demonstrate that NOWNS can be used to simulate flows involving blowing/suction strips, is more robust to numerical noise, and converges for stronger nonlinearities, as compared to NPSE.",
+    "authors": [
+      "Michael K. Sleeman",
+      "Tim Colonius",
+      "Matthew T. Lakebrink"
+    ],
+    "affiliations": [
+      "California Institute of Technology",
+      "Boeing (United States)",
+      "Boeing Research & Technology, Hazelwood, Missouri 63042"
+    ],
+    "date": "2025-02-07",
+    "year": 2025,
+    "url": "https://doi.org/10.2514/1.j064909",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文将单向Navier–Stokes（OWNS）方法扩展至支持不同频率波之间的非线性相互作用，提出非线性OWNS（NOWNS），用于边界层稳定性与转捩的非线性分析。在低速Blasius边界层中，以二维和三维扰动演化为例，与非线性PSE及文献DNS结果对比验证，表明NOWNS可模拟吹吸条带、对数值噪声更鲁棒且能收敛于更强非线性。",
+    "method": "数值方法：将线性化Navier–Stokes方程抛物化，在频域作为空间初值问题推进求解，并扩展至多频率波非线性耦合；验证工况为低速Blasius边界层二维/三维扰动，对比NPSE与DNS。",
+    "innovation": "在保持OWNS较全局求解器低成本、较PSE更稳健优势的同时，首次将OWNS框架推广到多频率波非线性相互作用分析，使其能处理更强非线性并模拟吹吸条带等流动控制构型。",
+    "conclusions": "1）NOWNS预测的二维/三维扰动非线性演化与NPSE及文献DNS结果一致；2）相比NPSE，NOWNS对数值噪声更鲁棒，并能在更强非线性条件下收敛。",
+    "limitations": "验证限于低速Blasius边界层，尚未涉及高雷诺数可压缩叶轮机械流动；非线性耦合频率数目与推进稳定性可能受限。",
+    "tags": [
+      "解析/降阶模型",
+      "稳定性建模",
+      "数值仿真"
+    ],
+    "relevance": 2,
+    "relevance_reason": "该文发展的是边界层非线性稳定性降阶推进方法，未涉及风扇/压气机旋转不稳定性或非同步振动，但其频域空间推进思路对RI-NSV稳定性建模与预测有方法学参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": []
+  },
+  {
     "id": "2a292b546e0d",
     "title": "Aeroelastic Wing Performance in High-Intensity Freestream Turbulence: Integral Length Scale Effects",
     "abstract": "The impact of variations in the integral length scale of incoming freestream turbulence on an aeroelastic NACA0012 wing is investigated using force, moment, and particle image velocimetry measurements. At a chord-based Reynolds number ([Formula: see text]) of [Formula: see text], an active grid generates turbulence intensities of 15% at normalized integral length scales ranging from [Formula: see text] to [Formula: see text] (where [Formula: see text] is the chord length). The introduction of turbulence improves the time-averaged performance characteristics of the aeroelastic wing by delaying stall and increasing the peak lift coefficient. The turbulence excites structural modes such as bending and torsion, but it does not introduce new frequencies in the forces and moments. Instead, it amplifies particular frequencies that appear in the clean flow case. It is observed that, for full-chord integral length scales, the magnitude of the fluctuations in forces and moments at the frequency of a structural bending mode is excited. Meanwhile, at half-chord integral length scales, the magnitude of the fluctuations in forces and moments at the frequency of a torsional response is excited. The structural excitations resulting from the incoming turbulence in turn generate unique characteristics in the flowfield surrounding the aeroelastic wing.",
@@ -13350,6 +13505,50 @@
     "relevance_reason": "论文研究气动弹性建模方法，虽未涉及RI-NSV，但方法可推广至风扇/压气机叶片流致振动预测。",
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
+    "groups": []
+  },
+  {
+    "id": "41ff298e0452",
+    "title": "Convergence Acceleration of Favre-Averaged Non-Linear Harmonic Method",
+    "abstract": "Abstract This paper develops a numerical procedure to accelerate the convergence of the Favre-averaged non-linear harmonic (FNLH) method. The scheme provides a unified mathematical framework for solving the sparse linear systems formed by the mean flow and the time-linearized harmonic flows of FNLH in an explicit or implicit fashion. The approach explores the similarity of the sparse linear systems of FNLH and leads to a memory-efficient procedure, so that its memory consumption does not depend on the number of harmonics to compute. The proposed method has been implemented in the industrial computational fluid dynamics solver Hydra. Three test cases are used to conduct a comparative study of explicit and implicit schemes in terms of convergence, computational efficiency, and memory consumption. Comparisons show that the implicit scheme yields better convergence than the explicit scheme and is also roughly 7–10 times more computationally efficient than the explicit scheme with four levels of multigrid. Furthermore, the implicit scheme consumes only approximately 50% of the memory required by the explicit scheme with four levels of multigrid. Compared with the full-annulus unsteady Reynolds-averaged Navier–Stokes simulations, the implicit scheme produces comparable results to URANS with computational time and memory consumption that are two orders of magnitude smaller.",
+    "authors": [
+      "Feng Wang",
+      "K. F. Weber",
+      "D. C. Radford",
+      "Luca di Mare",
+      "Marcus Meyer"
+    ],
+    "affiliations": [
+      "University of Oxford",
+      "University of Oxford Oxford Thermo-Fluids Institute, Department of Engineering Science, , Oxford OX1 2JD , UK",
+      "Rolls-Royce (United States)",
+      "Rolls-Royce Corporation Compressor Aero Method, , Indianapolis, IN 46225",
+      "Rolls-Royce (United Kingdom)",
+      "Rolls-Royce (United Kingdom) Noise Engineering, , Derby DE24 8JY , UK",
+      "Rolls-Royce plc Noise Engineering, , Derby DE24 8JY , UK",
+      "Rolls-Royce (Germany)",
+      "Rolls-Royce Deutschland Ltd & Co KG CFD Methods, , Brandenburg 15827 , Germany"
+    ],
+    "date": "2024-08-20",
+    "year": 2024,
+    "url": "https://doi.org/10.1115/1.4066267",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对Favre平均非线性谐波方法（FNLH）的收敛加速问题，提出统一数学框架，以显式或隐式方式求解平均流与时间线性化谐波流形成的稀疏线性系统，并在工业CFD求解器Hydra中实现，通过三个算例对比显式与隐式格式的收敛性、计算效率与内存消耗。",
+    "method": "数值方法研究：基于FNLH谐波平衡/时间线性化方法，构建稀疏线性系统统一求解框架，在Hydra求解器中实现显式与隐式格式，采用三个算例（含全环URANS对比）进行验证与性能评估。",
+    "innovation": "利用FNLH平均流与谐波流稀疏线性系统之间的相似性，构建内存高效求解流程，使内存消耗不随谐波数增加而增长，并在工业求解器中实现隐式加速。",
+    "conclusions": "隐式格式收敛性优于显式格式，计算效率约为四级多重网格显式格式的7–10倍，内存仅约50%；与全环URANS相比结果相当，计算时间与内存低约两个数量级。",
+    "limitations": "摘要未涉及旋转不稳定性或非同步振动等非定常流致振动问题，方法验证限于三个算例，谐波数较大时的精度与稳定性尚待评估。",
+    "tags": [
+      "数值仿真",
+      "解析/降阶模型",
+      "风扇/压气机叶片气动弹性"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文仅研究FNLH谐波方法收敛加速，未涉及RI-NSV机理、预测或控制，但作为高效非定常数值方法对风扇/压气机非定常气动与气动弹性分析有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
     "groups": []
   },
   {
@@ -18722,6 +18921,46 @@
     "groups": []
   },
   {
+    "id": "072fd7366a6f",
+    "title": "Conjugate Modeling of a Closed Co-Rotating Compressor Cavity",
+    "abstract": "Abstract Robust methods to predict heat transfer are vital to accurately control the blade-tip clearance in compressors and the radial growth of the disks to which these blades are attached. Fundamentally, the flow in the cavity between the co-rotating disks is a conjugate problem: the temperature gradient across this cavity drives large-scale buoyant structures in the core that rotate asynchronously to the disks, which in turn governs the heat transfer and temperature distributions in the disks. The practical engine designer requires expedient computational methods and low-order modeling. A conjugate heat transfer (CHT) methodology that can be used as a predictive tool is introduced here. Most simulations for rotating cavities only consider the fluid domain in isolation and typically require known disk temperature distributions as the boundary condition for the solution. This paper presents a novel coupling strategy for the conjugate problem, where unsteady Reynolds averaged Navier–Stokes (URANS) simulations for the fluid are combined with a series of steady simulations for the solid domain in an iterative approach. This strategy overcomes the limitations due to the difference in thermal inertia between fluid and solid; the method retains the unsteady flow features but allows a prediction of the disk temperature distributions, rather than using them as a boundary condition. This approach has been validated on the fundamental flow configuration of a closed co-rotating cavity. Metal temperatures and heat transfer correlations predicted by the simulation are compared to those measured experimentally for a range of engine-relevant conditions.",
+    "authors": [
+      "James Parry",
+      "Hui Tang",
+      "James A. Scobie",
+      "Gary D. Lock",
+      "Mauro Carnevale"
+    ],
+    "affiliations": [
+      "University of Bath",
+      "Department of Mechanical Engineering, University of Bath , Bath BA2 7AY, UK",
+      "Department of Mechanical Engineering, University of Bath, Bath, BA2 7AY, United Kingdom"
+    ],
+    "date": "2023-10-04",
+    "year": 2023,
+    "url": "https://doi.org/10.1115/1.4063632",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对压气机闭式共转盘腔的共轭传热问题，提出一种将流体域URANS非定常仿真与固体域系列稳态仿真迭代耦合的新策略，以预测盘温分布而非将其作为边界条件。在闭式共转腔基准构型上，与多工况实验测量的金属温度和换热关联式进行对比验证。",
+    "method": "数值研究：流体域采用URANS非定常仿真，固体域采用系列稳态仿真，通过迭代耦合实现共轭传热计算；在闭式共转盘腔上针对多个发动机相关工况开展验证，并与实验测量的金属温度和换热关联式对比。",
+    "innovation": "提出流体URANS与固体稳态仿真迭代耦合的共轭传热策略，克服流体与固体热惯性差异带来的限制，保留非定常流动特征的同时预测盘温分布，而非将盘温作为已知边界条件。",
+    "conclusions": "1）耦合方法在闭式共转腔上得到验证，预测的金属温度与换热关联式在多个发动机相关工况下与实验测量吻合；2）腔内温度梯度驱动的大尺度浮升结构以非同步于盘转速的方式旋转，并主导盘内换热与温度分布。",
+    "limitations": "仅针对闭式共转盘腔的简化基准构型验证，未涉及叶片、叶尖间隙真实几何及高速可压缩效应，外推至整机环境需进一步确认。",
+    "tags": [
+      "数值仿真",
+      "叶尖间隙",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究压气机盘腔共轭传热与浮升结构非同步旋转，涉及叶尖间隙控制但未涉及RI-NSV机理、预测或控制，仅对风扇/压气机非定常流动与间隙相关研究有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": [
+      "Bath Sealing Group"
+    ]
+  },
+  {
     "id": "1ced2de99772",
     "title": "Assessing Transfer Matrix Models and Measurements Using Acoustic Energy Conservation Principles",
     "abstract": "Abstract Acoustic transfer matrices are widely used in the analysis of combustion dynamics of gas turbines. The reliability of the analysis thus depends on the quality of the determination of the transfer matrices of the individual acoustic elements composing the system's acoustic network. These matrices are, in some simple cases, deduced analytically using one-dimensional acoustic modeling. For more complex elements, such as swirlers, perforated plates, or injection units, the transfer matrix has to be obtained experimentally using an impedance tube setup. There are, however, uncertainties in the experimental determination of the transfer matrix coefficients and in the modeling of key elements like injection units. It is thus worth examining experimental data and assessing models using acoustic energy conservation principles. The general idea is to consider the acoustic power flow in the element represented by the transfer matrix T and compare the power input to the power output. This is best accomplished by obtaining a representation in terms of a scattering matrix S, which may be deduced from the transfer matrix T. It is first shown that standard models like those corresponding to a constant area duct or an area change comply with acoustic energy conservation. This analysis is then employed to assess the L−ζ model, widely used to describe injection unit dynamics. Acoustic conservation principles are then used to assess transfer matrices of a family of injectors determined experimentally and check that the data complies with these principles.",
@@ -20438,6 +20677,40 @@
     "relevance_reason": "该综述可能涵盖风扇/压气机气动声学与流动控制研究，但未明确聚焦RI-NSV，仅作为领域背景参考。",
     "has_fulltext": false,
     "fetched_at": "2026-08-17",
+    "groups": []
+  },
+  {
+    "id": "b7af02eba665",
+    "title": "Integrated Sensing of Camber, Aerodynamic Load, and Vortex Structures over Membrane Wings",
+    "abstract": "Due to the compliant nature of extensible membrane wings, there exists a close relationship between the membrane wing camber and the aerodynamic load. Additionally, the membrane dynamics are often linked to unsteady large-scale flow structures, such as shear layer location or leading-edge vortex shedding. Real-time measurements of the membrane shape, including both mean camber and the frequency content of vibration, provide significant information on the surrounding flowfield. In this work, one method of integrated camber sensing is demonstrated, and the relationships to aerodynamic load and flowfield are shown. Camber is estimated via the capacitance of a dielectric elastomer membrane wing. The relationship between capacitance and camber is defined geometrically. The mean aerodynamic load is shown to be well-captured by applying a simple aeroelastic analysis to the measured camber. Finally, time-resolved membrane kinematics and flowfield measurements are used to illustrate the ties between the dynamic membrane vibration, as measured by capacitance, and the behavior of the shear layer above the wing. Ultimately, this work is a step toward an integrated, closed-loop control method for membrane wings.",
+    "authors": [
+      "Jillian Bohnker",
+      "Kenneth Breuer"
+    ],
+    "affiliations": [
+      "Brown University",
+      "Brown University, Providence, Rhode Island 02912",
+      "Center for Fluid Mechanics, School of Engineering;"
+    ],
+    "date": "2023-06-28",
+    "year": 2023,
+    "url": "https://doi.org/10.2514/1.j062578",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对可伸展薄膜翼，提出基于介电弹性体膜电容的弯度集成传感方法，将电容与弯度建立几何关系，并结合气动弹性分析由实测弯度估算平均气动载荷；同时利用时间分辨膜运动与流场测量，揭示电容测得的膜振动与翼面上方剪切层及前缘涡脱落等非定常大尺度结构的关联，为薄膜翼闭环流动控制奠定基础。",
+    "method": "实验研究：介电弹性体薄膜翼电容传感测量弯度与振动，结合时间分辨流场测量与简单气动弹性分析，推断涵盖不同来流速度与攻角工况。",
+    "innovation": "将介电弹性体电容传感用于薄膜翼弯度与振动的一体化实时测量，并建立其与气动载荷及非定常剪切层/前缘涡结构的定量联系，服务于闭环控制。",
+    "conclusions": "1）电容与弯度呈确定的几何关系，可实时估计平均弯度；2）对实测弯度施加简单气动弹性分析可较好捕捉平均气动载荷；3）电容测得的膜振动与翼面上方剪切层行为相关联。",
+    "limitations": "研究对象为低雷诺数薄膜翼，非叶轮机械旋转部件；未涉及旋转不稳定性与非同步振动，结论向风扇/压气机叶片推广需谨慎。",
+    "tags": [
+      "实验测量",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究薄膜翼流固耦合与剪切层/前缘涡非定常结构及传感测量，属泛化流固耦合与流动控制，与风扇/压气机RI-NSV机理、预测或控制无直接关联，仅有方法参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
     "groups": []
   },
   {
@@ -24281,6 +24554,41 @@
     "groups": []
   },
   {
+    "id": "c5e2876577e2",
+    "title": "An Experimental Investigation on the Dynamic Response Variability of a Turbine Blade With Midspan Dampers",
+    "abstract": "Abstract This paper addresses two main subjects. First, a novel test setup is described to experimentally study the nonlinear dynamic behavior of a turbine blade coupled with two midspan dampers (MSDs). To this end, a representative turbine blade and midspan friction dampers are originally designed, and they are assembled to a special test rig which has been previously developed at Politecnico di Torino. Second, the variability of the dynamic response is intensively investigated with a purposely defined loading/unloading strategy. To better understand the inherent kinematics of the blade–damper interaction, contact forces are measured through the novel design of the experimental campaign. It is shown that multiple responses, which are obtained in different tests while keeping all user-controlled inputs nominally same, are due to nonunique contact forces that provide different static force equilibria on the damper. This outcome is further supported by the qualitative illustration of hysteresis cycles. This study contributes to the understanding of the response repeatability linked to the nonuniqueness of friction forces.",
+    "authors": [
+      "Erhan Ferhatoğlu",
+      "Daniele Botto",
+      "Stefano Zucca"
+    ],
+    "affiliations": [
+      "Politecnico di Torino",
+      "Department of Mechanical and Aerospace Engineering, Politecnico di Torino , Italy Corso Duca degli Abruzzi 24, Torino 10129, Italy"
+    ],
+    "date": "2022-09-03",
+    "year": 2022,
+    "url": "https://doi.org/10.1115/1.4055494",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对带两个中跨阻尼器的涡轮叶片，设计新型试验台并开展实验研究。通过专门设计的加载/卸载策略，测量接触力以揭示叶片-阻尼器相互作用的运动学。研究发现，在相同控制输入下多次试验获得多个动态响应，源于非唯一接触力导致阻尼器静态力平衡不同，滞后环定性图示进一步支持该结论。",
+    "method": "实验研究，设计代表性涡轮叶片和中跨摩擦阻尼器，在专用试验台上采用加载/卸载策略测量接触力，分析动态响应变异性。",
+    "innovation": "首次通过实验测量接触力揭示中跨阻尼器与叶片相互作用的非唯一性，并关联到动态响应重复性差的问题，为摩擦阻尼器建模提供新见解。",
+    "conclusions": "相同输入下动态响应存在变异性；非唯一接触力导致不同静态力平衡，是响应重复性差的根源。",
+    "limitations": "研究限于实验台条件下的涡轮叶片，未涉及风扇/压气机环境，且未建立预测模型。",
+    "tags": [
+      "实验测量",
+      "叶片流致振动抑制/控制",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究涡轮叶片摩擦阻尼器的动态响应变异性，与风扇/压气机流致振动控制有参考价值，但未涉及RI-NSV机理、预测或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": []
+  },
+  {
     "id": "85d52eaca762",
     "title": "Compressor Surge Precursors for a Turbocharger Coupled to a Pressure Vessel",
     "abstract": "Abstract Dynamic compressors operating region is mainly constrained by fluid-dynamic instabilities occurring at low mass flow rate conditions, such as surge and rotating stall. This work presents a vibro-acoustic experimental investigation on a centrifugal compressor of an automotive turbocharger aimed to identify and confirm some surge precursor values in correspondence of its inception conditions. The experimental campaign was carried out on a turbocharger equipped by a vaneless diffuser compressor exploited for the pressurization of an innovative solid oxide fuel cell (SOFC) emulator. The investigated turbocharger is coupled with a pressure vessel for a former emulation activity on a pressurized SOFC. In such kind of plants, the joint effect of large volume size downstream the compressor makes more complex the dynamic behavior of the whole system during transients, thus significantly increasing surge onset risk. The main goal is to define a suitable quantitative indicator to detect in advance surge inception by relying only on system vibro-acoustic response. Several transient from a compressor stable condition to surge instability onset were performed by progressively closing specific valves in the air line. When moving close to surge , vibro-acoustic signals were acquired at a high sampling rate to investigate blade passage phenomena which might interact with rotating stall inception. Meanwhile, pressures, temperatures and mass flow rates measured at a lower sampling rate to correlate compressor vibro-acoustic and performance behavior. Cyclostationary analysis was performed on vibro-acoustic acquired signals to provide innovative diagnostic and predictive solutions (precursors) for early surge detection.",
@@ -24317,6 +24625,49 @@
     "has_fulltext": false,
     "fetched_at": "2026-06-01",
     "groups": []
+  },
+  {
+    "id": "3d4fb83da3b2",
+    "title": "The Inter-Bristle Pressure Field in a Large-Scale Brush Seal",
+    "abstract": "Abstract Brush seals promise improvements to the widely used labyrinth seal in regulating turbomachinery leakages. Enhanced resistance to the flow is provided by a static ring of densely packed fine wire bristles that are angled in the direction of rotation and flex to accommodate rotor excursions. A large-scale brush seal was constructed to study the leakage characteristics in direct relation to the pressure field within and surrounding the bristle pack for multiple clearance conditions, therefore developing the understanding of brush seal fluid dynamic behavior. The governing parameter controlling leakage behavior transitioned from pressure ratio for a large clearance, to pressure load for a line-on-line configuration. In all cases, leakage flow converged to an asymptotic value once maximum levels of bristle blow-down and pack compaction were attained. For both clearance configurations, this occurred at a pressure ratio corresponding to that at which axial distributions of pressure converged; equivalent behavior was noted for the line-on-line configuration with pressure drop. Comparatively small changes were experienced in leakage behavior and in the interbristle pressure field with increasing pressure drop for the line-on-line brush seal. This indicated that brush seal performance is more influenced by changes in bristle blow-down than bristle pack compaction.",
+    "authors": [
+      "Joshua P. Bowen",
+      "Matthew R. Jenkins",
+      "Aaron A. Bowsher",
+      "Peter F. Crudgington",
+      "Carl M. Sangan",
+      "James A. Scobie"
+    ],
+    "affiliations": [
+      "University of Bath",
+      "Department of Mechanical Engineering, University of Bath , Bath BA2 7AY, UK",
+      "Department of Mechanical Engineering University of Bath Bath, BA2 7AY United Kingdom",
+      "Cross Manufacturing Co. (1938) Ltd. , Devizes SN10 2HF, UK",
+      "Cross Manufacturing Co. (1938) Ltd. Devizes United Kingdom"
+    ],
+    "date": "2022-09-02",
+    "year": 2022,
+    "url": "https://doi.org/10.1115/1.4055458",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对大型刷式密封搭建实验台，测量多间隙工况下刷丝束内部及周边的压力场与泄漏特性，揭示泄漏主导参数随间隙由压比转为压力载荷，泄漏在刷丝吹闭与束压实饱和后趋于渐近值。",
+    "method": "实验研究：大型刷式密封试验台，测量多间隙（大间隙与线对线）工况下刷丝束内压力场与泄漏量，扫描压比与压降。",
+    "innovation": "首次在大尺度刷式密封上同步获取刷丝束内部压力场与泄漏特性，建立泄漏与刷丝吹闭、束压实的直接关联，区分二者对性能的影响。",
+    "conclusions": "泄漏主导参数随间隙由压比转为压力载荷；刷丝吹闭与束压实达最大后泄漏趋于渐近值，且该渐近与轴向压力分布收敛对应；线对线工况下泄漏与束内压力场随压降变化较小，说明刷丝吹闭比束压实影响更大。",
+    "limitations": "仅针对刷式密封静态实验，未涉及转子旋转与气流非定常激励下的刷丝振动及气动弹性耦合。",
+    "tags": [
+      "实验测量",
+      "叶尖间隙",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究刷式密封泄漏与刷丝束内压力场，属叶尖间隙密封流动，未涉及RI-NSV机理、预测或控制，仅对叶尖泄漏流建模有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": [
+      "Bath Sealing Group"
+    ]
   },
   {
     "id": "fb1caa3bbdd4",
@@ -34749,6 +35100,40 @@
     "groups": []
   },
   {
+    "id": "7d7ad2158a14",
+    "title": "Large-Scale Forcing of a Turbulent Channel Flow Through Spanwise Synthetic Jets",
+    "abstract": "The investigation focuses on the forcing of a fully developed turbulent channel flow through a linear array of synthetic jets injected tangentially to the wall and orthogonal to the mean flow direction. Forcing configurations are varied by differently combining the number of actuated jets working in an opposing blowing–suction configuration. Instantaneous wall shear stress and streamwise velocity fluctuations evidence drag reductions as well as turbulence attenuation up to 20%. The forcing effects are persistent up to at least a 150 half-channel height downstream of the injection section. Particle image velocimetry investigations in planes perpendicular to the channel axis highlight the presence of a large-scale streamwise vortical structure covering the whole height of the channel. This structure is thought to be responsible for the significant drag reduction, which is similar to the typical behavior evidenced in the case of colliding jets. The nondimensional forcing frequency of the synthetic jets producing the maximum drag reduction and turbulence attenuation is 0.0074 for the investigated Reynolds number . A statistical analysis of the near-wall structures demonstrates that the control mechanism acts in a way to reduce them in the forced configuration. It is conclude that the effect of the forcing is such that the near-wall structures merge and become less prone to inducing new structures, thus effectively reducing their number, and consequently the near-wall turbulence activity.",
+    "authors": [
+      "Marco Cannata",
+      "Gioacchino Cafiero",
+      "Gaetano Iuso"
+    ],
+    "affiliations": [
+      "Politecnico di Torino",
+      "Polytechnic University of Turin, 10129 Turin, Italy"
+    ],
+    "date": "2019-12-31",
+    "year": 2019,
+    "url": "https://doi.org/10.2514/1.j059047",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文研究展向合成射流阵列对充分发展湍流槽道流的强迫控制，射流沿切向注入并与主流正交，通过改变工作射流数量形成对吹-吸配置。实验发现壁面剪应力和流向速度脉动显示减阻与湍流衰减最高达20%，控制效果沿下游持续至少150个半槽高，并观测到贯穿全槽高的大尺度流向涡结构。",
+    "method": "实验研究，采用合成射流阵列对湍流槽道流进行强迫，测量壁面剪应力、流向速度脉动及垂直于槽道轴平面的PIV流场，考察不同射流组合与无量纲强迫频率。",
+    "innovation": "将展向合成射流以对吹-吸配置切向注入湍流槽道，利用射流组合调控产生贯穿全槽高的大尺度流向涡，实现显著减阻与湍流衰减，并揭示近壁结构合并与数量减少的控制机制。",
+    "conclusions": "减阻与湍流衰减最高达20%，效果沿下游持续至少150个半槽高；最大减阻对应的无量纲强迫频率为0.0074；控制通过促使近壁结构合并、减少其数量而降低近壁湍流活动。",
+    "limitations": "研究限于单一雷诺数下的湍流槽道流实验，未涉及旋转、叶片或叶轮机械复杂几何与非定常来流条件。",
+    "tags": [
+      "机匣处理与流动控制",
+      "实验测量"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究合成射流对湍流槽道流的减阻与湍流控制，属于流动控制与近壁湍流调控，未涉及旋转不稳定性或非同步振动，但对风扇/压气机流动控制有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": []
+  },
+  {
     "id": "45d1b756bfcb",
     "title": "Newton–Krylov Solver for Robust Turbomachinery Aerodynamic Analysis",
     "abstract": "Steady computational fluid dynamics solvers based on the Reynolds-averaged Navier–Stokes equations are the primary workhorses for turbomachinery aerodynamic analysis due to their good engineering accuracy at a low computational cost. However, even state-of-the-art steady solvers suffer from convergence slowdown or failure when applied to challenging off-design conditions. This severely limits the reliable nonlinear and linearized turbomachinery aerodynamic analysis over a wide operating range. To alleviate the convergence difficulties, a nonlinear flow solver using the Newton–Krylov method is developed. This is the first time the Newton–Krylov algorithm is used for achieving robust analysis of turbomachinery aerodynamics in the open literature. The proposed solution algorithm features 1) the exact Jacobian matrix forming, 2) straightforward parallelization, and 3) a reliable globalization strategy; and it aims to achieve fast machine-zero convergence. The solver accuracy is validated using four test cases: an airfoil, a linear turbine cascade, a centrifugal compressor, and an axial compressor. Machine-zero convergence is achieved for all cases over a wide range of operating conditions without manual intervention. The method shows great potential for enabling an automated and reliable whole-map turbomachinery aerodynamic analysis, and it paves the way for a robust and efficient linearized aerodynamic analysis, such as adjoint, time-linearized, and eigenvalue analyses.",
@@ -35132,6 +35517,41 @@
     "has_fulltext": false,
     "fetched_at": "2026-05-11",
     "groups": []
+  },
+  {
+    "id": "fbdf04665e86",
+    "title": "Influence of Wake and Background Turbulence on Predicted Fan Broadband Noise",
+    "abstract": "Next-generation fan designs featuring large bypass ratios have the potential to reduce rotor–stator interaction noise of fans. However, these designs pose new challenges and long-held beliefs regarding the acoustic benefit of such concepts that need to be evaluated. At off-design operating points, the increase in nozzle area serves to maintain the stall margin by reducing the fan loading. To an extent, this may lower the contribution of wake turbulence to fan broadband noise. Therefore, investigating the relative contribution of other noise sources becomes relevant. In this paper, the authors examine the contribution of wake and ingested turbulence to fan broadband noise levels at approach for the ASPIRE fan, which is a next-generation fan concept. To enable the investigation of background turbulence, a Reynolds stress turbulence model is used. The computational fluid dynamics solution then provides inputs for a two-dimensional cyclostationary synthetic turbulence method. The noise predictions are improved by performing simulations at three spanwise positions and by introducing a correction technique to account for the three-dimensional interstage flow. For the investigated case, it is shown that broadband noise generated at the stator is as high as for conventional concepts. Furthermore, both wake and background turbulence contribute significantly to the overall fan broadband noise.",
+    "authors": [
+      "Carolin Kissner",
+      "Sébastien Guérin"
+    ],
+    "affiliations": [
+      "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)",
+      "DLR, German Aerospace Center, 10623 Berlin, Germany"
+    ],
+    "date": "2019-10-28",
+    "year": 2019,
+    "url": "https://doi.org/10.2514/1.j058148",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对下一代大涵道比 ASPIRE 风扇，在进近工况下研究尾迹湍流与背景湍流对风扇宽频噪声的贡献。采用雷诺应力湍流模型进行 CFD 计算，并结合二维循环平稳合成湍流方法预测噪声，同时引入三维级间流动修正。结果表明，静子宽频噪声与传统构型相当，尾迹与背景湍流均有显著贡献。",
+    "method": "数值研究：RANS/雷诺应力湍流模型 CFD 结合二维循环平稳合成湍流噪声预测，在三个展向位置计算并做三维级间流动修正，工况为进近（非设计点）。",
+    "innovation": "将背景（进气）湍流纳入风扇宽频噪声预测，采用雷诺应力模型与循环平稳合成湍流方法结合，并提出三维级间流动修正以提升多展向位置预测精度。",
+    "conclusions": "1）ASPIRE 风扇静子宽频噪声与传统构型相当，大涵道比未必带来预期声学收益；2）尾迹湍流与背景湍流对总风扇宽频噪声均有显著贡献，背景湍流不可忽略。",
+    "limitations": "仅针对进近工况单一风扇构型，噪声预测基于二维合成湍流与修正，未涉及非同步振动等流致振动问题。",
+    "tags": [
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究风扇宽频噪声中尾迹与背景湍流的贡献，属气动声学与湍流预测，未涉及旋转不稳定性或非同步振动，仅对风扇非定常流动与噪声预测有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": [
+      "DLR"
+    ]
   },
   {
     "id": "b6534bce3820",
@@ -42341,6 +42761,43 @@
       "MIT GTL",
       "TU Berlin Aero Engines"
     ]
+  },
+  {
+    "id": "48d54a44d186",
+    "title": "State-Space Adaptation of Unsteady Lifting Line Theory: Twisting/Flapping Wings of Finite Span",
+    "abstract": "In this paper, a low-order state-space adaptation of the unsteady lifting line model has been analytically derived for a wing of finite aspect ratio, suitable for use in real-time control of wake-dependent forces. Each discretization along the span has between 1–6 states to represent the local unsteady wake effects, rather than remembering the entire wake history which unnecessarily complicates controller design. Sinusoidal perturbations to each system degree of freedom are also avoided. Instead, a state-space model is fit to individual indicial functions for each blade element, allowing the downwash and lift distributions over the span to be arbitrary. The wake geometry is assumed to be quasi steady (no roll up) but with fully unsteady vorticity. The model supports time-varying surge (a nonlinear effect), dihedral, heave, sweep, and twist along the span. Cross-coupling terms are explicitly derived. This state-space model is then validated through comparison with an analytic solution for elliptic wings, an unsteady vortex lattice method, and experiments from the literature.",
+    "authors": [
+      "Jacob Izraelevitz",
+      "Qiang Zhu",
+      "Michael S. Triantafyllou"
+    ],
+    "affiliations": [
+      "Massachusetts Institute of Technology",
+      "Massachusetts Institute of Technology, Cambridge, Massachusetts 02139",
+      "University of California San Diego",
+      "University of California, San Diego, San Diego, California 92093"
+    ],
+    "date": "2017-01-11",
+    "year": 2017,
+    "url": "https://doi.org/10.2514/1.j055144",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对有限展弦比机翼，解析推导了非定常升力线模型的低阶状态空间形式，用于实时控制尾迹相关气动力。沿展向每个离散单元用1–6个状态表征局部非定常尾迹效应，避免记忆完整尾迹历史；对每个叶片单元的指示函数拟合状态空间模型，允许展向下洗与升力任意分布，并显式推导交叉耦合项。模型支持时变来流、上反、沉浮、后掠与扭转，经椭圆翼解析解、非定常涡格法及文献实验验证。",
+    "method": "理论推导：基于非定常升力线理论构建低阶状态空间降阶模型，假设尾迹准定常（无卷起）但涡量完全非定常；通过椭圆翼解析解、非定常涡格法及文献实验进行验证。",
+    "innovation": "以每展向单元1–6个状态替代完整尾迹历史记忆，避免正弦扰动假设，对单元指示函数拟合状态空间模型，支持任意下洗/升力分布及多自由度时变运动与显式交叉耦合。",
+    "conclusions": "所建低阶状态空间模型能以每展向单元1–6个状态复现非定常尾迹效应，并与椭圆翼解析解、非定常涡格法及文献实验吻合良好，适用于尾迹相关气动力的实时控制。",
+    "limitations": "假设尾迹准定常且无卷起，未考虑涡系卷起与粘性效应；验证限于有限展弦比固定翼，尚未涉及叶轮机械旋转与叶片振动工况。",
+    "tags": [
+      "解析/降阶模型",
+      "叶片流致振动预测模型",
+      "风扇/压气机叶片气动弹性"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文提供有限展弦比机翼非定常气动力的低阶状态空间降阶模型，可支撑叶片流致振动预测与控制设计，但未涉及旋转不稳定性RI或非同步振动NSV机理。",
+    "has_fulltext": false,
+    "fetched_at": "2026-10-19",
+    "groups": []
   },
   {
     "id": "dec5c78e922a",
