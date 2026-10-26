@@ -46,7 +46,7 @@
       "Institute of Aeronautics and Astronautics",
       "Chair for Aero Engines"
     ],
-    "total": 47,
+    "total": 48,
     "avg_relevance": 2.8,
     "preset": true,
     "custom": false
@@ -96,8 +96,24 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 43,
+    "total": 44,
     "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
+    "name": "Purdue Compressor Lab",
+    "institution": "Purdue University",
+    "pis": [
+      "Nicole Key",
+      "Nicole L. Key",
+      "Berdanier",
+      "Sanford Fleeter",
+      "Yujun Leng"
+    ],
+    "aliases": [],
+    "total": 42,
+    "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
@@ -132,22 +148,6 @@
     "custom": false
   },
   {
-    "name": "Purdue Compressor Lab",
-    "institution": "Purdue University",
-    "pis": [
-      "Nicole Key",
-      "Nicole L. Key",
-      "Berdanier",
-      "Sanford Fleeter",
-      "Yujun Leng"
-    ],
-    "aliases": [],
-    "total": 41,
-    "avg_relevance": 2.6,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "Ecole Centrale Lyon LMFA",
     "institution": "Ecole Centrale de Lyon",
     "pis": [
@@ -156,8 +156,8 @@
       "Fabrice Thouverez"
     ],
     "aliases": [],
-    "total": 37,
-    "avg_relevance": 3.3,
+    "total": 38,
+    "avg_relevance": 3.2,
     "preset": true,
     "custom": false
   },
@@ -322,6 +322,13 @@
     "custom": false
   },
   {
+    "name": "★ Tianyu Pan",
+    "institution": "（自动识别）",
+    "total": 17,
+    "avg_relevance": 2.3,
+    "preset": false
+  },
+  {
     "name": "TU Dresden",
     "institution": "TU Dresden",
     "pis": [
@@ -353,10 +360,10 @@
     "custom": false
   },
   {
-    "name": "★ Tianyu Pan",
+    "name": "★ Qiushi Li",
     "institution": "（自动识别）",
-    "total": 16,
-    "avg_relevance": 2.2,
+    "total": 15,
+    "avg_relevance": 2.4,
     "preset": false
   },
   {
