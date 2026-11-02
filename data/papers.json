@@ -146,6 +146,45 @@
     ]
   },
   {
+    "id": "6c7439f28cd8",
+    "title": "A robust multi-level data-driven Bayesian approach for nonlinear aeroelastic system identification",
+    "abstract": "Accurate identification and calibration of nonlinear dynamical models is essential for reliable prediction of aerospace system behaviour, yet conventional model updating techniques are often computationally prohibitive and sensitive to limited experimental data. Bayesian Model Updating (BMU) offers a powerful probabilistic alternative but remains extremely expensive for nonlinear systems due to the reliance on repeated high-fidelity simulations. This paper presents a novel accelerated data-driven Bayesian framework for efficient stochastic model identification through combining multi-fidelity data-driven models with a multi-level Bayesian strategy. It enables a sequential updating strategy with adaptive domain refinement that can significantly reduce reliance on costly high-fidelity simulations. Furthermore, epistemic uncertainties from the data-driven models are consistently quantified and integrated into sequential Bayesian model updating, enhancing predictive robustness and reliability of parameter estimation. Application to a nonlinear aerofoil aeroelastic test case, supported by experimental data and physical modeling, demonstrates a 76% reduction in high-fidelity simulations while yielding posterior parameter estimates statistically consistent with a conventional single-level data-driven Bayesian approach.",
+    "authors": [
+      "Michael McGurk",
+      "Adolphus Lye",
+      "Jie Yuan"
+    ],
+    "affiliations": [
+      "University of Strathclyde",
+      "Aerospace Centre of Excellence, University of Strathclyde, Glasgow, UK",
+      "National University of Singapore",
+      "Singapore Nuclear Research and Safety Institute",
+      "Singapore Nuclear Research and Safety Institute, National University of Singapore, Singapore, Singapore",
+      "University of Southampton",
+      "Computational Engineering Design Group, University of Southampton, Southampton, UK"
+    ],
+    "date": "2026-09-26",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.jsv.2026.120144",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文提出一种加速的数据驱动贝叶斯框架，结合多保真度数据驱动模型与多级贝叶斯策略，用于非线性气动弹性系统的随机模型辨识。该方法通过自适应域细化顺序更新，显著减少对高保真仿真的依赖，并量化数据驱动模型的认识不确定性。在非线性翼型气动弹性测试案例中，高保真仿真次数减少76%，后验参数估计与传统单级方法统计一致。",
+    "method": "数值与实验结合：采用多保真度数据驱动模型与多级贝叶斯更新，应用于非线性翼型气动弹性测试案例，涉及实验数据与物理建模。",
+    "innovation": "将多保真度数据驱动模型与多级贝叶斯策略结合，实现自适应域细化的顺序更新，并一致量化数据驱动模型的认识不确定性，大幅降低高保真仿真需求。",
+    "conclusions": "高保真仿真次数减少76%；后验参数估计与传统单级数据驱动贝叶斯方法统计一致，验证了框架的准确性与效率。",
+    "limitations": "仅针对非线性翼型气动弹性案例验证，未涉及风扇/压气机叶片非定常流致振动或旋转不稳定性等复杂工况。",
+    "tags": [
+      "解析/降阶模型",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究非线性气动弹性系统辨识的贝叶斯方法，虽未直接涉及RI-NSV，但其降阶建模与不确定性量化思路对风扇/压气机流致振动预测有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": []
+  },
+  {
     "id": "08b3f7375d8d",
     "title": "Comparison of Flutter Analysis Approaches in the Frequency Domain for the ECL5 Open Fan",
     "abstract": "Abstract The topic of this paper is the flutter analysis at part speed of the ECL5/Catana open fan. The focus is on the operating point of maximal pressure ratio on the 80% speed line, where previous studies have revealed a very high sensitivity of the aerodynamic damping for the second blade eigenmode. In particular, a sudden drop of the damping near the nodal diameters of 5 was observed with time-linearised approaches, while for harmonic balance simulations with a different solver this V-shaped spike in the damping curve was observed near the nodal diameter of 6 when a fully nonlinear setup resolving the 0th and higher harmonics was used. In the previous study, this phenomenon was related to the resonance with a convective disturbance with a characteristic circumferential speed and suggested that, if non-linear effects are taken into account, then the resonance convective speed increases. In this paper, the flutter analyses based on three different frequency domain solvers are compared with each other: a time-linearised method and two harmonic balance solvers, each being based on different spatial schemes and/or turbulence models. The results in this paper show that the V-shaped damping curves can be reproduced with different solvers. If the zeroth harmonic is included in the set of harmonics which are solved for then the resonance condition is located near the nodal diameter of 6, while, for frozen mean flows, it is located at 5. This behaviour is confirmed by two harmonic balance solvers.",
@@ -629,6 +668,39 @@
     "groups": []
   },
   {
+    "id": "7db96bd1c6f8",
+    "title": "Data-Driven Modal Decomposition Analysis of Unsteady Flow in Multistage Turbine",
+    "abstract": "Two data-driven modal analysis approaches, proper orthogonal decomposition (POD) and dynamic mode decomposition (DMD), are applied to analyze the unsteady flow obtained by solving the Reynolds-averaged Navier–Stokes (RANS) equations in a 1.5-stage axial turbine. The reduced-order reconstructed pressure, dominant mode shapes, and dynamic features in the downstream stator of the turbine are compared between POD and four DMD variants. It is found that the DMD methods based on the amplitude criterion, the Tissot criterion, and sparsity-promoting DMD (SP-DMD) achieve reconstruction accuracies comparable to those of POD, while the frequency criterion yields larger reconstruction errors. The second and third POD and DMD modes capture the dominant pressure fluctuation structures within the stator, and there is similarity between the corresponding POD and DMD spatial modes. The unsteady flow is primarily dominated by neutrally stable DMD modes, which are characterized by relatively high modal amplitudes and low frequencies corresponding to harmonics of the rotor-passing frequency. While POD provides accurate reconstruction for the original snapshots, it is not capable of identifying the fundamental dynamic components of the system.",
+    "authors": [
+      "Yalu Zhu",
+      "Feng Liu"
+    ],
+    "affiliations": [
+      "University of California, Irvine"
+    ],
+    "date": "2026-08-14",
+    "year": 2026,
+    "url": "https://doi.org/10.2514/1.j066880",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "该文将本征正交分解（POD）与动态模态分解（DMD）及其四种变体应用于1.5级轴流涡轮RANS非定常流场，对比下游静叶中压力重构精度、主导模态形态与动态特征。发现基于幅值准则、Tissot准则和稀疏促进DMD的重构精度与POD相当，而频率准则误差较大；第二、三阶POD与DMD模态均捕捉到静叶内主导压力脉动结构且空间形态相似。非定常流动主要由中性稳定DMD模态主导，其模态幅值较高、频率较低，对应转子通过频率的谐波。POD虽能精确重构原始快照，但无法识别系统的基本动态成分。",
+    "method": "数值方法：求解RANS方程获得1.5级轴流涡轮非定常流场，采用POD与四种DMD变体进行数据驱动模态分解与降阶重构对比。",
+    "innovation": "系统对比POD与四种DMD变体在多级涡轮非定常流分析中的重构精度与模态辨识能力，揭示中性稳定DMD模态对流动的主导作用。",
+    "conclusions": "幅值准则、Tissot准则和SP-DMD重构精度与POD相当，频率准则误差较大；非定常流动由对应转子通过频率谐波的中性稳定DMD模态主导。",
+    "limitations": "研究对象为轴流涡轮而非风扇/压气机，未涉及旋转不稳定性与非同步振动，且仅基于RANS数值数据缺乏实验验证。",
+    "tags": [
+      "数值仿真",
+      "解析/降阶模型",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文采用POD/DMD降阶模态分解分析多级涡轮非定常流，方法可借鉴于RI-NSV模态识别，但对象为涡轮且未涉及旋转不稳定性或非同步振动。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": []
+  },
+  {
     "id": "0380c4809eca",
     "title": "Near-Stall Unsteady Aerodynamic and Aeroelastic Simulation Capabilities of the Open-Source Computational Fluid Dynamic Code SU2",
     "abstract": "Abstract Computational fluid dynamics (CFD) tools have revolutionized the way we design engineering systems. However, the prevalence of numerous established tools, each utilizing different development principles and validation strategies, has given rise to numerical inconsistencies that cast a shadow over their application. Differences in performance and stability predictions for identical compressor designs are widely observed between different CFD tools. Conducting a root cause analysis for these discrepancies is, however, next to impossible, as most codes are proprietary and closed-source. To facilitate technology advancement in CFD and to combine the expertise, creativity, and skills of different groups worldwide, the use of the freely available open-source CFD code, SU2, is proposed. This research builds upon a previously published study aimed at launching a comprehensive validation and verification campaign for SU2's turbomachinery capabilities. In the first paper, the Reynolds-Averaged Navier–Stokes (RANS) simulation results from SU2 were compared with experimental data and a commercial solver. Due to a lack of experimental data, the unsteady results obtained using Unsteady Reynolds-Averaged Navier–Stokes (URANS) in SU2 were compared only against commercial solvers. The recent release of unsteady test data from the Transonic Compressor Darmstadt Open Test Case has prompted this work. In this article, SU2's unsteady simulation capabilities against experimental data were further validated and its capability of predicting unsteady aerodynamic phenomena at near-stall condition, e.g., stall inception and stall-hunting, was demonstrated.",
@@ -851,6 +923,41 @@
     "groups": [
       "Waseda / IHI"
     ]
+  },
+  {
+    "id": "a664691d598d",
+    "title": "Hybrid modeling of rotating machinery using hamiltonian-infused machine learning",
+    "abstract": "Rotating machinery often operate under complex dynamic conditions involving unbalance, damping, nonlinear stiffness, gyroscopic effects, and control strategies. Accurately modeling such systems remains challenging due to limitations of both physics-based and data-driven methods. While classical physics-based modeling frameworks offer interpretability and physical insight, they struggle to capture unmodeled nonlinearities and real-world uncertainties. On the other hand, data-driven approaches exhibit strong nonlinear pattern recognition capabilities but often lack physical consistency and generalizability. In this study, we propose a hybrid modeling approach that integrates Hamiltonian mechanics with neural networks to bridge this gap. By learning a data-driven Hamiltonian function, the neural network model inherits the structure-preserving properties of physical laws while leveraging the capability of pattern recognition from machine learning. This enables modeling of complex real rotor systems with the effect of unbalance forces, damping behavior, elastic forces, uncertainty and nonlinearity. The proposed Hamiltonian Neural Network (HNN) is validated against experimental data from a rotor rig and benchmarked against a long short-term memory (LSTM) network. Results show that the HNN not only improves prediction accuracy of dominant frequencies and amplitudes but also captures nonlinear spectral features such as subharmonics and superharmonics – even when such features are not included in the training data. This demonstrates the model’s capacity to learn underlying system dynamics rather than memorizing input-output mappings. Overall, the proposed method offers a promising pathway toward more accurate, interpretable, and physics-aware development of a hybrid model.",
+    "authors": [
+      "Zihan Liu",
+      "Utkarsh Andharikar",
+      "Chandrasekhar Nataraj"
+    ],
+    "affiliations": [
+      "Villanova University",
+      "Villanova Center for Analytics of Dynamic Systems, Villanova University, Villanova, 19085, PA, USA"
+    ],
+    "date": "2026-08-10",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.jsv.2026.120048",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文提出将哈密顿力学与神经网络融合的混合建模方法，通过学习数据驱动的哈密顿函数，使模型兼具物理结构保持性与机器学习模式识别能力，用于建模含不平衡、阻尼、弹性力、不确定性和非线性的真实转子系统。基于转子试验台实验数据验证，并与LSTM对比，HNN在主导频率与幅值预测上更准确，且能捕捉训练数据中未包含的次谐波、超谐波等非线性频谱特征。",
+    "method": "理论建模与实验验证相结合：构建哈密顿神经网络（HNN）混合模型，利用转子试验台实验数据验证，并与LSTM网络进行基准对比，工况涉及不平衡、阻尼、陀螺效应与非线性刚度等复杂动态条件。",
+    "innovation": "将哈密顿力学结构先验嵌入神经网络，学习数据驱动的哈密顿函数，使模型保持物理结构性质并具备泛化能力，可外推捕捉训练数据中未出现的次谐波与超谐波特征，区别于纯数据驱动方法。",
+    "conclusions": "HNN在主导频率与幅值预测精度上优于LSTM；且能捕捉训练数据中未包含的次谐波和超谐波等非线性频谱特征，表明其学习的是底层系统动力学而非记忆输入-输出映射。",
+    "limitations": "验证仅基于转子试验台，未涉及叶轮机械叶片/风扇压气机流致振动场景；哈密顿框架对强非保守流动与气弹耦合的适用性尚待验证。",
+    "tags": [
+      "其他",
+      "解析/降阶模型",
+      "实验测量"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究转子系统哈密顿神经网络混合建模，属泛化转子动力学与降阶建模方法，未直接涉及RI-NSV机理、预测或控制，但对风扇/压气机流致振动的物理感知建模有参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": []
   },
   {
     "id": "450d6633c9a0",
@@ -1279,6 +1386,45 @@
     "has_fulltext": false,
     "fetched_at": "2026-07-27",
     "groups": []
+  },
+  {
+    "id": "fc4872ec998c",
+    "title": "Acoustic resistance of can-annular combustor–turbine gaps",
+    "abstract": "We quantify acoustic resistance of the gap between a can-annular combustor and high-pressure turbine, using an experimentally validated time-marching computational approach. Adjacent cans oscillating in antiphase drive an unsteady flow through the combustor--turbine gap, creating a vortex sheet, dissipating acoustic energy, and affecting thermoacoustic stability. We use unsteady Reynolds-averaged Navier--Stokes simulations of two-can sectors to excite the antiphase mode and study two cases: a laboratory-scale experiment, and a realistic industrial gas turbine. Predictions of resistance for the validation case agree with measurements to a root-mean-square error of 8\\%, allowing for asymmetry of the real apparatus. Further results show linear dependence of quasi-steady resistance on through-gap bias and streamwise Mach numbers, with slope varying from 1.04 to 1.65 across gap lengths due to two-dimensional mean flow effects. In the industrial case, parametric studies of gap length and trailing edge thickness show resistance scales with a trailing-edge Strouhal number, and that vortex shedding is the dominant mechanism driving frequency trends. Approaching the characteristic Strouhal number of 0.2, vortex shedding acts as a source of acoustic energy and resistance falls to zero. By inhibiting vortex shedding, short gaps, vane clocking and coolant flow are shown to increase resistance at high frequencies by up to a factor of 5. Our findings demonstrate quantitative prediction of gap resistance, where existing analytical models fail, and provide design guidance on sensitivities to geometry and the underlying fluid dynamics in can-annular combustors.",
+    "authors": [
+      "James Brind",
+      "Takaya Koda",
+      "Graham Pullan"
+    ],
+    "affiliations": [
+      "University of Cambridge",
+      "Whittle Laboratory, University of Cambridge, 1 JJ Thomson Avenue, Cambridge, CB3 0DY, UK",
+      "Mitsubishi Heavy Industries (Japan)",
+      "Research and Innovation Centre, Mitsubishi Heavy Industries, 2-1-1 Shinhama Arai-Cho, Takasago, Hyogo 676-8686, Japan"
+    ],
+    "date": "2026-06-18",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.jsv.2026.119964",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文采用经实验验证的时间推进URANS方法，量化环管燃烧室与高压涡轮间隙的声阻。相邻火焰筒反相振荡驱动间隙非定常流，形成涡片并耗散声能。实验室与工业燃气轮机两算例显示，准稳态声阻随偏流与马赫数线性增长，涡脱落主导频率趋势，接近Strouhal数0.2时声阻趋零。",
+    "method": "采用时间推进非定常RANS数值仿真，对双火焰筒扇区施加反相模态激励，含实验室尺度验证算例与真实工业燃气轮机算例，并开展间隙长度、尾缘厚度等参数研究。",
+    "innovation": "首次对环管燃烧室-涡轮间隙声阻进行定量预测，弥补现有解析模型失效的不足，并揭示涡脱落Strouhal数标度规律及短间隙、导叶时钟、冷却流抑制涡脱落的增阻机制。",
+    "conclusions": "准稳态声阻随偏流与流向马赫数线性变化，斜率随间隙长度在1.04~1.65间变化；声阻随尾缘Strouhal数标度，接近0.2时涡脱落成为声能源、声阻降至零，短间隙等可使高频声阻提高至5倍。",
+    "limitations": "仅针对环管燃烧室-涡轮间隙的声学特性，未涉及风扇/压气机叶栅内旋转不稳定性与非同步振动问题，且依赖URANS对涡脱落的模化精度。",
+    "tags": [
+      "其他",
+      "数值仿真",
+      "声学诱导叶片振动"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究燃烧室-涡轮间隙声阻与涡脱落声能机制，属叶轮机械声学与流动诱导振动范畴，但未直接涉及风扇/压气机RI-NSV机理、预测或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": [
+      "Mitsubishi Heavy Industries"
+    ]
   },
   {
     "id": "6a34acdc1072",
@@ -8047,6 +8193,41 @@
     "relevance_reason": "论文研究磁轴承转子系统稳定性，与风扇/压气机RI-NSV无直接关联，但转子动力学方法有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-06-01",
+    "groups": []
+  },
+  {
+    "id": "0771047b3206",
+    "title": "A coupled FE-BE multi-scale method for the dynamics of jointed structures",
+    "abstract": "The damping of built-up structures stems largely from the microscopic dry frictional interactions in the contact interfaces. The accurate prediction of friction damping has been an important scientific aim of the past several decades. Recent research indicates that very good agreement with vibration measurements is to be expected if the actual contact surface topography is sufficiently well known and finely resolved, and frictional-unilateral interactions are modeled in terms of the Coulomb-Signorini conditions. Resolving all relevant length scales in one finite element model leads to enormous or even prohibitive computation effort and regularization of the set-valued contact laws might be needed to ensure numerical stability . In this work, we propose a multi-scale approach: The stress and deformation field in the contact region is modeled using elastic half-space theory, implemented on a regular and fine grid of boundary elements (BE), so that the compliance matrix can be expressed in closed form . The vibration behavior of the remaining region is described using a relatively coarse finite element (FE) model, which may be even further reduced via component mode synthesis. The two models are coupled by enforcing compatibility and equilibrium conditions in the far field . The set-valued Coulomb-Signorini conditions are enforced robustly and efficiently using a projected over-relaxation scheme in conjunction with an appropriate active-set strategy. For the S4 beam benchmark, very good agreement with regard to the amplitude-dependent frequency and damping ratio of the first few modes is achieved, while the computation effort is reduced by several orders of magnitude compared to the full-FE reference. The proposed multi-scale method permits a very fine resolution of the contact surface topography without suffering from numerical instability.",
+    "authors": [
+      "Hendrik D. Linder",
+      "Johann Groß",
+      "Malte Krack"
+    ],
+    "affiliations": [
+      "University of Stuttgart",
+      "University of Stuttgart, Germany"
+    ],
+    "date": "2025-07-01",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.jsv.2025.119301",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "针对装配结构接触界面干摩擦阻尼难以高精度预测的问题，提出有限元-边界元耦合的多尺度方法：接触区用弹性半空间理论在细网格边界元上建模，其余区域用粗网格有限元并可通过模态综合降阶，远场施加位移协调与力平衡耦合，采用投影超松弛与主动集策略稳健求解Coulomb-Signorini接触条件。S4梁基准算例中前几阶模态的幅值相关频率与阻尼比与全有限元参考高度吻合，计算量降低数个量级。",
+    "method": "数值方法：FE-BE多尺度耦合建模，接触区弹性半空间边界元细网格，其余区粗网格有限元/模态综合降阶，投影超松弛+主动集求解单边摩擦接触；以S4梁为基准算例验证。",
+    "innovation": "将弹性半空间边界元细网格与粗网格有限元在远场耦合，使接触表面形貌可高分辨率解析，同时避免全域细网格带来的计算量爆炸与接触律正则化导致的数值不稳定。",
+    "conclusions": "S4梁基准中前几阶模态的幅值相关频率与阻尼比与全有限元参考高度吻合；计算量相比全有限元参考降低数个量级，且可精细分辨接触形貌而不出现数值不稳定。",
+    "limitations": "仅验证于S4梁等基准结构，接触区依赖弹性半空间假设，尚未涉及叶轮机械叶片榫连/缘板接触等复杂工况。",
+    "tags": [
+      "数值仿真",
+      "解析/降阶模型",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究装配结构干摩擦接触阻尼的FE-BE多尺度数值方法，属泛化叶片振动与阻尼预测工具，未涉及RI-NSV机理、预测或控制。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
     "groups": []
   },
   {
@@ -19369,6 +19550,40 @@
     "groups": []
   },
   {
+    "id": "15e7ac7b9877",
+    "title": "Experimental Measurements of Flow-Averaged Toroidal Vortices in Buoyancy-Dominated Rotating Cavities",
+    "abstract": "Abstract The flow structures and heat transfer within rotating cavities of aero-engine axial compressors influence the thermal expansion of the rotor disks, and consequently the blade-tip clearances. To investigate the flow field at the bore and lower cavity region, experimental measurements have been acquired in an engine-representative test facility. Axial, tangential, and radial velocities were measured using a miniature five-hole probe at a range of axial and radial positions. Time-averaged results from 28 tests carried out at nondimensional parameters comparable to engine conditions: 1.3 × 104 ≤ Rez ≤ 8.2 × 104, 3.0 × 105 ≤ Reθ ≤ 3.2 × 106, 0.11 ≤ Ro ≤ 3.24, 0.14 ≤ βΔT ≤ 0.36 are presented in this paper. The axial and tangential velocity measurements conform to previous work, while the radial velocity component provides quantitative evidence of an asymmetric toroidal vortex in the cavity gap, biased toward the downstream disk. The vortex is characterized by the local vorticity and grows in strength and size as Rossby number increases above Ro = 0.34 to 1.63. The effect of βΔT on the vortex formation is negligible compared to the influence of the tangential Reynolds number as the local circulation is suppressed by the Coriolis forces at high rotational speeds. Both the tangential and radial velocity results suggest that as Ro is increased, the proportion of air that is radially ingested and expelled from a cavity decreases.",
+    "authors": [
+      "Emma Fisher",
+      "Mark R. Puttock-Brown"
+    ],
+    "affiliations": [
+      "University of Sussex",
+      "Department of Engineering and Design, Thermo-Fluid Mechanics Research Centre, University of Sussex , Brighton BN1 9RH, UK"
+    ],
+    "date": "2023-10-07",
+    "year": 2023,
+    "url": "https://doi.org/10.1115/1.4063689",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对航空发动机轴流压气机旋转腔内的流动结构与传热问题，在发动机代表性试验台上采用微型五孔探针测量轴向、切向与径向速度，覆盖Rez 1.3×10⁴~8.2×10⁴、Reθ 3.0×10⁵~3.2×10⁶、Ro 0.11~3.24等工况，首次给出腔隙内偏向下游盘的环面涡定量证据，并揭示其随Rossby数增强、受科氏力抑制的规律。",
+    "method": "实验测量：微型五孔探针在28组工况下测量旋转腔轴向、切向、径向速度，参数覆盖Rez、Reθ、Ro与浮力数βΔT。",
+    "innovation": "首次通过径向速度定量证实旋转腔隙内存在偏向下游盘的非对称环面涡，并系统刻画其随Ro增长及高转速科氏力抑制的演化规律。",
+    "conclusions": "Ro由0.34增至1.63时环面涡强度与尺度增大；高转速下科氏力抑制局部环流，βΔT影响可忽略；Ro增大使腔内径向吸入/排出空气比例下降。",
+    "limitations": "仅给出时均流场，缺乏非定常频谱与涡脱落信息；探针测量空间分辨率有限，未涉及叶片振动响应。",
+    "tags": [
+      "实验测量",
+      "叶尖间隙",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究压气机旋转腔流动与盘腔传热对叶尖间隙的影响，未涉及RI-NSV机理、预测或控制，仅与叶轮机械流致问题有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": []
+  },
+  {
     "id": "08b68ca4201a",
     "title": "Performance Characteristics of a Rotating Detonation Combustor Exiting Into a Pressurized Plenum to Simulate Gas Turbine Inlet",
     "abstract": "Abstract The present study aims to experimentally characterize the performance of a rotating detonation combustion (RDC) system integrated with a pressurized downstream plenum to simulate the high-pressure inlet conditions of power-generating gas turbines. A thorough understanding of the operational behavior including wave mode behavior, static pressure profile along the combustor length, and dynamic features of pressure fluctuations is crucial for successful integration of RDC with the turbine. In this study, two RDC configurations are investigated, RDC with a constant area annulus and RDC with a converging nozzle. In both cases, the RDC flow exited into a plenum chamber kept at pressures varying from 155 kPa to 330 kPa. RDC was operated on methane and oxygen-enriched air to represent reactants used in land-based power generation. Experiments were conducted for the two RDCs configurations operated at three reactant mass flow rates (0.23, 0.32, and 0.46 kg/s). The RDC performance is characterized by time-averaged static pressure measurements, and wave velocity determined by ionization probes. In addition, dynamic pressure measurements were recorded both inside and near the exit of RDC channel to investigate wave interactions between RDC and downstream plenum. Results show that the RDC with the converging nozzle achieved superior performance while minimizing detrimental interactions with the reflected shock and/or acoustic waves from the downstream plenum.",
@@ -21009,6 +21224,42 @@
     "relevance_reason": "论文研究流固耦合测量方法，与风扇/压气机RI-NSV无直接关联，但可为叶片流致振动实验提供测量技术参考。",
     "has_fulltext": false,
     "fetched_at": "2026-06-15",
+    "groups": []
+  },
+  {
+    "id": "d5cb6a7cd158",
+    "title": "Unsteady Aeroelastic Characterization and Scaling Relations of Flexible Membrane Wings",
+    "abstract": "We present a numerical study to characterize nonlinear unsteady aeroelastic interactions of two-dimensional flexible wings at high angles of attack. The coupled fluid–flexible wing system is solved by a body-fitted variational aeroelastic solver based on the fully coupled Navier–Stokes and nonlinear structural equations. Using the coupled fluid–structure analysis, this study is aimed to provide physical insight and correlations for the aeroelastic behavior of flexible wings in the parameter space of the angle of attack and the aeroelastic number. The phase diagrams of the aerodynamic performance are established to obtain the envelope curves of the optimal performance and determine the transition line of the drag variation. The effects of the angle of attack and the aeroelastic number on the aeroelastic behaviors are systematically examined. The time-averaged membrane deformation is positively correlated with a nondimensional number, the so-called Weber number. A new scaling relation is proposed based on the dynamic equilibrium between the aerodynamic force fluctuation and the combined inertia–elastic fluctuation. The unsteady aerodynamic force can be adjusted by manipulating the membrane vibration, the mass ratio, the Strouhal number, and the aeroelastic number. The numerical investigations provide design guidelines and have the potential to enhance the maneuverability and flight agility of micro air vehicles with flexible wing structures.",
+    "authors": [
+      "Guojun Li",
+      "Rajeev K. Jaiman"
+    ],
+    "affiliations": [
+      "Xi'an Jiaotong University",
+      "Xi’an Jiaotong University, 710049 Xi’an, People’s Republic of China",
+      "University of British Columbia",
+      "University of British Columbia, Vancouver, British Columbia V6T 1Z4, Canada"
+    ],
+    "date": "2023-07-31",
+    "year": 2023,
+    "url": "https://doi.org/10.2514/1.j063004",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文采用贴体变分气动弹性求解器，耦合Navier-Stokes方程与非线性结构方程，数值研究高攻角下二维柔性翼的非线性非定常气动弹性相互作用，建立气动性能相图与最优包络线，系统考察攻角与气动弹性数的影响，并提出基于气动力脉动与惯性-弹性脉动动态平衡的新标度关系。",
+    "method": "数值研究：贴体变分气动弹性求解器，全耦合Navier-Stokes与非线性结构方程，二维柔性翼，高攻角，参数空间为攻角与气动弹性数。",
+    "innovation": "建立气动性能相图与阻力变化转捩线，揭示膜变形与Weber数的正相关，并提出基于气动力脉动与惯性-弹性脉动动态平衡的新标度关系。",
+    "conclusions": "时均膜变形与Weber数正相关；通过调控膜振动、质量比、Strouhal数和气动弹性数可调节非定常气动力，并获得最优性能包络线。",
+    "limitations": "仅针对二维柔性膜翼、高攻角工况，未涉及三维有限展长效应、叶轮机械旋转系与压缩性效应。",
+    "tags": [
+      "风扇/压气机叶片气动弹性",
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "该文研究柔性膜翼非定常气动弹性与标度关系，属泛化流固耦合与气动弹性研究，未涉及旋转不稳定性RI或非同步振动NSV，但对风扇/压气机叶片流致振动建模有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
     "groups": []
   },
   {
@@ -27358,6 +27609,44 @@
     "groups": [
       "Beihang BUAA"
     ]
+  },
+  {
+    "id": "7f4d6e8d5fe3",
+    "title": "Optimization of a Tip Appendage for the Control of Tip Leakage Vortices in Axial Flow Fans",
+    "abstract": "Abstract This paper presents the numerical optimization of a tip appendage design for the passive control of tip leakage vortices in subsonic axial flow cooling fans. The studied class of fan was designed in the conventional manner without the consideration of tip clearance effects. As such, the objective of this investigation is the improvement of the aerodynamic performance characteristics of the datum fan through consideration of the blade tip geometry. Based on previous studies involving fan performance enhancement using various tip end-plate configurations, the most promising end-plate geometry which is found to best improve the fan’s performance characteristics is selected for further development through optimization. Before the optimization process can begin, initialization of the chosen end-plate’s design space using the design of experiments (DoEs) technique is performed. Formulation of the response surface is based on a multi-objective multi-point objective function which considers the fan’s various performance metrics. Considering the optimization process, the design and analysis of computer aided experiments method is used in the development of the Kriging-based surrogate model’s database. The resulting database is coupled with an efficient global optimization algorithm which completes the workflow of the optimization routine. The Pareto-front of non-dominated solutions is used to guide the optimal design selection, on which the experimental evaluations are based. The experimental results of the optimized design indicate improved fan performance characteristics at greater than peak efficiency flowrates. This design is found to increase the datum fan’s design point performance characteristics by a value of 32.90% in total-to-static pressure rise and a 7.66 percentage point increase in total-to-static efficiency at the fan’s design speed of 722 rpm.",
+    "authors": [
+      "Thomas O. Meyer",
+      "Sybrand Johannes van der Spuy",
+      "Chris J. Meyer",
+      "Alessandro Corsini"
+    ],
+    "affiliations": [
+      "Stellenbosch University",
+      "Department of Mechanical and Mechatronic Engineering, Stellenbosch University, Stellenbosch 7600, South Africa",
+      "Sapienza University of Rome",
+      "Dipartimento di Ingegneria Meccanica e Aerospaziale, Università di Roma “La Sapienza, ”Rome I00184, Italy"
+    ],
+    "date": "2022-03-14",
+    "year": 2022,
+    "url": "https://doi.org/10.1115/1.4054069",
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对亚音速轴流冷却风扇，通过数值优化设计叶尖端板以被动控制叶尖泄漏涡。采用试验设计初始化设计空间，构建Kriging代理模型并结合高效全局优化算法，以多点多目标函数优化。优化设计使设计点总静压升提高32.90%，总静效率提高7.66个百分点。",
+    "method": "基于CFD的数值仿真与Kriging代理模型优化，结合试验设计（DoE）和高效全局优化算法，在设计转速722 rpm下评估风扇性能。",
+    "innovation": "将叶尖端板构型与多目标多点代理模型优化框架结合，系统提升风扇气动性能，并实验验证优化设计在大于峰值效率流量下的改善。",
+    "conclusions": "优化叶尖端板使设计点总静压升提升32.90%，总静效率提高7.66个百分点；在大于峰值效率流量下风扇性能同样改善。",
+    "limitations": "研究仅针对亚音速冷却风扇，未涉及非定常流动、振动或旋转不稳定性等动态问题，优化效果可能受工况限制。",
+    "tags": [
+      "叶尖间隙",
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 3,
+    "relevance_reason": "论文研究叶尖端板控制叶尖泄漏涡，属于叶尖泄漏流与流动控制范畴，但未直接涉及旋转不稳定性或非同步振动，与RI-NSV机理仅有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": []
   },
   {
     "id": "0a5dd42cc345",
@@ -36247,6 +36536,38 @@
     "groups": []
   },
   {
+    "id": "73f63f7a724c",
+    "title": "Enhanced Delayed Detached Eddy Simulation for Cavities and Labyrinth Seals",
+    "abstract": "Abstract A range of popular hybrid Reynolds-averaged Navier–Stokes -large eddy simulation (RANS-LES) methods are tested for a cavity and two labyrinth seal geometries using an in-house high-order computational fluid dynamics (CFD) code and a commercial CFD code. The models include the standard Spalart–Allmaras (SA) and Menter shear stress transport (SST) versions of delayed detached eddy simulation (DDES) and the Menter scale adaptive simulation (SAS) model. A recently formulated, enhanced, variant of SA-DDES presented in the literature and a new variant using the Menter SST model are also investigated. The latter modify the original definition of the subgrid length scale used in standard DDES based on local vorticity and strain. For all geometries, the meshes are considered to be hybrid RANS-LES adequate. Very low levels of resolved turbulence and quasi-two-dimensional flow fields are observed for the standard DDES and SAS models even for the test cases here that contain obstacles, sharp edges, and swirling flow. Similar findings are observed for both the commercial and in-house high-order CFD codes. For the cavity simulations, when using standard DDES and SAS, there is a significant under prediction of turbulent statistics compared with experimental measurements. The enhanced versions of DDES, on the other hand, show a significant improvement and resolve turbulent content over a wide range of scales. Improved agreement with experimental measurements is also observed for profiles of the vertical velocity component. For the first labyrinth seal geometry swirl velocities are more accurately captured by the enhanced DDES versions. For the second labyrinth seal geometry, the mass flow coefficient prediction using the enhanced models is significantly improved (up to 30%). Standard, industrially available hybrid RANS-LES models, when applied to the present canonical cases can produce little to no resolved turbulent content. The standard SA- and Menter-based DDES models can yield lower levels of eddy viscosity when compared to equivilent steady RANS simulations which means that they are not operating as RANS or LES. It is recommended that hybrid RANS-LES models should be extensively tested for specific flow configurations and that special care is exercised by CFD practitioners when using many of the popular hybrid RANS-LES models that are currently available in commercial CFD packages.",
+    "authors": [
+      "Richard J. Jefferson-Loveday"
+    ],
+    "affiliations": [
+      "University of Nottingham",
+      "Gas Turbines and Transmissions Research Centre (G2TRC), Faculty of Engineering, The University of Nottingham, Nottingham NG7 2RD, UK"
+    ],
+    "date": "2019-11-21",
+    "year": 2019,
+    "url": "https://doi.org/10.1115/1.4045484",
+    "venue": "Journal of Engineering for Gas Turbines and Power",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对空腔与两种迷宫密封几何，采用高阶自研CFD与商业CFD，系统测试了SA/SST-DDES、SAS及基于涡量与应变修正亚格子长度尺度的增强DDES变体。发现标准混合RANS-LES模型解析湍流极低、呈准二维流场，湍流统计与流量系数显著低估；增强DDES可解析多尺度湍流，使流量系数预测改善达30%。",
+    "method": "数值仿真：采用自研高阶CFD与商业CFD，对空腔及两种迷宫密封开展SA/SST-DDES、SAS与增强DDES的混合RANS-LES对比计算，网格满足混合RANS-LES要求。",
+    "innovation": "引入并评估基于局部涡量与应变修正亚格子长度尺度的增强DDES变体（含新SST版本），系统揭示标准混合RANS-LES在含障碍、锐边与旋流 canonical 几何中解析湍流不足的问题。",
+    "conclusions": "标准DDES与SAS解析湍流极低、湍流统计显著低估；增强DDES可解析宽尺度湍流，第二种迷宫密封流量系数预测改善最高达30%，旋流速度捕捉更准确。",
+    "limitations": "仅针对空腔与迷宫密封等 canonical 几何，未涉及叶轮机械旋转部件与气动弹性耦合，结论外推需验证。",
+    "tags": [
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文聚焦空腔与迷宫密封的混合RANS-LES湍流解析改进，未涉及风扇/压气机RI-NSV机理、预测或控制，仅对叶轮机械内非定常湍流模拟方法有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": []
+  },
+  {
     "id": "987624e1c877",
     "title": "High Amplitude Combustion Instabilities in an Annular Combustor Inducing Pressure Field Deformation and Flame Blow Off",
     "abstract": "Abstract This article reports experiments carried out in the laboratory scale annular combustor MICCA-spray equipped with multiple swirling spray injectors. The experimental setup consists in an air plenum connected to a combustion chamber formed by two concentric cylindrical quartz tubes, allowing full optical access to the flames. A new injection system is introduced and characterized. For a wide range of operating conditions, strong combustion instabilities are observed, but the focus of this article is placed on very high amplitude combustion instabilities coupled by a standing azimuthal mode. New results are obtained using a higher order reconstruction method for the pressure field: its shape is shown to be modified during high amplitude oscillation, leading to asymmetries of the pressure distribution in the system. Flame blow off occurs near the pressure nodal line when a critical level of oscillation is reached. A method is proposed to reconstruct the acoustic velocity field just before blow off occurs and in this way determine the blow off threshold. It is found that the pressure distribution, velocity field, and blow off pattern become asymmetric as the amplitude of oscillation increases and that this process is accompanied by a rapid shift in frequency of oscillation. Another notable result is that the heat release rate in the flames on the same side of the nodal line is not perfectly in phase and that the phase differences become larger as the amplitude of oscillation increases.",
@@ -38988,6 +39309,45 @@
     "groups": [
       "Beihang BUAA"
     ]
+  },
+  {
+    "id": "ffedd5241a8a",
+    "title": "Broadband characterisation of in-duct acoustic sources using an equivalent source approach",
+    "abstract": "This paper is concerned with the development of an experimental method capable of independently characterising low Mach number, in-duct fluid machines, such as pumps, fans, etc. The aim is to propose and test a source characterisation method that is suitable for acoustic simulation and the construction Virtual Acoustic Prototypes. Such a requirement demands that the source characterisation be (a) independent, so that components can be virtually (re)combined within different assemblies and (b) valid over a wide frequency range so as to enable the output of a virtual assembly to be auralised. In this regard, standard methods based on sound power are not suitable. An equivalent source approach is proposed, based on a two-stage measurement procedure in which source strengths are obtained by solving an inverse problem. The experimental application of the procedure is illustrated as part of a case study where a high speed compressor unit is independently characterised and the resulting source data used to predict the operational response in a new assembly. Three frequency ranges are identified based on plane wave, modal and statistical behaviour within the duct. The same measured data is used within each regime but subject to different processing according to different assumptions. Predictions are shown to be in good agreement with the directly measured response over a broad frequency range (100 Hz–10 kHz).",
+    "authors": [
+      "J.W.R. Meggitt",
+      "Andrew S. Elliott",
+      "Andrew T. Moorhouse",
+      "Guy Banwell",
+      "Hugh Hopper",
+      "J. Lamb"
+    ],
+    "affiliations": [
+      "University of Salford",
+      "Acoustics Research Centre, University of Salford, Greater Manchester M5 4WT, United Kingdom",
+      "Dyson (United Kingdom)",
+      "Dyson LTD, Malmesbury SN16 0RP, United Kingdom"
+    ],
+    "date": "2018-11-21",
+    "year": 2018,
+    "url": "https://doi.org/10.1016/j.jsv.2018.10.041",
+    "venue": "Journal of Sound and Vibration",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文针对低速管道流体机械（如泵、风扇、压缩机）提出一种等效源表征方法，通过两级测量与逆问题求解获得独立于装配的宽带声源特性，用于虚拟声学原型构建。以高速压缩机组为案例，在平面波、模态和统计三个频段分别处理同一组数据，预测新装配下的运行响应，在100 Hz–10 kHz范围内与直接测量吻合良好。",
+    "method": "实验方法：两级测量结合逆问题求解的等效源表征，针对高速压缩机组在平面波、模态与统计频段分别处理数据，预测新装配响应并与直接测量对比。",
+    "innovation": "提出独立于装配、覆盖宽频段的等效源表征方法，克服传统声功率法无法虚拟重组与听觉化的局限，并按管道内平面波、模态与统计行为分频段处理同一测量数据。",
+    "conclusions": "等效源方法可在100 Hz–10 kHz宽频范围内较准确预测新装配下的运行声学响应；基于声功率的标准方法不适用于需虚拟重组与听觉化的源表征需求。",
+    "limitations": "仅适用于低马赫数管道机械，未涉及旋转不稳定性等非定常流动激励机理，且依赖逆问题求解对测量误差较敏感。",
+    "tags": [
+      "实验测量",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究管道机械宽带声源表征与声学预测，属风扇/压气机声学与流致振动参考范畴，但未涉及旋转不稳定性或非同步振动机理。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
+    "groups": []
   },
   {
     "id": "a3493d654d11",
@@ -43911,6 +44271,44 @@
     "relevance_reason": "论文研究腔体流动的湍流建模，与风扇/压气机RI-NSV无直接关联，但湍流长度尺度建模对叶尖泄漏流模拟有参考价值。",
     "has_fulltext": false,
     "fetched_at": "2026-08-10",
+    "groups": []
+  },
+  {
+    "id": "400a109bdb04",
+    "title": "Aeroelastic Tailoring of a Representative Wing Box Using Tow-Steered Composites",
+    "abstract": "There has been an increasing effort to improve aircraft performance through using composite tailored structures, not only to reduce weight, but to exploit beneficial aeroelastic couplings. Recent work has considered the ability to tow steer the composite plies to achieve better performance. Here, the potential wing weight savings of a full-size aeroelastically tailored wing are assessed by optimizing the properties of a three-dimensional finite element model using straight-fiber and tow-steered composites in the skins. One- and two-dimensional thickness and laminate rotation angle variations are considered as design freedoms. The jig shape is updated to maintain a fixed flight shape, and optimization constraints are implemented on the strains and buckling loads due to maneuver and dynamic gust loads, flutter stability, and control effectiveness for different flight conditions. The optimal main fiber direction is rotated forward of the front spar direction in the outer wing, leading to extension-shear coupling in the skins, which increases the washout behavior of the wing. Washout effects shift the lift forces inboard and allow skin thickness reductions, but also lead to reductions in aileron control effectiveness. The optimized tow-steered laminate configurations achieved larger mass reductions than optimized straight-fiber configurations.",
+    "authors": [
+      "Olivia Stodieck",
+      "Jonathan E. Cooper",
+      "Paul M. Weaver",
+      "Paul Kealy"
+    ],
+    "affiliations": [
+      "University of Bristol",
+      "University of Bristol, Bristol BS8 1TR, United Kingdom",
+      "Airbus (United Kingdom)",
+      "Airbus Operations Ltd., Filton, Bristol BS34 7PA, United Kingdom"
+    ],
+    "date": "2016-12-30",
+    "year": 2016,
+    "url": "https://doi.org/10.2514/1.j055364",
+    "venue": "AIAA Journal",
+    "source": "OpenAlex",
+    "pdf_url": "",
+    "summary_zh": "本文以全尺寸代表性翼盒为对象，采用三维有限元模型优化直纤维与丝束转向复合材料蒙皮铺层，在应变、屈曲、阵风、颤振与控制效率约束下评估气动弹性剪裁的减重潜力。结果表明，外翼主纤维方向前旋引入拉伸-剪切耦合，增强下洗效应，使升力内移并允许减薄蒙皮，丝束转向铺层减重优于直纤维。",
+    "method": "基于三维有限元参数化建模的数值优化，设计变量为蒙皮厚度与铺层旋转角的一维/二维变化，约束含机动与阵风载荷下应变和屈曲、颤振稳定性及操纵效率，并迭代夹具形状以保持飞行形状。",
+    "innovation": "将丝束转向复合材料铺层的一维/二维厚度与纤维角变化引入全尺寸翼盒气动弹性剪裁优化，并联合考虑颤振、阵风、屈曲与控制效率约束，量化其相对直纤维铺层的额外减重收益。",
+    "conclusions": "外翼主纤维方向前旋产生拉伸-剪切耦合，增强下洗、使升力内移并允许蒙皮减薄；丝束转向优化铺层实现的质量减幅大于直纤维优化方案，但下洗增强会降低副翼操纵效率。",
+    "limitations": "摘要未给出具体减重百分比与颤振速度等定量数据；研究限于翼盒结构模型，未涉及真实气动载荷分布与制造缺陷影响。",
+    "tags": [
+      "风扇/压气机叶片气动弹性",
+      "数值仿真",
+      "其他"
+    ],
+    "relevance": 2,
+    "relevance_reason": "论文研究复合材料翼盒的气动弹性剪裁与颤振约束优化，属一般气动弹性问题，未涉及风扇/压气机旋转不稳定性或非同步振动，仅对叶片流致振动控制有间接参考价值。",
+    "has_fulltext": false,
+    "fetched_at": "2026-11-02",
     "groups": []
   },
   {
