@@ -67,7 +67,7 @@
       "Thomas Lord Department of Mechanical Engineering",
       "Department of Mechanical Engineering and Material Science"
     ],
-    "total": 45,
+    "total": 47,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -96,7 +96,7 @@
       "Institute of Aeroelasticity",
       "Fan and Compressor"
     ],
-    "total": 44,
+    "total": 46,
     "avg_relevance": 2.5,
     "preset": true,
     "custom": false
@@ -156,7 +156,7 @@
       "Fabrice Thouverez"
     ],
     "aliases": [],
-    "total": 38,
+    "total": 39,
     "avg_relevance": 3.2,
     "preset": true,
     "custom": false
@@ -173,8 +173,8 @@
       "IISc",
       "Department of Aerospace Engineering"
     ],
-    "total": 34,
-    "avg_relevance": 2.5,
+    "total": 36,
+    "avg_relevance": 2.4,
     "preset": true,
     "custom": false
   },
@@ -247,6 +247,19 @@
     "custom": false
   },
   {
+    "name": "Oxford Thermofluids",
+    "institution": "University of Oxford",
+    "pis": [
+      "L. He",
+      "Thomas Povey"
+    ],
+    "aliases": [],
+    "total": 22,
+    "avg_relevance": 2.2,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Polytechnique Montreal",
     "institution": "Polytechnique Montreal",
     "pis": [
@@ -285,19 +298,6 @@
     "custom": false
   },
   {
-    "name": "Oxford Thermofluids",
-    "institution": "University of Oxford",
-    "pis": [
-      "L. He",
-      "Thomas Povey"
-    ],
-    "aliases": [],
-    "total": 21,
-    "avg_relevance": 2.3,
-    "preset": true,
-    "custom": false
-  },
-  {
     "name": "CAS IET",
     "institution": "Chinese Academy of Sciences",
     "pis": [
@@ -308,6 +308,13 @@
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
+  },
+  {
+    "name": "★ Tianyu Pan",
+    "institution": "（自动识别）",
+    "total": 18,
+    "avg_relevance": 2.3,
+    "preset": false
   },
   {
     "name": "ETH Zurich LEC",
@@ -338,13 +345,6 @@
     "custom": false
   },
   {
-    "name": "★ Tianyu Pan",
-    "institution": "（自动识别）",
-    "total": 17,
-    "avg_relevance": 2.3,
-    "preset": false
-  },
-  {
     "name": "TU Dresden",
     "institution": "TU Dresden",
     "pis": [
@@ -362,8 +362,8 @@
   {
     "name": "★ Qiushi Li",
     "institution": "（自动识别）",
-    "total": 15,
-    "avg_relevance": 2.4,
+    "total": 16,
+    "avg_relevance": 2.3,
     "preset": false
   },
   {
@@ -404,6 +404,18 @@
     "custom": false
   },
   {
+    "name": "Peking University",
+    "institution": "Peking University",
+    "pis": [
+      "Chao Zhou"
+    ],
+    "aliases": [],
+    "total": 8,
+    "avg_relevance": 2.0,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Ferrara / Parma",
     "institution": "Univ. Ferrara / Univ. Parma",
     "pis": [
@@ -413,18 +425,6 @@
     "aliases": [],
     "total": 7,
     "avg_relevance": 2.3,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Peking University",
-    "institution": "Peking University",
-    "pis": [
-      "Chao Zhou"
-    ],
-    "aliases": [],
-    "total": 7,
-    "avg_relevance": 2.0,
     "preset": true,
     "custom": false
   },

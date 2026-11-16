@@ -761,6 +761,41 @@
     ]
   },
   {
+    "id": "W2023156420",
+    "title": "Euler Analysis of the Three-Dimensional Flow Field of a High-Speed Propeller: Boundary Condition Effects",
+    "date": "1987-07-01",
+    "year": 1987,
+    "authors": [
+      "M. Nallasamy",
+      "B. J. Clark",
+      "John F. Groeneweg"
+    ],
+    "affiliations": [
+      "Glenn Research Center",
+      "Sverdrup Technology, Inc., NASA Lewis Research Center, Cleveland, OH 44135",
+      "NASA Lewis Research Center, Cleveland, OH 44135"
+    ],
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1115/1.3262110",
+    "abstract": "This paper presents the results of an investigation of the effects of far field boundary conditions on the solution of the three-dimensional Euler equations governing the flow field of a high-speed single rotation propeller. The results show that the solutions obtained with the nonreflecting boundary conditions are in good agreement with experimental data. The specification of nonreflecting boundary conditions is effective in reducing the dependence of the solution on the location of the far field boundary. Details of the flow field within the blade passage and the tip vortex are presented. The dependence of the computed power coefficient on the blade setting angle is examined.",
+    "keywords": [
+      "high-speed propellers",
+      "three-dimensional Euler equations",
+      "far-field boundary conditions",
+      "absorbing boundary conditions",
+      "tip vortex",
+      "blade passage flow",
+      "power coefficient",
+      "blade setting angle",
+      "propeller aerodynamics"
+    ],
+    "topics_matched": [
+      "叶尖间隙",
+      "实验测量"
+    ]
+  },
+  {
     "id": "W1978436073",
     "title": "Discussion: “Secondary Flow, Turbulent Diffusion, and Mixing in Axial-Flow Compressors” (Wisler, D. C., Bauer, R. C., and Okiishi, T. H., 1987, ASME J. Turbomach., 109, pp. 455–469)",
     "date": "1987-10-01",
@@ -3661,6 +3696,31 @@
     ]
   },
   {
+    "id": "W1984836338",
+    "title": "Discussion: “Mixing in Axial-Flow Compressors: Conclusions Drawn From Three-Dimensional Navier–Stokes Analyses and Experiments” (Leylek, J. H., and Wisler, D. C., 1991, ASME J. Turbomach., 113, pp. 139–156)",
+    "date": "1991-04-01",
+    "year": 1991,
+    "authors": [
+      "A. J. Strazisar"
+    ],
+    "affiliations": [
+      "Glenn Research Center",
+      "Internal Fluid Mechanics Division, NASA Lewis Research Center, Cleveland, OH 44135"
+    ],
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1115/1.2929073",
+    "abstract": "",
+    "keywords": [
+      "axial compressor",
+      "mixing",
+      "turbulent mixing"
+    ],
+    "topics_matched": [
+      "实验测量"
+    ]
+  },
+  {
     "id": "W4234466578",
     "title": "Turbine Tip and Shroud Heat Transfer",
     "date": "1991-07-01",
@@ -5222,6 +5282,34 @@
     ]
   },
   {
+    "id": "W2064945372",
+    "title": "Discussion: “Prediction of Unsteady Rotor-Surface Pressure and Heat Transfer From Wake Passings” (Tran, L. T., and Taulbee, D. B., 1992, ASME J. Turbomach., 114, pp. 807–817)",
+    "date": "1993-04-01",
+    "year": 1993,
+    "authors": [
+      "Theodosios P. Korakianitis"
+    ],
+    "affiliations": [
+      "Washington University in St. Louis",
+      "Washington University, St. Louis, MO 63130"
+    ],
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1115/1.2929242",
+    "abstract": "The authors are congratulated for their contributions to unsteady heat transfer computations. Some additional obser-vations and questions are offered constructively. This discus-sion is based on previous investigations (Korakianitis, 1987a, 1988b, 1988c, 1992a, 1992b, 1993a; Korakianitis and Wilson, 1988a) on wake and potential-flow interaction propagating from upstream stators in turbine rotor cascades. (The discus-sion was offered in July 1991; further contributions to the unsteady flow and unsteady heat transfer phenomena on this turbine rotor are included in a recent study (Korakianitis et al., 1993b).) The authors ' Gaussian-velocity-defect wake model has am-plitude D = 0.15 and (half) width W = 0.04, derived from one study on compressor wakes, presumably because no wake data on the pertinent turbine geometry were available. Our previous literature reviews (Korakianitis, 1987a, 1992a; Ko-rakianitis and Wilson, 1988a) show experimental data on com-pressor and turbine-wake values of D and W as a function of distance downstream for the generating cascade. These data indicate that suction-side widths are larger than pressure-side widths, and turbine wakes have smaller amplitudes and wider widths than compressor wakes. For an axial gap of x/C = 0.2 from the stator cascade (as used in this study), compressor wakes would have Dc « 0.25, WCjSU » 0.10, and WCiPr « 0.05, and turbine wakes would have D, « 0.10, WtiSU ~ 0.23, and WtiPr » 0.18 (where the subscripts c, t, su, and pr denote compressor, turbine, suction, and pressure, respectively). Based on these data, using D, = 0.10, W,iS „ = 0.23, and WUpr = 0.18 would be a better turbine wake model for the present investigation. Given the mechanisms of propagation and re-gions of influence of wake and potential-flow interaction (see below) the authors ' wake model may have contributed to the overpredicting/underpredicting unsteady heat transfer shown",
+    "keywords": [
+      "transient heat transfer",
+      "stator cascade",
+      "unsteady pressure distribution",
+      "rotor-stator interaction",
+      "wind turbine wakes",
+      "heat transfer prediction"
+    ],
+    "topics_matched": [
+      "实验测量"
+    ]
+  },
+  {
     "id": "W1998733417",
     "title": "Discussion: “On the Conservation of Rothalpy in Turbomachines” (Lyman, F. A., 1993, ASME J. Turbomach., 115, pp. 520–525)",
     "date": "1993-07-01",
@@ -6519,6 +6607,41 @@
       "Geometry",
       "Aerodynamics",
       "Partial differential equation"
+    ],
+    "topics_matched": [
+      "实验测量"
+    ]
+  },
+  {
+    "id": "W2045432882",
+    "title": "Effect of Wind Tunnel Acoustic Modes on Linear Oscillating Cascade Aerodynamics",
+    "date": "1994-07-01",
+    "year": 1994,
+    "authors": [
+      "Daniel H. Buffum",
+      "Sanford Fleeter"
+    ],
+    "affiliations": [
+      "Glenn Research Center",
+      "NASA Lewis Research Center, Cleveland, OH 44135",
+      "Purdue University West Lafayette",
+      "Thermal Sciences and Propulsion Center, School of Mechanical Engineering, Purdue University, West Lafayette, IN 47907"
+    ],
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1115/1.2929440",
+    "abstract": "The aerodynamics of a biconvex airfoil cascade oscillating in torsion is investigated using the unsteady aerodynamic influence coefficient technique. For subsonic flow and reduced frequencies as large as 0.9, airfoil surface unsteady pressures resulting from oscillation of one of the airfoils are measured using flush-mounted high-frequency-response pressure transducers. The influence coefficient data are examined in detail and then used to predict the unsteady aerodynamics of a cascade oscillating at various interblade phase angles. These results are correlated with experimental data obtained in the traveling-wave mode of oscillation and linearized analysis predictions. It is found that the unsteady pressure disturbances created by an oscillating airfoil excite wind tunnel acoustic modes, which have detrimental effects on the experimental results. Acoustic treatment is proposed to rectify this problem.",
+    "keywords": [
+      "airfoil cascade",
+      "torsional vibration",
+      "unsteady aerodynamics",
+      "aerodynamic influence coefficients",
+      "biconvex airfoil",
+      "interblade phase angle",
+      "traveling wave modes",
+      "unsteady pressure measurement",
+      "acoustic treatment",
+      "reduced frequency"
     ],
     "topics_matched": [
       "实验测量"
@@ -8278,6 +8401,39 @@
     "topics_matched": [
       "失速/喘振机理",
       "实验测量"
+    ]
+  },
+  {
+    "id": "W2046872939",
+    "title": "Detailed Stress Tensor Measurements in a Centrifugal Compressor Vaneless Diffuser",
+    "date": "1996-04-01",
+    "year": 1996,
+    "authors": [
+      "A. Pinarbasi",
+      "M. W. Johnson"
+    ],
+    "affiliations": [
+      "University of Liverpool",
+      "Department of Mechanical Engineering, University of Liverpool, Liverpool, United Kingdom"
+    ],
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1115/1.2836654",
+    "abstract": "Detailed flow measurements have been made in the vaneless diffuser of a large low-speed centrifugal compressor using hot-wire anemometry. The three time mean velocity components and full stress tensor distributions have been determined on eight measurement planes within the diffuser. High levels of Reynolds stress result in the rapid mixing out of the blade wake. Although high levels of turbulent kinetic energy are found in the passage wake, they are not associated with strong Reynolds stresses and hence the passage wake mixes out only slowly. Low-frequency meandering of the wake position is therefore likely to be responsible for the high kinetic energy levels. The anisotropic nature of the turbulence suggests that Reynolds stress turbulence models are required for CFD modeling of diffuser flows.",
+    "keywords": [
+      "centrifugal compressor",
+      "vaneless diffuser",
+      "stress tensor",
+      "Reynolds stress",
+      "turbulent kinetic energy",
+      "wake meandering",
+      "anisotropic turbulence",
+      "turbulence modeling",
+      "low-speed compressor"
+    ],
+    "topics_matched": [
+      "实验测量",
+      "数值仿真"
     ]
   },
   {
@@ -24639,6 +24795,38 @@
     "topics_matched": [
       "实验测量",
       "数值仿真"
+    ]
+  },
+  {
+    "id": "W2032893486",
+    "title": "Integer Frequency Veering of Mistuned Blade Integrated Disks",
+    "date": "2013-09-13",
+    "year": 2013,
+    "authors": [
+      "Thomas Klauke",
+      "Ulrik Strehlau",
+      "Arnold Kühhorn"
+    ],
+    "affiliations": [
+      "e-mail:",
+      "Brandenburg University of Technology Cottbus-Senftenberg",
+      "e-mail:  Chair of Structural Mechanics and Vehicle Vibration Technology BTU Cottbus, Siemens-Halske-Ring 14, 03044 Cottbus, Germany"
+    ],
+    "venue": "Journal of Turbomachinery",
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1115/1.4024022",
+    "abstract": "As a result of more balanced blade aspect ratios of modern blade-integrated disks (blisks), interactions between disk-dominated and blade-dominated modes are becoming more and more important, especially if blade mistuning is considered. The specific vibration behavior in these transition regions is characterized by a mix of both fundamental mode types into “coupled” modes. In this paper, numerical and experimental investigations based on a front high-pressure compressor (HPC) blisk stage were carried out in order to determine the effect of blade mistuning on those regions in detail. At this, effects like mode localization and amplitude magnification are found to be weakened in an integer frequency-veering zone. Contrary to this, blisks are very sensitive to mistuning in regions of pure blade-dominated mode families with high modal density.",
+    "keywords": [
+      "blisk",
+      "blade mistuning",
+      "coupled modes",
+      "mode localization",
+      "high-pressure compressor",
+      "aeroelasticity",
+      "modal density"
+    ],
+    "topics_matched": [
+      "实验测量"
     ]
   },
   {
