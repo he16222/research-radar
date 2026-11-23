@@ -32,6 +32,35 @@
     "custom": false
   },
   {
+    "name": "DLR",
+    "institution": "German Aerospace Center",
+    "pis": [
+      "F. Holste",
+      "Holste",
+      "Frank Kameier",
+      "Kameier",
+      "Neise",
+      "Benjamin Pardowitz",
+      "Pardowitz",
+      "Marz",
+      "M. Baumgartner",
+      "Baumgartner"
+    ],
+    "aliases": [
+      "DLR",
+      "German Aerospace Center",
+      "Deutsches Zentrum fur Luft- und Raumfahrt",
+      "Engine Acoustics Department",
+      "Institute of Propulsion Technology",
+      "Institute of Aeroelasticity",
+      "Fan and Compressor"
+    ],
+    "total": 49,
+    "avg_relevance": 2.5,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "TU Berlin Aero Engines",
     "institution": "Technische Universitat Berlin",
     "pis": [
@@ -67,37 +96,22 @@
       "Thomas Lord Department of Mechanical Engineering",
       "Department of Mechanical Engineering and Material Science"
     ],
-    "total": 47,
+    "total": 48,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
   },
   {
-    "name": "DLR",
-    "institution": "German Aerospace Center",
+    "name": "Beihang BUAA",
+    "institution": "Beihang University",
     "pis": [
-      "F. Holste",
-      "Holste",
-      "Frank Kameier",
-      "Kameier",
-      "Neise",
-      "Benjamin Pardowitz",
-      "Pardowitz",
-      "Marz",
-      "M. Baumgartner",
-      "Baumgartner"
+      "Xiaofeng Sun",
+      "Dakun Sun",
+      "Xu Dong"
     ],
-    "aliases": [
-      "DLR",
-      "German Aerospace Center",
-      "Deutsches Zentrum fur Luft- und Raumfahrt",
-      "Engine Acoustics Department",
-      "Institute of Propulsion Technology",
-      "Institute of Aeroelasticity",
-      "Fan and Compressor"
-    ],
-    "total": 46,
-    "avg_relevance": 2.5,
+    "aliases": [],
+    "total": 44,
+    "avg_relevance": 3.0,
     "preset": true,
     "custom": false
   },
@@ -112,7 +126,7 @@
       "Yujun Leng"
     ],
     "aliases": [],
-    "total": 42,
+    "total": 43,
     "avg_relevance": 2.6,
     "preset": true,
     "custom": false
@@ -128,22 +142,8 @@
       "Venkatesh Suriyanarayanan"
     ],
     "aliases": [],
-    "total": 41,
+    "total": 42,
     "avg_relevance": 3.3,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Beihang BUAA",
-    "institution": "Beihang University",
-    "pis": [
-      "Xiaofeng Sun",
-      "Dakun Sun",
-      "Xu Dong"
-    ],
-    "aliases": [],
-    "total": 41,
-    "avg_relevance": 3.0,
     "preset": true,
     "custom": false
   },
@@ -173,7 +173,7 @@
       "IISc",
       "Department of Aerospace Engineering"
     ],
-    "total": 36,
+    "total": 37,
     "avg_relevance": 2.4,
     "preset": true,
     "custom": false
@@ -230,6 +230,19 @@
     "custom": false
   },
   {
+    "name": "Polytechnique Montreal",
+    "institution": "Polytechnique Montreal",
+    "pis": [
+      "Huu Duc Vo",
+      "Alain Batailly"
+    ],
+    "aliases": [],
+    "total": 23,
+    "avg_relevance": 2.1,
+    "preset": true,
+    "custom": false
+  },
+  {
     "name": "Waseda / IHI",
     "institution": "Waseda University / IHI",
     "pis": [
@@ -256,19 +269,6 @@
     "aliases": [],
     "total": 22,
     "avg_relevance": 2.2,
-    "preset": true,
-    "custom": false
-  },
-  {
-    "name": "Polytechnique Montreal",
-    "institution": "Polytechnique Montreal",
-    "pis": [
-      "Huu Duc Vo",
-      "Alain Batailly"
-    ],
-    "aliases": [],
-    "total": 22,
-    "avg_relevance": 2.1,
     "preset": true,
     "custom": false
   },
@@ -345,6 +345,13 @@
     "custom": false
   },
   {
+    "name": "★ Qiushi Li",
+    "institution": "（自动识别）",
+    "total": 17,
+    "avg_relevance": 2.3,
+    "preset": false
+  },
+  {
     "name": "TU Dresden",
     "institution": "TU Dresden",
     "pis": [
@@ -360,13 +367,6 @@
     "custom": false
   },
   {
-    "name": "★ Qiushi Li",
-    "institution": "（自动识别）",
-    "total": 16,
-    "avg_relevance": 2.3,
-    "preset": false
-  },
-  {
     "name": "Cranfield Propulsion",
     "institution": "Cranfield University",
     "pis": [
@@ -374,7 +374,7 @@
       "Vassilios Pachidis"
     ],
     "aliases": [],
-    "total": 15,
+    "total": 16,
     "avg_relevance": 2.2,
     "preset": true,
     "custom": false
